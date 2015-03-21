@@ -34,7 +34,7 @@ header h2 {
 	color: white;
 	background-color: rgb(239, 113, 0);
 	border: solid #000;
-	border-width: 0 1px;
+	border-width: 1px;
 	margin-right: 15px;
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -52,6 +52,28 @@ section {
 aside {
 	float: right;
 	width: 30%;
+}
+
+aside h1 {
+	font-family: sans-serif;
+	line-height: 30px;
+	font-size: 15px;
+	padding-top: 20px;
+}
+
+aside img {
+	margin-top: 15px;
+	float: left;
+	display: block;
+	height: 75px;
+	width: 75px;
+	border: solid #000;
+	border-width: 1px;
+	margin-right: 10px;
+}
+
+aside #floatImg {
+	border-top: 10px;
 }
 
 /* Footer */
