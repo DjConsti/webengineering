@@ -46,12 +46,52 @@ header h2 {
 section {
 	float: left;
 	width: 70%;
+	height: 100%;
+	padding-left: 100px;
+	height: 90%;
+}
+
+section #msgGreen {
+	font-family: sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+	color: green;
+	text-align: center;
+	border: solid green;
+	border-width: 1px;
+	margin-top: 10px;
+	width: 95%
+}
+
+section #msgRed {
+	font-family: sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+	color: red;
+	text-align: center;
+	border: solid red;
+	border-width: 1px;
+	margin-top: 10px;
+	width: 95%
+}
+
+section #msgBlack {
+	font-family: sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+	text-align: center;
+	border: solid black;
+	border-width: 1px;
+	margin-top: 10px;
+	width: 95%
 }
 
 /* Aside */
 aside {
-	float: right;
-	width: 30%;
+	float:left;
+	width: 20%;
+	height: 100%;
+	display: block;
 }
 
 aside h1 {
@@ -80,4 +120,5 @@ aside #floatImg {
 footer {
 	width: 100%;
 	text-align: center;
+	display: inline-block;
 }
