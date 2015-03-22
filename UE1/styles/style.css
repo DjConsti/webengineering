@@ -88,7 +88,7 @@ section #msgBlack {
 
 /* Aside */
 aside {
-	float:left;
+	float:right;
 	width: 20%;
 	height: 100%;
 	display: block;
@@ -102,7 +102,7 @@ aside h1 {
 }
 
 aside img {
-	margin-top: 15px;
+	margin-top: 5px;
 	float: left;
 	display: block;
 	height: 75px;
