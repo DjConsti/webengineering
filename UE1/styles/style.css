@@ -1,4 +1,4 @@
-body {
+html, body {
 	margin: 0px;
 	background: -webkit-linear-gradient(white, rgb(211, 216, 232)); 
 	background: -moz-linear-gradient(white, rgb(211, 216, 232)); 
@@ -50,9 +50,8 @@ header h2 {
 @media (min-width: 1101px) {
 	section {
 		float: left;
-		width: 70%;
+		width: 79%;
 		height: 100%;
-		padding-left: 100px;
 		height: 90%;
 	}
 }
@@ -60,9 +59,8 @@ header h2 {
 @media (max-width: 1100px) {
 	section {
 		float: left;
-		width: 90%;
+		width: 97%;
 		height: 100%;
-		padding-left: 50px;
 		height: 90%;
 	}
 }
@@ -76,7 +74,9 @@ section #msgGreen {
 	border: solid green;
 	border-width: 1px;
 	margin-top: 20px;
-	width: 95%
+	margin-left: 5%;
+	margin-right: 10px;
+	width: 90%
 }
 
 section #msgRed {
@@ -88,7 +88,9 @@ section #msgRed {
 	border: solid red;
 	border-width: 1px;
 	margin-top: 5px;
-	width: 95%
+	margin-left: 5%;
+	margin-right: 10px;
+	width: 90%
 }
 
 section #msgBlack {
@@ -99,7 +101,60 @@ section #msgBlack {
 	border: solid black;
 	border-width: 1px;
 	margin-top: 5px;
-	width: 95%
+	margin-left: 5%;
+	margin-right: 10px;
+	width: 90%
+}
+
+@media (min-width: 561px) {
+	section table {
+		float: left;
+		width: 19%;
+		font-family: sans-serif;
+		line-height: 30px;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-left: 5px;
+		height: 100%;
+	}
+}
+
+@media (max-width: 560px) {
+	section table {
+		width: 100%;
+		font-family: sans-serif;
+		line-height: 30px;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-left: 5px;
+	}
+}
+
+section table tr#tableHeader {
+	background-color: rgb(239, 113, 0);
+	color: rgb(23, 59, 38);
+	text-align: center;
+	border: solid #000;
+	border-width: 1px;
+	float: left;
+	width: 100%;
+	font-family: sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+section table tr#tableMoney {
+	background-color: rgb(43, 71, 129);
+	color: white;
+	text-align: center;
+	border: solid black;
+	border-width: 1px;
+	float: left;
+	width: 100%;
+	font-family: sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+	margin-top: 2px;
 }
 
 /* Aside */
