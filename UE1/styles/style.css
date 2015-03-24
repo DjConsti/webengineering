@@ -286,6 +286,7 @@ aside img#you {
 @media (min-width: 1101px) {
 	aside #floatImgOther {
 		border-top: 10px;
+		margin-top: 15px;
 	}
 }
 
