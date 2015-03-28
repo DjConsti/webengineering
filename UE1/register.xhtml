@@ -17,12 +17,12 @@
 			<h2>Pers&ouml;nliche Daten</h2>
 			<p><label for="vorname">Vorname:</label><input type="text" name="vorname" id="vorname"/></p>
 			<p><label for="nachname">Nachname:</label><input type="text" name="nachname" id="nachname"/></p>
-			<p><label for="geburtstag">Geburtstag:</label><input type="text" name="geburtstag" id="geburtstag"/></p>
+			<p><label for="geburtstag">Geburtstag:</label><input type="text" name="geburtstag" id="geburtstag" pattern="\d{1,2}\.\d{1,2}\.\d{4}"/></p>
 			<p><label for="geschlecht">Geburtstag:</label><input type="radio" name="geschlecht" value="maennlich" id="maennlich"/><label for="maennlich">M&auml;nnlich</label> <input type="radio" name="geschlecht" value="weiblich" id="weiblich"/><label for="weiblich">Weiblich</label></p>
 			<h2>Spielerdaten</h2>
 			<p><label for="avatar">Avatar:</label><input type="text" name="avatar" id="avatar"/></p>
-			<p><label for="avatar">Benutzername*:</label><input type="text" name="benutzername" id="benutzername"/></p>
-			<p><label for="avatar">Passwort*:</label><input type="password" name="passwort" id="passwort"/></p>
+			<p><label for="avatar">Benutzername*:</label><input type="text" name="benutzername" id="benutzername" required="true" pattern=".{4,8}"/></p>
+			<p><label for="avatar">Passwort*:</label><input type="password" name="passwort" id="passwort" required="true" pattern=".{4,8}"/></p>
 			<p><input type="submit" value="Registrieren"/></p>
 		</form>
 		<p>Mit "*" gekennzeichnete Felder sind Pflichtfelder</p>
