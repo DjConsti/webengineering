@@ -33,7 +33,7 @@
 		<div id="msgBlack">Deadpool hat TUWIEN für € 1000 gewählt.</div>
 		<table>
 		  <tr id="tableHeader">TV</tr>
-		  <tr id="tv1" class="tableEntry">€ 100</tr>
+		  <tr id="tv1" class="tableEntryDisabled">€ 100</tr>
 		  <tr id="tv2" class="tableEntry">€ 200</tr>
 		  <tr id="tv3" class="tableEntry">€ 500</tr>
 		  <tr id="tv4" class="tableEntry">€ 750</tr>
@@ -50,14 +50,14 @@
 		  <tr id="tableHeader">Web</tr>
 		  <tr id="web1" class="tableEntry">€ 100</tr>
 		  <tr id="web2" class="tableEntry">€ 200</tr>
-		  <tr id="web3" class="tableEntry">€ 500</tr>
+		  <tr id="web3" class="tableEntryDisabled">€ 500</tr>
 		  <tr id="web4" class="tableEntry">€ 750</tr>
 		  <tr id="web5" class="tableEntry">€ 1000</tr>
 		</table>
 		<table>
 		  <tr id="tableHeader">Sport</tr>
 		  <tr id="sport1" class="tableEntry">€ 100</tr>
-		  <tr id="sport2" class="tableEntry">€ 200</tr>
+		  <tr id="sport2" class="tableEntryDisabled">€ 200</tr>
 		  <tr id="sport3" class="tableEntry">€ 500</tr>
 		  <tr id="sport4" class="tableEntry">€ 750</tr>
 		</table>
@@ -67,8 +67,10 @@
 		  <tr id="tuwien2" class="tableEntry">€ 200</tr>
 		  <tr id="tuwien3" class="tableEntry">€ 500</tr>
 		  <tr id="tuwien4" class="tableEntry">€ 750</tr>
-		  <tr id="tuwien5" class="tableEntry">€ 1000</tr>
+		  <tr id="tuwien5" class="tableEntryDisabled">€ 1000</tr>
 		</table>
+  
+        <a href="#" class="btn">w&auml;hlen</a>
 	</section>
 	<footer>&copy; 2015 BIG Jeopardy!</footer>
     <script>
@@ -76,7 +78,7 @@
         $(document).ready(function() {
             $("tr").click(function(event) {
                 // alert(event.target.id);
-            document.getElementById(event.target.id).className = "tableEntryDisabled";
+            document.getElementById(event.target.id).className = "tableEntrySelected";
             });
         });
     </script>
