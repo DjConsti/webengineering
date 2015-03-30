@@ -37,3 +37,8 @@ footer {
 form p input {
 float: right;
 }
+
+.validationError {
+    color: red;
+}
+
