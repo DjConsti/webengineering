@@ -3,31 +3,63 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <title>Conforming XHTML 1.1 Template</title>
+    <style type="text/css">
+	    @import url('styles/register.css');
+    </style>
 
-<title>Conforming XHTML 1.1 Template</title>
-<style type="text/css">
-	@import url('styles/register.css');
-</style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/framework.js"></script>
 </head>
 
 <body>
 	<header><img src="img/big-logo-small.png"/><h1>Jeopardy!</h1></header>
 	<section>
-		<form>
+		<form id="register">
 			<h2>Pers&ouml;nliche Daten</h2>
-			<p><label for="vorname">Vorname:</label><input type="text" name="vorname" id="vorname"/></p>
+			<p><label for="vorname">Vorname:</label><input type="text" name="vorname" id="vorname" /></p>
 			<p><label for="nachname">Nachname:</label><input type="text" name="nachname" id="nachname"/></p>
-			<p><label for="geburtstag">Geburtstag:</label><input type="text" name="geburtstag" id="geburtstag" pattern="\d{1,2}\.\d{1,2}\.\d{4}"/></p>
+			<p><label for="geburtstag">Geburtstag:</label><input type="text" name="geburtstag" id="geburtstag" pattern="\d{1,2}\.\d{1,2}\.\d{4}"/></p> <!-- pattern="\d{1,2}\.\d{1,2}\.\d{4}" -->
 			<p><label for="geschlecht">Geburtstag:</label><input type="radio" name="geschlecht" value="maennlich" id="maennlich"/><label for="maennlich">M&auml;nnlich</label> <input type="radio" name="geschlecht" value="weiblich" id="weiblich"/><label for="weiblich">Weiblich</label></p>
 			<h2>Spielerdaten</h2>
 			<p><label for="avatar">Avatar:</label><input type="text" name="avatar" id="avatar"/></p>
-			<p><label for="avatar">Benutzername*:</label><input type="text" name="benutzername" id="benutzername" required="true" pattern=".{4,8}"/></p>
-			<p><label for="avatar">Passwort*:</label><input type="password" name="passwort" id="passwort" required="true" pattern=".{4,8}"/></p>
-			<p><input type="submit" value="Registrieren"/></p>
+			<p><label for="avatar">Benutzername*:</label><input type="text" name="benutzername" id="benutzername" required="true" pattern=".{4,8}" onchange="validateForm()" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein."/></p>
+			<p><label for="avatar">Passwort*:</label><input type="password" name="passwort" id="passwort" required="true" pattern=".{4,8}" onchange="validateForm()" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein."/></p>
+			<p><input id="regButton" type="submit" value="Registrieren" disabled="true"/></p>
+
 		</form>
-		<p>Mit "*" gekennzeichnete Felder sind Pflichtfelder</p>
+        <br/>
+        <p>Mit "*" gekennzeichnete Felder sind Pflichtfelder</p>
 	</section>
 	<footer>&copy; 2015 BIG Jeopardy!</footer>
+
+	<script>
+			if(hasFormValidation() == "noValid")
+                alert("javaScript disabled");
+            /*
+             * Validate the form; if valid the register button is clickable
+            */
+            function validateForm()
+            {
+                var form = $("form")[0];
+
+                if (! $("form")[0].checkValidity()) {
+                    //if button is enabled... disable it again
+                    if(document.getElementById("regButton").disabled == false )
+                      document.getElementById("regButton").disabled = true;
+
+                    // a disabled button isn't clickable... so set it to enabled
+                    // for a short time
+                    document.getElementById("regButton").disabled = false;
+                    document.getElementById("regButton").click();
+                    document.getElementById("regButton").disabled = true;
+                  // enable button
+                }else{
+                    document.getElementById("regButton").disabled = false;
+                 }
+            }
+            // document.getElementById("submit").disabled = false;
+	</script>
 </body>
 
 </html>
