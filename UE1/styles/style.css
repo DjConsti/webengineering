@@ -143,6 +143,34 @@ section table tr#tableHeader {
 	font-size: 20px;
 }
 
+.tableEntry {
+	background-color: rgb(43, 71, 129);
+	color: white;
+	text-align: center;
+	border: solid black;
+	border-width: 1px;
+	float: left;
+	width: 100%;
+	font-family: sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+	margin-top: 2px;
+}
+
+.tableEntryDisabled {
+	background-color: rgb(211, 216, 227);
+	color: rgb(146, 147, 150);
+	text-align: center;
+	border: solid rgb(92,95,99);
+	border-width: 1px;
+	float: left;
+	width: 100%;
+	font-family: sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+	margin-top: 2px;
+}
+
 section table tr#tableMoney {
 	background-color: rgb(43, 71, 129);
 	color: white;

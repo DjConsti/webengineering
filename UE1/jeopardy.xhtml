@@ -8,6 +8,7 @@
 <style type="text/css">
 	@import url('styles/style.css');
 </style>
+<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -32,44 +33,53 @@
 		<div id="msgBlack">Deadpool hat TUWIEN für € 1000 gewählt.</div>
 		<table>
 		  <tr id="tableHeader">TV</tr>
-		  <tr id="tableMoney">€ 100</tr>
-		  <tr id="tableMoney">€ 200</tr>
-		  <tr id="tableMoney">€ 500</tr>
-		  <tr id="tableMoney">€ 750</tr>
+		  <tr id="tv1" class="tableEntry">€ 100</tr>
+		  <tr id="tv2" class="tableEntry">€ 200</tr>
+		  <tr id="tv3" class="tableEntry">€ 500</tr>
+		  <tr id="tv4" class="tableEntry">€ 750</tr>
 		</table>
 		<table>
 		  <tr id="tableHeader">SSD</tr>
-		  <tr id="tableMoney">€ 100</tr>
-		  <tr id="tableMoney">€ 200</tr>
-		  <tr id="tableMoney">€ 500</tr>
-		  <tr id="tableMoney">€ 750</tr>
-		  <tr id="tableMoney">€ 1000</tr>
+		  <tr id="ssd1" class="tableEntry">€ 100</tr>
+		  <tr id="ssd2" class="tableEntry">€ 200</tr>
+		  <tr id="ssd3" class="tableEntry">€ 500</tr>
+		  <tr id="ssd4" class="tableEntry">€ 750</tr>
+		  <tr id="ssd5" class="tableEntry">€ 1000</tr>
 		</table>
 		<table>
 		  <tr id="tableHeader">Web</tr>
-		  <tr id="tableMoney">€ 100</tr>
-		  <tr id="tableMoney">€ 200</tr>
-		  <tr id="tableMoney">€ 500</tr>
-		  <tr id="tableMoney">€ 750</tr>
-		  <tr id="tableMoney">€ 1000</tr>
+		  <tr id="web1" class="tableEntry">€ 100</tr>
+		  <tr id="web2" class="tableEntry">€ 200</tr>
+		  <tr id="web3" class="tableEntry">€ 500</tr>
+		  <tr id="web4" class="tableEntry">€ 750</tr>
+		  <tr id="web5" class="tableEntry">€ 1000</tr>
 		</table>
 		<table>
 		  <tr id="tableHeader">Sport</tr>
-		  <tr id="tableMoney">€ 100</tr>
-		  <tr id="tableMoney">€ 200</tr>
-		  <tr id="tableMoney">€ 500</tr>
-		  <tr id="tableMoney">€ 750</tr>
+		  <tr id="sport1" class="tableEntry">€ 100</tr>
+		  <tr id="sport2" class="tableEntry">€ 200</tr>
+		  <tr id="sport3" class="tableEntry">€ 500</tr>
+		  <tr id="sport4" class="tableEntry">€ 750</tr>
 		</table>
 		<table>
 		  <tr id="tableHeader">TUWIEN</tr>
-		  <tr id="tableMoney">€ 100</tr>
-		  <tr id="tableMoney">€ 200</tr>
-		  <tr id="tableMoney">€ 500</tr>
-		  <tr id="tableMoney">€ 750</tr>
-		  <tr id="tableMoney">€ 1000</tr>
+		  <tr id="tuwien1" class="tableEntry">€ 100</tr>
+		  <tr id="tuwien2" class="tableEntry">€ 200</tr>
+		  <tr id="tuwien3" class="tableEntry">€ 500</tr>
+		  <tr id="tuwien4" class="tableEntry">€ 750</tr>
+		  <tr id="tuwien5" class="tableEntry">€ 1000</tr>
 		</table>
 	</section>
 	<footer>&copy; 2015 BIG Jeopardy!</footer>
+    <script>
+        // eventhandler for clicks
+        $(document).ready(function() {
+            $("tr").click(function(event) {
+                // alert(event.target.id);
+            document.getElementById(event.target.id).className = "tableEntryDisabled";
+            });
+        });
+    </script>
 </body>
 
 </html>
