@@ -347,6 +347,7 @@ aside img#you {
 
 @media (max-width: 1100px) {
 	aside #floatImgYou {
+		float: left;
 		border-top: 10px;
 		display: inline-block;
 		margin-left: 10px;
@@ -368,6 +369,7 @@ aside img#you {
 		display: inline-block;
 	}
 }
+
 /* Footer */
 footer {
 	width: 100%;
