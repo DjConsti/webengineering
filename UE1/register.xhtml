@@ -35,16 +35,24 @@
 	<footer>&copy; 2015 BIG Jeopardy!</footer>
 
 	<script>	
-            /*
+			// eventhandler for clicks
+			$(document).ready(function() {
+				$("input").keyup(function(event) {
+					// alert(event.target.id);
+				//document.getElementById(event.target.id).className = "tableEntrySelected";
+					if(event.target.id == "benutzername")
+						setTimeout(function() { $(event.target).focus();}, 1);
+				});
+			});    /*
              * Validate the form; if valid the register button is clickable
             */
             function validateForm()
             {
 
                 if(hasFormValidation() != "noValid")
-                {
+                {				
                     if (! $("form")[0].checkValidity()) {
-						alert('invalid');
+						
                         //if button is enabled... disable it again
                         if(document.getElementById("regButton").disabled == false )
                           document.getElementById("regButton").disabled = true;
