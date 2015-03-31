@@ -4,6 +4,12 @@ html, body {
 	background: -moz-linear-gradient(white, rgb(211, 216, 232)); 
 	background: -o-linear-gradient(white, rgb(211, 216, 232)); 
 	background: linear-gradient(white, rgb(211, 216, 232));
+
+}
+
+body{
+	height: 100%;
+	width: 100%;
 }
 
 /* Header */
@@ -259,6 +265,7 @@ a.btn {
 	aside h1#counter {
 		font-family: sans-serif;
 		text-align: center;
+		margin-top: 75px;
 		line-height: 30px;
 		font-size: 15px;
 	}
@@ -351,6 +358,7 @@ aside img#you {
 		border-top: 10px;
 		display: inline-block;
 		margin-left: 10px;
+
 	}
 }
 
@@ -375,4 +383,9 @@ footer {
 	width: 100%;
 	text-align: center;
 	display: inline-block;
+	position:absolute;
+	bottom:0;
+	left:0;
 }
+	
+	
