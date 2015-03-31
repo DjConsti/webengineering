@@ -15,16 +15,17 @@
 <body>
 	<header><img src="img/big-logo-small.png"/><h1>Jeopardy!</h1></header>
 	<section>
-		<form id="register">
+		<form id="register" method="post">
+				
 			<h2>Pers&ouml;nliche Daten</h2>
 			<p><label for="vorname">Vorname:</label><input type="text" name="vorname" id="vorname" /></p>
 			<p><label for="nachname">Nachname:</label><input type="text" name="nachname" id="nachname"/></p>
-			<p><label for="geburtstag">Geburtstag:</label><input type="date" name="geburtstag" id="geburtstag" pattern="\d{1,2}\.\d{1,2}\.\d{4}" onchange="validateForm()" title="Geben Sie das Geburtsdatum im Format dd.mm.yyyy an."/></p><p id="gebError" class="validationError"></p>
-			<p><label for="geschlecht">Geburtstag:</label><input type="radio" name="geschlecht" value="maennlich" id="maennlich"/><label for="maennlich">M&auml;nnlich</label> <input type="radio" name="geschlecht" value="weiblich" id="weiblich"/></p>
+			<p><label for="geburtstag">Geburtstag:</label><input type="date" name="geburtstag" id="geburtstag" pattern="\d{1,2}\.\d{1,2}\.\d{4}" onkeyup="validateForm()" title="Geben Sie das Geburtsdatum im Format dd.mm.yyyy an."/></p><p id="gebError" class="validationError"></p>
+			<p><label for="geschlecht">Geschlecht:</label><input type="radio" name="geschlecht" value="maennlich" id="maennlich"/><label for="maennlich">M&auml;nnlich</label> <input type="radio" name="geschlecht" value="weiblich" id="weiblich"/></p>
 			<h2>Spielerdaten</h2>
 			<p><label for="avatar">Avatar:</label><input type="text" name="avatar" id="avatar"/></p>
-			<p><label for="benutzer">Benutzername*:</label><input type="text" name="benutzername" id="benutzername" required="true" pattern=".{4,8}" onchange="validateForm()" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein."/><p id="userError" class="validationError"></p></p>
-			<p><label for="pw">Passwort*:</label><input type="password" name="passwort" id="passwort" required="true" pattern=".{4,8}" onchange="validateForm()" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein."/></p> <p id="pwError" class="validationError"></p>
+			<p><label for="benutzer">Benutzername*:</label><input type="text" name="benutzername" id="benutzername" required="true" pattern=".{4,8}" onkeyup="validateForm()" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein."/><p id="userError" class="validationError"></p></p>
+			<p><label for="pw">Passwort*:</label><input type="password" name="passwort" id="passwort" required="true" pattern=".{4,8}" onkeyup="validateForm()" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein."/></p> <p id="pwError" class="validationError"></p>
 			<p><input id="regButton" type="submit" value="Registrieren" /></p>
 
 		</form>
@@ -33,7 +34,7 @@
 	</section>
 	<footer>&copy; 2015 BIG Jeopardy!</footer>
 
-	<script>
+	<script>	
             /*
              * Validate the form; if valid the register button is clickable
             */
@@ -43,6 +44,7 @@
                 if(hasFormValidation() != "noValid")
                 {
                     if (! $("form")[0].checkValidity()) {
+						alert('invalid');
                         //if button is enabled... disable it again
                         if(document.getElementById("regButton").disabled == false )
                           document.getElementById("regButton").disabled = true;
