@@ -31,44 +31,44 @@
 		<div id="msgGreen">Du hast richtig geantwortet: +1000 €</div>
 		<div id="msgRed">Deadpool hat falsch geantwortet: -500 €</div>
 		<div id="msgBlack">Deadpool hat TUWIEN für € 1000 gewählt.</div>
-		<table>
-		  <tr id="tableHeader">TV</tr>
-		  <tr id="tv1" class="tableEntryDisabled">€ 100</tr>
-		  <tr id="tv2" class="tableEntry">€ 200</tr>
-		  <tr id="tv3" class="tableEntry">€ 500</tr>
-		  <tr id="tv4" class="tableEntry">€ 750</tr>
-		</table>
-		<table>
-		  <tr id="tableHeader">SSD</tr>
-		  <tr id="ssd1" class="tableEntry">€ 100</tr>
-		  <tr id="ssd2" class="tableEntry">€ 200</tr>
-		  <tr id="ssd3" class="tableEntry">€ 500</tr>
-		  <tr id="ssd4" class="tableEntry">€ 750</tr>
-		  <tr id="ssd5" class="tableEntry">€ 1000</tr>
-		</table>
-		<table>
-		  <tr id="tableHeader">Web</tr>
-		  <tr id="web1" class="tableEntry">€ 100</tr>
-		  <tr id="web2" class="tableEntry">€ 200</tr>
-		  <tr id="web3" class="tableEntryDisabled">€ 500</tr>
-		  <tr id="web4" class="tableEntry">€ 750</tr>
-		  <tr id="web5" class="tableEntry">€ 1000</tr>
-		</table>
-		<table>
-		  <tr id="tableHeader">Sport</tr>
-		  <tr id="sport1" class="tableEntry">€ 100</tr>
-		  <tr id="sport2" class="tableEntryDisabled">€ 200</tr>
-		  <tr id="sport3" class="tableEntry">€ 500</tr>
-		  <tr id="sport4" class="tableEntry">€ 750</tr>
-		</table>
-		<table>
-		  <tr id="tableHeader">TUWIEN</tr>
-		  <tr id="tuwien1" class="tableEntry">€ 100</tr>
-		  <tr id="tuwien2" class="tableEntry">€ 200</tr>
-		  <tr id="tuwien3" class="tableEntry">€ 500</tr>
-		  <tr id="tuwien4" class="tableEntry">€ 750</tr>
-		  <tr id="tuwien5" class="tableEntryDisabled">€ 1000</tr>
-		</table>
+		<ul>
+		  <li id="ulHeader">TV</li>
+		  <li id="tv1" class="ulEntryDisabled">€ 100</li>
+		  <li id="tv2" class="ulEntry">€ 200</li>
+		  <li id="tv3" class="ulEntry">€ 500</li>
+		  <li id="tv4" class="ulEntry">€ 750</li>
+		</ul>
+		<ul>
+		  <li id="ulHeader">SSD</li>
+		  <li id="ssd1" class="ulEntry">€ 100</li>
+		  <li id="ssd2" class="ulEntry">€ 200</li>
+		  <li id="ssd3" class="ulEntry">€ 500</li>
+		  <li id="ssd4" class="ulEntry">€ 750</li>
+		  <li id="ssd5" class="ulEntry">€ 1000</li>
+		</ul>
+		<ul>
+		  <li id="ulHeader">Web</li>
+		  <li id="web1" class="ulEntry">€ 100</li>
+		  <li id="web2" class="ulEntry">€ 200</li>
+		  <li id="web3" class="ulEntryDisabled">€ 500</li>
+		  <li id="web4" class="ulEntry">€ 750</li>
+		  <li id="web5" class="ulEntry">€ 1000</li>
+		</ul>
+		<ul>
+		  <li id="ulHeader">Sport</li>
+		  <li id="sport1" class="ulEntry">€ 100</li>
+		  <li id="sport2" class="ulEntryDisabled">€ 200</li>
+		  <li id="sport3" class="ulEntry">€ 500</li>
+		  <li id="sport4" class="ulEntry">€ 750</li>
+		</ul>
+		<ul>
+		  <li id="ulHeader">TUWIEN</li>
+		  <li id="tuwien1" class="ulEntry">€ 100</li>
+		  <li id="tuwien2" class="ulEntry">€ 200</li>
+		  <li id="tuwien3" class="ulEntry">€ 500</li>
+		  <li id="tuwien4" class="ulEntry">€ 750</li>
+		  <li id="tuwien5" class="ulEntryDisabled">€ 1000</li>
+		</ul>
   
         <a href="#" class="btn">w&auml;hlen</a>
 	</section>
@@ -76,9 +76,9 @@
     <script>
         // eventhandler for clicks
         $(document).ready(function() {
-            $("tr").click(function(event) {
+            $("li").click(function(event) {
                 // alert(event.target.id);
-            document.getElementById(event.target.id).className = "tableEntrySelected";
+            document.getElementById(event.target.id).className = "ulEntrySelected";
             });
         });
     </script>

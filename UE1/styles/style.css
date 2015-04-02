@@ -56,15 +56,21 @@ header h2 {
 @media (min-width: 1101px) {
 	section {
 		float: left;
-		width: 79%;
+		width: 69%;
 		height: 90%;
+	}
+}
+
+@media (min-width: 561px) {
+	section {
+		margin-left: 25px;
 	}
 }
 
 @media (max-width: 1100px) {
 	section {
 		float: left;
-		width: 97%;
+		width: 95.5%;
 		height: 90%;
 	}
 }
@@ -80,7 +86,13 @@ section #msgGreen {
 	margin-top: 20px;
 	margin-left: 5%;
 	margin-right: 10px;
-	width: 90%
+	width: 80%;
+}
+
+@media (max-width: 560px) {
+	section #msgGreen {
+		width: 92%;
+	}
 }
 
 section #msgRed {
@@ -94,7 +106,13 @@ section #msgRed {
 	margin-top: 5px;
 	margin-left: 5%;
 	margin-right: 10px;
-	width: 90%
+	width: 80%;
+}
+
+@media (max-width: 560px) {
+	section #msgRed {
+		width: 92%;
+	}
 }
 
 section #msgBlack {
@@ -107,34 +125,44 @@ section #msgBlack {
 	margin-top: 5px;
 	margin-left: 5%;
 	margin-right: 10px;
-	width: 90%
+	width: 80%;
+}
+
+@media (max-width: 560px) {
+	section #msgBlack {
+		width: 92%;
+	}
 }
 
 @media (min-width: 561px) {
-	section table {
+	section ul {
 		float: left;
-		width: 19%;
+		width: 17%;
 		font-family: sans-serif;
 		line-height: 30px;
 		font-size: 20px;
+		padding-left: 5px;
 		margin-top: 20px;
 		margin-left: 5px;
 		height: 100%;
+		list-style-type: none;
 	}
 }
 
 @media (max-width: 560px) {
-	section table {
+	section ul {
 		width: 100%;
 		font-family: sans-serif;
 		line-height: 30px;
 		font-size: 20px;
+		padding-left: 0px;
 		margin-top: 20px;
 		margin-left: 5px;
+		list-style-type: none;
 	}
 }
 
-section table tr#tableHeader {
+section ul li#ulHeader {
 	background-color: rgb(239, 113, 0);
 	color: rgb(23, 59, 38);
 	text-align: center;
@@ -147,7 +175,7 @@ section table tr#tableHeader {
 	font-size: 20px;
 }
 
-.tableEntry {
+.ulEntry {
 	background-color: rgb(43, 71, 129);
 	color: white;
 	text-align: center;
@@ -161,7 +189,7 @@ section table tr#tableHeader {
 	margin-top: 2px;
 }
 
-.tableEntryDisabled {
+.ulEntryDisabled {
 	background-color: rgb(211, 216, 227);
 	color: rgb(146, 147, 150);
 	text-align: center;
@@ -175,7 +203,7 @@ section table tr#tableHeader {
 	margin-top: 2px;
 }
 
-.tableEntrySelected {
+.ulEntrySelected {
 	background-color: rgb(235, 111, 0);
 	color: white;
 	text-align: center;
@@ -189,7 +217,7 @@ section table tr#tableHeader {
 	margin-top: 2px;
 }
 
-section table tr#tableMoney {
+section ul li#ulMoney {
 	background-color: rgb(43, 71, 129);
 	color: white;
 	text-align: center;
