@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <title>Conforming XHTML 1.1 Template</title>
+    <title>Register</title>
     <style type="text/css">
 	    @import url('styles/register.css');
     </style>
@@ -22,7 +22,10 @@
 			<p><label for="nachname">Nachname:</label><input type="text" name="nachname" id="nachname"/></p>
 			<p><label for="geburtstag">Geburtstag:</label><input type="date" name="geburtstag" id="geburtstag" pattern="\d{1,2}\.\d{1,2}\.\d{4}" onkeyup="validateForm()" title="Geben Sie das Geburtsdatum im Format dd.mm.yyyy an."/></p><p id="gebError" class="validationError"></p>
 			<p><fieldset>
-				<legend><label for="geschlecht">Geschlecht:</label></legend><input type="radio" name="geschlecht" value="maennlich" id="maennlich"/><label for="maennlich">M&auml;nnlich</label> <input type="radio" name="geschlecht" value="weiblich" id="weiblich"/> <label for="weiblich">Weiblich</label>
+				<legend><label for="geschlecht">Geschlecht:</label></legend>
+				<div class="radiodiv">
+					<input type="radio" name="geschlecht" value="maennlich" id="maennlich"/><label for="maennlich">M&auml;nnlich</label> <input type="radio" name="geschlecht" value="weiblich" id="weiblich"/> <label for="weiblich">Weiblich</label>
+				</div>
 			</fieldset></p>
 			<h2>Spielerdaten</h2>
 			<p><label for="avatar">Avatar:</label><input type="text" name="avatar" id="avatar"/></p>
