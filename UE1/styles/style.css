@@ -162,7 +162,7 @@ section #msgBlack {
 	}
 }
 
-section ul li#ulHeader {
+section ul li.ulHeader {
 	background-color: rgb(239, 113, 0);
 	color: rgb(23, 59, 38);
 	text-align: center;
