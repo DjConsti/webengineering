@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
     <title>Conforming XHTML 1.1 Template</title>
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header><img src="img/big-logo-small.png"/><h1>Jeopardy!</h1></header>
+	<header><img src="img/big-logo-small.png" alt="Jeopardy Logo"/><h1>Jeopardy!</h1></header>
 	<section>
 		<form id="register" method="post">
 				
@@ -21,7 +21,9 @@
 			<p><label for="vorname">Vorname:</label><input type="text" name="vorname" id="vorname" /></p>
 			<p><label for="nachname">Nachname:</label><input type="text" name="nachname" id="nachname"/></p>
 			<p><label for="geburtstag">Geburtstag:</label><input type="date" name="geburtstag" id="geburtstag" pattern="\d{1,2}\.\d{1,2}\.\d{4}" onkeyup="validateForm()" title="Geben Sie das Geburtsdatum im Format dd.mm.yyyy an."/></p><p id="gebError" class="validationError"></p>
-			<p><label for="geschlecht">Geschlecht:</label><input type="radio" name="geschlecht" value="maennlich" id="maennlich"/><label for="maennlich">M&auml;nnlich</label> <input type="radio" name="geschlecht" value="weiblich" id="weiblich"/></p>
+			<p><fieldset>
+				<legend><label for="geschlecht">Geschlecht:</label></legend><input type="radio" name="geschlecht" value="maennlich" id="maennlich"/><label for="maennlich">M&auml;nnlich</label> <input type="radio" name="geschlecht" value="weiblich" id="weiblich"/> <label for="weiblich">Weiblich</label>
+			</fieldset></p>
 			<h2>Spielerdaten</h2>
 			<p><label for="avatar">Avatar:</label><input type="text" name="avatar" id="avatar"/></p>
 			<p><label for="benutzer">Benutzername*:</label><input type="text" name="benutzername" id="benutzername" required="true" pattern=".{4,8}" onkeyup="validateForm()" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein."/><p id="userError" class="validationError"></p></p>
