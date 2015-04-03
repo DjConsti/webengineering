@@ -7,6 +7,11 @@ html, body {
 	min-height: 100%;
 }
 
+body{
+	height: 100%;
+	width: 100%;
+}
+
 /* Header */
 header {
 	width:100%;
@@ -20,7 +25,7 @@ header img {
 	padding-left: 5px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 560px) {
 	header h1 {
 		font-family: sans-serif;
 		font-size: 20px;
@@ -47,7 +52,7 @@ header img {
 	}
 }
 
-@media (min-width: 401px) {
+@media (min-width: 561px) {
 	header h1 {
 		font-family: sans-serif;
 		font-size: 25px;
@@ -76,17 +81,19 @@ header img {
 
 
 /* Section */
-@media (max-width: 400px) {
+@media (max-width: 560px) {
 	section {
 		width: 94%;
+		height: 100%;
 		margin: auto;
 		min-height: 100%;
 	}
 }
 
-@media (min-width: 401px) {
+@media (min-width: 561px) {
 	section {
 		width: 400px;
+		height: 100%;
 		margin: auto;
 		min-height: 100%;
 	}
@@ -97,8 +104,8 @@ footer {
 	width: 100%;
 	text-align: center;
 	display: block;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	position: absolute;
+	bottom: 0;
 }
 
 	p.pflichtfelderhinweis {
@@ -107,7 +114,7 @@ footer {
 	}
 
 /* Form */
-@media (max-width: 400px) {
+@media (max-width: 560px) {
 	form p input {
 		width: 98%;
 		padding: 1%;
@@ -129,7 +136,7 @@ footer {
 	}
 }
 
-@media (min-width: 401px) {
+@media (min-width: 561px) {
 	form p input {
 		float: right;
 		width: 55%;
