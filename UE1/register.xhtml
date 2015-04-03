@@ -31,10 +31,9 @@
 			<p><label for="avatar">Avatar:</label><input type="text" name="avatar" id="avatar"/></p>
 			<p><label for="benutzer">Benutzername*:</label><input type="text" name="benutzername" id="benutzername" required="true" pattern=".{4,8}" onkeyup="validateForm()" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein."/><p id="userError" class="validationError"></p></p>
 			<p><label for="pw">Passwort*:</label><input type="password" name="passwort" id="passwort" required="true" pattern=".{4,8}" onkeyup="validateForm()" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein."/></p> <p id="pwError" class="validationError"></p>
-			<p><input id="regButton" type="submit" value="Registrieren" /></p>
-
+			<p><input type="submit" id="regButton" value="Registrieren" disabled="true"/></p>
 		</form>
-        <br/>
+		
         <p class="pflichtfelderhinweis">Mit "*" gekennzeichnete Felder sind Pflichtfelder</p>
 	</section>
 	<footer>&copy; 2015 BIG Jeopardy!</footer>
@@ -45,8 +44,12 @@
 				$("input").keyup(function(event) {
 					// alert(event.target.id);
 				//document.getElementById(event.target.id).className = "tableEntrySelected";
-					if(event.target.id == "benutzername")
+					//if(event.target.id == "benutzername")
+					//{
+						//alert('Benutzername called');
 						setTimeout(function() { $(event.target).focus();}, 1);
+						
+					//}
 				});
 			});    /*
              * Validate the form; if valid the register button is clickable
