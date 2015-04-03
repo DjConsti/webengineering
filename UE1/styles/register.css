@@ -100,12 +100,22 @@ header img {
 }
 
 /* Footer */
-footer {
-	width: 100%;
-	text-align: center;
-	display: block;
-	position: absolute;
-	bottom: 0;
+@media (min-width: 561px) {
+	footer {
+		width: 100%;
+		text-align: center;
+		display: block;
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 560px) {
+	footer {
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+	}
 }
 
 	p.pflichtfelderhinweis {
