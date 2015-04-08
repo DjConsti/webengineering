@@ -2,6 +2,7 @@ package at.ac.tuwien.big.we15.lab2.servlet;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,8 +14,46 @@ public class BigJeopardyServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("TODO: Something");
-		System.out.println("Parameter registerButton: " + request.getParameter("registerButton"));
-		System.out.println("Parameter signInButton: " + request.getParameter("signInButton"));
+
+		if(request.getParameter("action") == null)
+			return;
+		
+		if(request.getParameter("action").compareTo("registerButtonClicked") == 0) {
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/register.jsp");
+			dispatcher.forward(request, response);
+		}
+		
+		if(request.getParameter("action").compareTo("logoutlinkButtonClicked") == 0) {
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/login.jsp");
+			dispatcher.forward(request, response);
+		}
+		
+		if(request.getParameter("action").compareTo("loginButtonClicked") == 0) {
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/login.jsp");
+			dispatcher.forward(request, response);
+		}
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		if(request.getParameter("action") == null)
+			return;
+		
+		if(request.getParameter("action").compareTo("signInButtonClicked") == 0) {
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+			dispatcher.forward(request, response);
+		}
+		
+		if(request.getParameter("action").compareTo("questionSubmitButtonClicked") == 0) {
+			System.out.println("TODO");
+			//RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/question.jsp");
+			//dispatcher.forward(request, response);
+		}
+		
+		if(request.getParameter("action").compareTo("registerButtonClicked") == 0) {
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+			dispatcher.forward(request, response);
+		}
 	}
 }
