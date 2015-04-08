@@ -32,6 +32,11 @@ public class BigJeopardyServlet extends HttpServlet {
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/login.jsp");
 			dispatcher.forward(request, response);
 		}
+		
+		if(request.getParameter("action").compareTo("restartButtonClicked") == 0) {
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+			dispatcher.forward(request, response);
+		}
 	}
 	
 	@Override
@@ -46,13 +51,17 @@ public class BigJeopardyServlet extends HttpServlet {
 		}
 		
 		if(request.getParameter("action").compareTo("questionSubmitButtonClicked") == 0) {
-			System.out.println("TODO");
-			//RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/question.jsp");
-			//dispatcher.forward(request, response);
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/question.jsp");
+			dispatcher.forward(request, response);
 		}
 		
 		if(request.getParameter("action").compareTo("registerButtonClicked") == 0) {
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+			dispatcher.forward(request, response);
+		}
+		
+		if(request.getParameter("action").compareTo("submitButtonClicked") == 0) {
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
 			dispatcher.forward(request, response);
 		}
 	}

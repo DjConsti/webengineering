@@ -27,14 +27,11 @@
 	<!-- Navigation -->
 	<nav role="navigation" aria-labelledby="navheading">
 	<h2 id="navheading" class="accessibility">Navigation</h2>
-	<ul>
-		<li>
 			<form action="BigJeopardyServlet" method="get">
 				<input class="orangelink navigationlink" type="submit" title="Klicke hier um dich anzumelden"
 					value="Anmelden" /> <input type="hidden"
 					value="loginButtonClicked" name="action" />
-			</form></li>
-	</ul>
+			</form>
 	</nav>
 
 	<!-- Content -->

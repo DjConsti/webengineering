@@ -26,16 +26,14 @@
 	<!-- Navigation -->
 	<nav role="navigation" aria-labelledby="navheading">
 	<h2 id="navheading" class="accessibility">Navigation</h2>
-	<ul>
-		<li>
+		
 			<form action="BigJeopardyServlet" method="get">
 				<input class="orangelink navigationlink"
 					title="Klicke hier um dich abzumelden" type="submit"
 					value="Abmelden" /> <input type="hidden"
 					value="logoutlinkButtonClicked" name="action" />
 			</form>
-		</li>
-	</ul>
+		
 	</nav>
 
 	<!-- Content -->
