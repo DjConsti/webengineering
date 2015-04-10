@@ -1,12 +1,25 @@
 package at.ac.tuwien.big.we15.lab2.servlet;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+import java.util.Random;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import at.ac.tuwien.big.we15.lab2.api.Category;
+import at.ac.tuwien.big.we15.lab2.api.QuestionDataProvider;
+import at.ac.tuwien.big.we15.lab2.api.impl.JSONQuestionDataProvider;
+import at.ac.tuwien.big.we15.lab2.api.impl.JeopardyBean;
+import at.ac.tuwien.big.we15.lab2.api.impl.JeopardyGame;
+import at.ac.tuwien.big.we15.lab2.api.impl.ServletJeopardyFactory;
+import at.ac.tuwien.big.we15.lab2.api.impl.SimpleJeopardyFactory;
 
 public class BigJeopardyServlet extends HttpServlet {
 
@@ -46,8 +59,21 @@ public class BigJeopardyServlet extends HttpServlet {
 			return;
 		
 		if(request.getParameter("action").compareTo("signInButtonClicked") == 0) {
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
-			dispatcher.forward(request, response);
+			HttpSession session = request.getSession();
+			JeopardyBean bean = (JeopardyBean)session.getAttribute("jeopardyBean");
+			if(bean == null) {
+				bean = new JeopardyBean();
+				ServletJeopardyFactory factory = new ServletJeopardyFactory(getServletContext());
+				QuestionDataProvider provider = factory.createQuestionDataProvider();
+				List<Category> categories = provider.getCategoryData();
+				Random random = new Random();
+				int randomCategoryNumber = random.nextInt() % categories.size();
+				Category category = categories.get(randomCategoryNumber);
+				JeopardyGame game = new JeopardyGame(category.getQuestions(), category);
+				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+				dispatcher.forward(request, response);
+				session.setAttribute("jeopardyBean", bean);
+			}
 		}
 		
 		if(request.getParameter("action").compareTo("questionSubmitButtonClicked") == 0) {
