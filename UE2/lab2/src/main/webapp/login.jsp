@@ -28,18 +28,18 @@
 	<div role="main">
 		<section id="login" aria-labelledby="loginheading">
 		<h2 id="loginheading" class="accessibility">Login</h2>
-		<fieldset>
-			<legend id="logindata">Login</legend>
-			<label for="username">Benutzername:</label> <input name="username"
-				id="username" type="text" required="required" /> <label
-				for="password">Passwort:</label> <input name="password"
-				id="password" type="password" required="required" />
-			<form action="BigJeopardyServlet" method="post">
-				<input class="greenlink formlink clickable" type="submit"
-					value="Anmelden" /> <input type="hidden"
-					value="signInButtonClicked" name="action" />
-			</form>
-		</fieldset>
+		<form action="BigJeopardyServlet" method="post">
+			<fieldset>
+				<legend id="logindata">Login</legend>
+				<label for="username">Benutzername:</label> <input name="username"
+					id="username" type="text" required="required" /> <label
+					for="password">Passwort:</label> <input name="password"
+					id="password" type="password" required="required" /> <input
+					class="greenlink formlink clickable" type="submit" value="Anmelden" />
+				<input type="hidden" value="signInButtonClicked" name="action" />
+
+			</fieldset>
+		</form>
 		</section>
 		<!-- Register section -->
 		<section id="registerforward" aria-labelledby="registerheading">
@@ -47,8 +47,8 @@
 		<p id="registerhint">Nicht registriert?</p>
 		<form action="BigJeopardyServlet" method="get">
 			<input class="contentlink orangelink"
-				title="Klicke hier um dich zu registrieren" type="submit" accesskey="r"
-				value="Zur Registrierung" /> <input type="hidden" 
+				title="Klicke hier um dich zu registrieren" type="submit"
+				accesskey="r" value="Zur Registrierung" /> <input type="hidden"
 				value="registerButtonClicked" name="action" />
 		</form>
 		</section>

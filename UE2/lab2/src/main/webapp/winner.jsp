@@ -24,12 +24,12 @@
 
 	<!-- Navigation -->
 	<nav role="navigation" aria-labelledby="navheading">
-	<h2 id="navheading" class="accessibility">Navigation</h2><form action="BigJeopardyServlet" method="get">
-				<input class="orangelink navigationlink"
-					title="Klicke hier um dich abzumelden" type="submit"
-					value="Abmelden" /> <input type="hidden"
-					value="logoutlinkButtonClicked" name="action" />
-			</form>
+	<h2 id="navheading" class="accessibility">Navigation</h2>
+	<form action="BigJeopardyServlet" method="get">
+		<input class="orangelink navigationlink"
+			title="Klicke hier um dich abzumelden" type="submit" value="Abmelden" />
+		<input type="hidden" value="logoutlinkButtonClicked" name="action" />
+	</form>
 	</nav>
 
 	<!-- Content -->
@@ -72,13 +72,12 @@
 		</section> </section>
 		<section id="newgame" aria-labelledby="newgameheading">
 		<h2 id="newgameheading" class="accessibility">Neues Spiel</h2>
-		
+
 		<form action="BigJeopardyServlet" method="get">
-				<input class="clickable orangelink contentlink"
-					type="submit"
-					value="Neues Spiel" /> <input type="hidden"
-					value="restartButtonClicked" name="action" />
-			</form>
+			<input class="clickable orangelink contentlink" type="submit"
+				value="Neues Spiel" /> <input type="hidden"
+				value="restartButtonClicked" name="action" />
+		</form>
 		</section>
 	</div>
 	<!-- footer -->

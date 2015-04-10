@@ -27,11 +27,10 @@
 	<nav role="navigation" aria-labelledby="navheading">
 	<h2 id="navheading" class="accessibility">Navigation</h2>
 	<form action="BigJeopardyServlet" method="get">
-				<input class="orangelink navigationlink"
-					title="Klicke hier um dich abzumelden" type="submit"
-					value="Abmelden" /> <input type="hidden"
-					value="logoutlinkButtonClicked" name="action" />
-			</form>
+		<input class="orangelink navigationlink"
+			title="Klicke hier um dich abzumelden" type="submit" value="Abmelden" />
+		<input type="hidden" value="logoutlinkButtonClicked" name="action" />
+	</form>
 	</nav>
 
 	<!-- Content -->
@@ -77,6 +76,7 @@
 
 		<!-- Question -->
 		<section id="question" aria-labelledby="questionheading">
+		<form action="BigJeopardyServlet" method="post">
 			<h2 id="questionheading" class="accessibility">Frage</h2>
 			<p id="questiontype">TUWIEN für Eur 300</p>
 			<p id="questiontext">Diese Lehrveranstaltungen bilden das Modul
@@ -95,13 +95,11 @@
 					type="checkbox" /><label class="tile clickable" for="answer_4">Was
 						ist Objektorientierte Modellierung?</label></li>
 			</ul>
-			<input id="timeleftvalue" type="hidden" value="100"/>
-				<form action="BigJeopardyServlet" method="post">
-				<input class="greenlink formlink clickable"
-					type="submit" accesskey="s"
-					value="wählen" /> <input type="hidden"
-					value="submitButtonClicked" name="action" />
-			</form>
+			<input id="timeleftvalue" type="hidden" value="100" /> <input
+				class="greenlink formlink clickable" type="submit" accesskey="s"
+				value="wählen" /> <input type="hidden" value="submitButtonClicked"
+				name="action" />
+		</form>
 		</section>
 
 		<section id="timer" aria-labelledby="timerheading">

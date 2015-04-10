@@ -26,14 +26,13 @@
 	<!-- Navigation -->
 	<nav role="navigation" aria-labelledby="navheading">
 	<h2 id="navheading" class="accessibility">Navigation</h2>
-		
-			<form action="BigJeopardyServlet" method="get">
-				<input class="orangelink navigationlink"
-					title="Klicke hier um dich abzumelden" type="submit"
-					value="Abmelden" /> <input type="hidden"
-					value="logoutlinkButtonClicked" name="action" />
-			</form>
-		
+
+	<form action="BigJeopardyServlet" method="get">
+		<input class="orangelink navigationlink"
+			title="Klicke hier um dich abzumelden" type="submit" value="Abmelden" />
+		<input type="hidden" value="logoutlinkButtonClicked" name="action" />
+	</form>
+
 	</nav>
 
 	<!-- Content -->
@@ -85,6 +84,7 @@
 		<p class="user-info negative-change">Deadpool hat falsch
 			geantwortet: -500 Eur</p>
 		<p class="user-info">Deadpool hat TUWIEN für Eur 1000 gewählt.</p>
+		<form action="BigJeopardyServlet" method="post">
 			<fieldset>
 				<legend class="accessibility">Fragenauswahl</legend>
 				<section class="questioncategory" aria-labelledby="tvheading">
@@ -192,11 +192,11 @@
 				</ol>
 				</section>
 			</fieldset>
-			<form action="BigJeopardyServlet" method="post">
-				<input class="greenlink formlink clickable" type="submit"
-					accesskey="s" value="wählen" /> <input type="hidden"
-					value="questionSubmitButtonClicked" name="action" />
-			</form>
+
+			<input class="greenlink formlink clickable" type="submit"
+				accesskey="s" value="wählen" /> <input type="hidden"
+				value="questionSubmitButtonClicked" name="action" />
+		</form>
 		</section>
 
 		<section id="lastgame" aria-labelledby="lastgameheading">
