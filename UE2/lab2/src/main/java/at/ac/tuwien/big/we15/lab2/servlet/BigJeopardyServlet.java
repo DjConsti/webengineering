@@ -68,6 +68,7 @@ public class BigJeopardyServlet extends HttpServlet {
 				List<Category> categories = provider.getCategoryData();
 				Random random = new Random();
 				int randomCategoryNumber = random.nextInt() % categories.size();
+				System.out.println(randomCategoryNumber);
 				Category category = categories.get(randomCategoryNumber);
 				JeopardyGame game = new JeopardyGame(category.getQuestions(), category);
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
