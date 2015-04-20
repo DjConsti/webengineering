@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<jsp:useBean id="jeopardyBean" scope="session" type="at.ac.tuwien.big.we14.lab2.api.impl.JeopardyBean" class="at.ac.tuwien.big.we14.lab2.api.impl.JeopardyBean" />
+<jsp:useBean id="jeopardyBean" scope="session" type="at.ac.tuwien.big.we15.lab2.api.impl.JeopardyBean" class="at.ac.tuwien.big.we15.lab2.api.impl.JeopardyBean" />
+<%@page import="at.ac.tuwien.big.we15.lab2.api.Question"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -79,9 +80,8 @@
 		<section id="question" aria-labelledby="questionheading">
 		<form action="BigJeopardyServlet" method="post">
 			<h2 id="questionheading" class="accessibility">Frage</h2>
-			<%Question question = jeopardyBean.getQuestion();%>
-			<p id="questiontype">TUWIEN für Eur 300<%question.getText();%></p>
-			<p id="questiontext"><%question.getText();%></p>
+			<p id="questiontype">todo</p>
+			<p id="questiontext"><%jeopardyBean.getQuestion.getText();%></p>
 			<ul id="answers">
 				<li><input name="answers" id="answer_1" value="1"
 					type="checkbox" /><label class="tile clickable" for="answer_1">Was

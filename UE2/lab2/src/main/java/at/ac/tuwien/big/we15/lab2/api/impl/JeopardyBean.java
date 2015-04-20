@@ -12,8 +12,16 @@ public class JeopardyBean {
 		
 	}
 	
+	public void setGame(JeopardyGame game) {
+		this.game = game;
+	}
+	
 	public Question getQuestion() {
 		return game.getQuestion();
+	}
+	
+	public String toString() {
+		return "asdfasdf";
 	}
 
 }

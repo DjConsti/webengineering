@@ -60,21 +60,22 @@ public class BigJeopardyServlet extends HttpServlet {
 		
 		if(request.getParameter("action").compareTo("signInButtonClicked") == 0) {
 			HttpSession session = request.getSession();
-			JeopardyBean bean = (JeopardyBean)session.getAttribute("jeopardyBean");
-			if(bean == null) {
-				bean = new JeopardyBean();
+			//JeopardyBean bean = (JeopardyBean)session.getAttribute("jeopardyBean");
+			//if(bean == null) {
 				ServletJeopardyFactory factory = new ServletJeopardyFactory(getServletContext());
 				QuestionDataProvider provider = factory.createQuestionDataProvider();
 				List<Category> categories = provider.getCategoryData();
 				Random random = new Random();
-				int randomCategoryNumber = random.nextInt() % categories.size();
+				int randomCategoryNumber = random.nextInt(10000) % categories.size();
 				System.out.println(randomCategoryNumber);
 				Category category = categories.get(randomCategoryNumber);
 				JeopardyGame game = new JeopardyGame(category.getQuestions(), category);
+				JeopardyBean bean = new JeopardyBean();
+				bean.setGame(game);
+				session.setAttribute("jeopardyBean", bean);
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
 				dispatcher.forward(request, response);
-				session.setAttribute("jeopardyBean", bean);
-			}
+			//}
 		}
 		
 		if(request.getParameter("action").compareTo("questionSubmitButtonClicked") == 0) {
