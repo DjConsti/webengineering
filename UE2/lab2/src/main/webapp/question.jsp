@@ -13,6 +13,9 @@
 <link rel="stylesheet" type="text/css" href="style/screen.css" />
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/framework.js" type="text/javascript"></script>
+<%if(jeopardyBean.getAskedQuestionCount() > 10){%>
+	<jsp:forward page="winner.jsp" />
+<% } %>
 </head>
 <body id="questionpage">
 	<a class="accessibility" href="#questions">Zur Fragenauswahl
@@ -73,28 +76,33 @@
 			</tr>
 		</table>
 		</section>
-		<p id="round">Frage: 3 / 10</p>
+		<p id="round">Frage: <%=jeopardyBean.getAskedQuestionCount()%> / 10</p>
 		</section>
-
+		<% 	// neue Frage holen
+			Question q = jeopardyBean.getQuestion();
+			jeopardyBean.getAllAnswers();
+		%>
 		<!-- Question -->
 		<section id="question" aria-labelledby="questionheading">
 		<form action="BigJeopardyServlet" method="post">
 			<h2 id="questionheading" class="accessibility">Frage</h2>
-			<p id="questiontype">todo</p>
-			<p id="questiontext"><%jeopardyBean.getQuestion.getText();%></p>
+			<p id="questiontype"><%=q.getCategory().getName()%></p>
+			<p id="questiontext"><%=q.getText()%></p>
 			<ul id="answers">
+				
 				<li><input name="answers" id="answer_1" value="1"
-					type="checkbox" /><label class="tile clickable" for="answer_1">Was
-						ist IT Strategie?</label></li>
+					type="checkbox" /><label class="tile clickable" for="answer_1">
+					<%=jeopardyBean.getCurrentAnswers().get(0).getText()%>
+					</label></li>
 				<li><input name="answers" id="answer_2" value="2"
-					type="checkbox" /><label class="tile clickable" for="answer_2">Was
-						ist Web Engineering?</label></li>
+					type="checkbox" /><label class="tile clickable" for="answer_2">
+					<%=jeopardyBean.getCurrentAnswers().get(1).getText()%></label></li>
 				<li><input name="answers" id="answer_3" value="3"
-					type="checkbox" /><label class="tile clickable" for="answer_3">Was
-						ist Semistrukturierte Daten?</label></li>
+					type="checkbox" /><label class="tile clickable" for="answer_3">
+					<%=jeopardyBean.getCurrentAnswers().get(2).getText()%></label></li>
 				<li><input name="answers" id="answer_4" value="4"
-					type="checkbox" /><label class="tile clickable" for="answer_4">Was
-						ist Objektorientierte Modellierung?</label></li>
+					type="checkbox" /><label class="tile clickable" for="answer_4">
+					<%=jeopardyBean.getCurrentAnswers().get(3).getText()%></label></li>
 			</ul>
 			<input id="timeleftvalue" type="hidden" value="100" /> <input
 				class="greenlink formlink clickable" type="submit" accesskey="s"

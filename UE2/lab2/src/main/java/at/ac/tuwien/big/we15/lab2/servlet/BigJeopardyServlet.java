@@ -2,6 +2,7 @@ package at.ac.tuwien.big.we15.lab2.servlet;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -24,7 +25,8 @@ import at.ac.tuwien.big.we15.lab2.api.impl.SimpleJeopardyFactory;
 public class BigJeopardyServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-
+	private JeopardyGame game;
+	private ArrayList<Integer> clickedButtonList = new ArrayList<Integer>();
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -66,16 +68,30 @@ public class BigJeopardyServlet extends HttpServlet {
 				QuestionDataProvider provider = factory.createQuestionDataProvider();
 				List<Category> categories = provider.getCategoryData();
 				Random random = new Random();
-				int randomCategoryNumber = random.nextInt(10000) % categories.size();
-				System.out.println(randomCategoryNumber);
-				Category category = categories.get(randomCategoryNumber);
-				JeopardyGame game = new JeopardyGame(category.getQuestions(), category);
+				Category category = categories.get(getCategory(request));
+				game = new JeopardyGame(category.getQuestions(), category);
 				JeopardyBean bean = new JeopardyBean();
+				bean.setClickedButtonList(clickedButtonList);
 				bean.setGame(game);
 				session.setAttribute("jeopardyBean", bean);
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
 				dispatcher.forward(request, response);
 			//}
+		}else if(request.getParameter("action").compareTo("questionSubmitButtonClicked") == 0)
+		{
+			int selectedQuestion = 0;
+			try{
+				selectedQuestion = Integer.parseInt(request.getParameter("question_selection"));
+			}catch(Exception e){}
+			
+			ServletJeopardyFactory factory = new ServletJeopardyFactory(getServletContext());
+			QuestionDataProvider provider = factory.createQuestionDataProvider();
+			List<Category> categories = provider.getCategoryData();
+			Category category = categories.get(getCategory(request));
+			game.setCategory(category);
+			game.setQuestions(category.getQuestions());
+			
+			clickedButtonList.add(selectedQuestion);
 		}
 		
 		if(request.getParameter("action").compareTo("questionSubmitButtonClicked") == 0) {
@@ -92,5 +108,36 @@ public class BigJeopardyServlet extends HttpServlet {
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
 			dispatcher.forward(request, response);
 		}
+	}
+	
+	/**
+	 * 1 - 4 TV; 5 - 9 ssd; 10 - 14 web; 15 - 18 web; 19 - 23 tuwien
+	 * 
+	 * @param request
+	 * @return
+	 */
+	int getCategory(HttpServletRequest request)
+	{
+		
+		int selectedQuestion = 0;
+		try{
+			selectedQuestion = Integer.parseInt(request.getParameter("question_selection"));
+		}catch(Exception e){}
+		
+		int cat = 1;
+		// 1 - 4 TV; 5 - 9 ssd; 10 - 14 web; 15 - 18 web; 19 - 23 tuwien
+		if(selectedQuestion >= 1 && selectedQuestion <= 4)
+			cat = 0;
+		else if(selectedQuestion >= 5 && selectedQuestion <= 9)
+			cat = 2;
+		else if(selectedQuestion >= 10 && selectedQuestion <= 14)
+			cat = 3;
+		else if(selectedQuestion >= 15 && selectedQuestion <= 18)
+			cat = 4;
+		else if(selectedQuestion >= 19 && selectedQuestion <= 23)
+			cat = 1;
+		
+		
+		return cat;
 	}
 }

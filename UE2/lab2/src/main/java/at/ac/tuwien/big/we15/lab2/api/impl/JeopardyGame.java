@@ -11,7 +11,6 @@ public class JeopardyGame {
 	private List<Question> questions;
 	private List<Question> askedQuestions;
 	private Category category;
-	private int questionCounter = 0;
 
 	public JeopardyGame(List<Question> questions, Category category) {
 		this.questions = questions;
@@ -19,17 +18,32 @@ public class JeopardyGame {
 		this.category = category;
 	}
 	
+	public void setQuestions(List<Question> questions)
+	{
+		this.questions = questions;
+	}
+	
+	public void setCategory(Category category)
+	{
+		this.category = category;
+	}
+	
+	public int askedQuestionCount()
+	{
+		return (this.askedQuestions == null ? 0 : this.askedQuestions.size());
+	}
+	
 	public Question getQuestion() {
-		if(questionCounter++ > 10) {
-			// ?
-		}
-		
+		// TODO teilweise sind nicht 10 Fragen in questions ... deshalb 
+		// haengt hoert es dann nicht auf zu laden
 		Random random = new Random();
-		int randomQuestionNumber = random.nextInt() % questions.size();
+		
 		Question question = null;
 		do {
+			int randomQuestionNumber = Math.abs(random.nextInt()) % questions.size();
 			question = questions.get(randomQuestionNumber);
-		}while(!askedQuestions.contains(question));
+			// System.out.println("xxx" + randomQuestionNumber + " " + questions.size());
+		}while(askedQuestions.contains(question));
 		askedQuestions.add(question);
 	
 		return question;

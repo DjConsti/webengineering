@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<jsp:useBean id="jeopardyBean" scope="session" type="at.ac.tuwien.big.we15.lab2.api.impl.JeopardyBean" class="at.ac.tuwien.big.we15.lab2.api.impl.JeopardyBean" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -73,7 +74,7 @@
 			</tr>
 		</table>
 		</section>
-		<p id="round">Fragen: 2 / 10</p>
+		<p id="round">Fragen: <%=jeopardyBean.getAskedQuestionCount()%> / 10</p>
 		</section>
 
 		<!-- Question -->
@@ -93,16 +94,16 @@
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_1" value="1"
-						type="radio" disabled="disabled" /><label class="tile clickable"
+						type="radio" <%=jeopardyBean.isClickedButton(1) %> /><label class="tile clickable"
 						for="question_1">Eur 100</label></li>
 					<li><input name="question_selection" id="question_2" value="2"
-						type="radio" /><label class="tile clickable" for="question_2">Eur
+						type="radio" <%=jeopardyBean.isClickedButton(2) %> /><label class="tile clickable" for="question_2">Eur
 							200</label></li>
 					<li><input name="question_selection" id="question_3" value="3"
-						type="radio" /><label class="tile clickable" for="question_3">Eur
+						type="radio" <%=jeopardyBean.isClickedButton(3) %> /><label class="tile clickable" for="question_3">Eur
 							500</label></li>
 					<li><input name="question_selection" id="question_4" value="4"
-						type="radio" /><label class="tile clickable" for="question_4">Eur
+						type="radio" <%=jeopardyBean.isClickedButton(4) %>/><label class="tile clickable" for="question_4">Eur
 							750</label></li>
 				</ol>
 				</section>
@@ -112,19 +113,19 @@
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_5" value="5"
-						type="radio" /><label class="tile clickable" for="question_5">Eur
+						type="radio" <%=jeopardyBean.isClickedButton(5) %>/><label class="tile clickable" for="question_5">Eur
 							100</label></li>
 					<li><input name="question_selection" id="question_6" value="6"
-						type="radio" /><label class="tile clickable" for="question_6">Eur
+						type="radio" <%=jeopardyBean.isClickedButton(6) %>/><label class="tile clickable" for="question_6">Eur
 							200</label></li>
 					<li><input name="question_selection" id="question_7" value="7"
-						type="radio" /><label class="tile clickable" for="question_7">Eur
+						type="radio" <%=jeopardyBean.isClickedButton(7) %>/><label class="tile clickable" for="question_7">Eur
 							500</label></li>
 					<li><input name="question_selection" id="question_8" value="8"
-						type="radio" /><label class="tile clickable" for="question_8">Eur
+						type="radio" <%=jeopardyBean.isClickedButton(8) %>/><label class="tile clickable" for="question_8">Eur
 							750</label></li>
 					<li><input name="question_selection" id="question_9" value="9"
-						type="radio" /><label class="tile clickable" for="question_9">Eur
+						type="radio" <%=jeopardyBean.isClickedButton(9) %>/><label class="tile clickable" for="question_9">Eur
 							1000</label></li>
 				</ol>
 				</section>
@@ -134,19 +135,19 @@
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_10"
-						value="10" type="radio" /><label class="tile clickable"
+						value="10" type="radio" <%=jeopardyBean.isClickedButton(10) %>/><label class="tile clickable"
 						for="question_10">Eur 100</label></li>
 					<li><input name="question_selection" id="question_11"
-						value="11" type="radio" /><label class="tile clickable"
+						value="11" type="radio" <%=jeopardyBean.isClickedButton(11) %>/><label class="tile clickable"
 						for="question_11">Eur 200</label></li>
 					<li><input name="question_selection" id="question_12"
-						value="12" type="radio" disabled="disabled" /><label
+						value="12" type="radio" <%=jeopardyBean.isClickedButton(12) %> /><label
 						class="tile clickable" for="question_12">Eur 500</label></li>
 					<li><input name="question_selection" id="question_13"
-						value="13" type="radio" /><label class="tile clickable"
+						value="13" type="radio" <%=jeopardyBean.isClickedButton(13) %>/><label class="tile clickable"
 						for="question_13">Eur 750</label></li>
 					<li><input name="question_selection" id="question_14"
-						value="14" type="radio" /><label class="tile clickable"
+						value="14" type="radio" <%=jeopardyBean.isClickedButton(14) %>/><label class="tile clickable"
 						for="question_14">Eur 1000</label></li>
 				</ol>
 				</section>
@@ -156,16 +157,16 @@
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_15"
-						value="15" type="radio" /><label class="tile clickable"
+						value="15" type="radio" <%=jeopardyBean.isClickedButton(15) %>/><label class="tile clickable"
 						for="question_15">Eur 100</label></li>
 					<li><input name="question_selection" id="question_16"
-						value="16" type="radio" disabled="disabled" /><label
+						value="16" type="radio" <%=jeopardyBean.isClickedButton(16) %> /><label
 						class="tile clickable" for="question_16">Eur 200</label></li>
 					<li><input name="question_selection" id="question_17"
-						value="17" type="radio" /><label class="tile clickable"
+						value="17" type="radio" <%=jeopardyBean.isClickedButton(17) %>/><label class="tile clickable"
 						for="question_17">Eur 500</label></li>
 					<li><input name="question_selection" id="question_18"
-						value="18" type="radio" /><label class="tile clickable"
+						value="18" type="radio" <%=jeopardyBean.isClickedButton(18) %>/><label class="tile clickable"
 						for="question_18">Eur 750</label></li>
 				</ol>
 				</section>
@@ -175,19 +176,19 @@
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_19"
-						value="19" type="radio" /><label class="tile clickable"
+						value="19" type="radio" <%=jeopardyBean.isClickedButton(19) %>/><label class="tile clickable"
 						for="question_19">Eur 100</label></li>
 					<li><input name="question_selection" id="question_20"
-						value="20" type="radio" /><label class="tile clickable"
+						value="20" type="radio" <%=jeopardyBean.isClickedButton(20) %>/><label class="tile clickable"
 						for="question_20">Eur 200</label></li>
 					<li><input name="question_selection" id="question_21"
-						value="21" type="radio" /><label class="tile clickable"
+						value="21" type="radio" <%=jeopardyBean.isClickedButton(21) %>/><label class="tile clickable"
 						for="question_21">Eur 500</label></li>
 					<li><input name="question_selection" id="question_22"
-						value="22" type="radio" /><label class="tile clickable"
+						value="22" type="radio" <%=jeopardyBean.isClickedButton(22) %>/><label class="tile clickable"
 						for="question_22">Eur 750</label></li>
 					<li><input name="question_selection" id="question_23"
-						value="23" type="radio" disabled="disabled" /><label
+						value="23" type="radio" <%=jeopardyBean.isClickedButton(23) %> /><label
 						class="tile clickable" for="question_23">Eur 1000</label></li>
 				</ol>
 				</section>

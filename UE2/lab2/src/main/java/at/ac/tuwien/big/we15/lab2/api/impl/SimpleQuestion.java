@@ -74,7 +74,7 @@ public class SimpleQuestion implements Question {
 	@Override
 	public String getText() {
 		//return text;
-		return "test";
+		return text;
 	}
 
 	@Override
