@@ -14,6 +14,8 @@ public class JeopardyGame {
 	private Category category;
 	private int humanPlayerScore = 0;
 	private int aiScore = 0;
+	private int humanPlayerScoreChange = 0;
+	private int aiScoreChange = 0;
 
 	public JeopardyGame(List<Question> questions, Category category) {
 		this.questions = questions;
@@ -91,12 +93,16 @@ public class JeopardyGame {
 			}
 		}
 
-		if (isHuman)
-			this.humanPlayerScore += this.askedQuestions.get(
+		if (isHuman) {
+			this.humanPlayerScoreChange =this.askedQuestions.get(
 					this.askedQuestions.size() - 1).getValue();
-		else
-			this.aiScore += this.askedQuestions.get(
+			this.humanPlayerScore += humanPlayerScoreChange;
+		}
+		else {
+			this.aiScoreChange = this.askedQuestions.get(
 					this.askedQuestions.size() - 1).getValue();
+			this.aiScore += this.aiScoreChange;
+		}
 
 		System.out.println("Richtig geantwortet");
 		return true;
@@ -108,5 +114,13 @@ public class JeopardyGame {
 
 	public int getAiScore() {
 		return this.aiScore;
+	}
+	
+	public int getHumanPlayerScoreChange() {
+		return humanPlayerScoreChange;
+	}
+
+	public int getAiScoreChange() {
+		return aiScoreChange;
 	}
 }

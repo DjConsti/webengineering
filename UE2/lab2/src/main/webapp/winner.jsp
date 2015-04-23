@@ -38,9 +38,9 @@
 		<section id="gameinfo" aria-labelledby="winnerinfoheading">
 		<h2 id="winnerinfoheading" class="accessibility">Gewinnerinformationen</h2>
 		<p class="user-info positive-change">Du hast richtig geantwortet:
-			+1000 Eur</p>
+			<%=jeopardyBean.getHumanScoreChange()%> Eur</p>
 		<p class="user-info negative-change">Deadpool hat falsch
-			geantwortet: -500 Eur</p>
+			geantwortet: <%=jeopardyBean.getAiScoreChange()%> Eur</p>
 		<section class="playerinfo leader"
 			aria-labelledby="winnerannouncement">
 		<h3 id="winnerannouncement">Gewinner: Black Widow</h3>

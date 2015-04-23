@@ -70,5 +70,15 @@ public class JeopardyBean {
 	{
 		return game.getAiScore();
 	}
+	
+	public int getHumanScoreChange()
+	{
+		return game.getHumanPlayerScoreChange();
+	}
+	
+	public int getAiScoreChange()
+	{
+		return game.getAiScoreChange();
+	}
 
 }
