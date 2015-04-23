@@ -13,9 +13,6 @@
 <link rel="stylesheet" type="text/css" href="style/screen.css" />
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/framework.js" type="text/javascript"></script>
-<%if(jeopardyBean.getAskedQuestionCount() > 10){%>
-	<jsp:forward page="winner.jsp" />
-<% } %>
 </head>
 <body id="questionpage">
 	<a class="accessibility" href="#questions">Zur Fragenauswahl
@@ -90,17 +87,17 @@
 			<p id="questiontext"><%=q.getText()%></p>
 			<ul id="answers">
 				
-				<li><input name="answers" id="answer_1" value="1"
+				<li><input name="answers" id="answer_1" value="<%=jeopardyBean.getCurrentAnswers().get(0).getId()%>"
 					type="checkbox" /><label class="tile clickable" for="answer_1">
 					<%=jeopardyBean.getCurrentAnswers().get(0).getText()%>
 					</label></li>
-				<li><input name="answers" id="answer_2" value="2"
+				<li><input name="answers" id="answer_2" value="<%=jeopardyBean.getCurrentAnswers().get(1).getId()%>"
 					type="checkbox" /><label class="tile clickable" for="answer_2">
 					<%=jeopardyBean.getCurrentAnswers().get(1).getText()%></label></li>
-				<li><input name="answers" id="answer_3" value="3"
+				<li><input name="answers" id="answer_3" value="<%=jeopardyBean.getCurrentAnswers().get(2).getId()%>"
 					type="checkbox" /><label class="tile clickable" for="answer_3">
 					<%=jeopardyBean.getCurrentAnswers().get(2).getText()%></label></li>
-				<li><input name="answers" id="answer_4" value="4"
+				<li><input name="answers" id="answer_4" value="<%=jeopardyBean.getCurrentAnswers().get(3).getId()%>"
 					type="checkbox" /><label class="tile clickable" for="answer_4">
 					<%=jeopardyBean.getCurrentAnswers().get(3).getText()%></label></li>
 			</ul>

@@ -3,6 +3,7 @@ package at.ac.tuwien.big.we15.lab2.servlet;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import at.ac.tuwien.big.we15.lab2.api.Answer;
 import at.ac.tuwien.big.we15.lab2.api.Category;
 import at.ac.tuwien.big.we15.lab2.api.QuestionDataProvider;
 import at.ac.tuwien.big.we15.lab2.api.impl.JSONQuestionDataProvider;
@@ -105,6 +107,15 @@ public class BigJeopardyServlet extends HttpServlet {
 		}
 		
 		if(request.getParameter("action").compareTo("submitButtonClicked") == 0) {
+			List<String> selectedAnswerIds = new ArrayList<String>();
+			try{
+				selectedAnswerIds.addAll(Arrays.asList(request.getParameterValues("answers")));
+			}catch(Exception e){}
+			
+			HttpSession session = request.getSession();
+			JeopardyBean bean = (JeopardyBean)session.getAttribute("jeopardyBean");
+			game.checkAnswers(selectedAnswerIds, bean.getCorrectAnswers());
+			
 			if(game.askedQuestionCount() > 10) {
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
 				dispatcher.forward(request, response);

@@ -45,6 +45,11 @@ public class JeopardyBean {
 		return this.currentAnswers;
 	}
 	
+	public List<Answer> getCorrectAnswers()
+	{
+		return q.getCorrectAnswers();
+	}
+	
 	public String toString() {
 		return "JeopardyBean";
 	}
@@ -55,5 +60,7 @@ public class JeopardyBean {
 			return "disabled=\"disabled\"";
 		else return "";	
 	}
+	
+	
 
 }

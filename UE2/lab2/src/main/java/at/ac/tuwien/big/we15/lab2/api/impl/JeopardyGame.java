@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import at.ac.tuwien.big.we15.lab2.api.Answer;
 import at.ac.tuwien.big.we15.lab2.api.Category;
 import at.ac.tuwien.big.we15.lab2.api.Question;
 
@@ -47,6 +48,29 @@ public class JeopardyGame {
 		askedQuestions.add(question);
 	
 		return question;
+	}
+	
+	public boolean checkAnswers(List<String> selectedAnswerIds, List<Answer> correctAnswers) {
+		List<Integer> correctAnswerIds = new ArrayList<Integer>();
+		for(Answer answer : correctAnswers) {
+			correctAnswerIds.add(answer.getId());
+		}
+		System.out.println(correctAnswerIds);
+		System.out.println(selectedAnswerIds);
+		if(selectedAnswerIds.size() != correctAnswerIds.size()) {
+			System.out.println("Falsch geantwortet");
+			return false;
+		}
+		
+		for(String selectedAnswerId : selectedAnswerIds) {
+			if(!correctAnswerIds.contains(Integer.valueOf(selectedAnswerId))) {
+				System.out.println("Falsch geantwortet");
+				return false;
+			}
+		}
+		
+		System.out.println("Richtig geantwortet");
+		return true;
 	}
 
 }
