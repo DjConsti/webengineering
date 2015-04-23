@@ -18,6 +18,14 @@ public class JeopardyGame {
 		this.category = category;
 	}
 	
+	/**
+	 * Spiel neustarten; alle Operationen dafuer sollen hier rein
+	 */
+	public void restart()
+	{
+		this.askedQuestions.clear();
+	}
+	
 	public void setQuestions(List<Question> questions)
 	{
 		this.questions = questions;

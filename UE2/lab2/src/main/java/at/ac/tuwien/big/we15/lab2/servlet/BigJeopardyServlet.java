@@ -49,6 +49,13 @@ public class BigJeopardyServlet extends HttpServlet {
 		}
 		
 		if(request.getParameter("action").compareTo("restartButtonClicked") == 0) {
+			this.clickedButtonList.clear();
+			if(game != null)
+			{
+				game.restart();
+			}
+			
+			
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
 			dispatcher.forward(request, response);
 		}
@@ -67,7 +74,6 @@ public class BigJeopardyServlet extends HttpServlet {
 				ServletJeopardyFactory factory = new ServletJeopardyFactory(getServletContext());
 				QuestionDataProvider provider = factory.createQuestionDataProvider();
 				List<Category> categories = provider.getCategoryData();
-				Random random = new Random();
 				Category category = categories.get(getCategory(request));
 				game = new JeopardyGame(category.getQuestions(), category);
 				JeopardyBean bean = new JeopardyBean();
