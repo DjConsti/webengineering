@@ -61,6 +61,14 @@ public class JeopardyBean {
 		else return "";	
 	}
 	
+	public int getHumanScore()
+	{
+		return game.getHumanPlayerScore();
+	}
 	
+	public int getAiScore()
+	{
+		return game.getAiScore();
+	}
 
 }

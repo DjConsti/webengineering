@@ -12,6 +12,8 @@ public class JeopardyGame {
 	private List<Question> questions;
 	private List<Question> askedQuestions;
 	private Category category;
+	private int humanPlayerScore = 0;
+	private int aiScore = 0;
 
 	public JeopardyGame(List<Question> questions, Category category) {
 		this.questions = questions;
@@ -58,7 +60,14 @@ public class JeopardyGame {
 		return question;
 	}
 	
-	public boolean checkAnswers(List<String> selectedAnswerIds, List<Answer> correctAnswers) {
+	public void makeAiSelections()
+	{
+		// TODO KI LOGIC
+		// Zeile entsprechend anpassen
+		// game.checkAnswers(selectedAnswerIds, bean.getCorrectAnswers(), false);
+	}
+	
+	public boolean checkAnswers(List<String> selectedAnswerIds, List<Answer> correctAnswers, boolean isHuman) {
 		List<Integer> correctAnswerIds = new ArrayList<Integer>();
 		for(Answer answer : correctAnswers) {
 			correctAnswerIds.add(answer.getId());
@@ -76,9 +85,23 @@ public class JeopardyGame {
 				return false;
 			}
 		}
+
+		if(isHuman)
+			this.humanPlayerScore += this.askedQuestions.get(this.askedQuestions.size()-1).getValue();
+		else
+			this.aiScore += this.askedQuestions.get(this.askedQuestions.size()-1).getValue();
 		
 		System.out.println("Richtig geantwortet");
 		return true;
 	}
 
+	public int getHumanPlayerScore()
+	{
+		return this.humanPlayerScore;
+	}
+	
+	public int getAiScore()
+	{
+		return this.aiScore;
+	}
 }

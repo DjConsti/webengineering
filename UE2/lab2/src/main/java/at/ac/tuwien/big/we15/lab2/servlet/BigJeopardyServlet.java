@@ -120,8 +120,9 @@ public class BigJeopardyServlet extends HttpServlet {
 			
 			HttpSession session = request.getSession();
 			JeopardyBean bean = (JeopardyBean)session.getAttribute("jeopardyBean");
-			game.checkAnswers(selectedAnswerIds, bean.getCorrectAnswers());
-			
+			// true gibt an ob mensch oder nicht
+			game.checkAnswers(selectedAnswerIds, bean.getCorrectAnswers(), true);
+			game.makeAiSelections();
 			if(game.askedQuestionCount() > 10) {
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
 				dispatcher.forward(request, response);

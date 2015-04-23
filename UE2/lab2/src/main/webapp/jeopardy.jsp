@@ -54,7 +54,7 @@
 			</tr>
 			<tr>
 				<th class="accessibility">Spielerpunkte</th>
-				<td class="playerpoints">2000 Eur</td>
+				<td class="playerpoints"><%=jeopardyBean.getHumanScore()%> Eur</td>
 			</tr>
 		</table>
 		</section> <section id="secondplayer" class="playerinfo"
@@ -70,7 +70,7 @@
 			</tr>
 			<tr>
 				<th class="accessibility">Spielerpunkte</th>
-				<td class="playerpoints">400 Eur</td>
+				<td class="playerpoints"><%=jeopardyBean.getAiScore()%> Eur</td>
 			</tr>
 		</table>
 		</section>
