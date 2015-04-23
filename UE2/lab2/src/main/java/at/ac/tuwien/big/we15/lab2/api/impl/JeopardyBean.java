@@ -46,7 +46,7 @@ public class JeopardyBean {
 	}
 	
 	public String toString() {
-		return "asdfasdf";
+		return "JeopardyBean";
 	}
 	
 	public String isClickedButton(int id)

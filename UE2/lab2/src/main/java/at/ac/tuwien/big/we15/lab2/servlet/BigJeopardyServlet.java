@@ -105,8 +105,15 @@ public class BigJeopardyServlet extends HttpServlet {
 		}
 		
 		if(request.getParameter("action").compareTo("submitButtonClicked") == 0) {
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
-			dispatcher.forward(request, response);
+			if(game.askedQuestionCount() > 10) {
+				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
+				dispatcher.forward(request, response);
+				return;
+			} else {
+				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+				dispatcher.forward(request, response);
+				return;
+			}
 		}
 	}
 	
