@@ -3,5 +3,3 @@ Built-By: pauluni
 Build-Jdk: 1.8.0_45
 Created-By: Maven Integration for Eclipse
 
-
-
