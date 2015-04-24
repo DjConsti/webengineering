@@ -13,9 +13,6 @@
 <link rel="stylesheet" type="text/css" href="style/screen.css" />
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/framework.js" type="text/javascript"></script>
-<%if(jeopardyBean.getAskedQuestionCount() >= 10){%>
-	<jsp:forward page="winner.jsp" />
-<% } %>
 </head>
 <body id="questionpage">
 	<a class="accessibility" href="#questions">Zur Fragenauswahl

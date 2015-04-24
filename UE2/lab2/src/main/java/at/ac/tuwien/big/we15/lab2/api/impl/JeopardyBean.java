@@ -81,4 +81,16 @@ public class JeopardyBean {
 		return game.getAiScoreChange();
 	}
 
+	/**
+	 * Wenn der Mensch gewonnen hat, liefert die Methode
+	 * true zurueck, sonst falsch.
+	 * 
+	 */
+	public boolean getWinnerStylesheet()
+	{
+		if(this.getHumanScore() >= this.getAiScore())
+			return true;
+
+		return false;
+	}
 }
