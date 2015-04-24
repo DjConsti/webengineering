@@ -1,6 +1,7 @@
 package at.ac.tuwien.big.we15.lab2.api.impl;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -201,5 +202,30 @@ public class JeopardyGame {
 		} else {
 			return "-" + (currentEuroValue/2);
 		}
+	}
+	
+	public String getAiChosenTopic() {
+		List<String> list = new ArrayList<String>();
+		list.add("Web Eng.");
+		list.add("SSD");
+		list.add("Web Tech.");
+		list.add("Internet");
+		list.add("TUWIEN");
+		Collections.shuffle(list);
+		//TODO: shuffle again if already taken
+		return list.get(0);
+	}
+	
+	public int getAiChosenValue() {
+		List<Integer> list = new ArrayList<Integer>();
+		list.add(100);
+		list.add(200);
+		list.add(500);
+		list.add(750);
+		//TODO: if(1000 exists in this category)
+		//list.add(1000);
+		//TODO: shuffle again if already taken
+		Collections.shuffle(list);
+		return list.get(0);
 	}
 }

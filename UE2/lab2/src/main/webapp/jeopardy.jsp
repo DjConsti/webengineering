@@ -86,7 +86,9 @@
 			<p class="user-info <%=jeopardyBean.getAiCorrectStatus()%>-change">Deadpool hat <%=jeopardyBean.getAiCorrectStatusText()%>
 				geantwortet: <%=jeopardyBean.getAiEuroChangeStatus()%> Eur</p>
 		<%}%>
-		<p class="user-info">Deadpool hat TUWIEN für Eur 1000 gewählt.</p>
+		<%if(jeopardyBean.hasAiLowerScore()) {%>
+		<p class="user-info">Deadpool hat <%=jeopardyBean.getAiChosenTopic()%> für Eur <%=jeopardyBean.getAiChosenValue()%> gewählt.</p>
+		<%}%>
 		<form action="BigJeopardyServlet" method="post">
 			<fieldset>
 				<legend class="accessibility">Fragenauswahl</legend>

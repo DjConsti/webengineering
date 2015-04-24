@@ -153,7 +153,7 @@ public class BigJeopardyServlet extends HttpServlet {
 	 * @param request
 	 * @return
 	 */
-	int getCategory(HttpServletRequest request)
+	private int getCategory(HttpServletRequest request)
 	{
 		
 		int selectedQuestion = 0;

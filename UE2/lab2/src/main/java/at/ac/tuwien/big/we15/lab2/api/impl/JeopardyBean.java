@@ -126,4 +126,16 @@ public class JeopardyBean {
 	public String getAiEuroChangeStatus() {
 		return game.getAiEuroChangeStatus();
 	}
+	
+	public boolean hasAiLowerScore() {
+		return game.getAiScore() < game.getHumanPlayerScore();
+	}
+	
+	public String getAiChosenTopic() {
+		return game.getAiChosenTopic();
+	}
+	
+	public int getAiChosenValue() {
+		return game.getAiChosenValue();
+	}
 }
