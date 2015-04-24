@@ -106,15 +106,9 @@ public class BigJeopardyServlet extends HttpServlet {
 			JeopardyBean bean = (JeopardyBean)request.getSession().getAttribute("jeopardyBean");
 			if(bean!=null) bean.addClickedButton(selectedQuestion);
 			
-			if(game.askedQuestionCount() > 10) {
-				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
-				dispatcher.forward(request, response);
-				return;
-			} else {
-				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/question.jsp");
-				dispatcher.forward(request, response);
-				return;
-			}
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/question.jsp");
+			dispatcher.forward(request, response);
+			return;
 		}
 		
 		if(request.getParameter("action").compareTo("questionSubmitButtonClicked") == 0) {
@@ -139,8 +133,15 @@ public class BigJeopardyServlet extends HttpServlet {
 			game.checkAnswers(selectedAnswerIds, bean.getCorrectAnswers(), true);
 			game.makeAiSelections(bean.getCorrectAnswers());
 			
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
-			dispatcher.forward(request, response);
+			if(game.askedQuestionCount() > 10) {
+				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
+				dispatcher.forward(request, response);
+				return;
+			} else {
+				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+				dispatcher.forward(request, response);
+				return;
+			}
 		}
 	}
 	
