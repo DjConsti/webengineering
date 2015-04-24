@@ -92,7 +92,7 @@
 				<legend class="accessibility">Fragenauswahl</legend>
 				<section class="questioncategory" aria-labelledby="tvheading">
 				<h3 id="tvheading" class="tile category-title">
-					<span class="accessibility">Kategorie: </span>TV
+					<span class="accessibility">Kategorie: </span>Web Eng.
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_1" value="1"
@@ -155,7 +155,7 @@
 				</section>
 				<section class="questioncategory" aria-labelledby="sportheading">
 				<h3 id="sportheading" class="tile category-title">
-					<span class="accessibility">Kategorie: </span>Web
+					<span class="accessibility">Kategorie: </span>Internet
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_15"

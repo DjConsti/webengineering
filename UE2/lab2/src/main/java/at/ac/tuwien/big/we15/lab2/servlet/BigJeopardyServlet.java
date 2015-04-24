@@ -28,8 +28,6 @@ public class BigJeopardyServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 	private JeopardyGame game;
-	
-	private ArrayList<Integer> clickedButtonList = new ArrayList<Integer>();
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -43,7 +41,9 @@ public class BigJeopardyServlet extends HttpServlet {
 		
 		if(request.getParameter("action").compareTo("logoutlinkButtonClicked") == 0) {
 			// liste der geklickten buttons wird geloescht
-			this.clickedButtonList.clear();
+			HttpSession session = request.getSession();
+			JeopardyBean bean = (JeopardyBean)session.getAttribute("jeopardyBean");
+			bean.getClickedButtonList().clear();
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/login.jsp");
 			dispatcher.forward(request, response);
 		}
@@ -54,7 +54,9 @@ public class BigJeopardyServlet extends HttpServlet {
 		}
 		
 		if(request.getParameter("action").compareTo("restartButtonClicked") == 0) {
-			this.clickedButtonList.clear();
+			HttpSession session = request.getSession();
+			JeopardyBean bean = (JeopardyBean)session.getAttribute("jeopardyBean");
+			bean.getClickedButtonList().clear();
 			if(game != null)
 			{
 				game.restart();
@@ -102,7 +104,7 @@ public class BigJeopardyServlet extends HttpServlet {
 			game.setQuestions(category.getQuestions());
 			
 			game.setCurrentEuroValue(selectedQuestion);
-			// 
+			
 			JeopardyBean bean = (JeopardyBean)request.getSession().getAttribute("jeopardyBean");
 			if(bean!=null) bean.addClickedButton(selectedQuestion);
 			

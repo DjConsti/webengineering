@@ -14,8 +14,8 @@ public class JeopardyGame {
 	private Category category;
 	private int humanPlayerScore = 0;
 	private int aiScore = 0;
-	private int humanPlayerScoreChange = 0;
-	private int aiScoreChange = 0;
+	//private int humanPlayerScoreChange = 0;
+	//private int aiScoreChange = 0;
 	private boolean userIsCorrect = false;
 	private boolean aiIsCorrect = false;
 	private int[] euroValues = {100, 200, 500, 750,
@@ -36,6 +36,11 @@ public class JeopardyGame {
 	 */
 	public void restart() {
 		this.askedQuestions.clear();
+		humanPlayerScore = 0;
+		aiScore = 0;
+		userIsCorrect = false;
+		aiIsCorrect = false;
+		currentEuroValue = 0;
 	}
 
 	public void setQuestions(List<Question> questions) {
@@ -91,11 +96,11 @@ public class JeopardyGame {
 		if (selectedAnswerIds.size() != correctAnswerIds.size()) {
 			if(isHuman) {
 				userIsCorrect = false;
-				humanPlayerScore -= currentEuroValue;
+				humanPlayerScore -= currentEuroValue/2;
 			}
 			else {
 				aiIsCorrect = false;
-				aiScore -= currentEuroValue;
+				aiScore -= currentEuroValue/2;
 			}
 			return;
 		}
@@ -104,11 +109,11 @@ public class JeopardyGame {
 			if (!correctAnswerIds.contains(Integer.valueOf(selectedAnswerId))) {
 				if(isHuman) {
 					userIsCorrect = false;
-					humanPlayerScore -= currentEuroValue;
+					humanPlayerScore -= currentEuroValue/2;
 				}
 				else {
 					aiIsCorrect = false;
-					aiScore -= currentEuroValue;
+					aiScore -= currentEuroValue/2;
 				}
 				return;
 			}
