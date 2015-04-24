@@ -3,6 +3,7 @@ package at.ac.tuwien.big.we15.lab2.servlet;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import at.ac.tuwien.big.we15.lab2.api.Answer;
 import at.ac.tuwien.big.we15.lab2.api.Category;
 import at.ac.tuwien.big.we15.lab2.api.QuestionDataProvider;
 import at.ac.tuwien.big.we15.lab2.api.impl.JSONQuestionDataProvider;
@@ -49,6 +51,13 @@ public class BigJeopardyServlet extends HttpServlet {
 		}
 		
 		if(request.getParameter("action").compareTo("restartButtonClicked") == 0) {
+			this.clickedButtonList.clear();
+			if(game != null)
+			{
+				game.restart();
+			}
+			
+			
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
 			dispatcher.forward(request, response);
 		}
@@ -67,7 +76,6 @@ public class BigJeopardyServlet extends HttpServlet {
 				ServletJeopardyFactory factory = new ServletJeopardyFactory(getServletContext());
 				QuestionDataProvider provider = factory.createQuestionDataProvider();
 				List<Category> categories = provider.getCategoryData();
-				Random random = new Random();
 				Category category = categories.get(getCategory(request));
 				game = new JeopardyGame(category.getQuestions(), category);
 				JeopardyBean bean = new JeopardyBean();
@@ -105,6 +113,16 @@ public class BigJeopardyServlet extends HttpServlet {
 		}
 		
 		if(request.getParameter("action").compareTo("submitButtonClicked") == 0) {
+			List<String> selectedAnswerIds = new ArrayList<String>();
+			try{
+				selectedAnswerIds.addAll(Arrays.asList(request.getParameterValues("answers")));
+			}catch(Exception e){}
+			
+			HttpSession session = request.getSession();
+			JeopardyBean bean = (JeopardyBean)session.getAttribute("jeopardyBean");
+			// true gibt an ob mensch oder nicht
+			game.checkAnswers(selectedAnswerIds, bean.getCorrectAnswers(), true);
+			game.makeAiSelections(bean.getCorrectAnswers());
 			if(game.askedQuestionCount() > 10) {
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
 				dispatcher.forward(request, response);

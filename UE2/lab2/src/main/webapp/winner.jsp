@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<jsp:useBean id="jeopardyBean" scope="session" type="at.ac.tuwien.big.we15.lab2.api.impl.JeopardyBean" class="at.ac.tuwien.big.we15.lab2.api.impl.JeopardyBean" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -33,13 +34,14 @@
 	</nav>
 
 	<!-- Content -->
+	
 	<div role="main">
 		<section id="gameinfo" aria-labelledby="winnerinfoheading">
 		<h2 id="winnerinfoheading" class="accessibility">Gewinnerinformationen</h2>
 		<p class="user-info positive-change">Du hast richtig geantwortet:
-			+1000 Eur</p>
+			<%=jeopardyBean.getHumanScoreChange()%> Eur</p>
 		<p class="user-info negative-change">Deadpool hat falsch
-			geantwortet: -500 Eur</p>
+			geantwortet: <%=jeopardyBean.getAiScoreChange()%> Eur</p>
 		<section class="playerinfo leader"
 			aria-labelledby="winnerannouncement">
 		<h3 id="winnerannouncement">Gewinner: Black Widow</h3>
@@ -52,7 +54,7 @@
 			</tr>
 			<tr>
 				<th class="accessibility">Spielerpunkte</th>
-				<td class="playerpoints">Eur 2000</td>
+				<td class="playerpoints"><%=jeopardyBean.getHumanScore()%> Eur</td>
 			</tr>
 		</table>
 		</section> <section class="playerinfo" aria-labelledby="loserheading">
@@ -66,7 +68,7 @@
 			</tr>
 			<tr>
 				<th class="accessibility">Spielerpunkte</th>
-				<td class="playerpoints">Eur 400</td>
+				<td class="playerpoints"><%=jeopardyBean.getAiScore()%> Eur</td>
 			</tr>
 		</table>
 		</section> </section>

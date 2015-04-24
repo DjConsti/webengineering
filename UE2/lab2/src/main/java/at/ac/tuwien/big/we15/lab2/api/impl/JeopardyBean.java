@@ -45,6 +45,11 @@ public class JeopardyBean {
 		return this.currentAnswers;
 	}
 	
+	public List<Answer> getCorrectAnswers()
+	{
+		return q.getCorrectAnswers();
+	}
+	
 	public String toString() {
 		return "JeopardyBean";
 	}
@@ -54,6 +59,26 @@ public class JeopardyBean {
 		if( this.clickedButtonList.contains(id) )
 			return "disabled=\"disabled\"";
 		else return "";	
+	}
+	
+	public int getHumanScore()
+	{
+		return game.getHumanPlayerScore();
+	}
+	
+	public int getAiScore()
+	{
+		return game.getAiScore();
+	}
+	
+	public int getHumanScoreChange()
+	{
+		return game.getHumanPlayerScoreChange();
+	}
+	
+	public int getAiScoreChange()
+	{
+		return game.getAiScoreChange();
 	}
 
 }
