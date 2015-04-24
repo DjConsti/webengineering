@@ -100,6 +100,17 @@ public class BigJeopardyServlet extends HttpServlet {
 			game.setQuestions(category.getQuestions());
 			
 			clickedButtonList.add(selectedQuestion);
+			game.setCurrentEuroValue(selectedQuestion);
+			
+			if(game.askedQuestionCount() > 10) {
+				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
+				dispatcher.forward(request, response);
+				return;
+			} else {
+				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/question.jsp");
+				dispatcher.forward(request, response);
+				return;
+			}
 		}
 		
 		if(request.getParameter("action").compareTo("questionSubmitButtonClicked") == 0) {
@@ -123,15 +134,9 @@ public class BigJeopardyServlet extends HttpServlet {
 			// true gibt an ob mensch oder nicht
 			game.checkAnswers(selectedAnswerIds, bean.getCorrectAnswers(), true);
 			game.makeAiSelections(bean.getCorrectAnswers());
-			if(game.askedQuestionCount() > 10) {
-				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
-				dispatcher.forward(request, response);
-				return;
-			} else {
-				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
-				dispatcher.forward(request, response);
-				return;
-			}
+			
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+			dispatcher.forward(request, response);
 		}
 	}
 	

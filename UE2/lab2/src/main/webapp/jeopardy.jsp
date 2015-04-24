@@ -80,10 +80,12 @@
 		<!-- Question -->
 		<section id="question-selection" aria-labelledby="questionheading">
 		<h2 id="questionheading" class="black accessibility">Jeopardy</h2>
-		<p class="user-info positive-change">Du hast richtig geantwortet:
-			+1000 Eur</p>
-		<p class="user-info negative-change">Deadpool hat falsch
-			geantwortet: -500 Eur</p>
+		<%if(jeopardyBean.getAskedQuestionCount() > 0) {%>
+			<p class="user-info <%=jeopardyBean.getUserCorrectStatus()%>-change">Du hast <%=jeopardyBean.getUserCorrectStatusText()%> geantwortet:
+				<%=jeopardyBean.getUserEuroChangeStatus()%> Eur</p>
+			<p class="user-info <%=jeopardyBean.getAiCorrectStatus()%>-change">Deadpool hat <%=jeopardyBean.getAiCorrectStatusText()%>
+				geantwortet: <%=jeopardyBean.getAiEuroChangeStatus()%> Eur</p>
+		<%}%>
 		<p class="user-info">Deadpool hat TUWIEN für Eur 1000 gewählt.</p>
 		<form action="BigJeopardyServlet" method="post">
 			<fieldset>

@@ -86,7 +86,7 @@
 		<section id="question" aria-labelledby="questionheading">
 		<form action="BigJeopardyServlet" method="post">
 			<h2 id="questionheading" class="accessibility">Frage</h2>
-			<p id="questiontype"><%=q.getCategory().getName()%></p>
+			<p id="questiontype"><%=q.getCategory().getName()%> für <%=jeopardyBean.getCurrentEuroValue()%> Eur</p>
 			<p id="questiontext"><%=q.getText()%></p>
 			<ul id="answers">
 				
