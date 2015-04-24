@@ -133,7 +133,7 @@
 				</section>
 				<section class="questioncategory" aria-labelledby="webheading">
 				<h3 id="webheading" class="tile category-title">
-					<span class="accessibility">Kategorie: </span>Web
+					<span class="accessibility">Kategorie: </span>Internet Tech.
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_10"
@@ -155,7 +155,7 @@
 				</section>
 				<section class="questioncategory" aria-labelledby="sportheading">
 				<h3 id="sportheading" class="tile category-title">
-					<span class="accessibility">Kategorie: </span>Sport
+					<span class="accessibility">Kategorie: </span>Web
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_15"

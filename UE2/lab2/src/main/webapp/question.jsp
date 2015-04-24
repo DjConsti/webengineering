@@ -81,7 +81,7 @@
 		%>
 		<!-- Question -->
 		<section id="question" aria-labelledby="questionheading">
-		<form action="BigJeopardyServlet" method="post">
+		<form action="BigJeopardyServlet" name="questionForm" method="post">
 			<h2 id="questionheading" class="accessibility">Frage</h2>
 			<p id="questiontype"><%=q.getCategory().getName()%> für <%=jeopardyBean.getCurrentEuroValue()%> Eur</p>
 			<p id="questiontext"><%=q.getText()%></p>
@@ -101,7 +101,7 @@
 					type="checkbox" /><label class="tile clickable" for="answer_4">
 					<%=jeopardyBean.getCurrentAnswers().get(3).getText()%></label></li>
 			</ul>
-			<input id="timeleftvalue" type="hidden" value="100" /> <input
+			<input id="timeleftvalue" type="hidden" value="100" /> <input id="submitButton"
 				class="greenlink formlink clickable" type="submit" accesskey="s"
 				value="wählen" /> <input type="hidden" value="submitButtonClicked"
 				name="action" />
@@ -153,7 +153,7 @@
                 timeleft.text(secToMMSS(value));
                 
                 if(value <= 0) {
-                    $('#questionform').submit();
+                    $("#submitButton").click();
                 }
             }
             
