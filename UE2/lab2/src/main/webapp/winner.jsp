@@ -38,10 +38,10 @@
 	<div role="main">
 		<section id="gameinfo" aria-labelledby="winnerinfoheading">
 		<h2 id="winnerinfoheading" class="accessibility">Gewinnerinformationen</h2>
-		<p class="user-info positive-change">Du hast richtig geantwortet:
-			<%=jeopardyBean.getHumanScoreChange()%> Eur</p>
-		<p class="user-info negative-change">Deadpool hat falsch
-			geantwortet: <%=jeopardyBean.getAiScoreChange()%> Eur</p>
+		<p class="user-info <%=jeopardyBean.getUserCorrectStatus()%>-change">Du hast <%=jeopardyBean.getUserCorrectStatusText()%> geantwortet:
+				<%=jeopardyBean.getUserEuroChangeStatus()%> Eur</p>
+			<p class="user-info <%=jeopardyBean.getAiCorrectStatus()%>-change">Deadpool hat <%=jeopardyBean.getAiCorrectStatusText()%>
+				geantwortet: <%=jeopardyBean.getAiEuroChangeStatus()%> Eur</p>
 		<section class="playerinfo leader"
 			aria-labelledby="winnerannouncement">
 		<h3 id="winnerannouncement">Gewinner: Black Widow</h3>

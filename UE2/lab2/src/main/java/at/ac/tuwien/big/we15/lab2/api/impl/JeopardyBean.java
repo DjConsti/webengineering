@@ -71,7 +71,7 @@ public class JeopardyBean {
 		return game.getAiScore();
 	}
 	
-	public int getHumanScoreChange()
+	/*public int getHumanScoreChange()
 	{
 		return game.getHumanPlayerScoreChange();
 	}
@@ -79,7 +79,7 @@ public class JeopardyBean {
 	public int getAiScoreChange()
 	{
 		return game.getAiScoreChange();
-	}
+	}*/
 
 	/**
 	 * Wenn der Mensch gewonnen hat, liefert die Methode
@@ -92,5 +92,33 @@ public class JeopardyBean {
 			return true;
 
 		return false;
+	}
+	
+	public String getUserCorrectStatus() {
+		return game.getUserCorrectStatus();
+	}
+	
+	public String getUserCorrectStatusText() {
+		return game.getUserCorrectStatusText();
+	}
+	
+	public String getAiCorrectStatus() {
+		return game.getAiCorrectStatus();
+	}
+	
+	public String getAiCorrectStatusText() {
+		return game.getAiCorrectStatusText();
+	}
+	
+	public int getCurrentEuroValue() {
+		return game.getCurrentEuroValue();
+	}
+	
+	public String getUserEuroChangeStatus() {
+		return game.getUserEuroChangeStatus();
+	}
+	
+	public String getAiEuroChangeStatus() {
+		return game.getAiEuroChangeStatus();
 	}
 }
