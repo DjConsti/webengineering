@@ -42,9 +42,10 @@
 				<%=jeopardyBean.getUserEuroChangeStatus()%> Eur</p>
 			<p class="user-info <%=jeopardyBean.getAiCorrectStatus()%>-change">Deadpool hat <%=jeopardyBean.getAiCorrectStatusText()%>
 				geantwortet: <%=jeopardyBean.getAiEuroChangeStatus()%> Eur</p>
-		<section class="playerinfo leader"
+				<!-- stylesheet (vergroessern des bildes etc) -->
+		<section class="playerinfo<%=(jeopardyBean.getWinner()?" leader":"")%>" 
 			aria-labelledby="winnerannouncement">
-		<h3 id="winnerannouncement">Gewinner: Black Widow</h3>
+		<h3 id="winnerannouncement"><%=(jeopardyBean.getHumanScore() == jeopardyBean.getAiScore()?"Unentschieden":"Gewinner: ") %><%=(jeopardyBean.getHumanScore()>jeopardyBean.getAiScore()?"Black Widow":"Deadpool")%></h3>
 		<img class="avatar" src="img/avatar/black-widow.png"
 			alt="Spieler-Avatar Black Widow" />
 		<table>
@@ -57,7 +58,7 @@
 				<td class="playerpoints"><%=jeopardyBean.getHumanScore()%> Eur</td>
 			</tr>
 		</table>
-		</section> <section class="playerinfo" aria-labelledby="loserheading">
+		</section> <section class="playerinfo <%=(!jeopardyBean.getWinner()?" leader":"")%>" aria-labelledby="loserheading">
 		<h3 id="loserheading" class="accessibility">Verlierer: Deadpool</h3>
 		<img class="avatar" src="img/avatar/deadpool_head.png"
 			alt="Spieler-Avatar Deadpool" />

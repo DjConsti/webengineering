@@ -73,7 +73,7 @@
 			</tr>
 		</table>
 		</section>
-		<p id="round">Frage: <%=jeopardyBean.getAskedQuestionCount()%> / 10</p>
+		<p id="round">Fragen: <%=jeopardyBean.getAskedQuestionCount()%> / 10</p>
 		</section>
 		<% 	// neue Frage holen
 			Question q = jeopardyBean.getQuestion();

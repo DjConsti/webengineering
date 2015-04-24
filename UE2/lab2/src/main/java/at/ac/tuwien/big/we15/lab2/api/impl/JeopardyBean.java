@@ -14,12 +14,7 @@ public class JeopardyBean {
 	private ArrayList<Integer> clickedButtonList;
 
 	public JeopardyBean() {
-		
-	}
-	
-	public void setClickedButtonList(ArrayList<Integer> clickedButtonList)
-	{
-		this.clickedButtonList = clickedButtonList;
+		clickedButtonList = new ArrayList<Integer>();
 	}
 	
 	public void setGame(JeopardyGame game) {
@@ -54,11 +49,21 @@ public class JeopardyBean {
 		return "JeopardyBean";
 	}
 	
+	public void addClickedButton(int id)
+	{
+		this.clickedButtonList.add(id);
+	}
+	
 	public String isClickedButton(int id)
 	{
 		if( this.clickedButtonList.contains(id) )
 			return "disabled=\"disabled\"";
 		else return "";	
+	}
+	
+	public ArrayList<Integer> getClickedButtonList()
+	{
+		return this.clickedButtonList;
 	}
 	
 	public int getHumanScore()
@@ -86,9 +91,9 @@ public class JeopardyBean {
 	 * true zurueck, sonst falsch.
 	 * 
 	 */
-	public boolean getWinnerStylesheet()
+	public boolean getWinner()
 	{
-		if(this.getHumanScore() >= this.getAiScore())
+		if(this.getHumanScore() > this.getAiScore())
 			return true;
 
 		return false;
