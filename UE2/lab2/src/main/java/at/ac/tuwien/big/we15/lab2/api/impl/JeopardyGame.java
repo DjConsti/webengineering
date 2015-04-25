@@ -25,6 +25,7 @@ public class JeopardyGame {
 			100, 200, 500, 750,
 			100, 200, 500, 750, 1000};
 	private int currentEuroValue;
+	private String userName;
 
 	public JeopardyGame(List<Question> questions, Category category) {
 		this.questions = questions;
@@ -202,6 +203,14 @@ public class JeopardyGame {
 		} else {
 			return "-" + (currentEuroValue/2);
 		}
+	}
+	
+	public String getUserName() {
+		return userName;
+	}
+	
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	
 	public String getAiChosenTopic() {

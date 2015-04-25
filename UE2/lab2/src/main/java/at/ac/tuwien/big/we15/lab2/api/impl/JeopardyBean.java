@@ -138,4 +138,12 @@ public class JeopardyBean {
 	public int getAiChosenValue() {
 		return game.getAiChosenValue();
 	}
+	
+	public String getUserName() {
+		return game.getUserName();
+	}
+	
+	public void setUserName(String userName) {
+		game.setUserName(userName);
+	}
 }

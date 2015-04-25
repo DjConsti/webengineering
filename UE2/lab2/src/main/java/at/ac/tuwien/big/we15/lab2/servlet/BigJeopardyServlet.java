@@ -85,6 +85,7 @@ public class BigJeopardyServlet extends HttpServlet {
 				game = new JeopardyGame(category.getQuestions(), category);
 				JeopardyBean bean = new JeopardyBean();
 				bean.setGame(game);
+				bean.setUserName(request.getParameter("username"));
 				session.setAttribute("jeopardyBean", bean);
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
 				dispatcher.forward(request, response);

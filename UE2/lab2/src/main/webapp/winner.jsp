@@ -51,7 +51,7 @@
 		<table>
 			<tr>
 				<th class="accessibility">Spielername</th>
-				<td class="playername">Black Widow</td>
+				<td class="playername"><%=jeopardyBean.getUserName()%></td>
 			</tr>
 			<tr>
 				<th class="accessibility">Spielerpunkte</th>
