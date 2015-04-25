@@ -95,7 +95,12 @@ public class BigJeopardyServlet extends HttpServlet {
 			int selectedQuestion = 0;
 			try{
 				selectedQuestion = Integer.parseInt(request.getParameter("question_selection"));
-			}catch(Exception e){}
+			}catch(Exception e) {
+				//No topic was selected, stay on page
+				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jeopardy.jsp");
+				dispatcher.forward(request, response);
+				return;
+			}
 			
 			ServletJeopardyFactory factory = new ServletJeopardyFactory(getServletContext());
 			QuestionDataProvider provider = factory.createQuestionDataProvider();
