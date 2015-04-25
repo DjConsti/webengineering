@@ -52,6 +52,7 @@ public class JeopardyBean {
 	public void addClickedButton(int id)
 	{
 		this.clickedButtonList.add(id);
+		game.addClickedButton(id);
 	}
 	
 	public String isClickedButton(int id)

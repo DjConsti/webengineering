@@ -26,11 +26,14 @@ public class JeopardyGame {
 			100, 200, 500, 750, 1000};
 	private int currentEuroValue;
 	private String userName;
+	private ArrayList<Integer> clickedButtonList;
+	private int chosenCategory = 0;
 
 	public JeopardyGame(List<Question> questions, Category category) {
 		this.questions = questions;
 		askedQuestions = new ArrayList<Question>();
 		this.category = category;
+		this.clickedButtonList = new ArrayList<Integer>();
 	}
 
 	/**
@@ -43,6 +46,13 @@ public class JeopardyGame {
 		userIsCorrect = false;
 		aiIsCorrect = false;
 		currentEuroValue = 0;
+		this.clickedButtonList.clear();
+		chosenCategory = 0;
+	}
+	
+	public void addClickedButton(int id)
+	{
+		this.clickedButtonList.add(id);
 	}
 
 	public void setQuestions(List<Question> questions) {
@@ -215,26 +225,143 @@ public class JeopardyGame {
 	
 	public String getAiChosenTopic() {
 		List<String> list = new ArrayList<String>();
-		list.add("Web Eng.");
-		list.add("SSD");
-		list.add("Web Tech.");
-		list.add("Internet");
-		list.add("TUWIEN");
+		if (!this.clickedButtonList.contains(1)||
+				!this.clickedButtonList.contains(2)||
+				!this.clickedButtonList.contains(3)||
+				!this.clickedButtonList.contains(4)) {
+			list.add("Internet");
+		}
+		if (!this.clickedButtonList.contains(5)||
+				!this.clickedButtonList.contains(6)||
+				!this.clickedButtonList.contains(7)||
+				!this.clickedButtonList.contains(8)||
+				!this.clickedButtonList.contains(9)) {
+			list.add("SSD");
+		}
+		if (!this.clickedButtonList.contains(10)||
+				!this.clickedButtonList.contains(11)||
+				!this.clickedButtonList.contains(12)||
+				!this.clickedButtonList.contains(13)||
+				!this.clickedButtonList.contains(14)) {
+			list.add("Web Eng.");
+		}
+		if (!this.clickedButtonList.contains(15)||
+				!this.clickedButtonList.contains(16)||
+				!this.clickedButtonList.contains(17)||
+				!this.clickedButtonList.contains(18)) {
+			list.add("Web Tech.");
+		}
+		if (!this.clickedButtonList.contains(19)||
+				!this.clickedButtonList.contains(20)||
+				!this.clickedButtonList.contains(21)||
+				!this.clickedButtonList.contains(22)||
+				!this.clickedButtonList.contains(23)) {
+			list.add("TUWIEN");
+		}
 		Collections.shuffle(list);
-		//TODO: shuffle again if already taken
-		return list.get(0);
+		String chosen = list.get(0);
+		if (chosen.equals("Internet")) {
+			chosenCategory = 1;
+		} else if (chosen.equals("SSD")) {
+			chosenCategory = 2;
+		} else if (chosen.equals("Web Tech.")) {
+			chosenCategory = 3;
+		} else if (chosen.equals("Web Eng.")) {
+			chosenCategory = 4;
+		} else if (chosen.equals("TUWIEN")) {
+			chosenCategory = 5;
+		}
+		System.out.println("category:"+ chosen);
+		return chosen;
 	}
 	
 	public int getAiChosenValue() {
 		List<Integer> list = new ArrayList<Integer>();
-		list.add(100);
-		list.add(200);
-		list.add(500);
-		list.add(750);
-		//TODO: if(1000 exists in this category)
-		//list.add(1000);
-		//TODO: shuffle again if already taken
+		switch (chosenCategory) {
+		case 1:
+			if (!this.clickedButtonList.contains(1)) {
+				list.add(100);
+			}
+			if (!this.clickedButtonList.contains(2)) {
+				list.add(200);
+			}
+			if (!this.clickedButtonList.contains(3)) {
+				list.add(500);
+			}
+			if (!this.clickedButtonList.contains(4)) {
+				list.add(750);
+			}
+			break;
+		case 2:
+			if (!this.clickedButtonList.contains(5)) {
+				list.add(100);
+			}
+			if (!this.clickedButtonList.contains(6)) {
+				list.add(200);
+			}
+			if (!this.clickedButtonList.contains(7)) {
+				list.add(500);
+			}
+			if (!this.clickedButtonList.contains(8)) {
+				list.add(750);
+			}
+			if (!this.clickedButtonList.contains(9)) {
+				list.add(1000);
+			}
+			break;
+		case 3:
+			if (!this.clickedButtonList.contains(10)) {
+				list.add(100);
+			}
+			if (!this.clickedButtonList.contains(11)) {
+				list.add(200);
+			}
+			if (!this.clickedButtonList.contains(12)) {
+				list.add(500);
+			}
+			if (!this.clickedButtonList.contains(13)) {
+				list.add(750);
+			}
+			if (!this.clickedButtonList.contains(14)) {
+				list.add(1000);
+			}
+			break;
+		case 4:
+			if (!this.clickedButtonList.contains(15)) {
+				list.add(100);
+			}
+			if (!this.clickedButtonList.contains(16)) {
+				list.add(200);
+			}
+			if (!this.clickedButtonList.contains(17)) {
+				list.add(500);
+			}
+			if (!this.clickedButtonList.contains(18)) {
+				list.add(750);
+			}
+			break;
+		case 5:
+			if (!this.clickedButtonList.contains(19)) {
+				list.add(100);
+			}
+			if (!this.clickedButtonList.contains(20)) {
+				list.add(200);
+			}
+			if (!this.clickedButtonList.contains(21)) {
+				list.add(500);
+			}
+			if (!this.clickedButtonList.contains(22)) {
+				list.add(750);
+			}
+			if (!this.clickedButtonList.contains(23)) {
+				list.add(1000);
+			}
+			break;
+		default:
+			break;
+		}
 		Collections.shuffle(list);
+		System.out.println("categoryval:"+ list.get(0));
 		return list.get(0);
 	}
 }
