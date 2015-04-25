@@ -131,7 +131,7 @@ public class BigJeopardyServlet extends HttpServlet {
 			game.checkAnswers(selectedAnswerIds, bean.getCorrectAnswers(), true);
 			game.makeAiSelections(bean.getCorrectAnswers());
 			
-			if(game.askedQuestionCount() >= 10) {
+			if(game.askedQuestionCount() > 10) {
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
 				dispatcher.forward(request, response);
 				return;
