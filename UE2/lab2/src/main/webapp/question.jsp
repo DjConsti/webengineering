@@ -13,9 +13,6 @@
 <link rel="stylesheet" type="text/css" href="style/screen.css" />
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/framework.js" type="text/javascript"></script>
-<%if(jeopardyBean.getAskedQuestionCount() >= 10){%>
-	<jsp:forward page="winner.jsp" />
-<% } %>
 </head>
 <body id="questionpage">
 	<a class="accessibility" href="#questions">Zur Fragenauswahl
@@ -52,7 +49,7 @@
 		<table>
 			<tr>
 				<th class="accessibility">Spielername</th>
-				<td class="playername">Black Widow (Du)</td>
+				<td class="playername"><%=jeopardyBean.getUserName()%> (Du)</td>
 			</tr>
 			<tr>
 				<th class="accessibility">Spielerpunkte</th>
@@ -76,7 +73,7 @@
 			</tr>
 		</table>
 		</section>
-		<p id="round">Frage: <%=jeopardyBean.getAskedQuestionCount()%> / 10</p>
+		<p id="round">Fragen: <%=jeopardyBean.getAskedQuestionCount()%> / 10</p>
 		</section>
 		<% 	// neue Frage holen
 			Question q = jeopardyBean.getQuestion();
@@ -84,9 +81,9 @@
 		%>
 		<!-- Question -->
 		<section id="question" aria-labelledby="questionheading">
-		<form action="BigJeopardyServlet" method="post">
+		<form action="BigJeopardyServlet" name="questionForm" method="post">
 			<h2 id="questionheading" class="accessibility">Frage</h2>
-			<p id="questiontype"><%=q.getCategory().getName()%></p>
+			<p id="questiontype"><%=q.getCategory().getName()%> für <%=jeopardyBean.getCurrentEuroValue()%> Eur</p>
 			<p id="questiontext"><%=q.getText()%></p>
 			<ul id="answers">
 				
@@ -104,7 +101,7 @@
 					type="checkbox" /><label class="tile clickable" for="answer_4">
 					<%=jeopardyBean.getCurrentAnswers().get(3).getText()%></label></li>
 			</ul>
-			<input id="timeleftvalue" type="hidden" value="100" /> <input
+			<input id="timeleftvalue" type="hidden" value="100" /> <input id="submitButton"
 				class="greenlink formlink clickable" type="submit" accesskey="s"
 				value="wählen" /> <input type="hidden" value="submitButtonClicked"
 				name="action" />
@@ -156,7 +153,7 @@
                 timeleft.text(secToMMSS(value));
                 
                 if(value <= 0) {
-                    $('#questionform').submit();
+                    $("#submitButton").click();
                 }
             }
             

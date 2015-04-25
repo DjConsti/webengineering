@@ -38,26 +38,27 @@
 	<div role="main">
 		<section id="gameinfo" aria-labelledby="winnerinfoheading">
 		<h2 id="winnerinfoheading" class="accessibility">Gewinnerinformationen</h2>
-		<p class="user-info positive-change">Du hast richtig geantwortet:
-			<%=jeopardyBean.getHumanScoreChange()%> Eur</p>
-		<p class="user-info negative-change">Deadpool hat falsch
-			geantwortet: <%=jeopardyBean.getAiScoreChange()%> Eur</p>
-		<section class="playerinfo leader"
+		<p class="user-info <%=jeopardyBean.getUserCorrectStatus()%>-change">Du hast <%=jeopardyBean.getUserCorrectStatusText()%> geantwortet:
+				<%=jeopardyBean.getUserEuroChangeStatus()%> Eur</p>
+			<p class="user-info <%=jeopardyBean.getAiCorrectStatus()%>-change">Deadpool hat <%=jeopardyBean.getAiCorrectStatusText()%>
+				geantwortet: <%=jeopardyBean.getAiEuroChangeStatus()%> Eur</p>
+				<!-- stylesheet (vergroessern des bildes etc) -->
+		<section class="playerinfo<%=(jeopardyBean.getWinner()?" leader":"")%>" 
 			aria-labelledby="winnerannouncement">
-		<h3 id="winnerannouncement">Gewinner: Black Widow</h3>
+		<h3 id="winnerannouncement"><%=(jeopardyBean.getHumanScore() == jeopardyBean.getAiScore()?"Unentschieden":"Gewinner: ") %><%=(jeopardyBean.getHumanScore()>jeopardyBean.getAiScore()?"Black Widow":"Deadpool")%></h3>
 		<img class="avatar" src="img/avatar/black-widow.png"
 			alt="Spieler-Avatar Black Widow" />
 		<table>
 			<tr>
 				<th class="accessibility">Spielername</th>
-				<td class="playername">Black Widow</td>
+				<td class="playername"><%=jeopardyBean.getUserName()%></td>
 			</tr>
 			<tr>
 				<th class="accessibility">Spielerpunkte</th>
 				<td class="playerpoints"><%=jeopardyBean.getHumanScore()%> Eur</td>
 			</tr>
 		</table>
-		</section> <section class="playerinfo" aria-labelledby="loserheading">
+		</section> <section class="playerinfo <%=(!jeopardyBean.getWinner()?" leader":"")%>" aria-labelledby="loserheading">
 		<h3 id="loserheading" class="accessibility">Verlierer: Deadpool</h3>
 		<img class="avatar" src="img/avatar/deadpool_head.png"
 			alt="Spieler-Avatar Deadpool" />

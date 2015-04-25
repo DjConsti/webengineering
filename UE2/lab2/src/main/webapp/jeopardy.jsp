@@ -50,7 +50,7 @@
 		<table>
 			<tr>
 				<th class="accessibility">Spielername</th>
-				<td class="playername">Black Widow (Du)</td>
+				<td class="playername"><%=jeopardyBean.getUserName()%> (Du)</td>
 			</tr>
 			<tr>
 				<th class="accessibility">Spielerpunkte</th>
@@ -80,17 +80,21 @@
 		<!-- Question -->
 		<section id="question-selection" aria-labelledby="questionheading">
 		<h2 id="questionheading" class="black accessibility">Jeopardy</h2>
-		<p class="user-info positive-change">Du hast richtig geantwortet:
-			+1000 Eur</p>
-		<p class="user-info negative-change">Deadpool hat falsch
-			geantwortet: -500 Eur</p>
-		<p class="user-info">Deadpool hat TUWIEN für Eur 1000 gewählt.</p>
+		<%if(jeopardyBean.getAskedQuestionCount() > 0) {%>
+			<p class="user-info <%=jeopardyBean.getUserCorrectStatus()%>-change">Du hast <%=jeopardyBean.getUserCorrectStatusText()%> geantwortet:
+				<%=jeopardyBean.getUserEuroChangeStatus()%> Eur</p>
+			<p class="user-info <%=jeopardyBean.getAiCorrectStatus()%>-change">Deadpool hat <%=jeopardyBean.getAiCorrectStatusText()%>
+				geantwortet: <%=jeopardyBean.getAiEuroChangeStatus()%> Eur</p>
+		<%}%>
+		<%if(jeopardyBean.hasAiLowerScore()) {%>
+		<p class="user-info">Deadpool hat <%=jeopardyBean.getAiChosenTopic()%> für Eur <%=jeopardyBean.getAiChosenValue()%> gewählt.</p>
+		<%}%>
 		<form action="BigJeopardyServlet" method="post">
 			<fieldset>
 				<legend class="accessibility">Fragenauswahl</legend>
 				<section class="questioncategory" aria-labelledby="tvheading">
 				<h3 id="tvheading" class="tile category-title">
-					<span class="accessibility">Kategorie: </span>TV
+					<span class="accessibility">Kategorie: </span>Web Eng.
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_1" value="1"
@@ -131,7 +135,7 @@
 				</section>
 				<section class="questioncategory" aria-labelledby="webheading">
 				<h3 id="webheading" class="tile category-title">
-					<span class="accessibility">Kategorie: </span>Web
+					<span class="accessibility">Kategorie: </span>Web Tech.
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_10"
@@ -153,7 +157,7 @@
 				</section>
 				<section class="questioncategory" aria-labelledby="sportheading">
 				<h3 id="sportheading" class="tile category-title">
-					<span class="accessibility">Kategorie: </span>Sport
+					<span class="accessibility">Kategorie: </span>Internet
 				</h3>
 				<ol class="category_questions">
 					<li><input name="question_selection" id="question_15"

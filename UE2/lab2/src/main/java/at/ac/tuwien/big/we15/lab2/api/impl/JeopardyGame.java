@@ -1,6 +1,7 @@
 package at.ac.tuwien.big.we15.lab2.api.impl;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -14,8 +15,17 @@ public class JeopardyGame {
 	private Category category;
 	private int humanPlayerScore = 0;
 	private int aiScore = 0;
-	private int humanPlayerScoreChange = 0;
-	private int aiScoreChange = 0;
+	//private int humanPlayerScoreChange = 0;
+	//private int aiScoreChange = 0;
+	private boolean userIsCorrect = false;
+	private boolean aiIsCorrect = false;
+	private int[] euroValues = {100, 200, 500, 750,
+			100, 200, 500, 750, 1000,
+			100, 200, 500, 750, 1000,
+			100, 200, 500, 750,
+			100, 200, 500, 750, 1000};
+	private int currentEuroValue;
+	private String userName;
 
 	public JeopardyGame(List<Question> questions, Category category) {
 		this.questions = questions;
@@ -28,6 +38,11 @@ public class JeopardyGame {
 	 */
 	public void restart() {
 		this.askedQuestions.clear();
+		humanPlayerScore = 0;
+		aiScore = 0;
+		userIsCorrect = false;
+		aiIsCorrect = false;
+		currentEuroValue = 0;
 	}
 
 	public void setQuestions(List<Question> questions) {
@@ -73,39 +88,53 @@ public class JeopardyGame {
 		this.checkAnswers(selectedAnswerIds, correctAnswers, false);
 	}
 
-	public boolean checkAnswers(List<String> selectedAnswerIds,
+	public void checkAnswers(List<String> selectedAnswerIds,
 			List<Answer> correctAnswers, boolean isHuman) {
 		List<Integer> correctAnswerIds = new ArrayList<Integer>();
 		for (Answer answer : correctAnswers) {
 			correctAnswerIds.add(answer.getId());
 		}
-		System.out.println(correctAnswerIds);
-		System.out.println(selectedAnswerIds);
+
 		if (selectedAnswerIds.size() != correctAnswerIds.size()) {
-			System.out.println("Falsch geantwortet");
-			return false;
+			if(isHuman) {
+				userIsCorrect = false;
+				humanPlayerScore -= currentEuroValue/2;
+			}
+			else {
+				aiIsCorrect = false;
+				aiScore -= currentEuroValue/2;
+			}
+			return;
 		}
 
 		for (String selectedAnswerId : selectedAnswerIds) {
 			if (!correctAnswerIds.contains(Integer.valueOf(selectedAnswerId))) {
-				System.out.println("Falsch geantwortet");
-				return false;
+				if(isHuman) {
+					userIsCorrect = false;
+					humanPlayerScore -= currentEuroValue/2;
+				}
+				else {
+					aiIsCorrect = false;
+					aiScore -= currentEuroValue/2;
+				}
+				return;
 			}
 		}
 
 		if (isHuman) {
-			this.humanPlayerScoreChange =this.askedQuestions.get(
+			/*this.humanPlayerScoreChange =this.askedQuestions.get(
 					this.askedQuestions.size() - 1).getValue();
-			this.humanPlayerScore += humanPlayerScoreChange;
+			this.humanPlayerScore += humanPlayerScoreChange;*/
+			humanPlayerScore += currentEuroValue;
+			userIsCorrect = true;
 		}
 		else {
-			this.aiScoreChange = this.askedQuestions.get(
+			/*this.aiScoreChange = this.askedQuestions.get(
 					this.askedQuestions.size() - 1).getValue();
-			this.aiScore += this.aiScoreChange;
+			this.aiScore += this.aiScoreChange;*/
+			aiScore += currentEuroValue;
+			aiIsCorrect = true;
 		}
-
-		System.out.println("Richtig geantwortet");
-		return true;
 	}
 
 	public int getHumanPlayerScore() {
@@ -116,11 +145,96 @@ public class JeopardyGame {
 		return this.aiScore;
 	}
 	
-	public int getHumanPlayerScoreChange() {
+	/*public int getHumanPlayerScoreChange() {
 		return humanPlayerScoreChange;
 	}
 
 	public int getAiScoreChange() {
 		return aiScoreChange;
+	}*/
+	
+	public String getUserCorrectStatus() {
+		if(userIsCorrect)
+			return "positive";
+		else
+			return "negative";
+	}
+	
+	public String getUserCorrectStatusText() {
+		if(userIsCorrect)
+			return "richtig";
+		else
+			return "falsch";
+	}
+	
+	public String getAiCorrectStatus() {
+		if(aiIsCorrect)
+			return "positive";
+		else
+			return "negative";
+	}
+	
+	public String getAiCorrectStatusText() {
+		if(aiIsCorrect)
+			return "richtig";
+		else
+			return "falsch";
+	}
+	
+	public void setCurrentEuroValue(int questionNumber) {
+		currentEuroValue = euroValues[questionNumber-1];
+	}
+	
+	public int getCurrentEuroValue() {
+		return currentEuroValue;
+	}
+	
+	public String getUserEuroChangeStatus() {
+		if(userIsCorrect) {
+			return "+" + currentEuroValue;
+		} else {
+			return "-" + (currentEuroValue/2);
+		}
+	}
+	
+	public String getAiEuroChangeStatus() {
+		if(aiIsCorrect) {
+			return "+" + currentEuroValue;
+		} else {
+			return "-" + (currentEuroValue/2);
+		}
+	}
+	
+	public String getUserName() {
+		return userName;
+	}
+	
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	
+	public String getAiChosenTopic() {
+		List<String> list = new ArrayList<String>();
+		list.add("Web Eng.");
+		list.add("SSD");
+		list.add("Web Tech.");
+		list.add("Internet");
+		list.add("TUWIEN");
+		Collections.shuffle(list);
+		//TODO: shuffle again if already taken
+		return list.get(0);
+	}
+	
+	public int getAiChosenValue() {
+		List<Integer> list = new ArrayList<Integer>();
+		list.add(100);
+		list.add(200);
+		list.add(500);
+		list.add(750);
+		//TODO: if(1000 exists in this category)
+		//list.add(1000);
+		//TODO: shuffle again if already taken
+		Collections.shuffle(list);
+		return list.get(0);
 	}
 }

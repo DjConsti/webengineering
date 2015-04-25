@@ -14,12 +14,7 @@ public class JeopardyBean {
 	private ArrayList<Integer> clickedButtonList;
 
 	public JeopardyBean() {
-		
-	}
-	
-	public void setClickedButtonList(ArrayList<Integer> clickedButtonList)
-	{
-		this.clickedButtonList = clickedButtonList;
+		clickedButtonList = new ArrayList<Integer>();
 	}
 	
 	public void setGame(JeopardyGame game) {
@@ -54,11 +49,21 @@ public class JeopardyBean {
 		return "JeopardyBean";
 	}
 	
+	public void addClickedButton(int id)
+	{
+		this.clickedButtonList.add(id);
+	}
+	
 	public String isClickedButton(int id)
 	{
 		if( this.clickedButtonList.contains(id) )
 			return "disabled=\"disabled\"";
 		else return "";	
+	}
+	
+	public ArrayList<Integer> getClickedButtonList()
+	{
+		return this.clickedButtonList;
 	}
 	
 	public int getHumanScore()
@@ -71,7 +76,7 @@ public class JeopardyBean {
 		return game.getAiScore();
 	}
 	
-	public int getHumanScoreChange()
+	/*public int getHumanScoreChange()
 	{
 		return game.getHumanPlayerScoreChange();
 	}
@@ -79,6 +84,66 @@ public class JeopardyBean {
 	public int getAiScoreChange()
 	{
 		return game.getAiScoreChange();
-	}
+	}*/
 
+	/**
+	 * Wenn der Mensch gewonnen hat, liefert die Methode
+	 * true zurueck, sonst falsch.
+	 * 
+	 */
+	public boolean getWinner()
+	{
+		if(this.getHumanScore() > this.getAiScore())
+			return true;
+
+		return false;
+	}
+	
+	public String getUserCorrectStatus() {
+		return game.getUserCorrectStatus();
+	}
+	
+	public String getUserCorrectStatusText() {
+		return game.getUserCorrectStatusText();
+	}
+	
+	public String getAiCorrectStatus() {
+		return game.getAiCorrectStatus();
+	}
+	
+	public String getAiCorrectStatusText() {
+		return game.getAiCorrectStatusText();
+	}
+	
+	public int getCurrentEuroValue() {
+		return game.getCurrentEuroValue();
+	}
+	
+	public String getUserEuroChangeStatus() {
+		return game.getUserEuroChangeStatus();
+	}
+	
+	public String getAiEuroChangeStatus() {
+		return game.getAiEuroChangeStatus();
+	}
+	
+	public boolean hasAiLowerScore() {
+		return game.getAiScore() < game.getHumanPlayerScore();
+	}
+	
+	public String getAiChosenTopic() {
+		return game.getAiChosenTopic();
+	}
+	
+	public int getAiChosenValue() {
+		return game.getAiChosenValue();
+	}
+	
+	public String getUserName() {
+		return game.getUserName();
+	}
+	
+	public void setUserName(String userName) {
+		game.setUserName(userName);
+	}
 }
