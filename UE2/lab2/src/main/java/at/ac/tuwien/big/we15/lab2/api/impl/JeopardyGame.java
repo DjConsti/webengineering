@@ -227,7 +227,7 @@ public class JeopardyGame {
 				!this.clickedButtonList.contains(2)||
 				!this.clickedButtonList.contains(3)||
 				!this.clickedButtonList.contains(4)) {
-			list.add("Internet");
+			list.add("Web Eng.");
 		}
 		if (!this.clickedButtonList.contains(5)||
 				!this.clickedButtonList.contains(6)||
@@ -241,13 +241,13 @@ public class JeopardyGame {
 				!this.clickedButtonList.contains(12)||
 				!this.clickedButtonList.contains(13)||
 				!this.clickedButtonList.contains(14)) {
-			list.add("Web Eng.");
+			list.add("Web Tech.");
 		}
 		if (!this.clickedButtonList.contains(15)||
 				!this.clickedButtonList.contains(16)||
 				!this.clickedButtonList.contains(17)||
 				!this.clickedButtonList.contains(18)) {
-			list.add("Web Tech.");
+			list.add("Internet");
 		}
 		if (!this.clickedButtonList.contains(19)||
 				!this.clickedButtonList.contains(20)||
@@ -258,13 +258,13 @@ public class JeopardyGame {
 		}
 		Collections.shuffle(list);
 		String chosen = list.get(0);
-		if (chosen.equals("Internet")) {
+		if (chosen.equals("Web Eng.")) {
 			chosenCategory = 1;
 		} else if (chosen.equals("SSD")) {
 			chosenCategory = 2;
 		} else if (chosen.equals("Web Tech.")) {
 			chosenCategory = 3;
-		} else if (chosen.equals("Web Eng.")) {
+		} else if (chosen.equals("Internet")) {
 			chosenCategory = 4;
 		} else if (chosen.equals("TUWIEN")) {
 			chosenCategory = 5;
@@ -358,6 +358,7 @@ public class JeopardyGame {
 			break;
 		}
 		Collections.shuffle(list);
+		
 		return list.get(0);
 	}
 }
