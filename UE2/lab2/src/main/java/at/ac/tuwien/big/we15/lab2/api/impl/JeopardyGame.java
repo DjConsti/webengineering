@@ -70,12 +70,10 @@ public class JeopardyGame {
 	public Question getQuestion() {
 		// TODO teilweise sind nicht 10 Fragen in questions ... deshalb
 		// haengt hoert es dann nicht auf zu laden
-		Random random = new Random();
 
 		Question question = null;
 		do {
-			int randomQuestionNumber = Math.abs(random.nextInt())
-					% questions.size();
+			int randomQuestionNumber = (int)(Math.random()*questions.size());
 			question = questions.get(randomQuestionNumber);
 			// System.out.println("xxx" + randomQuestionNumber + " " +
 			// questions.size());
@@ -271,7 +269,6 @@ public class JeopardyGame {
 		} else if (chosen.equals("TUWIEN")) {
 			chosenCategory = 5;
 		}
-		System.out.println("category:"+ chosen);
 		return chosen;
 	}
 	
@@ -361,7 +358,6 @@ public class JeopardyGame {
 			break;
 		}
 		Collections.shuffle(list);
-		System.out.println("categoryval:"+ list.get(0));
 		return list.get(0);
 	}
 }
