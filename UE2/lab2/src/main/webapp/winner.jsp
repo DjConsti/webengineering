@@ -45,7 +45,7 @@
 				<!-- stylesheet (vergroessern des bildes etc) -->
 		<section class="playerinfo<%=(jeopardyBean.getWinner()?" leader":"")%>" 
 			aria-labelledby="winnerannouncement">
-		<h3 id="winnerannouncement"><%=(jeopardyBean.getHumanScore() == jeopardyBean.getAiScore()?"Unentschieden":"Gewinner: ") %><%=(jeopardyBean.getHumanScore()>jeopardyBean.getAiScore()?"Black Widow":"Deadpool")%></h3>
+		<h3 id="winnerannouncement"><%=(jeopardyBean.getHumanScore() == jeopardyBean.getAiScore()?"Unentschieden":"Gewinner: ") %><%=(jeopardyBean.getHumanScore()>jeopardyBean.getAiScore()?jeopardyBean.getUserName():"Deadpool")%></h3>
 		<img class="avatar" src="img/avatar/black-widow.png"
 			alt="Spieler-Avatar Black Widow" />
 		<table>
