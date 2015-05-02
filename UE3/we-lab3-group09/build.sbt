@@ -10,5 +10,11 @@ libraryDependencies ++= Seq(
   javaJdbc,
   javaEbean,
   cache,
-  javaWs
+  javaWs,
+  "org.hibernate" % "hibernate-entitymanager" % "4.3.1.Final",
+  "com.google.code.gson" % "gson" % "2.2"
 )
+
+templatesImport += "scala.collection._"
+
+templatesImport += "at.ac.tuwien.big.we15.lab2.api._"
