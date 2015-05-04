@@ -10,7 +10,6 @@ import views.html.*;
 public class Application extends Controller {
 
 	public static Result index() {
-		jeopardy2.render("string");
 		return redirect("authentication");
 	}
 
