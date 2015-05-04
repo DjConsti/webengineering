@@ -198,3 +198,10 @@ footer {
    clear: both;
    text-align: center;
 }
+
+
+#loginFailed {
+	padding-top: 10px;
+	color: red;
+	text-align: center;
+}
