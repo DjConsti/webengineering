@@ -7,18 +7,21 @@ GET     /                         controllers.Application.index()
 
 
 GET     /authentication           controllers.Application.auth()
+# formular von login gedrueckt
+POST    /authentication           controllers.Application.login()
 
 GET     /jeopardy	              controllers.Application.jeopardy()
 # wenn waehlen button geklickt wurde
-GET 	/question				  controllers.Application.chooseQuestion()
+POST 	/question				  controllers.Application.chooseQuestion()
 
 GET     /question           	  controllers.Application.question()
+POST     /jeopardy           	  controllers.Application.commitAnswer()
 
 GET     /registration             controllers.Application.registration()
 
 GET     /winner                   controllers.Application.winner()
 
-POST    /authentication           controllers.Application.login()
+
 
 POST 	/registration			  controllers.Application.completeReg()
 
