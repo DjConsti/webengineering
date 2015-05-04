@@ -51,6 +51,11 @@ public class Application extends Controller {
 		return redirect("jeopardy");
 
 	}
+	
+	public static Result chooseQuestion()
+	{
+		return ok(question.render());
+	}
 
 	public static Result auth() {
 		return ok(authentication.render(Form.form(Login.class)));
