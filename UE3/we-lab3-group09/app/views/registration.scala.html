@@ -1,9 +1,8 @@
+@(form:Form[model.Register])
+
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<html charset="UTF-8">
     <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Business Informatics Group Jeopardy! - Registrieren</title>
         <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/base.css")" />
         <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/screen.css")" />
@@ -20,21 +19,22 @@
          </h1>
       </header>
       
-      <!-- Navigation -->
+      <!-- Navigation
 		<nav role="navigation" aria-labelledby="navheading">
 			<h2 id="navheading" class="accessibility">Navigation</h2>
 			<ul>
 				<li><a class="orangelink navigationlink" id="loginlink" title="Klicke hier um dich anzumelden" href="login.xhtml" accesskey="l">Anmelden</a></li>
 			</ul>
-		</nav>
+		</nav>  -->
       
       <!-- Content -->
       <div id="register" role="main"> 
             <!-- Register section -->
             <h2 id="registerheading" class="accessibility">Registrierung</h2>
-            <form action="login.xhtml" method="post">
+            
+            @helper.form(action = routes.Application.completeReg()) {
                 <fieldset>
-                    <legend>Persönliche Daten</legend>
+                    <legend>Pers&ouml;nliche Daten</legend>
                     <label for="firstname">Vorname:</label>
                     <input id="firstname" type="text" name="firstname"/>
                     
@@ -48,12 +48,11 @@
                     <label>Geschlecht:</label>
                     <fieldset class="inputset">
                         <input type="radio" name="gender" id="male" value="m" checked="checked" />
-                        <label for="male">Männlich</label>
+                        <label for="male">M&auml;nnlich</label>
                         <input type="radio" name="gender" id="female" value="f" />
                         <label for="female">Weiblich</label>
                     </fieldset>
-                    
-                    
+               
                 </fieldset>
                 <fieldset>
                     <legend>Spielerdaten</legend>
@@ -113,11 +112,11 @@
                     <input class="greenlink formlink" type="submit" value="Registrieren" accesskey="s"/>
                     <p id="requiredhint">Mit "*" gekennzeichnete Felder sind Pflichtfelder</p>
                 </fieldset>
-            </form>
+            	}
         </div>
 
         <!-- Footer -->
-        <footer role="contentinfo">© 2015 BIG Jeopardy</footer>
+        <footer role="contentinfo">&copy; 2015 BIG Jeopardy</footer>
         
         <script type="text/javascript">
             //<![CDATA[

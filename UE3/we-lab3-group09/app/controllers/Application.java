@@ -3,14 +3,33 @@ package controllers;
 import javax.naming.AuthenticationException;
 
 import model.Login;
+import model.Register;
 import play.data.*;
 import play.mvc.*;
 import views.html.*;
+import at.ac.tuwien.big.we15.lab2.api.*;
 
 public class Application extends Controller {
 
 	public static Result index() {
+		
 		return redirect("authentication");
+	}
+	
+	public static Result completeReg(){
+		Form<Register> registerForm = Form.form(Register.class).bindFromRequest();
+		
+		try {
+			if (registerForm.hasErrors()) {
+				return badRequest(registration.render(registerForm));
+			}
+		} catch (Exception e) {
+			return badRequest(registration.render(registerForm));
+		}
+
+		Register registerData = registerForm.get();
+		System.out.println("Register/User: " + registerData.getUsername());
+		return ok(registration.render(Form.form(Register.class)));
 	}
 
 	public static Result login() {
@@ -46,7 +65,7 @@ public class Application extends Controller {
 	}
 
 	public static Result registration() {
-		return ok(registration.render());
+		return ok(registration.render(Form.form(Register.class)));
 	}
 
 	public static Result winner() {
