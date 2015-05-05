@@ -1,5 +1,8 @@
 package models;
 
+import views.html.authentication;
+import controllers.Application;
+
 public class Login {
 	public String username;
 	public String password;
@@ -19,11 +22,17 @@ public class Login {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
+	
 	public String validate() {
-		if (username.equals("test") && password.equals("test")) {
+
+		if(Application.fetchUser(username) != null) {
+			System.out.println("Login erfolgreich");
+			Application.session().clear();
 			return null;
+		} else {
+			System.err.println("Diesen User gibt es nicht!");
 		}
+		
 		return "Invalid user or password";
 	}
 }

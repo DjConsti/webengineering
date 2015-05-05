@@ -15,28 +15,32 @@ import views.html.*;
 import at.ac.tuwien.big.we15.lab2.api.*;
 
 public class Application extends Controller {
-	
+
 	public static Result index() {
-		
+
 		return redirect("authentication");
 	}
-	
+
 	@play.db.jpa.Transactional
 	public static void storeUser(UserImpl user) {
 		EntityManager em = JPA.em();
 		em.persist(user);
 	}
-	
+
 	@play.db.jpa.Transactional
 	public static UserImpl fetchUser(String username) {
 		EntityManager em = JPA.em();
+		if (em.find(UserImpl.class, username) != null) {
+			System.out.println("ERROR NULL");
+		}
 		return em.find(UserImpl.class, username);
 	}
 
 	@play.db.jpa.Transactional
-	public static Result completeReg(){
-		Form<Register> registerForm = Form.form(Register.class).bindFromRequest();
-		
+	public static Result completeReg() {
+		Form<Register> registerForm = Form.form(Register.class)
+				.bindFromRequest();
+
 		try {
 			if (registerForm.hasErrors()) {
 				return badRequest(registration.render(registerForm));
@@ -46,7 +50,7 @@ public class Application extends Controller {
 		}
 
 		Register registerData = registerForm.get();
-		
+
 		UserImpl user = new UserImpl();
 		user.setFirstname(registerData.getFirstname());
 		user.setLastname(registerData.getLastname());
@@ -56,42 +60,32 @@ public class Application extends Controller {
 		user.setBirthdate(registerData.getBirthdate());
 		user.setGender(registerData.getGender());
 		storeUser(user);
-		
+
 		System.out.println("Register/User: " + registerData.getUsername());
-		return ok(registration.render(Form.form(Register.class)));
+		return redirect("authentication");
 	}
 
 	@play.db.jpa.Transactional
 	public static Result login() {
-		Form<Login> loginForm = Form.form(Login.class).bindFromRequest();
-		System.out.println("User: " + loginForm.get().username);
-		try {	
+		Form<Login> loginForm;
+
+		loginForm = Form.form(Login.class).bindFromRequest();
+		try {
 			if (loginForm.hasErrors()) {
 				return badRequest(authentication.render(loginForm));
-			}else
-			{
-				Login loginData = loginForm.get();
-
-				if(fetchUser(loginData.username) != null) {
-					System.out.println("Login erfolgreich");
-					session().clear();
-				} else {
-					System.out.println("Diesen User gibt es nicht!");
-				}
-
-				session("user", loginData.username);
-				return redirect("jeopardy");
 			}
 		} catch (Exception e) {
 			return badRequest(authentication.render(loginForm));
 		}
+		
+		session("user", loginForm.get().username);
+		return ok(jeopardy.render());
 	}
-	
-	
+
 	public static Result auth() {
 		return ok(authentication.render(Form.form(Login.class)));
 	}
-	
+
 	public static Result registration() {
 		return ok(registration.render(Form.form(Register.class)));
 	}
