@@ -15,7 +15,7 @@ public class Secured extends Security.Authenticator {
 
     @Override
     public String getUsername(Context curr) {
-    	System.err.println("GETUSERNAME CALLED" + curr.session().get("user"));
+    	// System.err.println("GETUSERNAME CALLED" + curr.session().get("user"));
         return curr.session().get("user");
     }
 
