@@ -20,16 +20,19 @@ public class Application extends Controller {
 	@play.db.jpa.Transactional
 	public static Result index() {
 		// TODO die 4 zeilen vor abgabe löschen!!!
-		EntityManager em = JPA.em();
-		UserImpl testUser = new UserImpl();
-		testUser.setFirstname("");
-		testUser.setLastname("");
-		testUser.setAvatar("");
-		testUser.setBirthdate(new Date());
-		testUser.setGender("");
-		testUser.setUsername("test"); testUser.setPassword("test");
-		storeUser(testUser);
 		
+		if(fetchUser("test")==null)
+		{
+			System.err.println("adding user");
+			UserImpl testUser = new UserImpl();
+			testUser.setFirstname("");
+			testUser.setLastname("");
+			testUser.setAvatar("");
+			testUser.setBirthdate(new Date());
+			testUser.setGender("");
+			testUser.setUsername("test"); testUser.setPassword("test");
+			storeUser(testUser);
+		}
 		return redirect("authentication");
 	}
 
@@ -42,8 +45,9 @@ public class Application extends Controller {
 	@play.db.jpa.Transactional
 	public static UserImpl fetchUser(String username) {
 		EntityManager em = JPA.em();
-		if (em.find(UserImpl.class, username) != null) {
+		if (em.find(UserImpl.class, username) == null) {
 			System.out.println("ERROR NULL");
+			return null;
 		}
 		return em.find(UserImpl.class, username);
 	}
