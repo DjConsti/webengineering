@@ -15,11 +15,14 @@ GET     /jeopardy	              controllers.SecuredArea.jeopardy()
 POST 	/question				  controllers.SecuredArea.chooseQuestion()
 
 GET     /question           	  controllers.SecuredArea.question()
-POST     /jeopardy           	  controllers.SecuredArea.commitAnswer()
+POST    /jeopardy           	  controllers.SecuredArea.commitAnswer()
 
 GET     /registration             controllers.Application.registration()
 
 GET     /winner                   controllers.SecuredArea.winner()
+
+#wenn methode in scala aufgerufen wird, wird man zu logout verlinkt
+GET 	/logout  			  	  controllers.SecuredArea.logout()
 
 
 POST 	/registration			  controllers.Application.completeReg()

@@ -3,7 +3,6 @@ package controllers;
 import play.*;
 import play.mvc.*;
 import play.mvc.Http.*;
-
 import models.*;
 /**
  * Diese Klasse kümmert sich um die Authentifikation in der Session
@@ -15,7 +14,7 @@ public class Secured extends Security.Authenticator {
 
     @Override
     public String getUsername(Context curr) {
-    	// System.err.println("GETUSERNAME CALLED" + curr.session().get("user"));
+    	System.err.println("Current user: " + curr.session().get("user"));
         return curr.session().get("user");
     }
 
