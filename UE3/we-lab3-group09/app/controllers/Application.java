@@ -1,5 +1,7 @@
 package controllers;
 
+import java.util.Date;
+
 import javax.naming.AuthenticationException;
 import javax.persistence.EntityManager;
 
@@ -15,9 +17,19 @@ import views.html.*;
 import at.ac.tuwien.big.we15.lab2.api.*;
 
 public class Application extends Controller {
-
+	@play.db.jpa.Transactional
 	public static Result index() {
-
+		// TODO die 4 zeilen vor abgabe löschen!!!
+		EntityManager em = JPA.em();
+		UserImpl testUser = new UserImpl();
+		testUser.setFirstname("");
+		testUser.setLastname("");
+		testUser.setAvatar("");
+		testUser.setBirthdate(new Date());
+		testUser.setGender("");
+		testUser.setUsername("test"); testUser.setPassword("test");
+		storeUser(testUser);
+		
 		return redirect("authentication");
 	}
 

@@ -1,5 +1,5 @@
-New log file opened at Tue May 05 22:14:36 CEST 2015 by 6288@amd6x-PC
-jvm 6288@amd6x-PC
+New log file opened at Tue May 05 22:22:47 CEST 2015 by 4928@amd6x-PC
+jvm 4928@amd6x-PC
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project, returning: (we-lab3-group09-build)
 Loading project definition from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@50bb6402, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3393d1b0, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to we-lab3-group09 (in build file:/C:/xampp/htdocs/webengine
 > server-handle-next-server-request
 > {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@269a96f0, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4fd86f2, check cycles: false
 Read from stdout: Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root...
 Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root...
 Other repositories:
@@ -82,7 +82,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.1 ...
 Resolving org.scala-lang#scala-library;2.11.1 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@712afb5e
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48f8ed0e
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1
 	found org.scala-lang#scala-library;2.11.1 in sbt-chain
 	[2.11.1] org.scala-lang#scala-library;2.11.1
@@ -590,7 +590,7 @@ sbt-chain: module revision found in cache: javax.transaction#jta;1.1
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->default(compile)]
 Read from stdout: Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
 Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b59c9f2
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13fb982
 sbt-chain: module revision found in cache: com.typesafe.play#play-java_2.11;2.3.8
 	found com.typesafe.play#play-java_2.11;2.3.8 in sbt-chain
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->runtime]
@@ -7304,7 +7304,7 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 4640ms :: artifacts dl 139ms
+:: resolution report :: resolve 4641ms :: artifacts dl 136ms
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT compile produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-compile.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT runtime produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-runtime.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT test produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-test.xml
@@ -7319,22 +7319,22 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT pom produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-pom.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT scala-tool produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-scala-tool.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT fork-run produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-fork-run.xml
-	resolve done (4640ms resolve - 139ms download)
+	resolve done (4641ms resolve - 136ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 6 s, completed 05.05.2015 22:15:23
+Total time: 6 s, completed 05.05.2015 22:24:23
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@48829fcf, check cycles: false
-Total time: 0 s, completed 05.05.2015 22:15:24
+Running task... Cancel: sbt.server.ServerTaskCancellation@5ea67f1c, check cycles: false
+Total time: 0 s, completed 05.05.2015 22:24:24
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@f5ae281, check cycles: false
-Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\controllers\Application.class: stamp changed from lastModified(1430856751590) to lastModified(1430856819027)
+Running task... Cancel: sbt.server.ServerTaskCancellation@75a5bed0, check cycles: false
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\controllers\Application.class: stamp changed from lastModified(1430857328107) to lastModified(1430857355503)
 
 Initial source changes: 
 	removed:Set()
@@ -7353,10 +7353,10 @@ All initially invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab
 
 Read from stdout: Compiling 2 Java sources to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
 Compiling 2 Java sources to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2b756b9e directly...
-Java compilation took 1.025316595 s
-Java analysis took 0.107338997 s
-Java compile + analysis took 1.148160406 s
+Attempting to call com.sun.tools.javac.api.JavacTool@30e04a7e directly...
+Java compilation took 1.003385541 s
+Java analysis took 0.107035475 s
+Java compile + analysis took 1.126199732 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
@@ -7370,13 +7370,13 @@ Copy resource mappings:
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\routes,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\routes)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF\persistence.xml,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 2 s, completed 05.05.2015 22:15:27
+Total time: 2 s, completed 05.05.2015 22:24:26
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2b51783b, check cycles: false
-Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\controllers\Application.class: stamp changed from lastModified(1430856819027) to lastModified(1430856927268)
+Running task... Cancel: sbt.server.ServerTaskCancellation@333ccc8c, check cycles: false
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\controllers\Application.class: stamp changed from lastModified(1430857355503) to lastModified(1430857466133)
 
 Initial source changes: 
 	removed:Set()
@@ -7395,10 +7395,10 @@ All initially invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab
 
 Read from stdout: Compiling 2 Java sources to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
 Compiling 2 Java sources to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@46761b6e directly...
-Java compilation took 0.216256304 s
-Java analysis took 0.019283105 s
-Java compile + analysis took 0.247324077 s
+Attempting to call com.sun.tools.javac.api.JavacTool@eb8f763 directly...
+Java compilation took 0.200606311 s
+Java analysis took 0.019307972 s
+Java compile + analysis took 0.231879966 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
@@ -7412,6 +7412,6 @@ Copy resource mappings:
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\routes,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\routes)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF\persistence.xml,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 1 s, completed 05.05.2015 22:16:52
+Total time: 1 s, completed 05.05.2015 22:26:22
 > server-post-command-cleanup
 > server-handle-next-server-request
