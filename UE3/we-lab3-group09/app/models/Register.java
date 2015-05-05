@@ -3,103 +3,71 @@ package models;
 import java.util.Date;
 
 public class Register {
-	public String firstname;
-	public String lastname;
-	public Date birthdate;
-	public String avatar; // public AVATARS_ENU ...
-	public String gender;
-	public String username;
-	public String password;
+	private UserImpl user;
 	
-
+	public Register() {
+		user = new UserImpl();
+	}
 	
 	public String getFirstname() {
-		return firstname;
+		return user.getFirstname();
 	}
-
-
 
 	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+		user.setFirstname(firstname);
 	}
-
-
 
 	public String getLastname() {
-		return lastname;
+		return user.getLastname();
 	}
-
-
 
 	public void setLastname(String lastname) {
-		this.lastname = lastname;
+		user.setLastname(lastname);
 	}
-
-
 
 	public Date getBirthdate() {
-		return birthdate;
+		return user.getBirthdate();
 	}
-
-
 
 	public void setBirthdate(Date birthdate) {
-		this.birthdate = birthdate;
+		user.setBirthdate(birthdate);
 	}
-
-
 
 	public String getAvatar() {
-		return avatar;
+		return user.getAvatar();
 	}
-
-
 
 	public void setAvatar(String avatar) {
-		this.avatar = avatar;
+		user.setAvatar(avatar);
 	}
-
-
-
+	
 	public String getGender() {
-		return gender;
+		return user.getGender();
 	}
-
-
 
 	public void setGender(String gender) {
-		this.gender = gender;
+		user.setGender(gender);
 	}
-
-
 
 	public String getUsername() {
-		return username;
+		return user.getUsername();
 	}
-
-
 
 	public void setUsername(String username) {
-		this.username = username;
+		user.setUsername(username);
 	}
-
-
 
 	public String getPassword() {
-		return password;
+		return user.getPassword();
 	}
-
-
 
 	public void setPassword(String password) {
-		this.password = password;
+		user.setPassword(password);
 	}
-
-
 
 	public String validate() {
 		if (true) {
-			// TODO hier überprüfen ob die register daten OK sind
+			// TODO hier Ã¼berprÃ¼fen ob die register daten OK sind
 			return null;
 		}
 		return "Invalid user or password";
