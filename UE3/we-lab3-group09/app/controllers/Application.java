@@ -5,6 +5,7 @@ import javax.naming.AuthenticationException;
 import ch.qos.logback.core.Context;
 import models.Login;
 import models.Register;
+import play.Routes;
 import play.data.*;
 import play.mvc.*;
 import views.html.*;
@@ -34,11 +35,11 @@ public class Application extends Controller {
 		return ok(registration.render(Form.form(Register.class)));
 	}
 
-	@Security.Authenticated(Secured.class)
+
 	public static Result login() {
 		Form<Login> loginForm = Form.form(Login.class).bindFromRequest();
-
-		try {
+		System.out.println("User: " + loginForm.get().username);
+		try {	
 			if (loginForm.hasErrors()) {
 				return badRequest(authentication.render(loginForm));
 			}else
@@ -93,6 +94,7 @@ public class Application extends Controller {
 		return ok(jeopardy.render());
 	}
 	
+	
 	public static Result auth() {
 		return ok(authentication.render(Form.form(Login.class)));
 	}
@@ -100,6 +102,7 @@ public class Application extends Controller {
 	public static Result jeopardy() {
 		return ok(jeopardy.render());
 	}
+	
 	@Security.Authenticated(Secured.class)
 	public static Result question() {
 		return ok(question.render());
@@ -108,6 +111,7 @@ public class Application extends Controller {
 	public static Result registration() {
 		return ok(registration.render(Form.form(Register.class)));
 	}
+	
 	@Security.Authenticated(Secured.class)
 	public static Result winner() {
 		return ok(winner.render());
