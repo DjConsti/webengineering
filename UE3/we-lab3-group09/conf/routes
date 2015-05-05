@@ -10,17 +10,16 @@ GET     /authentication           controllers.Application.auth()
 # formular von login gedrueckt
 POST    /authentication           controllers.Application.login()
 
-GET     /jeopardy	              controllers.Application.jeopardy()
+GET     /jeopardy	              controllers.SecuredArea.jeopardy()
 # wenn waehlen button geklickt wurde
-POST 	/question				  controllers.Application.chooseQuestion()
+POST 	/question				  controllers.SecuredArea.chooseQuestion()
 
-GET     /question           	  controllers.Application.question()
-POST     /jeopardy           	  controllers.Application.commitAnswer()
+GET     /question           	  controllers.SecuredArea.question()
+POST     /jeopardy           	  controllers.SecuredArea.commitAnswer()
 
 GET     /registration             controllers.Application.registration()
 
-GET     /winner                   controllers.Application.winner()
-
+GET     /winner                   controllers.SecuredArea.winner()
 
 
 POST 	/registration			  controllers.Application.completeReg()

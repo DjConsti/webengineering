@@ -35,7 +35,6 @@ public class Application extends Controller {
 		return ok(registration.render(Form.form(Register.class)));
 	}
 
-
 	public static Result login() {
 		Form<Login> loginForm = Form.form(Login.class).bindFromRequest();
 		System.out.println("User: " + loginForm.get().username);
@@ -55,65 +54,15 @@ public class Application extends Controller {
 		} catch (Exception e) {
 			return badRequest(authentication.render(loginForm));
 		}
-
-
-
-	}
-	
-	@Security.Authenticated(Secured.class)
-	public static Result chooseQuestion()
-	{
-		// selected question id
-		int questionId =  -1;
-		try{
-		questionId = Integer.parseInt(request().body().asFormUrlEncoded().get("question_selection")[0]);
-		}catch(Exception e) { 
-			System.err.println("USERERROR: INVALID QUESTION SELECT NUMBER");
-			return ok(jeopardy.render());
-		}
-		System.out.println("Selected Question ID: " + questionId);
-		
-		return ok(question.render());
-	}
-	@Security.Authenticated(Secured.class)
-	public static Result commitAnswer()
-	{
-		System.out.println("NUMBER OF SELECTED ANSWERS: " + request().body().asFormUrlEncoded().get("answers").length);
-		
-		int [] selectedAnswers = new int[request().body().asFormUrlEncoded().get("answers").length];
-		
-		for(int i = 0; i < request().body().asFormUrlEncoded().get("answers").length; i++)
-		{
-			selectedAnswers[i] = Integer.parseInt(request().body().asFormUrlEncoded().get("answers")[i]);
-		}
-		
-		// TODO in selectedAnswers sind nun die ID enthalten, von den Fragen, die ausgewählt wurden
-		// jetzt muss noch die Logik entsprechend implementiert werden.
-		
-		
-		return ok(jeopardy.render());
 	}
 	
 	
 	public static Result auth() {
 		return ok(authentication.render(Form.form(Login.class)));
 	}
-	@Security.Authenticated(Secured.class)
-	public static Result jeopardy() {
-		return ok(jeopardy.render());
-	}
-	
-	@Security.Authenticated(Secured.class)
-	public static Result question() {
-		return ok(question.render());
-	}
 	
 	public static Result registration() {
 		return ok(registration.render(Form.form(Register.class)));
 	}
-	
-	@Security.Authenticated(Secured.class)
-	public static Result winner() {
-		return ok(winner.render());
-	}
+
 }
