@@ -1,5 +1,6 @@
 package models;
 
+import java.util.Comparator;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -9,7 +10,7 @@ import at.ac.tuwien.big.we15.lab2.api.Avatar;
 import play.data.validation.Constraints.Required;
 
 @Entity
-public class UserImpl {
+public class UserImpl implements Comparable<UserImpl> {
 	
 	private String firstname;
 	private String lastname;
@@ -79,5 +80,12 @@ public class UserImpl {
 		this.password = password;
 	}
 
+	@Override
+	public int compareTo(UserImpl arg0) {
+		if(this.username == arg0.username)
+			return 0;
+		else
+			return -1;
+	}
 	
 }

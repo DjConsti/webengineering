@@ -83,7 +83,7 @@ public class Application extends Controller {
 
 
 		System.out.println("Register/User: " + registerData.getUsername());
-		return ok(registration.render(Form.form(Register.class)));
+		return redirect("authentication");
 	}
 
 	@play.db.jpa.Transactional
@@ -100,7 +100,7 @@ public class Application extends Controller {
 		}
 		
 		session("user", loginForm.get().username);
-		GameController.games.put(fetchUser(loginForm.get().username), new GameController(fetchUser(loginForm.get().username)));
+		GameController.games.put(loginForm.get().username, new GameController(fetchUser(loginForm.get().username)));
 		return ok(jeopardy.render());
 	}
 

@@ -30,7 +30,8 @@ public class SecuredArea extends Controller{
 	public static Result chooseQuestion()
 	{
 		String username = session().get("user");
-		GameController gamectrl = controller.games.get(Application.fetchUser(username));
+		System.out.println("Username: " + username);
+		GameController gamectrl = controller.games.get(username);
 		// selected question id
 		int questionId =  -1;
 		try{
@@ -39,7 +40,7 @@ public class SecuredArea extends Controller{
 			System.err.println("USERERROR: INVALID QUESTION SELECT NUMBER");
 			return ok(jeopardy.render());
 		}
-		System.out.println("Selected Question ID: " + questionId);
+		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
 		
 		gamectrl.getGame().chooseHumanQuestion(questionId);
 		
@@ -49,7 +50,7 @@ public class SecuredArea extends Controller{
 	public static Result commitAnswer()
 	{
 		String username = session().get("user");
-		GameController gamectrl = controller.games.get(Application.fetchUser(username));
+		GameController gamectrl = controller.games.get(username);
 		
 		System.out.println("NUMBER OF SELECTED ANSWERS: " + request().body().asFormUrlEncoded().get("answers").length);
 		
