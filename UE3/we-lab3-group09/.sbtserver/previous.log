@@ -1,22 +1,40 @@
+<<<<<<< HEAD
 New log file opened at Wed May 06 13:12:15 CEST 2015 by 4048@amd6x-PC
 jvm 4048@amd6x-PC
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+=======
+New log file opened at Wed May 06 16:25:43 CEST 2015 by 524@Max
+jvm 524@Max
+jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=23.7-b01
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.7
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:PermSize=64m, -XX:MaxPermSize=256m]
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 Starting event engine
 Starting sbt command engine
 Waiting for sbt command engine
 Command engine arguments=List()
+<<<<<<< HEAD
 Command engine baseDirectory=C:\xampp\htdocs\webengineering\UE3\we-lab3-group09
+=======
+Command engine baseDirectory=C:\delete\webengineering\UE3\we-lab3-group09
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
 > onFailure load-failed
 > boot
 > reload
+<<<<<<< HEAD
 [Loading] Scanning directory C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project
 [Loading] Found non-root projects 
 [Loading] Done in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project, returning: ()
+=======
+[Loading] Scanning directory C:\delete\webengineering\UE3\we-lab3-group09\project
+[Loading] Found non-root projects 
+[Loading] Done in C:\delete\webengineering\UE3\we-lab3-group09\project, returning: ()
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
 sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
@@ -25,9 +43,15 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+<<<<<<< HEAD
 [Loading] Done in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project, returning: (we-lab3-group09-build)
 Loading project definition from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project
 Running task... Cancel: sbt.TaskCancellationStrategy$Null$@7658d511, check cycles: false
+=======
+[Loading] Done in C:\delete\webengineering\UE3\we-lab3-group09\project, returning: (we-lab3-group09-build)
+Loading project definition from C:\delete\webengineering\UE3\we-lab3-group09\project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@a22f37, check cycles: false
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 
 Initial source changes: 
 	removed:Set()
@@ -46,7 +70,11 @@ All initially invalidated sources: Set()
 
 Copy resource mappings: 
 	
+<<<<<<< HEAD
 [Loading] Scanning directory C:\xampp\htdocs\webengineering\UE3\we-lab3-group09
+=======
+[Loading] Scanning directory C:\delete\webengineering\UE3\we-lab3-group09
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 [Loading] Found root project root w/ remaining 
 deducing auto plugins based on known facts Set(Atom(play.PlayJava), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.Play),Set(Atom(com.typesafe.sbt.webdriver.SbtWebDriver))), Clause(Atom(play.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.PlayJava),Set(Atom(play.Play))), Clause(Atom(play.PlayScala),Set(Atom(play.Play))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.webdriver.SbtWebDriver),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.webdriver.SbtWebDriver))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,play.PlayJava,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,com.typesafe.sbt.jse.SbtJsTask,play.twirl.sbt.SbtTwirl,com.typesafe.sbt.webdriver.SbtWebDriver,com.typesafe.sbt.jshint.SbtJSHint,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,com.typesafe.sbt.digest.SbtDigest,play.sbt.forkrun.PlayForkRun)
@@ -58,6 +86,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, play.PlayJava, sbt.plugins.Interaction
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play) not found List(play.PlayJava, play.sbt.forkrun.PlayForkRun)
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play, play.PlayJava, play.sbt.forkrun.PlayForkRun) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play, play.PlayJava, play.sbt.forkrun.PlayForkRun)
+<<<<<<< HEAD
 [Loading] Done in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09, returning: (root)
 Set current project to we-lab3-group09 (in build file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/)
 Reapplying settings...
@@ -70,6 +99,20 @@ Evaluating tasks: *:playForkConfig
 Running task... Cancel: sbt.server.ServerTaskCancellation@66604427, check cycles: false
 Read from stdout: Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root...
 Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root...
+=======
+[Loading] Done in C:\delete\webengineering\UE3\we-lab3-group09, returning: (root)
+Set current project to we-lab3-group09 (in build file:/C:/delete/webengineering/UE3/we-lab3-group09/)
+Reapplying settings...
+Set current project to we-lab3-group09 (in build file:/C:/delete/webengineering/UE3/we-lab3-group09/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@17c4b47, check cycles: false
+Read from stdout: Updating {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root...
+Updating {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root...
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 Other repositories:
 Default repositories:
 Using inline dependencies specified in Scala.
@@ -82,7 +125,11 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.1 ...
 Resolving org.scala-lang#scala-library;2.11.1 ...
+<<<<<<< HEAD
 sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ae5d26f
+=======
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@173520e
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1
 	found org.scala-lang#scala-library;2.11.1 in sbt-chain
 	[2.11.1] org.scala-lang#scala-library;2.11.1
@@ -590,7 +637,11 @@ sbt-chain: module revision found in cache: javax.transaction#jta;1.1
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->default(compile)]
 Read from stdout: Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
 Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
+<<<<<<< HEAD
 sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@207cdb0a
+=======
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15e009e
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 sbt-chain: module revision found in cache: com.typesafe.play#play-java_2.11;2.3.8
 	found com.typesafe.play#play-java_2.11;2.3.8 in sbt-chain
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->runtime]
@@ -6764,6 +6815,7 @@ sbt-chain: module revision found in cache: com.typesafe.play#fork-run_2.11;2.3.8
 	found com.typesafe.play#fork-run_2.11;2.3.8 in sbt-chain
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#fork-run_2.11;2.3.8 [fork-run->runtime]
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#fork-run_2.11;2.3.8 [fork-run->compile]
+<<<<<<< HEAD
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->master(compile)]
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.play#fork-run-protocol_2.11;2.3.8 [compile->master(compile)]
@@ -6785,15 +6837,45 @@ sbt-chain: module revision found in cache: com.typesafe.play#run-support_2.11;2.
 == resolving dependencies com.typesafe.play#run-support_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->master(compile)]
 == resolving dependencies com.typesafe.play#run-support_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
 == resolving dependencies com.typesafe.play#run-support_2.11;2.3.8->com.typesafe.play#build-link;2.3.8 [compile->master(compile)]
+=======
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.play#fork-run-protocol_2.11;2.3.8 [compile->master(*)]
+Read from stdout: Resolving com.typesafe.play#fork-run-protocol_2.11;2.3.8 ...
+Resolving com.typesafe.play#fork-run-protocol_2.11;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#fork-run-protocol_2.11;2.3.8 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.typesafe.play#fork-run-protocol_2.11;2.3.8
+	found com.typesafe.play#fork-run-protocol_2.11;2.3.8 in sbt-chain
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.play#fork-run-protocol_2.11;2.3.8 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.play#run-support_2.11;2.3.8 [compile->master(*)]
+Read from stdout: Resolving com.typesafe.play#run-support_2.11;2.3.8 ...
+Resolving com.typesafe.play#run-support_2.11;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#run-support_2.11;2.3.8 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.typesafe.play#run-support_2.11;2.3.8
+	found com.typesafe.play#run-support_2.11;2.3.8 in sbt-chain
+== resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.play#run-support_2.11;2.3.8 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#run-support_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#run-support_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#run-support_2.11;2.3.8->com.typesafe.play#build-link;2.3.8 [compile->master(*)]
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 == resolving dependencies com.typesafe.play#run-support_2.11;2.3.8->com.typesafe.play#build-link;2.3.8 [compile->compile(*)]
 == resolving dependencies com.typesafe.play#build-link;2.3.8->com.typesafe.play#play-exceptions;2.3.8 [compile->master(*)]
 == resolving dependencies com.typesafe.play#build-link;2.3.8->com.typesafe.play#play-exceptions;2.3.8 [compile->compile(*)]
 == resolving dependencies com.typesafe.play#build-link;2.3.8->org.javassist#javassist;3.18.2-GA [compile->master(*)]
 == resolving dependencies com.typesafe.play#build-link;2.3.8->org.javassist#javassist;3.18.2-GA [compile->compile(*)]
+<<<<<<< HEAD
 == resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.sbtrc#client-2-11;0.3.1 [compile->master(compile)]
 Read from stdout: Resolving com.typesafe.sbtrc#client-2-11;0.3.1 ...
 Resolving com.typesafe.sbtrc#client-2-11;0.3.1 ...
 sbt-chain: Checking cache for: dependency: com.typesafe.sbtrc#client-2-11;0.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+=======
+== resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.sbtrc#client-2-11;0.3.1 [compile->master(*)]
+Read from stdout: Resolving com.typesafe.sbtrc#client-2-11;0.3.1 ...
+Resolving com.typesafe.sbtrc#client-2-11;0.3.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbtrc#client-2-11;0.3.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 sbt-chain: module revision found in cache: com.typesafe.sbtrc#client-2-11;0.3.1
 	found com.typesafe.sbtrc#client-2-11;0.3.1 in sbt-chain
 == resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
@@ -6810,10 +6892,17 @@ sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.5
 	[2.11.5] org.scala-lang#scala-reflect;2.11.5
 == resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->org.scala-lang#scala-reflect;2.11.5 [compile->runtime]
 == resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->org.scala-lang#scala-reflect;2.11.5 [compile->compile]
+<<<<<<< HEAD
 == resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.5 [compile->master(*)]
 == resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
 == resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
 == resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+=======
+== resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.1 [compile->master(compile)]
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 == resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
 == resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
 == resolving dependencies org.scala-lang#scala-reflect;2.11.5->org.scala-lang#scala-library;2.11.1 [runtime->compile]
@@ -7052,6 +7141,57 @@ sbt-chain: module revision found in cache: org.scala-sbt#collections_2.11;0.13.8
 == resolving dependencies org.scala-sbt#collections_2.11;0.13.8-M3->org.scala-lang#scala-library;2.11.1 [compile->runtime]
 == resolving dependencies org.scala-sbt#collections_2.11;0.13.8-M3->org.scala-lang#scala-library;2.11.1 [compile->compile]
 == resolving dependencies org.scala-sbt#collections_2.11;0.13.8-M3->org.scala-lang#scala-library;2.11.1 [compile->master]
+<<<<<<< HEAD
+=======
+== resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.sbtrc#client-2-11;0.3.1 [compile->compile]
+== resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.sbtrc#client-2-11;0.3.1 [compile->runtime]
+== resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.sbtrc#client-2-11;0.3.1 [compile->compile]
+== resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->com.novocode#junit-interface;0.11 [test->default(compile)]
+Read from stdout: Resolving com.novocode#junit-interface;0.11 ...
+Resolving com.novocode#junit-interface;0.11 ...
+sbt-chain: Checking cache for: dependency: com.novocode#junit-interface;0.11 {test=[default(compile)]}
+sbt-chain: module revision found in cache: com.novocode#junit-interface;0.11
+	found com.novocode#junit-interface;0.11 in sbt-chain
+== resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->com.novocode#junit-interface;0.11 [test->runtime]
+== resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->com.novocode#junit-interface;0.11 [test->compile]
+== resolving dependencies com.novocode#junit-interface;0.11->junit#junit;4.11 [compile->master(*)]
+== resolving dependencies com.novocode#junit-interface;0.11->junit#junit;4.11 [compile->compile(*)]
+== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->master(*)]
+== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->compile(*)]
+== resolving dependencies com.novocode#junit-interface;0.11->org.scala-sbt#test-interface;1.0 [compile->master(*)]
+== resolving dependencies com.novocode#junit-interface;0.11->org.scala-sbt#test-interface;1.0 [compile->compile(*)]
+== resolving dependencies com.novocode#junit-interface;0.11->junit#junit;4.11 [runtime->runtime(*)]
+== resolving dependencies com.novocode#junit-interface;0.11->junit#junit;4.11 [runtime->compile]
+== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [runtime->runtime(*)]
+== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [runtime->compile]
+== resolving dependencies com.novocode#junit-interface;0.11->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)]
+== resolving dependencies com.novocode#junit-interface;0.11->org.scala-sbt#test-interface;1.0 [runtime->compile]
+== resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->com.novocode#junit-interface;0.11 [test->master]
+== resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->org.scalacheck#scalacheck_2.11;1.11.5 [test->default(compile)]
+Read from stdout: Resolving org.scalacheck#scalacheck_2.11;1.11.5 ...
+Resolving org.scalacheck#scalacheck_2.11;1.11.5 ...
+sbt-chain: Checking cache for: dependency: org.scalacheck#scalacheck_2.11;1.11.5 {test=[default(compile)]}
+sbt-chain: module revision found in cache: org.scalacheck#scalacheck_2.11;1.11.5
+	found org.scalacheck#scalacheck_2.11;1.11.5 in sbt-chain
+== resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->org.scalacheck#scalacheck_2.11;1.11.5 [test->runtime]
+== resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->org.scalacheck#scalacheck_2.11;1.11.5 [test->compile]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-sbt#test-interface;1.0 [compile->master(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-sbt#test-interface;1.0 [compile->compile(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang#scala-library;2.11.1 [runtime->compile]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-sbt#test-interface;1.0 [runtime->compile]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->runtime(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->runtime(*)]
+== resolving dependencies org.scalacheck#scalacheck_2.11;1.11.5->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->compile]
+== resolving dependencies com.typesafe.sbtrc#client-2-11;0.3.1->org.scalacheck#scalacheck_2.11;1.11.5 [test->master]
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 == resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.sbtrc#client-2-11;0.3.1 [compile->compile(*)]
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.play#fork-run-protocol_2.11;2.3.8 [compile->runtime(*)]
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.play#fork-run-protocol_2.11;2.3.8 [compile->compile]
@@ -7069,10 +7209,17 @@ sbt-chain: module revision found in cache: org.scala-sbt#collections_2.11;0.13.8
 == resolving dependencies com.typesafe.play#build-link;2.3.8->org.javassist#javassist;3.18.2-GA [runtime->compile]
 == resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.sbtrc#client-2-11;0.3.1 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.play#fork-run-protocol_2.11;2.3.8->com.typesafe.sbtrc#client-2-11;0.3.1 [runtime->compile]
+<<<<<<< HEAD
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->master(compile)]
 Read from stdout: Resolving com.typesafe.sbtrc#actor-client-2-11;0.3.1 ...
 Resolving com.typesafe.sbtrc#actor-client-2-11;0.3.1 ...
 sbt-chain: Checking cache for: dependency: com.typesafe.sbtrc#actor-client-2-11;0.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+=======
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->master(*)]
+Read from stdout: Resolving com.typesafe.sbtrc#actor-client-2-11;0.3.1 ...
+Resolving com.typesafe.sbtrc#actor-client-2-11;0.3.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbtrc#actor-client-2-11;0.3.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 sbt-chain: module revision found in cache: com.typesafe.sbtrc#actor-client-2-11;0.3.1
 	found com.typesafe.sbtrc#actor-client-2-11;0.3.1 in sbt-chain
 == resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
@@ -7089,10 +7236,17 @@ sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.3
 	found com.typesafe.akka#akka-actor_2.11;2.3.8 in sbt-chain
 == resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->runtime]
 == resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile]
+<<<<<<< HEAD
 == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
 == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
 == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
 == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(compile)]
+=======
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(*)]
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->compile(*)]
 == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
@@ -7108,11 +7262,19 @@ sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.11;2
 	found com.typesafe.akka#akka-testkit_2.11;2.3.8 in sbt-chain
 == resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.typesafe.akka#akka-testkit_2.11;2.3.8 [compile->runtime]
 == resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.typesafe.akka#akka-testkit_2.11;2.3.8 [compile->compile]
+<<<<<<< HEAD
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->master(compile)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->master(compile)]
+=======
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->master(*)]
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile]
@@ -7122,6 +7284,7 @@ sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.11;2
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->com.typesafe.akka#akka-actor_2.11;2.3.8 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.8->com.typesafe.akka#akka-actor_2.11;2.3.8 [runtime->compile]
 == resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.typesafe.akka#akka-testkit_2.11;2.3.8 [compile->master]
+<<<<<<< HEAD
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->compile(*)]
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->runtime(*)]
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->compile]
@@ -7129,6 +7292,26 @@ sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.11;2
 Read from stdout: Resolving net.contentobjects.jnotify#jnotify;0.94 ...
 Resolving net.contentobjects.jnotify#jnotify;0.94 ...
 sbt-chain: Checking cache for: dependency: net.contentobjects.jnotify#jnotify;0.94 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+=======
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->compile]
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->runtime]
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->compile]
+== resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.novocode#junit-interface;0.11 [test->default(compile)]
+== resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.novocode#junit-interface;0.11 [test->runtime]
+== resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.novocode#junit-interface;0.11 [test->compile]
+== resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->com.novocode#junit-interface;0.11 [test->master]
+== resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->org.scalacheck#scalacheck_2.11;1.11.5 [test->default(compile)]
+== resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->org.scalacheck#scalacheck_2.11;1.11.5 [test->runtime]
+== resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->org.scalacheck#scalacheck_2.11;1.11.5 [test->compile]
+== resolving dependencies com.typesafe.sbtrc#actor-client-2-11;0.3.1->org.scalacheck#scalacheck_2.11;1.11.5 [test->master]
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->com.typesafe.sbtrc#actor-client-2-11;0.3.1 [compile->compile]
+== resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->net.contentobjects.jnotify#jnotify;0.94 [compile->master(*)]
+Read from stdout: Resolving net.contentobjects.jnotify#jnotify;0.94 ...
+Resolving net.contentobjects.jnotify#jnotify;0.94 ...
+sbt-chain: Checking cache for: dependency: net.contentobjects.jnotify#jnotify;0.94 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 sbt-chain: module revision found in cache: net.contentobjects.jnotify#jnotify;0.94
 	found net.contentobjects.jnotify#jnotify;0.94 in sbt-chain
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.8->net.contentobjects.jnotify#jnotify;0.94 [compile->compile(*)]
@@ -7284,9 +7467,19 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	[NOT REQUIRED] com.typesafe.play#fork-run_2.11;2.3.8!fork-run_2.11.jar
 	[NOT REQUIRED] com.typesafe.play#fork-run-protocol_2.11;2.3.8!fork-run-protocol_2.11.jar
 	[NOT REQUIRED] com.typesafe.sbtrc#actor-client-2-11;0.3.1!actor-client-2-11.jar
+<<<<<<< HEAD
 	[NOT REQUIRED] net.contentobjects.jnotify#jnotify;0.94!jnotify.jar
 	[NOT REQUIRED] com.typesafe.play#run-support_2.11;2.3.8!run-support_2.11.jar
 	[NOT REQUIRED] com.typesafe.sbtrc#client-2-11;0.3.1!client-2-11.jar
+=======
+	[NOT REQUIRED] com.typesafe.sbtrc#actor-client-2-11;0.3.1!actor-client-2-11.jar
+	[NOT REQUIRED] com.typesafe.sbtrc#actor-client-2-11;0.3.1!actor-client-2-11.jar(src)
+	[NOT REQUIRED] net.contentobjects.jnotify#jnotify;0.94!jnotify.jar
+	[NOT REQUIRED] com.typesafe.play#run-support_2.11;2.3.8!run-support_2.11.jar
+	[NOT REQUIRED] com.typesafe.sbtrc#client-2-11;0.3.1!client-2-11.jar
+	[NOT REQUIRED] com.typesafe.sbtrc#client-2-11;0.3.1!client-2-11.jar
+	[NOT REQUIRED] com.typesafe.sbtrc#client-2-11;0.3.1!client-2-11.jar(src)
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.5!scala-reflect.jar
 	[NOT REQUIRED] org.scala-sbt#serialization_2.11;0.1.0!serialization_2.11.jar
 	[NOT REQUIRED] org.scala-sbt#launcher-interface;0.13.8-M3!launcher-interface.jar
@@ -7302,6 +7495,7 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	[NOT REQUIRED] org.json4s#json4s-ast_2.11;3.2.10!json4s-ast_2.11.jar
 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar
 	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar
+<<<<<<< HEAD
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
 :: resolution report :: resolve 4425ms :: artifacts dl 131ms
@@ -7323,10 +7517,36 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 Read from stdout: Done updating.
 Done updating.
 Total time: 6 s, completed 06.05.2015 13:16:15
+=======
+	[NOT REQUIRED] com.novocode#junit-interface;0.11!junit-interface.jar
+	[NOT REQUIRED] org.scalacheck#scalacheck_2.11;1.11.5!scalacheck_2.11.jar
+	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
+	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
+:: resolution report :: resolve 2917ms :: artifacts dl 94ms
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT compile produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-compile.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT runtime produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-runtime.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT test produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-test.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT provided produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-provided.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT optional produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-optional.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT compile-internal produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-compile-internal.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT runtime-internal produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-runtime-internal.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT test-internal produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-test-internal.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT plugin produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-plugin.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT sources produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-sources.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT docs produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-docs.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT pom produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-pom.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT scala-tool produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-scala-tool.xml
+	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT fork-run produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-fork-run.xml
+	resolve done (2917ms resolve - 94ms download)
+Read from stdout: Done updating.
+Done updating.
+Total time: 4 s, completed 06.05.2015 16:25:51
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
+<<<<<<< HEAD
 Running task... Cancel: sbt.server.ServerTaskCancellation@63f8a5ab, check cycles: false
 Total time: 0 s, completed 06.05.2015 13:16:16
 > server-post-command-cleanup
@@ -7334,20 +7554,38 @@ Total time: 0 s, completed 06.05.2015 13:16:16
 > {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
 Running task... Cancel: sbt.server.ServerTaskCancellation@495e20d8, check cycles: false
+=======
+Running task... Cancel: sbt.server.ServerTaskCancellation@ae6cee, check cycles: false
+Total time: 0 s, completed 06.05.2015 16:25:51
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@883c7d, check cycles: false
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
+<<<<<<< HEAD
 	modified: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
 Initial directly invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
+=======
+	modified: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
+<<<<<<< HEAD
 All initially invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
 
 Read from stdout: Compiling 1 Java source to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
@@ -7356,6 +7594,64 @@ Attempting to call com.sun.tools.javac.api.JavacTool@50309059 directly...
 Java compilation took 0.888537223 s
 Java analysis took 0.025834867 s
 Java compile + analysis took 0.927349495 s
+=======
+All initially invalidated sources: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+
+Read from stdout: Compiling 1 Java source to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Compiling 1 Java source to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1467a2d directly...
+Java compilation took 0.471149465 s
+Java analysis took 0.178501904 s
+Java compile + analysis took 0.663563213 s
+Invalidating C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java...
+Invalidating (transitively) by inheritance from C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java...
+Initial set of included nodes: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+Invalidated by transitive inheritance dependency: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+The C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java source file has the following regular definitions changed:
+	chooseQuestion.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java
+The following modified names cause invalidation of C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala: Set(chooseQuestion)
+The following modified names cause invalidation of C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(chooseQuestion)
+New invalidations:
+	Set(C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala, C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Initial set of included nodes: Set(C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala, C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala
+Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala
+Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala, C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Read from stdout: Compiling 2 Scala sources and 1 Java source to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Compiling 2 Scala sources and 1 Java source to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 1d78e7, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jdk1.7.0_17\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.7.0_17\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.7.0_17\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.7.0_17\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.7.0_17\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.7.0_17\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.7.0_17\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.7.0_17\jre\classes;C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
+	-classpath
+	C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes;C:\delete\webengineering\UE3\we-lab3-group09\lib\jeopardy.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Administrator\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Administrator\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Administrator\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Administrator\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Administrator\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Administrator\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Administrator\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Administrator\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Administrator\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Administrator\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Administrator\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Administrator\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\Administrator\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\Administrator\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\Administrator\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\Administrator\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\Administrator\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\Administrator\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\Administrator\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\Administrator\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Administrator\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\Administrator\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Administrator\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\Administrator\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\Administrator\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Administrator\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Administrator\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\Administrator\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Administrator\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-4.3.1.Final.jar;C:\Users\Administrator\.ivy2\cache\org.jboss.logging\jboss-logging-annotations\jars\jboss-logging-annotations-1.2.0.Beta1.jar;C:\Users\Administrator\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-4.3.1.Final.jar;C:\Users\Administrator\.ivy2\cache\org.jboss.spec.javax.transaction\jboss-transaction-api_1.2_spec\jars\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Users\Administrator\.ivy2\cache\org.hibernate.common\hibernate-commons-annotations\jars\hibernate-commons-annotations-4.0.4.Final.jar;C:\Users\Administrator\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\jars\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Administrator\.ivy2\cache\antlr\antlr\jars\antlr-2.7.7.jar;C:\Users\Administrator\.ivy2\cache\org.jboss\jandex\jars\jandex-1.1.0.Final.jar
+Scala compilation took 4.345956073 s
+Attempting to call com.sun.tools.javac.api.JavacTool@1467a2d directly...
+Java compilation took 0.098142363 s
+Java analysis took 0.076838605 s
+Java compile + analysis took 0.181774697 s
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
@@ -7363,6 +7659,7 @@ Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
 Copy resource mappings: 
+<<<<<<< HEAD
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\application.conf,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\application.conf)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\data.de.json,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.de.json)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\data.en.json,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.en.json)
@@ -7370,6 +7667,15 @@ Copy resource mappings:
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\routes,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\routes)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF\persistence.xml,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF\persistence.xml)
 Total time: 2 s, completed 06.05.2015 13:16:26
+=======
+	(C:\delete\webengineering\UE3\we-lab3-group09\conf\application.conf,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\application.conf)
+	(C:\delete\webengineering\UE3\we-lab3-group09\conf\data.de.json,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.de.json)
+	(C:\delete\webengineering\UE3\we-lab3-group09\conf\data.en.json,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.en.json)
+	(C:\delete\webengineering\UE3\we-lab3-group09\conf\META-INF,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF)
+	(C:\delete\webengineering\UE3\we-lab3-group09\conf\routes,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\routes)
+	(C:\delete\webengineering\UE3\we-lab3-group09\conf\META-INF\persistence.xml,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF\persistence.xml)
+Total time: 7 s, completed 06.05.2015 16:26:04
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -7378,4 +7684,8 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
+<<<<<<< HEAD
 Closing the 4048@amd6x-PC logs at Wed May 06 13:19:09 CEST 2015, goodbye.
+=======
+Closing the 524@Max logs at Wed May 06 16:28:45 CEST 2015, goodbye.
+>>>>>>> afe40ce5ae32c67b317940283367bb896006c728

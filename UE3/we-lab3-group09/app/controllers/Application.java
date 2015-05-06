@@ -15,6 +15,7 @@ import play.db.jpa.JPA;
 import play.mvc.*;
 import views.html.*;
 import at.ac.tuwien.big.we15.lab2.api.*;
+import at.ac.tuwien.big.we15.lab2.api.impl.PlayJeopardyFactory;
 
 public class Application extends Controller {
 	@play.db.jpa.Transactional
@@ -27,7 +28,7 @@ public class Application extends Controller {
 			UserImpl testUser = new UserImpl();
 			testUser.setFirstname("");
 			testUser.setLastname("");
-			testUser.setAvatar("");
+			testUser.setAvatar(null);
 			testUser.setBirthdate(new Date());
 			testUser.setGender("");
 			testUser.setUsername("test"); testUser.setPassword("test");
@@ -46,6 +47,7 @@ public class Application extends Controller {
 	public static UserImpl fetchUser(String username) {
 		EntityManager em = JPA.em();
 		if (em.find(UserImpl.class, username) == null) {
+			System.out.println("ERROR NULL");
 			return null;
 		}
 		return em.find(UserImpl.class, username);
@@ -53,19 +55,18 @@ public class Application extends Controller {
 
 	@play.db.jpa.Transactional
 	public static Result completeReg() {
-		Form<Register> registerForm = Form.form(Register.class)
-				.bindFromRequest();
+		Form<Register> registerForm = Form.form(Register.class).bindFromRequest();
 
 		try {
 			if (registerForm.hasErrors()) {
-				return badRequest(registration.render(registerForm));
+				//return badRequest(registration.render(registerForm));
 			}
 		} catch (Exception e) {
 			return badRequest(registration.render(registerForm));
 		}
 
 		Register registerData = registerForm.get();
-
+		
 		UserImpl user = new UserImpl();
 		user.setFirstname(registerData.getFirstname());
 		user.setLastname(registerData.getLastname());
@@ -75,13 +76,14 @@ public class Application extends Controller {
 		user.setBirthdate(registerData.getBirthdate());
 		user.setGender(registerData.getGender());
 		storeUser(user);
-		
+
 		System.out.println(registerData.getFirstname() + " " + registerData.getLastname() + " " + registerData.getAvatar() + " " +
 							registerData.getUsername() + " " + registerData.getPassword() + " " + registerData.getBirthdate() + " " 
 							+ registerData.getGender() );
 
+
 		System.out.println("Register/User: " + registerData.getUsername());
-		return redirect("authentication");
+		return ok(registration.render(Form.form(Register.class)));
 	}
 
 	@play.db.jpa.Transactional
@@ -98,7 +100,7 @@ public class Application extends Controller {
 		}
 		
 		session("user", loginForm.get().username);
-		
+		GameController.games.put(fetchUser(loginForm.get().username), new GameController(fetchUser(loginForm.get().username)));
 		return ok(jeopardy.render());
 	}
 
