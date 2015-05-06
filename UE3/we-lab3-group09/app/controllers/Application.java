@@ -15,6 +15,7 @@ import play.db.jpa.JPA;
 import play.mvc.*;
 import views.html.*;
 import at.ac.tuwien.big.we15.lab2.api.*;
+import at.ac.tuwien.big.we15.lab2.api.impl.PlayJeopardyFactory;
 
 public class Application extends Controller {
 	@play.db.jpa.Transactional
@@ -94,6 +95,7 @@ public class Application extends Controller {
 		}
 		
 		session("user", loginForm.get().username);
+		GameController.games.put(fetchUser(loginForm.get().username), new GameController(fetchUser(loginForm.get().username)));
 		return ok(jeopardy.render());
 	}
 

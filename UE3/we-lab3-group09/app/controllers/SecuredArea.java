@@ -1,5 +1,9 @@
 package controllers;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import javax.naming.AuthenticationException;
 
 import ch.qos.logback.core.Context;
@@ -10,6 +14,7 @@ import play.data.*;
 import play.mvc.*;
 import views.html.*;
 import at.ac.tuwien.big.we15.lab2.api.*;
+import at.ac.tuwien.big.we15.lab2.api.impl.PlayJeopardyFactory;
 
 /**
  * Hier kommen alle Methoden rein, die nur aufrufbar sein sollen, wenn der User eingeloggt
@@ -19,11 +24,12 @@ import at.ac.tuwien.big.we15.lab2.api.*;
  */
 @Security.Authenticated(Secured.class)
 public class SecuredArea extends Controller{
+	private static GameController controller;
 	
-	
-
 	public static Result chooseQuestion()
 	{
+		String username = session().get("user");
+		GameController gamectrl = controller.games.get(Application.fetchUser(username));
 		// selected question id
 		int questionId =  -1;
 		try{
@@ -34,11 +40,16 @@ public class SecuredArea extends Controller{
 		}
 		System.out.println("Selected Question ID: " + questionId);
 		
+		gamectrl.getGame().chooseHumanQuestion(questionId);
+		
 		return ok(question.render());
 	}
 
 	public static Result commitAnswer()
 	{
+		String username = session().get("user");
+		GameController gamectrl = controller.games.get(Application.fetchUser(username));
+		
 		System.out.println("NUMBER OF SELECTED ANSWERS: " + request().body().asFormUrlEncoded().get("answers").length);
 		
 		int [] selectedAnswers = new int[request().body().asFormUrlEncoded().get("answers").length];
@@ -48,9 +59,10 @@ public class SecuredArea extends Controller{
 			selectedAnswers[i] = Integer.parseInt(request().body().asFormUrlEncoded().get("answers")[i]);
 		}
 		
-		// TODO in selectedAnswers sind nun die ID enthalten, von den Fragen, die ausgewählt wurden
-		// jetzt muss noch die Logik entsprechend implementiert werden.
-		
+		List<Integer> answerList = new ArrayList<Integer>();
+		for(int answerId : selectedAnswers)
+			answerList.add(answerId);
+		gamectrl.getGame().answerHumanQuestion(answerList);
 		
 		return ok(jeopardy.render());
 	}
