@@ -1,5 +1,5 @@
-New log file opened at Wed May 06 11:07:07 CEST 2015 by 2344@Max
-jvm 2344@Max
+New log file opened at Wed May 06 15:44:56 CEST 2015 by 5504@Max
+jvm 5504@Max
 jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=23.7-b01
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.7
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:PermSize=64m, -XX:MaxPermSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\delete\webengineering\UE3\we-lab3-group09\project, returning: (we-lab3-group09-build)
 Loading project definition from C:\delete\webengineering\UE3\we-lab3-group09\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@a932e7, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4d0d45, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to we-lab3-group09 (in build file:/C:/delete/webengineering/
 > server-handle-next-server-request
 > {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@972fb, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@26618f, check cycles: false
 Read from stdout: Updating {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root...
 Updating {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root...
 Other repositories:
@@ -82,7 +82,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.1 ...
 Resolving org.scala-lang#scala-library;2.11.1 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f97cce
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@173520e
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1
 	found org.scala-lang#scala-library;2.11.1 in sbt-chain
 	[2.11.1] org.scala-lang#scala-library;2.11.1
@@ -590,7 +590,7 @@ sbt-chain: module revision found in cache: javax.transaction#jta;1.1
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->default(compile)]
 Read from stdout: Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
 Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19e7771
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10ed28e
 sbt-chain: module revision found in cache: com.typesafe.play#play-java_2.11;2.3.8
 	found com.typesafe.play#play-java_2.11;2.3.8 in sbt-chain
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->runtime]
@@ -7369,7 +7369,7 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	[NOT REQUIRED] org.scalacheck#scalacheck_2.11;1.11.5!scalacheck_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 2917ms :: artifacts dl 93ms
+:: resolution report :: resolve 2995ms :: artifacts dl 94ms
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT compile produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-compile.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT runtime produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-runtime.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT test produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-test.xml
@@ -7384,56 +7384,66 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT pom produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-pom.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT scala-tool produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-scala-tool.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT fork-run produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-fork-run.xml
-	resolve done (2917ms resolve - 93ms download)
+	resolve done (2995ms resolve - 94ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 4 s, completed 06.05.2015 11:07:14
+Total time: 4 s, completed 06.05.2015 15:45:04
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@78ba1, check cycles: false
-Total time: 0 s, completed 06.05.2015 11:07:15
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ab75ac, check cycles: false
+Total time: 0 s, completed 06.05.2015 15:45:04
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@12bd644, check cycles: false
-Invalidating C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\controllers\Application.class: stamp changed from lastModified(1430897669931) to lastModified(1430902865958)
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c8c6fb, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java, C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
+	modified: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java, C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java, C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
 Removed products: Set()
 External API changes: API Changes: Set()
-Modified binary dependencies: Set(C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\controllers\Application.class)
-Initial directly invalidated sources: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java, C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java, C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java, C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
 
 Sources indirectly invalidated by:
 	product: Set()
-	binary dep: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java, C:\delete\webengineering\UE3\we-lab3-group09\app\models\Login.java)
+	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java, C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java, C:\delete\webengineering\UE3\we-lab3-group09\app\models\Login.java, C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
+All initially invalidated sources: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java, C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java, C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
 
-Read from stdout: Compiling 4 Java sources to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
-Compiling 4 Java sources to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@111a306 directly...
-Java compilation took 0.488047471 s
-Java analysis took 0.185662903 s
-Java compile + analysis took 0.689314143 s
-Invalidating C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java...
-Invalidating (transitively) by inheritance from C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java...
-Initial set of included nodes: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
-Invalidated by transitive inheritance dependency: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
-The C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java source file has the following regular definitions changed:
-	games, <init>.
+Read from stdout: Compiling 3 Java sources to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Compiling 3 Java sources to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@34a993 directly...
+Java compilation took 0.523714644 s
+Java analysis took 0.122406626 s
+Java compile + analysis took 0.66031058 s
+Invalidating C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java...
+Invalidating (transitively) by inheritance from C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java...
+Initial set of included nodes: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java)
+Invalidated by transitive inheritance dependency: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java)
+The C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java source file has the following regular definitions changed:
+	avatar, setName, getUsername, setUsername, getName, UserImpl, getAvatar, setAvatar.
 All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\delete\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java
 Name hashing optimization doesn't apply to non-Scala dependency: C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java
+Invalidating C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java...
+Invalidating (transitively) by inheritance from C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java...
+Initial set of included nodes: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+Invalidated by transitive inheritance dependency: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+The C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java source file has the following regular definitions changed:
+	avatar, female, username, getPassword, firstname, setBirthdate, setPassword, getUsername, getFirstname, setUsername, lastname, birthdate, getBirthdate, setFirstname, getGender, getLastname, male, getAvatar, user, setLastname, setAvatar, password, setGender.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java
+None of the modified names appears in C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala. This dependency is not being considered for invalidation.
 New invalidations:
-	Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
-Initial set of included nodes: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+	Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+Initial set of included nodes: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+Including C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java by C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java
 Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala by C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java
 Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala
 Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
@@ -7445,15 +7455,27 @@ Including C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\Secured.j
 Including C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala by C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(C:\delete\webengineering\UE3\we-lab3-group09\conf\application.conf,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\application.conf)
-	(C:\delete\webengineering\UE3\we-lab3-group09\conf\data.de.json,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.de.json)
-	(C:\delete\webengineering\UE3\we-lab3-group09\conf\data.en.json,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.en.json)
-	(C:\delete\webengineering\UE3\we-lab3-group09\conf\META-INF,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF)
-	(C:\delete\webengineering\UE3\we-lab3-group09\conf\routes,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\routes)
-	(C:\delete\webengineering\UE3\we-lab3-group09\conf\META-INF\persistence.xml,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 2 s, completed 06.05.2015 11:07:24
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+Read from stdout: Compiling 1 Java source to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Compiling 1 Java source to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@34a993 directly...
+Read from stdout: C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java:18: no suitable method found for createGame(models.UserImpl)
+Read from stdout: method at.ac.tuwien.big.we15.lab2.api.JeopardyFactory.createGame(java.lang.String) is not applicable
+Read from stdout: (actual argument models.UserImpl cannot be converted to java.lang.String by method invocation conversion)
+Read from stdout: method at.ac.tuwien.big.we15.lab2.api.JeopardyFactory.createGame(at.ac.tuwien.big.we15.lab2.api.User) is not applicable
+Read from stdout: (actual argument models.UserImpl cannot be converted to at.ac.tuwien.big.we15.lab2.api.User by method invocation conversion)
+Read from stdout: method at.ac.tuwien.big.we15.lab2.api.JeopardyFactory.createGame() is not applicable
+Read from stdout: (actual and formal argument lists differ in length)
+C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java:18: no suitable method found for createGame(models.UserImpl)
+    method at.ac.tuwien.big.we15.lab2.api.JeopardyFactory.createGame(java.lang.String) is not applicable
+      (actual argument models.UserImpl cannot be converted to java.lang.String by method invocation conversion)
+    method at.ac.tuwien.big.we15.lab2.api.JeopardyFactory.createGame(at.ac.tuwien.big.we15.lab2.api.User) is not applicable
+      (actual argument models.UserImpl cannot be converted to at.ac.tuwien.big.we15.lab2.api.User by method invocation conversion)
+    method at.ac.tuwien.big.we15.lab2.api.JeopardyFactory.createGame() is not applicable
+      (actual and formal argument lists differ in length)
+Read from stdout: factory.createGame
+factory.createGame
+Total time: 2 s, completed 06.05.2015 15:45:14
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -7462,4 +7484,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 2344@Max logs at Wed May 06 11:10:08 CEST 2015, goodbye.
+Closing the 5504@Max logs at Wed May 06 15:47:57 CEST 2015, goodbye.
