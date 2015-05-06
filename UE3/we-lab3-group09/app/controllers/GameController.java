@@ -15,7 +15,7 @@ public class GameController {
 
 	public GameController(UserImpl user) {
 		factory = new PlayJeopardyFactory("conf/data.de.json");
-		//game = factory.createGame(user);
+		//game = factory.createGame();
 	}
 	
 	public JeopardyGame getGame() {

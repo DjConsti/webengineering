@@ -26,6 +26,7 @@ import at.ac.tuwien.big.we15.lab2.api.impl.PlayJeopardyFactory;
 public class SecuredArea extends Controller{
 	private static GameController controller;
 	
+	@play.db.jpa.Transactional
 	public static Result chooseQuestion()
 	{
 		String username = session().get("user");
