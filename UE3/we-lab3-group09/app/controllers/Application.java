@@ -27,10 +27,10 @@ public class Application extends Controller {
 			UserImpl testUser = new UserImpl();
 			testUser.setFirstname("");
 			testUser.setLastname("");
-			testUser.setAvatar("");
+			testUser.setAvatar(null);
 			testUser.setBirthdate(new Date());
 			testUser.setGender("");
-			testUser.setUsername("test"); testUser.setPassword("test");
+			testUser.setName("test"); testUser.setPassword("test");
 			storeUser(testUser);
 		}
 		return redirect("authentication");
@@ -54,12 +54,11 @@ public class Application extends Controller {
 
 	@play.db.jpa.Transactional
 	public static Result completeReg() {
-		Form<Register> registerForm = Form.form(Register.class)
-				.bindFromRequest();
+		Form<Register> registerForm = Form.form(Register.class).bindFromRequest();
 
 		try {
 			if (registerForm.hasErrors()) {
-				return badRequest(registration.render(registerForm));
+				//return badRequest(registration.render(registerForm));
 			}
 		} catch (Exception e) {
 			return badRequest(registration.render(registerForm));
@@ -68,16 +67,16 @@ public class Application extends Controller {
 		Register registerData = registerForm.get();
 
 		UserImpl user = new UserImpl();
-		user.setFirstname(registerData.getFirstname());
-		user.setLastname(registerData.getLastname());
-		user.setAvatar(registerData.getAvatar());
-		user.setUsername(registerData.getUsername());
-		user.setPassword(registerData.getPassword());
-		user.setBirthdate(registerData.getBirthdate());
-		user.setGender(registerData.getGender());
+		user.setFirstname(registerData.firstname);
+		user.setLastname(registerData.lastname);
+		//user.setAvatar(registerData.avatar);
+		user.setName(registerData.username);
+		user.setPassword(registerData.password);
+		user.setBirthdate(registerData.birthdate);
+		//user.setGender(registerData.gender);
 		storeUser(user);
 
-		System.out.println("Register/User: " + registerData.getUsername());
+		System.out.println("Register/User: " + registerData.username);
 		return redirect("authentication");
 	}
 

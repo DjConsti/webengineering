@@ -6,15 +6,16 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import at.ac.tuwien.big.we15.lab2.api.Avatar;
+import at.ac.tuwien.big.we15.lab2.api.User;
 import play.data.validation.Constraints.Required;
 
 @Entity
-public class UserImpl {
+public class UserImpl implements User {
 	
 	private String firstname;
 	private String lastname;
 	private Date birthdate;
-	private String avatar;
+	private Avatar avatar;
 	private String gender;
 	@Id @Required private String username;
 	@Required private String password;
@@ -47,11 +48,11 @@ public class UserImpl {
 		this.birthdate = birthdate;
 	}
 
-	public String getAvatar() {
+	public Avatar getAvatar() {
 		return avatar;
 	}
 
-	public void setAvatar(String avatar) {
+	public void setAvatar(Avatar avatar) {
 		this.avatar = avatar;
 	}
 
@@ -63,11 +64,11 @@ public class UserImpl {
 		this.gender = gender;
 	}
 
-	public String getUsername() {
+	public String getName() {
 		return username;
 	}
 
-	public void setUsername(String username) {
+	public void setName(String username) {
 		this.username = username;
 	}
 

@@ -2,10 +2,29 @@ package models;
 
 import java.util.Date;
 
+import play.data.validation.Constraints.MaxLength;
+import play.data.validation.Constraints.MinLength;
+import play.data.validation.Constraints.Required;
+import at.ac.tuwien.big.we15.lab2.api.Avatar;
 import controllers.Application;
 
 public class Register {
-	private UserImpl user;
+	public String firstname;
+	public String lastname;
+	public Date birthdate;
+	public String male;
+	public String female;
+	public String avatar;
+	//@Required
+	//@MinLength(4)
+	//@MaxLength(8)
+	public String username;
+	//@Required
+	//@MinLength(4)
+	//@MaxLength(8)
+	public String password;
+	
+	/*private UserImpl user;
 	
 	public Register() {
 		user = new UserImpl();
@@ -35,11 +54,11 @@ public class Register {
 		user.setBirthdate(birthdate);
 	}
 
-	public String getAvatar() {
+	public Avatar getAvatar() {
 		return user.getAvatar();
 	}
 
-	public void setAvatar(String avatar) {
+	public void setAvatar(Avatar avatar) {
 		user.setAvatar(avatar);
 	}
 	
@@ -52,11 +71,11 @@ public class Register {
 	}
 
 	public String getUsername() {
-		return user.getUsername();
+		return user.getName();
 	}
 
 	public void setUsername(String username) {
-		user.setUsername(username);
+		user.setName(username);
 	}
 
 	public String getPassword() {
@@ -66,12 +85,12 @@ public class Register {
 	public void setPassword(String password) {
 		user.setPassword(password);
 	}
-
+*/
 	public String validate() {
-		if(Application.fetchUser(user.getUsername())!=null)
+		/*if(Application.fetchUser(user.getName())!=null)
 		{
 			return "Username already in use!";
-		}
+		}*/
 		
 		
 		return null;
