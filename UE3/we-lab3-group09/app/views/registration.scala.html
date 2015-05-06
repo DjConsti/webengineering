@@ -112,6 +112,12 @@
                     <p id="requiredhint">Mit "*" gekennzeichnete Felder sind Pflichtfelder</p>
                 </fieldset>
             	}
+            	
+            	@if(form.hasGlobalErrors) {
+				    <p id="loginFailed">
+				        @form.globalError.message
+				    </p>
+				}
         </div>
 
         <!-- Footer -->

@@ -2,6 +2,8 @@ package models;
 
 import java.util.Date;
 
+import controllers.Application;
+
 public class Register {
 	private UserImpl user;
 	
@@ -66,11 +68,13 @@ public class Register {
 	}
 
 	public String validate() {
-		if (true) {
-			// TODO hier Ã¼berprÃ¼fen ob die register daten OK sind
-			return null;
+		if(Application.fetchUser(user.getUsername())!=null)
+		{
+			return "Username already in use!";
 		}
-		return "Invalid user or password";
+		
+		
+		return null;
 	}
 	
 	/*
