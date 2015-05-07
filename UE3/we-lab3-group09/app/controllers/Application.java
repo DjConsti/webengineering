@@ -6,10 +6,12 @@ import javax.naming.AuthenticationException;
 import javax.persistence.EntityManager;
 
 import ch.qos.logback.core.Context;
+import models.Language;
 import models.Login;
 import models.Register;
 import models.UserImpl;
 import play.Routes;
+import play.api.i18n.Lang;
 import play.data.*;
 import play.db.jpa.JPA;
 import play.mvc.*;
@@ -64,7 +66,7 @@ public class Application extends Controller {
 		} catch (Exception e) {
 			return badRequest(registration.render(registerForm));
 		}
-
+		
 		Register registerData = registerForm.get();
 		
 		UserImpl user = new UserImpl();
@@ -89,7 +91,7 @@ public class Application extends Controller {
 	@play.db.jpa.Transactional
 	public static Result login() {
 		Form<Login> loginForm;
-
+		
 		loginForm = Form.form(Login.class).bindFromRequest();
 		try {
 			if (loginForm.hasErrors()) {
@@ -98,10 +100,28 @@ public class Application extends Controller {
 		} catch (Exception e) {
 			return badRequest(authentication.render(loginForm));
 		}
+
 		
 		session("user", loginForm.get().username);
 		GameController.games.put(loginForm.get().username, new GameController(fetchUser(loginForm.get().username)));
-		return ok(jeopardy.render());
+		return ok(jeopardy.render(loginForm.get().username, String.valueOf(1)));
+	}
+	
+	public static Result changeLanguage()
+	{
+		Form<Language> langSelectForm;
+		langSelectForm = Form.form(Language.class).bindFromRequest();
+
+		request().getQueryString("language");
+		
+		if(langSelectForm.get().language.equals("en") || langSelectForm.get().language.equals("de"))
+		{
+			changeLang(langSelectForm.get().language);
+			session("lan", langSelectForm.get().language);
+			return ok(authentication.render(Form.form(Login.class)));
+		}
+		
+		return badRequest(authentication.render(Form.form(Login.class)));
 	}
 
 	public static Result auth() {

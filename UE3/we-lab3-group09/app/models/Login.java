@@ -22,17 +22,18 @@ public class Login {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 	public String validate() {
 
-		if(Application.fetchUser(username) != null) {
+		if (Application.fetchUser(username) != null) {
 			System.out.println("Login erfolgreich");
 			Application.session().clear();
 			return null;
 		} else {
 			System.err.println("Diesen User gibt es nicht!");
 		}
-		
+		// TODO diese nachricht ist eigentlich hinfällig, da jetzt die des
+		// messagesfiles benutz wird
 		return "Invalid user or password";
 	}
 }

@@ -3,14 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
     <head>
     	<meta charset="UTF-8">
-        <title>Business Informatics Group Jeopardy! - Gewinnanzeige</title>
+        <title>Business Informatics Group Jeopardy! - @Messages("view.winner.winnerpage")</title>
         <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/base.css")" />
         <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/screen.css")" />
 		  <script src="@routes.Assets.at("javascript/framework.js")" type="text/javascript"></script>
         <script src="@routes.Assets.at("javascript/framework.js")" type="text/javascript"></script>
     </head>
     <body id="winner-page">
-      <a class="accessibility" href="#winner">Zur Gewinnanzeige springen</a>
+      <a class="accessibility" href="#winner">@Messages("view.winner.gotowinner")</a>
       <!-- Header -->
       <header role="banner" aria-labelledby="bannerheading">
          <h1 id="bannerheading">
@@ -22,49 +22,49 @@
 		<nav role="navigation" aria-labelledby="navheading">
 			<h2 id="navheading" class="accessibility">Navigation</h2>
 			<ul>
-				<li><a class="orangelink navigationlink" id="logoutlink" title="Klicke hier um dich abzumelden" href="@routes.SecuredArea.logout()" accesskey="l">Abmelden</a></li>
+				<li><a class="orangelink navigationlink" id="logoutlink" title="@Messages("view.global.logout.hover")" href="@routes.SecuredArea.logout()" accesskey="l">@Messages("view.global.logout")</a></li>
 			</ul>
 		</nav>
       
       <!-- Content -->
       <div role="main">
          <section id="gameinfo" aria-labelledby="winnerinfoheading">
-            <h2 id="winnerinfoheading" class="accessibility">Gewinnerinformationen</h2>
-            <p class="user-info positive-change">Du hast richtig geantwortet: +1000 €</p>
-            <p class="user-info negative-change">Deadpool hat falsch geantwortet: -500 €</p>
+            <h2 id="winnerinfoheading" class="accessibility">@Messages("view.winner.winnerinformation")</h2>
+            <p class="user-info positive-change">@Messages("view.jeopardy.correctAnswer") +1000 €</p>
+            <p class="user-info negative-change">Deadpool @Messages("view.jeopardy.wrongAnswer"): -500 €</p>
             <section class="playerinfo leader" aria-labelledby="winnerannouncement">
-               <h3 id="winnerannouncement">Gewinner: Black Widow</h3>
-               <img class="avatar" src="img/avatar/black-widow.png" alt="Spieler-Avatar Black Widow" />
+               <h3 id="winnerannouncement">@Messages("view.winner.winner"): Black Widow</h3>
+               <img class="avatar" src="@routes.Assets.at("images/avatar/black-widow.png")" alt="Spieler-Avatar Black Widow" />
                <table>
                   <tr>
-                     <th class="accessibility">Spielername</th>
+                     <th class="accessibility">@Messages("view.jeopardy.playername")</th>
                      <td class="playername">Black Widow</td>
                   </tr>
                   <tr>
-                     <th class="accessibility">Spielerpunkte</th>
+                     <th class="accessibility">@Messages("view.jeopardy.score")</th>
                      <td class="playerpoints">€ 2000</td>
                   </tr>
                </table>
             </section>
             <section class="playerinfo" aria-labelledby="loserheading">
                <h3 id="loserheading" class="accessibility">Verlierer: Deadpool</h3>
-               <img class="avatar" src="img/avatar/deadpool_head.png" alt="Spieler-Avatar Deadpool" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/deadpool_head.png")" alt="Spieler-Avatar Deadpool" />
                <table>
                   <tr>
-                     <th class="accessibility">Spielername</th>
+                     <th class="accessibility">@Messages("view.jeopardy.playername")</th>
                      <td class="playername">Deadpool</td>
                   </tr>
                   <tr>
-                     <th class="accessibility">Spielerpunkte</th>
+                     <th class="accessibility">@Messages("view.jeopardy.score")</th>
                      <td class="playerpoints">€ 400</td>
                   </tr>
                </table>
             </section>
          </section>
          <section id="newgame" aria-labelledby="newgameheading">
-             <h2 id="newgameheading" class="accessibility">Neues Spiel</h2>
+             <h2 id="newgameheading" class="accessibility">@Messages("view.winner.newgame")</h2>
          	<form action="jeopardy.xhtml" method="post">
-               	<input class="clickable orangelink contentlink" id="new_game" type="submit" name="restart" value="Neues Spiel" />
+               	<input class="clickable orangelink contentlink" id="new_game" type="submit" name="restart" value="@Messages("view.winner.newgame")" />
             </form>
          </section>
       </div>

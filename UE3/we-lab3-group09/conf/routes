@@ -10,6 +10,8 @@ GET     /authentication           controllers.Application.auth()
 # formular von login gedrueckt
 POST    /authentication           controllers.Application.login()
 
+POST 	/changelan		     	  controllers.Application.changeLanguage()
+
 GET     /jeopardy	              controllers.SecuredArea.jeopardy()
 # wenn waehlen button geklickt wurde
 POST 	/question				  controllers.SecuredArea.chooseQuestion()

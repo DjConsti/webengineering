@@ -15,6 +15,7 @@ import play.mvc.*;
 import views.html.*;
 import at.ac.tuwien.big.we15.lab2.api.*;
 import at.ac.tuwien.big.we15.lab2.api.impl.PlayJeopardyFactory;
+import play.i18n.Messages;
 
 /**
  * Hier kommen alle Methoden rein, die nur aufrufbar sein sollen, wenn der User eingeloggt
@@ -38,13 +39,13 @@ public class SecuredArea extends Controller{
 		questionId = Integer.parseInt(request().body().asFormUrlEncoded().get("question_selection")[0]);
 		}catch(Exception e) { 
 			System.err.println("USERERROR: INVALID QUESTION SELECT NUMBER");
-			return ok(jeopardy.render());
+			return jeopardy();
 		}
 		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
 		
 		gamectrl.getGame().chooseHumanQuestion(questionId);
 		
-		return ok(question.render());
+		return question();
 	}
 
 	public static Result commitAnswer()
@@ -65,8 +66,12 @@ public class SecuredArea extends Controller{
 		for(int answerId : selectedAnswers)
 			answerList.add(answerId);
 		gamectrl.getGame().answerHumanQuestion(answerList);
+		gamectrl.increaseRound();
 		
-		return ok(jeopardy.render());
+		if(gamectrl.isGameOver())
+			return winner();
+		
+		return jeopardy();
 	}
 	
 	public static Result logout()
@@ -77,12 +82,12 @@ public class SecuredArea extends Controller{
 	}
 	
 	public static Result jeopardy() {
-		return ok(jeopardy.render());
+		return ok(jeopardy.render(session().get("user"), String.valueOf(controller.games.get(session().get("user")).getRound())));
 	}
 	
 
 	public static Result question() {
-		return ok(question.render());
+		return ok(question.render(session().get("user"), String.valueOf(controller.games.get(session().get("user")).getRound())));
 	}
 	
 	
