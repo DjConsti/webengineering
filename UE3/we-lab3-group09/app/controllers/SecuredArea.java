@@ -39,13 +39,13 @@ public class SecuredArea extends Controller{
 		questionId = Integer.parseInt(request().body().asFormUrlEncoded().get("question_selection")[0]);
 		}catch(Exception e) { 
 			System.err.println("USERERROR: INVALID QUESTION SELECT NUMBER");
-			return jeopardy();//ok(jeopardy.render(username, String.valueOf(gamectrl.getRound())));
+			return jeopardy();
 		}
 		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
 		
 		gamectrl.getGame().chooseHumanQuestion(questionId);
 		
-		return question();//ok(question.render(username, String.valueOf(gamectrl.getRound())));
+		return question();
 	}
 
 	public static Result commitAnswer()
@@ -68,7 +68,10 @@ public class SecuredArea extends Controller{
 		gamectrl.getGame().answerHumanQuestion(answerList);
 		gamectrl.increaseRound();
 		
-		return jeopardy();//ok(jeopardy.render(username, String.valueOf(gamectrl.getRound())));
+		if(gamectrl.isGameOver())
+			return winner();
+		
+		return jeopardy();
 	}
 	
 	public static Result logout()
