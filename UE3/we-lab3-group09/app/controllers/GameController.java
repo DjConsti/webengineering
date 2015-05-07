@@ -12,6 +12,7 @@ public class GameController {
 	
 	private JeopardyFactory factory;
 	private JeopardyGame game;
+	private int round=1;
 
 	public GameController(UserImpl user) {
 		factory = new PlayJeopardyFactory("data.de.json");
@@ -25,6 +26,14 @@ public class GameController {
 		if(game == null )
 			System.err.println("GAME IS NULL 2");
 		return game;
+	}
+	
+	public void increaseRound() {
+		round++;
+	}
+	
+	public int getRound() {
+		return round;
 	}
 
 }
