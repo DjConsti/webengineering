@@ -101,7 +101,7 @@ public class Application extends Controller {
 		
 		session("user", loginForm.get().username);
 		GameController.games.put(loginForm.get().username, new GameController(fetchUser(loginForm.get().username)));
-		return ok(jeopardy.render());
+		return ok(jeopardy.render(loginForm.get().username));
 	}
 
 	public static Result auth() {

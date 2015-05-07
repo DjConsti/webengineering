@@ -1,7 +1,7 @@
-New log file opened at Wed May 06 20:15:55 CEST 2015 by 4424@amd6x-PC
-Taking next connection to: 59809
-New client attempting to connect on port: 59812-59809
-  Address = /192.168.2.108:59809
-This client on port 59812 has uuid 32b7bfdb-4c07-4e2b-8a05-3ad80f4b4f3a configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-32b7bfdb-4c07-4e2b-8a05-3ad80f4b4f3a
-Taking next connection to: 59809
+New log file opened at Thu May 07 16:20:54 CEST 2015 by 2392@Max
+Taking next connection to: 56279
+New client attempting to connect on port: 56280-56279
+  Address = /192.168.0.12:56279
+This client on port 56280 has uuid 23f778e8-fbb4-4c4c-b114-58cb618e92a6 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-23f778e8-fbb4-4c4c-b114-58cb618e92a6
+Taking next connection to: 56279

@@ -38,7 +38,7 @@ public class SecuredArea extends Controller{
 		questionId = Integer.parseInt(request().body().asFormUrlEncoded().get("question_selection")[0]);
 		}catch(Exception e) { 
 			System.err.println("USERERROR: INVALID QUESTION SELECT NUMBER");
-			return ok(jeopardy.render());
+			return ok(jeopardy.render(username));
 		}
 		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
 		
@@ -66,7 +66,7 @@ public class SecuredArea extends Controller{
 			answerList.add(answerId);
 		gamectrl.getGame().answerHumanQuestion(answerList);
 		
-		return ok(jeopardy.render());
+		return ok(jeopardy.render(username));
 	}
 	
 	public static Result logout()
@@ -77,7 +77,7 @@ public class SecuredArea extends Controller{
 	}
 	
 	public static Result jeopardy() {
-		return ok(jeopardy.render());
+		return ok(jeopardy.render(session().get("user")));
 	}
 	
 
