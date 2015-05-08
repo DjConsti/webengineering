@@ -43,6 +43,7 @@ public class SecuredArea extends Controller{
 		}
 		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
 		
+		gamectrl.addChosenQuestion(questionId);
 		gamectrl.getGame().chooseHumanQuestion(questionId);
 		
 		return question();
@@ -82,12 +83,39 @@ public class SecuredArea extends Controller{
 	}
 	
 	public static Result jeopardy() {
-		return ok(jeopardy.render(session().get("user"), String.valueOf(controller.games.get(session().get("user")).getRound())));
+		// TODO wenn die methode jeopardy von winner aufgerufen wird, sind diese Attribute nicht gesetzt... 
+		// entsprechend nur diese attribute holen, wenn sie gesetzt sind. 
+		int userMoneyChangeNum = controller.games.get(session().get("user")).getGame().getHumanPlayer().getLatestProfitChange();
+		int computerMoneyChangeNum = controller.games.get(session().get("user")).getGame().getMarvinPlayer().getLatestProfitChange();
+		String userMoneyChange = String.valueOf(userMoneyChangeNum) + " €";
+		String computerMoneyChange = String.valueOf(computerMoneyChangeNum)+" €";
+		if (userMoneyChangeNum>=0) {
+			userMoneyChange = "+"+userMoneyChange;
+		}
+		if (computerMoneyChangeNum>=0) {
+			computerMoneyChange = "+"+computerMoneyChange;
+		}
+		return ok(jeopardy.render(session().get("user"), 
+				String.valueOf(controller.games.get(session().get("user")).getRound()),
+				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
+				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
+				userMoneyChange,
+				userMoneyChangeNum >= 0,
+				computerMoneyChange,
+				computerMoneyChangeNum >= 0,
+				controller.games.get(session().get("user")).getQWrapper()
+				));
 	}
 	
 
 	public static Result question() {
-		return ok(question.render(session().get("user"), String.valueOf(controller.games.get(session().get("user")).getRound())));
+		List<Answer> list = controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getAllAnswers();
+		return ok(question.render(session().get("user"), 
+				String.valueOf(controller.games.get(session().get("user")).getRound()),
+				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
+				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
+				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getText(),
+				list.get(0).getText(), list.get(1).getText(), list.get(2).getText(), list.get(3).getText()));
 	}
 	
 	

@@ -1,5 +1,5 @@
-New log file opened at Thu May 07 23:55:45 CEST 2015 by 5728@amd6x-PC
-jvm 5728@amd6x-PC
+New log file opened at Fri May 08 16:24:34 CEST 2015 by 5936@amd6x-PC
+jvm 5936@amd6x-PC
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project, returning: (we-lab3-group09-build)
 Loading project definition from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@50bb6402, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3134c3b9, check cycles: false
 [info] Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/project/}we-lab3-group09-build...
 Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/project/}we-lab3-group09-build...
 Other repositories:
@@ -16307,7 +16307,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8-M3!apply-macro.jar
 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-:: resolution report :: resolve 7370ms :: artifacts dl 159ms
+:: resolution report :: resolve 7129ms :: artifacts dl 150ms
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT compile produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-compile.xml
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT runtime produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-runtime.xml
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT test produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-test.xml
@@ -16321,7 +16321,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT docs produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-docs.xml
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT pom produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-pom.xml
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT scala-tool produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-scala-tool.xml
-	resolve done (7370ms resolve - 159ms download)
+	resolve done (7129ms resolve - 150ms download)
 [info] Done updating.
 Done updating.
 

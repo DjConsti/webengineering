@@ -1,16 +1,7 @@
-New log file opened at Thu May 07 23:55:45 CEST 2015 by 5728@amd6x-PC
-Taking next connection to: 62197
-New client attempting to connect on port: 62199-62197
-  Address = /192.168.2.108:62197
-This client on port 62199 has uuid a88e60c2-c4f8-4145-9c6f-5c7d8ce99f26 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-a88e60c2-c4f8-4145-9c6f-5c7d8ce99f26
-Taking next connection to: 62197
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 62197
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 62197
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 62197
+New log file opened at Fri May 08 16:24:34 CEST 2015 by 5936@amd6x-PC
+Taking next connection to: 50748
+New client attempting to connect on port: 50750-50748
+  Address = /192.168.2.108:50748
+This client on port 50750 has uuid 84efb359-220a-4e21-bf5f-d7bf97e218d1 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-84efb359-220a-4e21-bf5f-d7bf97e218d1
+Taking next connection to: 50748

@@ -1,4 +1,4 @@
-@(username: String)(nrfragen: String)
+@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(qText: String)(q1Text: String)(q2Text: String)(q3Text: String)(q4Text: String)
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
@@ -42,7 +42,7 @@
                   </tr>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.score")</th>
-                     <td class="playerpoints">2000 €</td>
+                     <td class="playerpoints">@userMoney €</td>
                   </tr>
                </table>
             </section>
@@ -56,7 +56,7 @@
                   </tr>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.score")</th>
-                     <td class="playerpoints">400 €</td>
+                     <td class="playerpoints">@computerMoney €</td>
                   </tr>
                </table>
             </section>
@@ -68,12 +68,12 @@
             @helper.form(action = routes.SecuredArea.commitAnswer()) {
                <h2 id="questionheading" class="accessibility">@Messages("view.jeopardy.question")</h2>
                <p id="questiontype">TUWIEN für € 300</p>
-               <p id="questiontext">Diese Lehrveranstaltungen bilden das Modul EWA.</p>
+               <p id="questiontext">@qText</p>
                <ul id="answers">
-                  <li><input name="answers" id="answer_1" value="1" type="checkbox"/><label class="tile clickable" for="answer_1">Was ist IT Strategie?</label></li>
-                  <li><input name="answers" id="answer_2" value="2" type="checkbox"/><label class="tile clickable" for="answer_2">Was ist Web Engineering?</label></li>
-                  <li><input name="answers" id="answer_3" value="3" type="checkbox"/><label class="tile clickable" for="answer_3">Was ist Semistrukturierte Daten?</label></li>
-                  <li><input name="answers" id="answer_4" value="4" type="checkbox"/><label class="tile clickable" for="answer_4">Was ist Objektorientierte Modellierung?</label></li>
+                  <li><input name="answers" id="answer_1" value="1" type="checkbox"/><label class="tile clickable" for="answer_1">@q1Text</label></li>
+                  <li><input name="answers" id="answer_2" value="2" type="checkbox"/><label class="tile clickable" for="answer_2">@q2Text</label></li>
+                  <li><input name="answers" id="answer_3" value="3" type="checkbox"/><label class="tile clickable" for="answer_3">@q3Text</label></li>
+                  <li><input name="answers" id="answer_4" value="4" type="checkbox"/><label class="tile clickable" for="answer_4">@q4Text</label></li>
                </ul>
                <input id="timeleftvalue" type="hidden" value="100"/>
                <input class="greenlink formlink clickable" name="answer_submit" id="next" type="submit" value="@Messages("view.question.submitAnswer")" accesskey="s"/>
