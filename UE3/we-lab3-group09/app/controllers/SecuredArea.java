@@ -3,6 +3,7 @@ package controllers;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 import javax.naming.AuthenticationException;
 
@@ -44,7 +45,22 @@ public class SecuredArea extends Controller{
 		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
 		
 		gamectrl.addChosenQuestion(questionId);
-		gamectrl.getGame().chooseHumanQuestion(questionId);
+		
+		Random rand = new Random();
+		int randomQuestionId = -1;
+		
+		if(questionId < 5)
+			randomQuestionId = rand.nextInt((7 - 1) + 1) + 1;
+		else if(questionId < 10)
+			randomQuestionId = rand.nextInt((14 - 8) + 1) + 8;
+		else if(questionId < 15)
+			randomQuestionId = rand.nextInt((21 - 15) + 1) + 15;
+		else if(questionId < 19)
+			randomQuestionId = rand.nextInt((28 - 22) + 1) + 22;
+		else
+			randomQuestionId = rand.nextInt((35 - 29) + 1) + 29;
+		
+		gamectrl.getGame().chooseHumanQuestion(randomQuestionId);
 		
 		return question();
 	}
