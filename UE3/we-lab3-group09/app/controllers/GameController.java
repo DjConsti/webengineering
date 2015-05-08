@@ -19,7 +19,7 @@ public class GameController {
 	private QuestionWrapper qWrapper;
 
 	public GameController(UserImpl user) {
-		if(Messages.get("frage").equals("Frage"))
+		if(Messages.get("view.global.logout").equals("Abmelden"))
 			factory = new PlayJeopardyFactory("data.de.json");
 		else
 			factory = new PlayJeopardyFactory("data.en.json");

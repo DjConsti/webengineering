@@ -1,5 +1,5 @@
-New log file opened at Fri May 08 19:18:03 CEST 2015 by 5676@Max
-jvm 5676@Max
+New log file opened at Fri May 08 20:42:34 CEST 2015 by 6724@Max
+jvm 6724@Max
 jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=23.7-b01
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.7
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:PermSize=64m, -XX:MaxPermSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\delete\webengineering\UE3\we-lab3-group09\project, returning: (we-lab3-group09-build)
 Loading project definition from C:\delete\webengineering\UE3\we-lab3-group09\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@10eada1, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@1adc939, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to we-lab3-group09 (in build file:/C:/delete/webengineering/
 > server-handle-next-server-request
 > {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@34e9d0, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@16c72ac, check cycles: false
 Read from stdout: Updating {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root...
 Updating {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root...
 Other repositories:
@@ -82,7 +82,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.1 ...
 Resolving org.scala-lang#scala-library;2.11.1 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b2920
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47b25b
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1
 	found org.scala-lang#scala-library;2.11.1 in sbt-chain
 	[2.11.1] org.scala-lang#scala-library;2.11.1
@@ -590,7 +590,7 @@ sbt-chain: module revision found in cache: javax.transaction#jta;1.1
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->default(compile)]
 Read from stdout: Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
 Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@171a5c3
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73b009
 sbt-chain: module revision found in cache: com.typesafe.play#play-java_2.11;2.3.8
 	found com.typesafe.play#play-java_2.11;2.3.8 in sbt-chain
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->runtime]
@@ -7399,7 +7399,7 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	[NOT REQUIRED] org.scalacheck#scalacheck_2.11;1.11.5!scalacheck_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 2925ms :: artifacts dl 109ms
+:: resolution report :: resolve 2955ms :: artifacts dl 108ms
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT compile produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-compile.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT runtime produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-runtime.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT test produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-test.xml
@@ -7414,50 +7414,37 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT pom produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-pom.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT scala-tool produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-scala-tool.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT fork-run produced in C:\delete\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-fork-run.xml
-	resolve done (2925ms resolve - 109ms download)
+	resolve done (2955ms resolve - 108ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 4 s, completed 08.05.2015 19:18:11
+Total time: 4 s, completed 08.05.2015 20:42:42
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@1b5901b, check cycles: false
-Total time: 0 s, completed 08.05.2015 19:18:12
+Running task... Cancel: sbt.server.ServerTaskCancellation@17cafd1, check cycles: false
+Total time: 0 s, completed 08.05.2015 20:42:43
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/delete/webengineering/UE3/we-lab3-group09/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@14585c1, check cycles: false
-Invalidating C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\controllers\Application.class: stamp changed from lastModified(1431080863741) to lastModified(1431103878592)
+Running task... Cancel: sbt.server.ServerTaskCancellation@82a0db, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
-Modified binary dependencies: Set(C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\controllers\Application.class)
-Initial directly invalidated sources: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
-	binary dep: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\models\Login.java, C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\delete\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java, C:\delete\webengineering\UE3\we-lab3-group09\app\models\Login.java, C:\delete\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 3 Java sources to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
-Compiling 3 Java sources to C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@1cbf259 directly...
-Java compilation took 0.488199583 s
-Java analysis took 0.185212065 s
-Java compile + analysis took 0.726076156 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
 Copy resource mappings: 
 	(C:\delete\webengineering\UE3\we-lab3-group09\conf\application.conf,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\application.conf)
 	(C:\delete\webengineering\UE3\we-lab3-group09\conf\data.de.json,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.de.json)
@@ -7467,13 +7454,6 @@ Copy resource mappings:
 	(C:\delete\webengineering\UE3\we-lab3-group09\conf\META-INF,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF)
 	(C:\delete\webengineering\UE3\we-lab3-group09\conf\routes,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\routes)
 	(C:\delete\webengineering\UE3\we-lab3-group09\conf\META-INF\persistence.xml,C:\delete\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 2 s, completed 08.05.2015 19:18:19
+Total time: 1 s, completed 08.05.2015 20:42:48
 > server-post-command-cleanup
 > server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 5676@Max logs at Fri May 08 19:21:04 CEST 2015, goodbye.
