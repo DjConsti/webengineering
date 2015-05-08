@@ -52,4 +52,5 @@ view.winner.winnerpage=Winner overview
 view.winner.gotowinner=Go to winner overview
 view.winner.winnerinformation=Winner information
 view.winner.winner=Winner
+view.winner.loser=Loser
 view.winner.newgame=New game

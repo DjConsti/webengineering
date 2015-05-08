@@ -52,5 +52,6 @@ view.winner.winnerpage=Gewinnanzeige
 view.winner.gotowinner=Zur Gewinnanzeige springen
 view.winner.winnerinformation=Gewinnerinformationen
 view.winner.winner=Gewinner
+view.winner.loser=Verlierer
 view.winner.newgame=Neues Spiel
 

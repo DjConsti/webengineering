@@ -1,3 +1,4 @@
+@(username: String)(userMoney: String)(computerMoney: String)(userMoneyChange: String)(computerMoneyChange: String)(userCorrect: Boolean)(computerCorrect: Boolean)(humanWinner: String)(computerWinner: String)(humanWon: Boolean)
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
@@ -30,24 +31,36 @@
       <div role="main">
          <section id="gameinfo" aria-labelledby="winnerinfoheading">
             <h2 id="winnerinfoheading" class="accessibility">@Messages("view.winner.winnerinformation")</h2>
-            <p class="user-info positive-change">@Messages("view.jeopardy.correctAnswer") +1000 €</p>
-            <p class="user-info negative-change">Deadpool @Messages("view.jeopardy.wrongAnswer"): -500 €</p>
-            <section class="playerinfo leader" aria-labelledby="winnerannouncement">
-               <h3 id="winnerannouncement">@Messages("view.winner.winner"): Black Widow</h3>
+            @if(userCorrect) {
+            <p class="user-info positive-change">@Messages("view.jeopardy.userCorrectAnswer"): @userMoneyChange</p>
+            } else {
+            <p class="user-info negative-change">@Messages("view.jeopardy.userWrongAnswer"): @userMoneyChange</p>
+            }
+            @if(computerCorrect) {
+            <p class="user-info positive-change">@Messages("view.jeopardy.computerCorrectAnswer"): @computerMoneyChange</p>
+            } else {
+            <p class="user-info negative-change">@Messages("view.jeopardy.computerWrongAnswer"): @computerMoneyChange</p>
+            }
+            <section class="playerinfo @humanWinner" aria-labelledby="winnerannouncement">
+				@if(humanWon) {
+               <h3 id="winnerannouncement">@Messages("view.winner.winner"): @username</h3>
+			   } else {
+			   <h3 id="winnerannouncement">@Messages("view.winner.winner"): Deadpool</h3>
+			   }
                <img class="avatar" src="@routes.Assets.at("images/avatar/black-widow.png")" alt="Spieler-Avatar Black Widow" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>
-                     <td class="playername">Black Widow</td>
+                     <td class="playername">@username</td>
                   </tr>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.score")</th>
-                     <td class="playerpoints">€ 2000</td>
+                     <td class="playerpoints">€ @userMoney</td>
                   </tr>
                </table>
             </section>
-            <section class="playerinfo" aria-labelledby="loserheading">
-               <h3 id="loserheading" class="accessibility">Verlierer: Deadpool</h3>
+            <section class="playerinfo @computerWinner" aria-labelledby="loserheading">
+               <h3 id="loserheading" class="accessibility">@Messages("view.jeopardy.loser"): Deadpool</h3>
                <img class="avatar" src="@routes.Assets.at("images/avatar/deadpool_head.png")" alt="Spieler-Avatar Deadpool" />
                <table>
                   <tr>
@@ -56,7 +69,7 @@
                   </tr>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.score")</th>
-                     <td class="playerpoints">€ 400</td>
+                     <td class="playerpoints">€ @computerMoney</td>
                   </tr>
                </table>
             </section>
