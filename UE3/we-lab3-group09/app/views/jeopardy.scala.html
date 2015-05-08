@@ -1,4 +1,4 @@
-@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(questionStatus: QuestionWrapper)
+@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(userMoneyChange: String)(computerMoneyChange: String)(questionStatus: QuestionWrapper)
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
     <head>
@@ -66,8 +66,8 @@
          <!-- Question -->
          <section id="question-selection" aria-labelledby="questionheading">
             <h2 id="questionheading" class="black accessibility">Jeopardy</h2>
-            <p class="user-info positive-change">@Messages("view.jeopardy.correctAnswer"): +1000 €</p>
-            <p class="user-info negative-change">Deadpool @Messages("view.jeopardy.wrongAnswer"): -500 €</p>
+            <p class="user-info positive-change">@Messages("view.jeopardy.correctAnswer"): @userMoneyChange</p>
+            <p class="user-info negative-change">Deadpool @Messages("view.jeopardy.wrongAnswer"): @computerMoneyChange</p>
             <p class="user-info">Deadpool hat TUWIEN für € 1000 gewählt.</p>
             @helper.form(action = routes.SecuredArea.chooseQuestion()) {
                <fieldset>
