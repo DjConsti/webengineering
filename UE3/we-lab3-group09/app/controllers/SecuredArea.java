@@ -83,10 +83,22 @@ public class SecuredArea extends Controller{
 	}
 	
 	public static Result jeopardy() {
+		int userMoneyChangeNum = controller.games.get(session().get("user")).getGame().getHumanPlayer().getLatestProfitChange();
+		int computerMoneyChangeNum = controller.games.get(session().get("user")).getGame().getMarvinPlayer().getLatestProfitChange();
+		String userMoneyChange = String.valueOf(userMoneyChangeNum) + " €";
+		String computerMoneyChange = String.valueOf(computerMoneyChangeNum)+" €";
+		if (userMoneyChangeNum>=0) {
+			userMoneyChange = "+"+userMoneyChange;
+		}
+		if (computerMoneyChangeNum>=0) {
+			computerMoneyChange = "+"+computerMoneyChange;
+		}
 		return ok(jeopardy.render(session().get("user"), 
 				String.valueOf(controller.games.get(session().get("user")).getRound()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
+				userMoneyChange,
+				computerMoneyChange,
 				controller.games.get(session().get("user")).getQWrapper()
 				));
 	}
