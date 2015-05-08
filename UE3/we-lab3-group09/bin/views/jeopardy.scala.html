@@ -66,8 +66,16 @@
          <!-- Question -->
          <section id="question-selection" aria-labelledby="questionheading">
             <h2 id="questionheading" class="black accessibility">Jeopardy</h2>
-            <p class="user-info positive-change">@Messages("view.jeopardy.correctAnswer"): @userMoneyChange</p>
-            <p class="user-info negative-change">Deadpool @Messages("view.jeopardy.wrongAnswer"): @computerMoneyChange</p>
+            @if(userCorrect) {
+            <p class="user-info positive-change">@Messages("view.jeopardy.userCorrectAnswer"): @userMoneyChange</p>
+            } else {
+            <p class="user-info negative-change">@Messages("view.jeopardy.userWrongAnswer"): @userMoneyChange</p>
+            }
+            @if(computerCorrect) {
+            <p class="user-info positive-change">@Messages("view.jeopardy.computerCorrectAnswer"): @computerMoneyChange</p>
+            } else {
+            <p class="user-info negative-change">@Messages("view.jeopardy.computerWrongAnswer"): @computerMoneyChange</p>
+            }
             <p class="user-info">Deadpool hat TUWIEN für € 1000 gewählt.</p>
             @helper.form(action = routes.SecuredArea.chooseQuestion()) {
                <fieldset>
