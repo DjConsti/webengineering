@@ -43,6 +43,7 @@ public class SecuredArea extends Controller{
 		}
 		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
 		
+		gamectrl.addChosenQuestion(questionId);
 		gamectrl.getGame().chooseHumanQuestion(questionId);
 		
 		return question();
@@ -82,12 +83,23 @@ public class SecuredArea extends Controller{
 	}
 	
 	public static Result jeopardy() {
-		return ok(jeopardy.render(session().get("user"), String.valueOf(controller.games.get(session().get("user")).getRound())));
+		return ok(jeopardy.render(session().get("user"), 
+				String.valueOf(controller.games.get(session().get("user")).getRound()),
+				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
+				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
+				controller.games.get(session().get("user")).getQWrapper()
+				));
 	}
 	
 
 	public static Result question() {
-		return ok(question.render(session().get("user"), String.valueOf(controller.games.get(session().get("user")).getRound())));
+		List<Answer> list = controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getAllAnswers();
+		return ok(question.render(session().get("user"), 
+				String.valueOf(controller.games.get(session().get("user")).getRound()),
+				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
+				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
+				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getText(),
+				list.get(0).getText(), list.get(1).getText(), list.get(2).getText(), list.get(3).getText()));
 	}
 	
 	

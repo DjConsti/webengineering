@@ -1,6 +1,8 @@
 package controllers;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import at.ac.tuwien.big.we15.lab2.api.JeopardyFactory;
 import at.ac.tuwien.big.we15.lab2.api.JeopardyGame;
@@ -14,6 +16,7 @@ public class GameController {
 	private JeopardyFactory factory;
 	private JeopardyGame game;
 	private int round=1;
+	private QuestionWrapper qWrapper;
 
 	public GameController(UserImpl user) {
 		if(Messages.get("frage").equals("Frage"))
@@ -23,6 +26,7 @@ public class GameController {
 		game = factory.createGame("test");
 		if(game == null )
 			System.err.println("GAME IS NULL 1");
+		qWrapper = new QuestionWrapper();
 	}
 	
 	public JeopardyGame getGame() {
@@ -42,6 +46,14 @@ public class GameController {
 	
 	public boolean isGameOver() {
 		return round > 10;
+	}
+	
+	public void addChosenQuestion(int id) {
+		qWrapper.add(id);
+	}
+	
+	public QuestionWrapper getQWrapper() {
+		return qWrapper;
 	}
 
 }

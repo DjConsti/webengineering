@@ -104,7 +104,8 @@ public class Application extends Controller {
 		
 		session("user", loginForm.get().username);
 		GameController.games.put(loginForm.get().username, new GameController(fetchUser(loginForm.get().username)));
-		return ok(jeopardy.render(loginForm.get().username, String.valueOf(1)));
+		return ok(jeopardy.render(loginForm.get().username, String.valueOf(1), String.valueOf(0), String.valueOf(0), 
+				new QuestionWrapper()));
 	}
 	
 	public static Result changeLanguage()
