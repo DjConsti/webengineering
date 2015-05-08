@@ -98,7 +98,9 @@ public class SecuredArea extends Controller{
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
 				userMoneyChange,
+				userMoneyChangeNum >= 0,
 				computerMoneyChange,
+				computerMoneyChangeNum >= 0,
 				controller.games.get(session().get("user")).getQWrapper()
 				));
 	}
