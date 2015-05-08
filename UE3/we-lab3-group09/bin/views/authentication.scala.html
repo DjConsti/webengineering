@@ -1,0 +1,59 @@
+@(form:Form[models.Login])
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title>Business Informatics Group Jeopardy! - Login</title>
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/base.css")" />
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/screen.css")" />
+    </head>
+    
+    <body id="login-page"> 
+      <a class="accessibility" href="#login">@Messages("view.authentication.gotologin")</a>
+	  <a class="accessibility" title="@Messages("view.authentication.gotoreg")" href="register.xhtml" accesskey="r">Registrieren</a>  
+      <!-- Header -->
+      <header role="banner" aria-labelledby="bannerheading">
+         <h1 id="bannerheading">
+            <span class="accessibility">Business Informatics Group </span><span class="gametitle">Jeopardy!</span>
+         </h1>
+      </header>
+      @helper.form(action=routes.Application.changeLanguage()){
+	      <select id="language" name="language">
+	                <option value="de">Deutsch</option>
+	                <option value="en">English</option>
+	      </select>
+	      <input type="submit" name="changeLan" id="changeLan" class="greenlink formlink clickable" value="@Messages("view.authentication.changelan")" />
+      }
+      
+      <!-- Content -->
+        <div role="main">
+            <section id="login" aria-labelledby="loginheading">
+               <h2 id="loginheading" class="accessibility">Login</h2>
+               @helper.form(action = routes.Application.login()) {
+	               <fieldset>
+	                     <label for="username">@Messages("view.authentication.user"):</label>
+	                     <input name="username" id="username" type="text" required="required"/>
+	                     <label for="password">@Messages("view.authentication.pw"):</label>
+	                     <input name="password" id="password" type="password" required="required"/>	                     
+	                     <input name="login" id="loginsubmit" class="greenlink formlink clickable" type="submit" value="@Messages("view.authentication.loginsubmit")"/>	               
+					</fieldset>
+      			}
+      			
+      			@if(form.hasGlobalErrors) {
+				    <p id="loginFailed">
+				        @Messages("view.authentication.loginerror")
+				    </p>
+				}
+            
+            </section>
+            <!-- Register section -->
+            <section id="registerforward" aria-labelledby="registerheading">
+                <h2 id="registerheading" class="accessibility">Registrierung</h2>
+                <p id="registerhint">@Messages("view.authentication.notReg")?</p>
+                <a class="contentlink orangelink" title="@Messages("view.authentication.gotoreg.hover")" href="@routes.Application.registration()" accesskey="r">@Messages("view.authentication.gotoreg")</a>
+            </section>
+        </div>
+
+    </body>
+</html>
