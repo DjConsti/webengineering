@@ -17,7 +17,7 @@ view.registration.regform.personalData=Persönliche Daten
 view.registration.firstName=Vorname
 view.registration.lastName=Nachname
 view.registration.birthday=Geburtstag
-view.registration.birthday.hover=Verwenden Sie bitte folgendes Datumsformat: 
+view.registration.birthday.hover=Verwenden Sie bitte folgendes Datumsformat: dd.mm.yyyy (z.B. 24.12.2010).
 view.registration.sex=Geschlecht
 view.registration.male=Männlich
 view.registration.female=Weiblich
@@ -26,6 +26,8 @@ view.registration.user.hover=Der Benutzername muss mindestens 4 Zeichen und darf
 view.registration.pw.hover=Das Passwort muss mindestens 4 Zeichen und darf maximal 8 Zeichen enthalten.
 view.registration.rebbutton=Registrieren
 view.registration.requiredFields=Mit "*" gekennzeichnete Felder sind Pflichtfelder
+
+view.registration.validation.usernameInUse=Der Benutzername ist bereits in Verwendung!
 
 view.jeopardy.questionSelect=Fragenauswahl
 view.jeopardy.jumptoQestionSelect=Zur Fragenauswahl springen

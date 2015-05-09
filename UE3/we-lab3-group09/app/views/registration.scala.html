@@ -42,8 +42,11 @@
                     
                     <label for="birthdate">@Messages("view.registration.birthday"):</label>
                     <input id="birthdate" type="date" name="birthdate"/>
-                    <div id="error_msg_birthdate" class="hide" role="alert">@Messages("view.registration.birthday.hover") dd.mm.yyyy (z.B. 24.12.2010).</div>
-                    
+                     @if(form.hasErrors) {
+	                    @for(error <- form("birthdate").errors) {
+                    		<div id="error_msg_birthdate" role="alert">@error.messages</div>
+						}
+					}
                     <label>@Messages("view.registration.sex"):</label>
                     <fieldset class="inputset">
                         <input type="radio" name="gender" id="male" value="m" checked="checked" />
@@ -103,21 +106,24 @@
 					
 					<label for="username">@Messages("view.authentication.user")*:</label>
                     <input id="username" type="text" required="required" pattern="\w{4,8}" name="username"/>
-                    <div id="error_msg_username" class="hide" role="alert">@Messages("view.registration.pw.hover")</div>
                     
+                    @if(form.hasErrors) {
+	                    @for(error <- form("username").errors) {
+						    <div id="error_msg_username" role="alert">@error.message</div>
+						}
+					}
                     <label for="password">@Messages("view.authentication.pw")*:</label>
                     <input id="password" type="password" required="required" pattern="\w{4,8}" name="password"/>
-                    <div id="error_msg_password" class="hide" role="alert">@Messages("view.registration.pw.hover")</div>
+                    @if(form.hasErrors) {
+	                    @for(error <- form("password").errors) {
+						    <div id="error_msg_password" role="alert">@error.messages</div>
+						}
+					}
+                    
                     <input class="greenlink formlink" type="submit" value="@Messages("view.registration.rebbutton")" accesskey="s"/>
                     <p id="requiredhint">@Messages("view.registration.requiredFields")</p>
                 </fieldset>
             	}
-            	
-            	@if(form.hasGlobalErrors) {
-				    <p id="loginFailed">
-				        @form.globalError.message
-				    </p>
-				}
         </div>
 
         <!-- Footer -->

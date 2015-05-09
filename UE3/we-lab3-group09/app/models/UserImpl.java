@@ -5,19 +5,28 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.Constraint;
 
 import at.ac.tuwien.big.we15.lab2.api.Avatar;
 import play.data.validation.Constraints.Required;
+import play.data.validation.Constraints;
 
 @Entity
-public class UserImpl implements Comparable<UserImpl> {
+public class UserImpl {
 	
 	private String firstname;
 	private String lastname;
 	private Date birthdate;
 	private String avatar;
+	
 	private String gender;
+	
+	@Constraints.MinLength(4)
+	@Constraints.MaxLength(8)
 	@Id @Required private String username;
+	
+	@Constraints.MinLength(4)
+	@Constraints.MaxLength(8)
 	@Required private String password;
 
 	public UserImpl() {
@@ -78,14 +87,6 @@ public class UserImpl implements Comparable<UserImpl> {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	@Override
-	public int compareTo(UserImpl arg0) {
-		if(this.username == arg0.username)
-			return 0;
-		else
-			return -1;
 	}
 	
 }

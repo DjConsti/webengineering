@@ -1,5 +1,6 @@
 package controllers;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.naming.AuthenticationException;
@@ -31,6 +32,8 @@ public class Application extends Controller {
 			testUser.setFirstname("");
 			testUser.setLastname("");
 			testUser.setAvatar(null);
+			SimpleDateFormat parserSDF=new SimpleDateFormat("yyyy-mm-dd");
+			//parserSDF.format(arg0)
 			testUser.setBirthdate(new Date());
 			testUser.setGender("");
 			testUser.setUsername("test"); testUser.setPassword("test");
@@ -61,7 +64,7 @@ public class Application extends Controller {
 
 		try {
 			if (registerForm.hasErrors()) {
-				//return badRequest(registration.render(registerForm));
+				return badRequest(registration.render(registerForm));
 			}
 		} catch (Exception e) {
 			return badRequest(registration.render(registerForm));
