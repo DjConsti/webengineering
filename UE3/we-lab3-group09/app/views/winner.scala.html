@@ -76,9 +76,10 @@
          </section>
          <section id="newgame" aria-labelledby="newgameheading">
              <h2 id="newgameheading" class="accessibility">@Messages("view.winner.newgame")</h2>
-         	<form action="@routes.SecuredArea.jeopardy()" method="post">
+         
+         	@helper.form(action=routes.SecuredArea.restart()){
                	<input class="clickable orangelink contentlink" id="new_game" type="submit" name="restart" value="@Messages("view.winner.newgame")" />
-            </form>
+           	}
          </section>
       </div>
         <!-- footer -->

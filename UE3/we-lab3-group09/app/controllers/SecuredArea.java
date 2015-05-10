@@ -26,7 +26,7 @@ import play.i18n.Messages;
  */
 @Security.Authenticated(Secured.class)
 public class SecuredArea extends Controller{
-	private static GameController controller;
+	public static GameController controller;
 	
 	@play.db.jpa.Transactional
 	public static Result chooseQuestion()
@@ -48,7 +48,9 @@ public class SecuredArea extends Controller{
 		
 		Random rand = new Random();
 		int randomQuestionId = -1;
-		
+		gamectrl.getGame().chooseHumanQuestion(questionId);
+		gamectrl.addChosenQuestion(gamectrl.getGame().getMarvinPlayer().getChosenQuestion().getId());
+		/*
 		while(true) {
 			if(questionId < 5)
 				randomQuestionId = rand.nextInt((7 - 1) + 1) + 1;
@@ -62,11 +64,23 @@ public class SecuredArea extends Controller{
 				randomQuestionId = rand.nextInt((14 - 8) + 1) + 8;
 			
 			try {
-				gamectrl.getGame().chooseHumanQuestion(randomQuestionId);
+				
 			} catch(IllegalArgumentException e) {
 				continue;
 			}
 			break;
+		}*/
+		
+		List<Category> cat = gamectrl.getGame().getCategories();
+		// cat.get(0).getQuestions().get(0).get
+		List<Answer> ans = cat.get(0).getQuestions().get(0).getAllAnswers();
+		
+		for( int i = 0; i < cat.size(); i++)
+			System.out.println("Catnames: " + cat.get(i).getName() );
+		
+		for(int i = 0; i < ans.size();i++)
+		{
+			System.out.println("Ansids: " + ans.get(i).getId());
 		}
 		
 		return question();
@@ -77,25 +91,31 @@ public class SecuredArea extends Controller{
 		String username = session().get("user");
 		GameController gamectrl = controller.games.get(username);
 		
-		System.out.println("NUMBER OF SELECTED ANSWERS: " + request().body().asFormUrlEncoded().get("answers").length);
 		
-		int [] selectedAnswers = new int[request().body().asFormUrlEncoded().get("answers").length];
+		List<Integer> answerList = new ArrayList<Integer>();
 		
 		for(int i = 0; i < request().body().asFormUrlEncoded().get("answers").length; i++)
 		{
-			selectedAnswers[i] = Integer.parseInt(request().body().asFormUrlEncoded().get("answers")[i]);
+			answerList.add(Integer.parseInt(request().body().asFormUrlEncoded().get("answers")[i]));
 		}
 		
-		List<Integer> answerList = new ArrayList<Integer>();
-		for(int answerId : selectedAnswers)
-			answerList.add(answerId);
 		gamectrl.getGame().answerHumanQuestion(answerList);
 		gamectrl.increaseRound();
-		
+	
 		if(gamectrl.isGameOver())
 			return winner();
 		
 		return jeopardy();
+	}
+	
+	public static Result restart()
+	{
+		GameController.games.get(session().get("user")).start();
+		GameController.games.get(session().get("user")).setRound(0);
+		
+		return ok(jeopardy.render(session().get("user"), String.valueOf(1), String.valueOf(0), String.valueOf(0), "+0€", true, "+0€", true, 
+				new QuestionWrapper(), GameController.games.get(session().get("user")).getGame().getCategories())
+				);
 	}
 	
 	public static Result logout()
@@ -118,6 +138,7 @@ public class SecuredArea extends Controller{
 		if (computerMoneyChangeNum>=0) {
 			computerMoneyChange = "+"+computerMoneyChange;
 		}
+		
 		return ok(jeopardy.render(session().get("user"), 
 				String.valueOf(controller.games.get(session().get("user")).getRound()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
@@ -126,19 +147,21 @@ public class SecuredArea extends Controller{
 				userMoneyChangeNum >= 0,
 				computerMoneyChange,
 				computerMoneyChangeNum >= 0,
-				controller.games.get(session().get("user")).getQWrapper()
-				));
+				controller.games.get(session().get("user")).getQWrapper(),
+				GameController.games.get(session().get("user")).getGame().getCategories())
+				);
 	}
 	
 
 	public static Result question() {
 		List<Answer> list = controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getAllAnswers();
+		list.get(0).getId();
 		return ok(question.render(session().get("user"), 
 				String.valueOf(controller.games.get(session().get("user")).getRound()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
 				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getText(),
-				list.get(0).getText(), list.get(1).getText(), list.get(2).getText(), list.get(3).getText()));
+				list));
 	}
 	
 	

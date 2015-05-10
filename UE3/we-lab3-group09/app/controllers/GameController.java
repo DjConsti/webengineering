@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import at.ac.tuwien.big.we15.lab2.api.Answer;
 import at.ac.tuwien.big.we15.lab2.api.JeopardyFactory;
 import at.ac.tuwien.big.we15.lab2.api.JeopardyGame;
+import at.ac.tuwien.big.we15.lab2.api.Question;
 import at.ac.tuwien.big.we15.lab2.api.impl.PlayJeopardyFactory;
 import models.UserImpl;
 import play.i18n.Messages;
@@ -19,7 +21,12 @@ public class GameController {
 	private QuestionWrapper qWrapper;
 
 	public GameController(UserImpl user) {
-		if(Messages.get("view.global.logout").equals("Abmelden"))
+		start();
+	}
+	
+	public void start()
+	{
+		if(Application.session().get("lan")==null || Application.session().get("lan").equals("de"))
 			factory = new PlayJeopardyFactory("data.de.json");
 		else
 			factory = new PlayJeopardyFactory("data.en.json");
@@ -36,6 +43,11 @@ public class GameController {
 		return game;
 	}
 	
+	public void setGame(JeopardyGame game)
+	{
+		this.game = game;
+	}
+	
 	public void increaseRound() {
 		round++;
 	}
@@ -44,14 +56,24 @@ public class GameController {
 		return round;
 	}
 	
+	public void setRound(int round)
+	{
+		this.round = round;
+	}
+	
 	public boolean isGameOver() {
 		return round > 10;
 	}
 	
 	public void addChosenQuestion(int id) {
+
 		qWrapper.add(id);
 	}
 	
+	public void setQWrapper(QuestionWrapper qWrapper)
+	{
+		this.qWrapper = qWrapper;
+	}
 	public QuestionWrapper getQWrapper() {
 		return qWrapper;
 	}

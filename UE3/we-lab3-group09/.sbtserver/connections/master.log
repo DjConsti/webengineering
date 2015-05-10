@@ -1,25 +1,22 @@
-New log file opened at Sat May 09 23:06:08 CEST 2015 by 6368@amd6x-PC
-Taking next connection to: 64188
-New client attempting to connect on port: 64191-64188
-  Address = /192.168.2.108:64188
-This client on port 64191 has uuid 57e10f80-897a-4517-920a-872686dc749d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-57e10f80-897a-4517-920a-872686dc749d
-Taking next connection to: 64188
-New client attempting to connect on port: 64412-64188
-  Address = /192.168.2.108:64188
-Handshake exception on socket: 64412
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 64188
-New client attempting to connect on port: 64416-64188
-  Address = /192.168.2.108:64188
-This client on port 64416 has uuid 6b974579-f540-472b-8a36-74e59be6cbee configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-6b974579-f540-472b-8a36-74e59be6cbee
-Taking next connection to: 64188
+New log file opened at Sun May 10 00:06:50 CEST 2015 by 4520@amd6x-PC
+Taking next connection to: 51486
+New client attempting to connect on port: 51489-51486
+  Address = /192.168.2.108:51486
+This client on port 51489 has uuid 6aa4ab90-59d6-494f-9951-55731ae609dc configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-6aa4ab90-59d6-494f-9951-55731ae609dc
+Taking next connection to: 51486
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51486
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51486
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51486
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 4520@amd6x-PC logs at Sun May 10 00:18:51 CEST 2015, goodbye.

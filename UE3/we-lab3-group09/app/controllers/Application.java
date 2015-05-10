@@ -1,7 +1,9 @@
 package controllers;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.naming.AuthenticationException;
 import javax.persistence.EntityManager;
@@ -32,7 +34,7 @@ public class Application extends Controller {
 			testUser.setFirstname("");
 			testUser.setLastname("");
 			testUser.setAvatar(null);
-			SimpleDateFormat parserSDF=new SimpleDateFormat("yyyy-mm-dd");
+			
 			//parserSDF.format(arg0)
 			testUser.setBirthdate(new Date());
 			testUser.setGender("");
@@ -103,12 +105,20 @@ public class Application extends Controller {
 		} catch (Exception e) {
 			return badRequest(authentication.render(loginForm));
 		}
-
+		/*
+		List <Category> cat = GameController.games.get(loginForm.get().username).getGame().getCategories();
+		
+		ArrayList<String> categories = new ArrayList<String>();
+		for(int i = 0; i < GameController.games.get(loginForm.get().username).getGame().getCategories().size(); i ++)
+		{
+			categories.add(cat.get(i).getName());
+		}*/
 		
 		session("user", loginForm.get().username);
 		GameController.games.put(loginForm.get().username, new GameController(fetchUser(loginForm.get().username)));
 		return ok(jeopardy.render(loginForm.get().username, String.valueOf(1), String.valueOf(0), String.valueOf(0), "+0€", true, "+0€", true, 
-				new QuestionWrapper()));
+				new QuestionWrapper(), GameController.games.get(loginForm.get().username).getGame().getCategories())
+				);
 	}
 	
 	public static Result changeLanguage()

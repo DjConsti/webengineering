@@ -1,5 +1,5 @@
-New log file opened at Sat May 09 23:02:56 CEST 2015 by 5696@amd6x-PC
-jvm 5696@amd6x-PC
+New log file opened at Sun May 10 00:03:40 CEST 2015 by 5376@amd6x-PC
+jvm 5376@amd6x-PC
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project, returning: (we-lab3-group09-build)
 Loading project definition from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3471fadb, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@d47ab66, check cycles: false
 [info] Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/project/}we-lab3-group09-build...
 Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/project/}we-lab3-group09-build...
 Other repositories:
@@ -16307,7 +16307,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8-M3!apply-macro.jar
 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-:: resolution report :: resolve 8887ms :: artifacts dl 198ms
+:: resolution report :: resolve 7210ms :: artifacts dl 163ms
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT compile produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-compile.xml
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT runtime produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-runtime.xml
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT test produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-test.xml
@@ -16321,7 +16321,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT docs produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-docs.xml
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT pom produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-pom.xml
 	report for default#we-lab3-group09-build;0.1-SNAPSHOT scala-tool produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\project\target\resolution-cache\reports\default-we-lab3-group09-build-scala-tool.xml
-	resolve done (8887ms resolve - 198ms download)
+	resolve done (7210ms resolve - 163ms download)
 [info] Done updating.
 Done updating.
 
@@ -16363,7 +16363,7 @@ Set current project to we-lab3-group09 (in build file:/C:/xampp/htdocs/webengine
 > server-handle-next-server-request
 > {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@2df961b9, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@62dd1379, check cycles: false
 Read from stdout: Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root...
 Updating {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root...
 Other repositories:
@@ -16378,7 +16378,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.1 ...
 Resolving org.scala-lang#scala-library;2.11.1 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6503b4f3
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13f06690
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1
 	found org.scala-lang#scala-library;2.11.1 in sbt-chain
 	[2.11.1] org.scala-lang#scala-library;2.11.1
@@ -16886,7 +16886,7 @@ sbt-chain: module revision found in cache: javax.transaction#jta;1.1
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->default(compile)]
 Read from stdout: Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
 Resolving com.typesafe.play#play-java_2.11;2.3.8 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fcff455
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75e28d0e
 sbt-chain: module revision found in cache: com.typesafe.play#play-java_2.11;2.3.8
 	found com.typesafe.play#play-java_2.11;2.3.8 in sbt-chain
 == resolving dependencies we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.8 [compile->runtime]
@@ -23630,7 +23630,7 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 3235ms :: artifacts dl 113ms
+:: resolution report :: resolve 2757ms :: artifacts dl 106ms
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT compile produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-compile.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT runtime produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-runtime.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT test produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-test.xml
@@ -23645,43 +23645,214 @@ circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT pom produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-pom.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT scala-tool produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-scala-tool.xml
 	report for we-lab3-group09#we-lab3-group09_2.11;1.0-SNAPSHOT fork-run produced in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\resolution-cache\reports\we-lab3-group09-we-lab3-group09_2.11-fork-run.xml
-	resolve done (3235ms resolve - 113ms download)
+	resolve done (2757ms resolve - 106ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 4 s, completed 09.05.2015 23:03:18
+Total time: 3 s, completed 10.05.2015 00:03:59
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@4059af8d, check cycles: false
-Total time: 0 s, completed 09.05.2015 23:03:19
+Running task... Cancel: sbt.server.ServerTaskCancellation@1a3216b1, check cycles: false
+Total time: 0 s, completed 10.05.2015 00:04:00
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@646f8866, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3f2d22c4, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set()
-	modified: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+	added: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\controllers\routes.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Login.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Language.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\QuestionWrapper.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+Initial directly invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\controllers\routes.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Login.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Language.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\QuestionWrapper.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+All initially invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\controllers\routes.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Login.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Language.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\QuestionWrapper.java, C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
 
-Read from stdout: Compiling 1 Java source to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
-Compiling 1 Java source to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@d34d37 directly...
-Java compilation took 1.137371872 s
-Java analysis took 0.03747463 s
-Java compile + analysis took 1.191601239 s
+Recompiling all 19 sources: invalidated sources (19) exceeded 50.0% of all sources
+Read from stdout: Compiling 9 Scala sources and 10 Java sources to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Compiling 9 Scala sources and 10 Java sources to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 47795a6d, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes;C:\Users\amd 6x\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
+	-classpath
+	C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes;C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\lib\gson-2.2.jar;C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\lib\jeopardy.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\amd 6x\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\amd 6x\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\amd 6x\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\amd 6x\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\amd 6x\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\amd 6x\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\amd 6x\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\amd 6x\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\amd 6x\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\amd 6x\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\amd 6x\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\amd 6x\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\amd 6x\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\amd 6x\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\amd 6x\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\amd 6x\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\amd 6x\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\amd 6x\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\amd 6x\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\amd 6x\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\amd 6x\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\amd 6x\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\amd 6x\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\amd 6x\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\amd 6x\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\amd 6x\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\amd 6x\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\amd 6x\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\amd 6x\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\amd 6x\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\amd 6x\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\amd 6x\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\amd 6x\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\amd 6x\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\amd 6x\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\amd 6x\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-4.3.1.Final.jar;C:\Users\amd 6x\.ivy2\cache\org.jboss.logging\jboss-logging-annotations\jars\jboss-logging-annotations-1.2.0.Beta1.jar;C:\Users\amd 6x\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-4.3.1.Final.jar;C:\Users\amd 6x\.ivy2\cache\org.jboss.spec.javax.transaction\jboss-transaction-api_1.2_spec\jars\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Users\amd 6x\.ivy2\cache\org.hibernate.common\hibernate-commons-annotations\jars\hibernate-commons-annotations-4.0.4.Final.jar;C:\Users\amd 6x\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\jars\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\amd 6x\.ivy2\cache\antlr\antlr\jars\antlr-2.7.7.jar;C:\Users\amd 6x\.ivy2\cache\org.jboss\jandex\jars\jandex-1.1.0.Final.jar;C:\Users\amd 6x\.ivy2\cache\com.google.code.gson\gson\jars\gson-2.2.jar
+Scala compilation took 9.003457947 s
+Attempting to call com.sun.tools.javac.api.JavacTool@3878604e directly...
+Java compilation took 1.246854533 s
+Java analysis took 0.015157776 s
+Java compile + analysis took 1.276725774 s
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Register.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\controllers\routes.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\controllers\routes.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\controllers\routes.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\controllers\routes.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\controllers\routes.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Application.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala. This dependency is not being considered for invalidation.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, authentication, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\UserImpl.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\QuestionWrapper.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\QuestionWrapper.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\QuestionWrapper.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\QuestionWrapper.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\QuestionWrapper.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala source file has the following regular definitions changed:
+	notify, format, winner, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala source file has the following regular definitions changed:
+	notify, completeReg, winner, question, logout, wait, $asInstanceOf, auth, equals, asInstanceOf, synchronized, $isInstanceOf, ReverseAssets, ReverseSecuredArea, notifyAll, isInstanceOf, changeLanguage, <init>, at, ==, clone, commitAnswer, toString, !=, getClass, registration, login, ne, chooseQuestion, eq, ReverseApplication, ##, finalize, index, hashCode, jeopardy.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala: Set(changeLanguage, <init>, at, registration, login)
+The following modified names cause invalidation of C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala: Set(<init>, at)
+The following modified names cause invalidation of C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala: Set(completeReg, auth, <init>, at, registration)
+The following modified names cause invalidation of C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\winner.template.scala: Set(winner, logout, <init>, at, jeopardy)
+The following modified names cause invalidation of C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala: Set(question, logout, <init>, at, commitAnswer)
+The following modified names cause invalidation of C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala: Set(logout, <init>, at, chooseQuestion, jeopardy)
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\index.template.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\index.template.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\index.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\index.template.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\index.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, index, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\Secured.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\jeopardy.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode, jeopardy.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\registration.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, registration, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\main.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, main, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Login.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Login.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Login.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Login.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Login.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\authentication.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\SecuredArea.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala. This dependency is not being considered for invalidation.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Language.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Language.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Language.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Language.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\models\Language.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\twirl\main\views\html\question.template.scala source file has the following regular definitions changed:
+	notify, format, question, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_routing.scala source file has the following regular definitions changed:
+	notify, controllers_SecuredArea_chooseQuestion5_invoker, controllers_Application_changeLanguage3_route, badRequest, wait, $asInstanceOf, routes, createInvoker, equals, prefix, asInstanceOf, documentation, controllers_Application_index0_invoker, controllers_SecuredArea_winner9_invoker, controllers_Application_login2_invoker, synchronized, controllers_Application_auth1_route, $isInstanceOf, handlerFor, controllers_Application_completeReg11_invoker, controllers_SecuredArea_jeopardy4_route, _prefix, notifyAll, controllers_Assets_at12_invoker, isInstanceOf, controllers_SecuredArea_chooseQuestion5_route, controllers_SecuredArea_jeopardy4_invoker, controllers_Application_login2_route, controllers_SecuredArea_question6_invoker, ==, controllers_Application_auth1_invoker, clone, Routes, controllers_SecuredArea_commitAnswer7_invoker, controllers_Application_registration8_invoker, toString, !=, controllers_Assets_at12_route, controllers_SecuredArea_commitAnswer7_route, fakeValue, getClass, setPrefix, controllers_Application_index0_route, ne, controllers_Application_completeReg11_route, call, eq, defaultPrefix, controllers_SecuredArea_logout10_route, controllers_Application_changeLanguage3_invoker, ##, controllers_SecuredArea_winner9_route, finalize, controllers_SecuredArea_question6_route, hashCode, controllers_Application_registration8_route, controllers_SecuredArea_logout10_invoker.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(prefix, _prefix, Routes, getClass, defaultPrefix)
+Invalidating C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java...
+Invalidating (transitively) by inheritance from C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java...
+Initial set of included nodes: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+Invalidated by transitive inheritance dependency: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+The C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
@@ -23697,7 +23868,50 @@ Copy resource mappings:
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\routes,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\routes)
 	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF\persistence.xml,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 2 s, completed 09.05.2015 23:03:27
+Total time: 12 s, completed 10.05.2015 00:04:22
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/xampp/htdocs/webengineering/UE3/we-lab3-group09/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1a6b958, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\app\controllers\GameController.java)
+
+Read from stdout: Compiling 1 Java source to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Compiling 1 Java source to C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@64fa31d4 directly...
+Java compilation took 0.137511565 s
+Java analysis took 0.00755329 s
+Java compile + analysis took 0.156793938 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\application.conf,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\application.conf)
+	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\data.de.json,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.de.json)
+	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\data.en.json,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\data.en.json)
+	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\messages.de,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\messages.de)
+	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\messages.en,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\messages.en)
+	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF)
+	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\routes,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\routes)
+	(C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\conf\META-INF\persistence.xml,C:\xampp\htdocs\webengineering\UE3\we-lab3-group09\target\scala-2.11\classes\META-INF\persistence.xml)
+Total time: 1 s, completed 10.05.2015 00:04:57
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -23706,4 +23920,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 5696@amd6x-PC logs at Sat May 09 23:06:00 CEST 2015, goodbye.
+Closing the 5376@amd6x-PC logs at Sun May 10 00:06:42 CEST 2015, goodbye.
