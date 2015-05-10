@@ -39,11 +39,9 @@
 	                     <input name="login" id="loginsubmit" class="greenlink formlink clickable" type="submit" value="@Messages("view.authentication.loginsubmit")"/>	               
 					</fieldset>
       			}
-      			
-      			@if(form.hasGlobalErrors) {
-				    <p id="loginFailed">
-				        @Messages("view.authentication.loginerror")
-				    </p>
+      			<br />
+     			@if(form.hasGlobalErrors) {
+				     <div id="error_msg_password" role="alert">@form.globalError.message!</div>
 				}
             
             </section>

@@ -1,22 +1,7 @@
-New log file opened at Sun May 10 00:06:50 CEST 2015 by 4520@amd6x-PC
-Taking next connection to: 51486
-New client attempting to connect on port: 51489-51486
-  Address = /192.168.2.108:51486
-This client on port 51489 has uuid 6aa4ab90-59d6-494f-9951-55731ae609dc configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-6aa4ab90-59d6-494f-9951-55731ae609dc
-Taking next connection to: 51486
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51486
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51486
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51486
-Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-Server socket thread exiting.
-0 clients open, will close them...
-All client sockets have been closed.
-Closing the 4520@amd6x-PC logs at Sun May 10 00:18:51 CEST 2015, goodbye.
+New log file opened at Sun May 10 09:35:45 CEST 2015 by 6108@Max
+Taking next connection to: 52046
+New client attempting to connect on port: 52047-52046
+  Address = /10.0.0.3:52046
+This client on port 52047 has uuid 81a1afd5-b20e-4606-bb1d-2da11946147b configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-81a1afd5-b20e-4606-bb1d-2da11946147b
+Taking next connection to: 52046
