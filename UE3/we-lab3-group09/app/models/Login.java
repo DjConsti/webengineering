@@ -25,6 +25,7 @@ public class Login {
 	}
 
 	public String validate() {
+		
 		UserImpl user = Application.fetchUser(username);
 		if (user != null && user.getPassword().equals(this.password)) {
 			System.out.println("Login erfolgreich");

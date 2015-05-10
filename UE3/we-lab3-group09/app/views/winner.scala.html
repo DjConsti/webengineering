@@ -1,4 +1,4 @@
-@(username: String)(userMoney: String)(computerMoney: String)(userMoneyChange: String)(computerMoneyChange: String)(userCorrect: Boolean)(computerCorrect: Boolean)(humanWinner: String)(computerWinner: String)(humanWon: Boolean)
+@(username: String)(userMoney: String)(computerMoney: String)(userMoneyChange: String)(computerMoneyChange: String)(userCorrect: Boolean)(computerCorrect: Boolean)(humanWinner: String)(computerWinner: String)(humanWon: Boolean)(avt: at.ac.tuwien.big.we15.lab2.api.Avatar)(enemy: at.ac.tuwien.big.we15.lab2.api.Avatar)
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
@@ -45,9 +45,9 @@
 				@if(humanWon) {
                <h3 id="winnerannouncement">@Messages("view.winner.winner"): @username</h3>
 			   } else {
-			   <h3 id="winnerannouncement">@Messages("view.winner.winner"): Deadpool</h3>
+			   <h3 id="winnerannouncement">@Messages("view.winner.winner"): @enemy.getName()</h3>
 			   }
-               <img class="avatar" src="@routes.Assets.at("images/avatar/black-widow.png")" alt="Spieler-Avatar Black Widow" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/"+avt.getImageFull())" alt="Spieler-Avatar @avt.getName()" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>
@@ -61,11 +61,11 @@
             </section>
             <section class="playerinfo @computerWinner" aria-labelledby="loserheading">
                <h3 id="loserheading" class="accessibility">@Messages("view.jeopardy.loser"): Deadpool</h3>
-               <img class="avatar" src="@routes.Assets.at("images/avatar/deadpool_head.png")" alt="Spieler-Avatar Deadpool" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/"+enemy.getImageFull())" alt="Spieler-Avatar @enemy.getName()" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>
-                     <td class="playername">Deadpool</td>
+                     <td class="playername">@enemy.getName()</td>
                   </tr>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.score")</th>

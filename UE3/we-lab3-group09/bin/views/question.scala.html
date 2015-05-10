@@ -1,4 +1,4 @@
-@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(qText: String)(q1Text: String)(q2Text: String)(q3Text: String)(q4Text: String)
+@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(qText: String)(ans:List[at.ac.tuwien.big.we15.lab2.api.Answer])(avt: at.ac.tuwien.big.we15.lab2.api.Avatar)(enemy: at.ac.tuwien.big.we15.lab2.api.Avatar)
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
@@ -34,7 +34,7 @@
             <h2 id="gameinfoinfoheading" class="accessibility">@Messages("view.jeopardy.gameinfo")</h2>
             <section id="firstplayer" class="playerinfo leader" aria-labelledby="firstplayerheading">
                <h3 id="firstplayerheading" class="accessibility">@Messages("view.jeopardy.leadingPlayer")</h3>
-               <img class="avatar" src="@routes.Assets.at("images/avatar/black-widow_head.png")" alt="Spieler-Avatar Black Widow" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/"+avt.getImageFull())" alt="Spieler-Avatar @avt.getName()" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>
@@ -48,11 +48,11 @@
             </section>
             <section id="secondplayer" class="playerinfo" aria-labelledby="secondplayerheading">
                <h3 id="secondplayerheading" class="accessibility">@Messages("view.jeopardy.secondPlayer")</h3>
-               <img class="avatar" src="@routes.Assets.at("images/avatar/deadpool_head.png")" alt="Spieler-Avatar Deadpool" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/"+enemy.getImageFull())" alt="Spieler-Avatar @enemy.getName()" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>
-                     <td class="playername">Deadpool</td>
+                     <td class="playername">@enemy.getName()</td>
                   </tr>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.score")</th>
@@ -70,10 +70,10 @@
                <p id="questiontype">TUWIEN für € 300</p>
                <p id="questiontext">@qText</p>
                <ul id="answers">
-                  <li><input name="answers" id="answer_1" value="1" type="checkbox"/><label class="tile clickable" for="answer_1">@q1Text</label></li>
-                  <li><input name="answers" id="answer_2" value="2" type="checkbox"/><label class="tile clickable" for="answer_2">@q2Text</label></li>
-                  <li><input name="answers" id="answer_3" value="3" type="checkbox"/><label class="tile clickable" for="answer_3">@q3Text</label></li>
-                  <li><input name="answers" id="answer_4" value="4" type="checkbox"/><label class="tile clickable" for="answer_4">@q4Text</label></li>
+                  <li><input name="answers" id="answer_1" value="@ans.get(0).getId()" type="checkbox"/><label class="tile clickable" for="answer_1">@ans.get(0).getText()</label></li>
+                  <li><input name="answers" id="answer_2" value="@ans.get(1).getId()" type="checkbox"/><label class="tile clickable" for="answer_2">@ans.get(1).getText()</label></li>
+                  <li><input name="answers" id="answer_3" value="@ans.get(2).getId()" type="checkbox"/><label class="tile clickable" for="answer_3">@ans.get(2).getText()</label></li>
+                  <li><input name="answers" id="answer_4" value="@ans.get(3).getId()" type="checkbox"/><label class="tile clickable" for="answer_4">@ans.get(3).getText()</label></li>
                </ul>
                <input id="timeleftvalue" type="hidden" value="100"/>
                <input class="greenlink formlink clickable" name="answer_submit" id="next" type="submit" value="@Messages("view.question.submitAnswer")" accesskey="s"/>

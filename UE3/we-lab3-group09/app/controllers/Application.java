@@ -116,8 +116,17 @@ public class Application extends Controller {
 		
 		session("user", loginForm.get().username);
 		GameController.games.put(loginForm.get().username, new GameController(fetchUser(loginForm.get().username)));
+		
+		System.out.println("Avatarpath: " + GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar().getImageFull());
+		fetchUser(loginForm.get().username).getAvatar();
+		if(fetchUser(loginForm.get().username).getAvatar()!=null)
+			GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().setAvatar(Avatar.getAvatar(fetchUser(loginForm.get().username).getAvatar()));
+		
+		System.out.println(GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar().getImageHead());
 		return ok(jeopardy.render(loginForm.get().username, String.valueOf(1), String.valueOf(0), String.valueOf(0), "+0€", true, "+0€", true, 
-				new QuestionWrapper(), GameController.games.get(loginForm.get().username).getGame().getCategories())
+				new QuestionWrapper(), GameController.games.get(loginForm.get().username).getGame().getCategories(),
+				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar())
 				);
 	}
 	

@@ -108,13 +108,19 @@ public class SecuredArea extends Controller{
 		return jeopardy();
 	}
 	
+	@play.db.jpa.Transactional
 	public static Result restart()
 	{
 		GameController.games.get(session().get("user")).start();
 		GameController.games.get(session().get("user")).setRound(0);
 		
+		if(Application.fetchUser(session().get("user")).getAvatar()!=null)
+			GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().setAvatar(Avatar.getAvatar(Application.fetchUser(session().get("user")).getAvatar()));
+		
 		return ok(jeopardy.render(session().get("user"), String.valueOf(1), String.valueOf(0), String.valueOf(0), "+0€", true, "+0€", true, 
-				new QuestionWrapper(), GameController.games.get(session().get("user")).getGame().getCategories())
+				new QuestionWrapper(), GameController.games.get(session().get("user")).getGame().getCategories(),
+				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar())
 				);
 	}
 	
@@ -148,7 +154,9 @@ public class SecuredArea extends Controller{
 				computerMoneyChange,
 				computerMoneyChangeNum >= 0,
 				controller.games.get(session().get("user")).getQWrapper(),
-				GameController.games.get(session().get("user")).getGame().getCategories())
+				GameController.games.get(session().get("user")).getGame().getCategories(),
+				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar())
 				);
 	}
 	
@@ -161,7 +169,9 @@ public class SecuredArea extends Controller{
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
 				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getText(),
-				list));
+				list,
+				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar()));
 	}
 	
 	
@@ -191,7 +201,9 @@ public class SecuredArea extends Controller{
 				computerMoneyChangeNum >= 0,
 				humanWinner,
 				computerWinner,
-				controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit() > controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()
+				controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit() > controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit(),
+				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar()
 				));
 	}
 }
