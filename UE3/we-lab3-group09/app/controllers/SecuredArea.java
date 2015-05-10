@@ -34,43 +34,24 @@ public class SecuredArea extends Controller{
 		String username = session().get("user");
 		System.out.println("Username: " + username);
 		GameController gamectrl = controller.games.get(username);
+		gamectrl.setAttributesSet(true);
 		// selected question id
 		int questionId =  -1;
 		try{
-		questionId = Integer.parseInt(request().body().asFormUrlEncoded().get("question_selection")[0]);
+			questionId = Integer.parseInt(request().body().asFormUrlEncoded().get("question_selection")[0]);
 		}catch(Exception e) { 
 			System.err.println("USERERROR: INVALID QUESTION SELECT NUMBER");
+			gamectrl.setAttributesSet(false);
 			return jeopardy();
 		}
 		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
 		
+		
 		gamectrl.addChosenQuestion(questionId);
 		
-		Random rand = new Random();
-		int randomQuestionId = -1;
 		gamectrl.getGame().chooseHumanQuestion(questionId);
 		gamectrl.addChosenQuestion(gamectrl.getGame().getMarvinPlayer().getChosenQuestion().getId());
-		/*
-		while(true) {
-			if(questionId < 5)
-				randomQuestionId = rand.nextInt((7 - 1) + 1) + 1;
-			else if(questionId < 10)
-				randomQuestionId = rand.nextInt((21 - 15) + 1) + 15;
-			else if(questionId < 15)
-				randomQuestionId = rand.nextInt((35 - 29) + 1) + 29;
-			else if(questionId < 19)
-				randomQuestionId = rand.nextInt((28 - 22) + 1) + 22;
-			else
-				randomQuestionId = rand.nextInt((14 - 8) + 1) + 8;
-			
-			try {
-				
-			} catch(IllegalArgumentException e) {
-				continue;
-			}
-			break;
-		}*/
-		
+	
 		List<Category> cat = gamectrl.getGame().getCategories();
 		// cat.get(0).getQuestions().get(0).get
 		List<Answer> ans = cat.get(0).getQuestions().get(0).getAllAnswers();
@@ -90,9 +71,14 @@ public class SecuredArea extends Controller{
 	{
 		String username = session().get("user");
 		GameController gamectrl = controller.games.get(username);
-		
+		gamectrl.setAttributesSet(true);
 		
 		List<Integer> answerList = new ArrayList<Integer>();
+		
+		if(request().body().asFormUrlEncoded().get("answers") == null) {
+			System.err.println("USERERROR: INVALID ANSWER SELECT NUMBER");
+			return question();
+		}
 		
 		for(int i = 0; i < request().body().asFormUrlEncoded().get("answers").length; i++)
 		{
@@ -101,7 +87,9 @@ public class SecuredArea extends Controller{
 		
 		gamectrl.getGame().answerHumanQuestion(answerList);
 		gamectrl.increaseRound();
-	
+		if(gamectrl.getGame().getMarvinPlayer().getChosenQuestion()!=null)
+			System.out.println("Cat-Name Enemy: " + gamectrl.getGame().getMarvinPlayer().getChosenQuestion().getCategory().getName());
+		
 		if(gamectrl.isGameOver())
 			return winner();
 		
@@ -117,10 +105,23 @@ public class SecuredArea extends Controller{
 		if(Application.fetchUser(session().get("user")).getAvatar()!=null)
 			GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().setAvatar(Avatar.getAvatar(Application.fetchUser(session().get("user")).getAvatar()));
 		
+		String enemyChosenCategory = "";
+		String enemyChosenValue = "";
+		try {
+			enemyChosenCategory = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getCategory().getName()+"";
+			enemyChosenValue = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getValue()+"";
+		} catch (NullPointerException e) {
+			
+		}
+		
 		return ok(jeopardy.render(session().get("user"), String.valueOf(1), String.valueOf(0), String.valueOf(0), "+0€", true, "+0€", true, 
 				new QuestionWrapper(), GameController.games.get(session().get("user")).getGame().getCategories(),
 				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
-				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar())
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar(),
+				enemyChosenCategory,
+				enemyChosenValue,
+				GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion()
+				)
 				);
 	}
 	
@@ -132,18 +133,33 @@ public class SecuredArea extends Controller{
 	}
 	
 	public static Result jeopardy() {
-		// TODO wenn die methode jeopardy von winner aufgerufen wird, sind diese Attribute nicht gesetzt... 
-		// entsprechend nur diese attribute holen, wenn sie gesetzt sind. 
-		int userMoneyChangeNum = controller.games.get(session().get("user")).getGame().getHumanPlayer().getLatestProfitChange();
-		int computerMoneyChangeNum = controller.games.get(session().get("user")).getGame().getMarvinPlayer().getLatestProfitChange();
-		String userMoneyChange = String.valueOf(userMoneyChangeNum) + " €";
-		String computerMoneyChange = String.valueOf(computerMoneyChangeNum)+" €";
-		if (userMoneyChangeNum>=0) {
-			userMoneyChange = "+"+userMoneyChange;
+		int userMoneyChangeNum = 0;
+		int computerMoneyChangeNum = 0;
+		String userMoneyChange = "0";
+		String computerMoneyChange = "0";
+		if(controller.games.get(session().get("user")).isAttributesSet()) {
+			userMoneyChangeNum = controller.games.get(session().get("user")).getGame().getHumanPlayer().getLatestProfitChange();
+			computerMoneyChangeNum = controller.games.get(session().get("user")).getGame().getMarvinPlayer().getLatestProfitChange();
+			userMoneyChange = String.valueOf(userMoneyChangeNum) + " €";
+			computerMoneyChange = String.valueOf(computerMoneyChangeNum)+" €";
+			if (userMoneyChangeNum>=0) {
+				userMoneyChange = "+"+userMoneyChange;
+			}
+			if (computerMoneyChangeNum>=0) {
+				computerMoneyChange = "+"+computerMoneyChange;
+			}
 		}
-		if (computerMoneyChangeNum>=0) {
-			computerMoneyChange = "+"+computerMoneyChange;
+		
+		String enemyChosenCategory = "";
+		String enemyChosenValue = "";
+		try {
+			enemyChosenCategory = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getCategory().getName()+"";
+			enemyChosenValue = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getValue()+"";
+		} catch (NullPointerException e) {
+			
 		}
+		//GameController.games.get(session().get("user")).getGame().
+		//System.out.println("Cat-Name Enemy: " + GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getCategory().getName());
 		
 		return ok(jeopardy.render(session().get("user"), 
 				String.valueOf(controller.games.get(session().get("user")).getRound()),
@@ -156,8 +172,11 @@ public class SecuredArea extends Controller{
 				controller.games.get(session().get("user")).getQWrapper(),
 				GameController.games.get(session().get("user")).getGame().getCategories(),
 				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
-				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar())
-				);
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar(),
+				enemyChosenCategory,
+				enemyChosenValue,
+				GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion()
+				));
 	}
 	
 
@@ -168,6 +187,8 @@ public class SecuredArea extends Controller{
 				String.valueOf(controller.games.get(session().get("user")).getRound()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
+				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getCategory().getName(),
+				new String(controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getValue()+""),
 				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getText(),
 				list,
 				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
@@ -176,6 +197,7 @@ public class SecuredArea extends Controller{
 	
 	
 	public static Result winner() {
+		controller.games.get(session().get("user")).setAttributesSet(false);
 		int userMoneyChangeNum = controller.games.get(session().get("user")).getGame().getHumanPlayer().getLatestProfitChange();
 		int computerMoneyChangeNum = controller.games.get(session().get("user")).getGame().getMarvinPlayer().getLatestProfitChange();
 		String userMoneyChange = String.valueOf(userMoneyChangeNum) + " €";

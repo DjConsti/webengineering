@@ -34,6 +34,13 @@ div[role="main"] {
  * Sections
  ***********************************/ 
 
+section#language {
+   width: 26em;
+   margin: 1em auto 0 auto;
+   clear: both;
+   border-width: 5px;
+} 
+ 
 section#login,
 div#register {
    width: 26em;

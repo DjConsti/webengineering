@@ -122,12 +122,24 @@ public class Application extends Controller {
 		if(fetchUser(loginForm.get().username).getAvatar()!=null)
 			GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().setAvatar(Avatar.getAvatar(fetchUser(loginForm.get().username).getAvatar()));
 		
+		String enemyChosenCategory = "";
+		String enemyChosenValue = "";
+		try {
+			enemyChosenCategory = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getCategory().getName()+"";
+			enemyChosenValue = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getValue()+"";
+		} catch (NullPointerException e) {
+			
+		}
+		
 		System.out.println(GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar().getImageHead());
 		return ok(jeopardy.render(loginForm.get().username, String.valueOf(1), String.valueOf(0), String.valueOf(0), "+0€", true, "+0€", true, 
 				new QuestionWrapper(), GameController.games.get(loginForm.get().username).getGame().getCategories(),
 				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
-				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar())
-				);
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar(),
+				enemyChosenCategory,
+				enemyChosenValue,
+				null
+				));
 	}
 	
 	public static Result changeLanguage()

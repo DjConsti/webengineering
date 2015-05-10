@@ -19,6 +19,7 @@ public class GameController {
 	private JeopardyGame game;
 	private int round=1;
 	private QuestionWrapper qWrapper;
+	private boolean attributesSet = false;
 
 	public GameController(UserImpl user) {
 		start();
@@ -78,4 +79,13 @@ public class GameController {
 		return qWrapper;
 	}
 
+	public boolean isAttributesSet() {
+		return attributesSet;
+	}
+
+	public void setAttributesSet(boolean attributesSet) {
+		this.attributesSet = attributesSet;
+	}
+
+	
 }
