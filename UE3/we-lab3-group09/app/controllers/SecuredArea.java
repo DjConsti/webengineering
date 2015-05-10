@@ -34,22 +34,25 @@ public class SecuredArea extends Controller{
 		String username = session().get("user");
 		System.out.println("Username: " + username);
 		GameController gamectrl = controller.games.get(username);
+		gamectrl.setAttributesSet(true);
 		// selected question id
 		int questionId =  -1;
 		try{
-		questionId = Integer.parseInt(request().body().asFormUrlEncoded().get("question_selection")[0]);
+			questionId = Integer.parseInt(request().body().asFormUrlEncoded().get("question_selection")[0]);
 		}catch(Exception e) { 
 			System.err.println("USERERROR: INVALID QUESTION SELECT NUMBER");
+			gamectrl.setAttributesSet(false);
 			return jeopardy();
 		}
 		System.out.println("Selected Question ID: " + questionId + "  " + gamectrl);
+		
 		
 		gamectrl.addChosenQuestion(questionId);
 		
 		Random rand = new Random();
 		int randomQuestionId = -1;
 		gamectrl.getGame().chooseHumanQuestion(questionId);
-		gamectrl.addChosenQuestion(gamectrl.getGame().getMarvinPlayer().getChosenQuestion().getId());
+		//gamectrl.addChosenQuestion(gamectrl.getGame().getMarvinPlayer().getChosenQuestion().getId());
 		/*
 		while(true) {
 			if(questionId < 5)
@@ -90,7 +93,7 @@ public class SecuredArea extends Controller{
 	{
 		String username = session().get("user");
 		GameController gamectrl = controller.games.get(username);
-		
+		gamectrl.setAttributesSet(true);
 		
 		List<Integer> answerList = new ArrayList<Integer>();
 		
@@ -132,17 +135,21 @@ public class SecuredArea extends Controller{
 	}
 	
 	public static Result jeopardy() {
-		// TODO wenn die methode jeopardy von winner aufgerufen wird, sind diese Attribute nicht gesetzt... 
-		// entsprechend nur diese attribute holen, wenn sie gesetzt sind. 
-		int userMoneyChangeNum = controller.games.get(session().get("user")).getGame().getHumanPlayer().getLatestProfitChange();
-		int computerMoneyChangeNum = controller.games.get(session().get("user")).getGame().getMarvinPlayer().getLatestProfitChange();
-		String userMoneyChange = String.valueOf(userMoneyChangeNum) + " €";
-		String computerMoneyChange = String.valueOf(computerMoneyChangeNum)+" €";
-		if (userMoneyChangeNum>=0) {
-			userMoneyChange = "+"+userMoneyChange;
-		}
-		if (computerMoneyChangeNum>=0) {
-			computerMoneyChange = "+"+computerMoneyChange;
+		int userMoneyChangeNum = 0;
+		int computerMoneyChangeNum = 0;
+		String userMoneyChange = "0";
+		String computerMoneyChange = "0";
+		if(controller.games.get(session().get("user")).isAttributesSet()) {
+			userMoneyChangeNum = controller.games.get(session().get("user")).getGame().getHumanPlayer().getLatestProfitChange();
+			computerMoneyChangeNum = controller.games.get(session().get("user")).getGame().getMarvinPlayer().getLatestProfitChange();
+			userMoneyChange = String.valueOf(userMoneyChangeNum) + " €";
+			computerMoneyChange = String.valueOf(computerMoneyChangeNum)+" €";
+			if (userMoneyChangeNum>=0) {
+				userMoneyChange = "+"+userMoneyChange;
+			}
+			if (computerMoneyChangeNum>=0) {
+				computerMoneyChange = "+"+computerMoneyChange;
+			}
 		}
 		
 		return ok(jeopardy.render(session().get("user"), 
@@ -176,6 +183,7 @@ public class SecuredArea extends Controller{
 	
 	
 	public static Result winner() {
+		controller.games.get(session().get("user")).setAttributesSet(false);
 		int userMoneyChangeNum = controller.games.get(session().get("user")).getGame().getHumanPlayer().getLatestProfitChange();
 		int computerMoneyChangeNum = controller.games.get(session().get("user")).getGame().getMarvinPlayer().getLatestProfitChange();
 		String userMoneyChange = String.valueOf(userMoneyChangeNum) + " €";
