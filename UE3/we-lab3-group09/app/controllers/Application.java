@@ -122,8 +122,8 @@ public class Application extends Controller {
 		if(fetchUser(loginForm.get().username).getAvatar()!=null)
 			GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().setAvatar(Avatar.getAvatar(fetchUser(loginForm.get().username).getAvatar()));
 		
-		String enemyChosenCategory = "";
-		String enemyChosenValue = "";
+		String enemyChosenCategory = "TUWIEN";
+		String enemyChosenValue = "50";
 		try {
 			enemyChosenCategory = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getCategory().getName()+"";
 			enemyChosenValue = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getValue()+"";
