@@ -125,10 +125,22 @@ public class SecuredArea extends Controller{
 		if(Application.fetchUser(session().get("user")).getAvatar()!=null)
 			GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().setAvatar(Avatar.getAvatar(Application.fetchUser(session().get("user")).getAvatar()));
 		
+		String enemyChosenCategory = "";
+		String enemyChosenValue = "";
+		try {
+			enemyChosenCategory = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getCategory().getName()+"";
+			enemyChosenValue = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getValue()+"";
+		} catch (NullPointerException e) {
+			
+		}
+		
 		return ok(jeopardy.render(session().get("user"), String.valueOf(1), String.valueOf(0), String.valueOf(0), "+0€", true, "+0€", true, 
 				new QuestionWrapper(), GameController.games.get(session().get("user")).getGame().getCategories(),
 				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
-				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar())
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar(),
+				enemyChosenCategory,
+				enemyChosenValue
+				)
 				);
 	}
 	
@@ -157,6 +169,15 @@ public class SecuredArea extends Controller{
 			}
 		}
 		
+		String enemyChosenCategory = "";
+		String enemyChosenValue = "";
+		try {
+			enemyChosenCategory = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getCategory().getName()+"";
+			enemyChosenValue = GameController.games.get(session().get("user")).getGame().getMarvinPlayer().getChosenQuestion().getValue()+"";
+		} catch (NullPointerException e) {
+			
+		}
+		
 		return ok(jeopardy.render(session().get("user"), 
 				String.valueOf(controller.games.get(session().get("user")).getRound()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
@@ -168,8 +189,10 @@ public class SecuredArea extends Controller{
 				controller.games.get(session().get("user")).getQWrapper(),
 				GameController.games.get(session().get("user")).getGame().getCategories(),
 				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
-				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar())
-				);
+				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar(),
+				enemyChosenCategory,
+				enemyChosenValue
+				));
 	}
 	
 

@@ -1,4 +1,4 @@
-@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(userMoneyChange: String)(userCorrect: Boolean)(computerMoneyChange: String)(computerCorrect: Boolean)(questionStatus: QuestionWrapper)(cat:List[at.ac.tuwien.big.we15.lab2.api.Category])(avt: at.ac.tuwien.big.we15.lab2.api.Avatar)(enemy: at.ac.tuwien.big.we15.lab2.api.Avatar)
+@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(userMoneyChange: String)(userCorrect: Boolean)(computerMoneyChange: String)(computerCorrect: Boolean)(questionStatus: QuestionWrapper)(cat:List[at.ac.tuwien.big.we15.lab2.api.Category])(avt: at.ac.tuwien.big.we15.lab2.api.Avatar)(enemy: at.ac.tuwien.big.we15.lab2.api.Avatar)(enemyChosenCategory: String)(enemyChosenValue: String)
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
     <head>
@@ -76,7 +76,7 @@
             } else {
             <p class="user-info negative-change">@Messages("view.jeopardy.computerWrongAnswer"): @computerMoneyChange</p>
             }
-            <p class="user-info">Deadpool @Messages("view.jeopardy.hasChosenCategoryP1") TUWIEN @Messages("view.jeopardy.hasChosenCategoryP2") € 1000 @Messages("view.jeopardy.hasChosenCategoryP3")</p>
+            <p class="user-info">Deadpool @Messages("view.jeopardy.hasChosenCategoryP1") @enemyChosenCategory @Messages("view.jeopardy.hasChosenCategoryP2") € @enemyChosenValue @Messages("view.jeopardy.hasChosenCategoryP3")</p>
             @helper.form(action = routes.SecuredArea.chooseQuestion()) {
                <fieldset>
                <legend class="accessibility">@Messages("view.jeopardy.questionSelect")</legend>
