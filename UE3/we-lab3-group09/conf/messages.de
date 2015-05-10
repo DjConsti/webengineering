@@ -10,6 +10,7 @@ view.authentication.notReg=Nicht registriert
 view.authentication.gotoreg=Zur Registrierung
 view.authentication.gotoreg.hover=Klicke hier um dich zu registrieren
 view.authentication.changelan=Sprache ändern
+view.authentication.clickToLogin=Klicke hier um dich anzumelden
 
 view.registration.gotoreg.hover=Zur Registrierung springen
 view.registration.reg=Registrierung
@@ -30,6 +31,7 @@ view.registration.requiredFields=Mit "*" gekennzeichnete Felder sind Pflichtfeld
 view.registration.validation.usernameInUse=Der Benutzername ist bereits in Verwendung!
 
 view.jeopardy.questionSelect=Fragenauswahl
+view.jeopardy.playerAvatar=Spieler-Avatar
 view.jeopardy.jumptoQestionSelect=Zur Fragenauswahl springen
 view.jeopardy.gameinfo=Spielinformationen
 view.jeopardy.leadingPlayer=Führender Spieler
@@ -51,6 +53,7 @@ view.question.questionAnswer=Fragenbeantwortung
 view.question.submitAnswer=antworten
 view.question.timeleft=Verbleibende Zeit
 
+view.winner.playerAvatar=Spieler-Avatar
 view.winner.winnerpage=Gewinnanzeige
 view.winner.gotowinner=Zur Gewinnanzeige springen
 view.winner.winnerinformation=Gewinnerinformationen

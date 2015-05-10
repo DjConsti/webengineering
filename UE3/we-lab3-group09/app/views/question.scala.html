@@ -34,7 +34,7 @@
             <h2 id="gameinfoinfoheading" class="accessibility">@Messages("view.jeopardy.gameinfo")</h2>
             <section id="firstplayer" class="playerinfo leader" aria-labelledby="firstplayerheading">
                <h3 id="firstplayerheading" class="accessibility">@Messages("view.jeopardy.leadingPlayer")</h3>
-               <img class="avatar" src="@routes.Assets.at("images/avatar/"+avt.getImageFull())" alt="Spieler-Avatar @avt.getName()" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/"+avt.getImageFull())" alt="@Messages("view.jeopardy.playerAvatar") @avt.getName()" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>
@@ -48,7 +48,7 @@
             </section>
             <section id="secondplayer" class="playerinfo" aria-labelledby="secondplayerheading">
                <h3 id="secondplayerheading" class="accessibility">@Messages("view.jeopardy.secondPlayer")</h3>
-               <img class="avatar" src="@routes.Assets.at("images/avatar/"+enemy.getImageFull())" alt="Spieler-Avatar @enemy.getName()" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/"+enemy.getImageFull())" alt="@Messages("view.jeopardy.playerAvatar") @enemy.getName()" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>

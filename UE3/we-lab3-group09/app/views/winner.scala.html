@@ -47,7 +47,7 @@
 			   } else {
 			   <h3 id="winnerannouncement">@Messages("view.winner.winner"): @enemy.getName()</h3>
 			   }
-               <img class="avatar" src="@routes.Assets.at("images/avatar/"+avt.getImageFull())" alt="Spieler-Avatar @avt.getName()" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/"+avt.getImageFull())" alt="@Messages("view.winner.playerAvatar") @avt.getName()" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>
@@ -61,7 +61,7 @@
             </section>
             <section class="playerinfo @computerWinner" aria-labelledby="loserheading">
                <h3 id="loserheading" class="accessibility">@Messages("view.jeopardy.loser"): Deadpool</h3>
-               <img class="avatar" src="@routes.Assets.at("images/avatar/"+enemy.getImageFull())" alt="Spieler-Avatar @enemy.getName()" />
+               <img class="avatar" src="@routes.Assets.at("images/avatar/"+enemy.getImageFull())" alt="@Messages("view.winner.playerAvatar") @enemy.getName()" />
                <table>
                   <tr>
                      <th class="accessibility">@Messages("view.jeopardy.playername")</th>

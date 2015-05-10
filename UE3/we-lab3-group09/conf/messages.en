@@ -10,6 +10,7 @@ view.authentication.notReg=Not registered
 view.authentication.gotoreg=Go to registration
 view.authentication.gotoreg.hover=Click here to register
 view.authentication.changelan=Change language
+view.authentication.clickToLogin=Click here to login
 
 view.registration.gotoreg.hover=Go to registration
 view.registration.reg=Registration
@@ -30,6 +31,7 @@ view.registration.requiredFields=Fields marked with "*" are mandatory.
 view.registration.validation.usernameInUse=Username already in use!
 
 view.jeopardy.questionSelect=Question selection
+view.jeopardy.playerAvatar=Player avatar
 view.jeopardy.jumptoQestionSelect=Go to question selection
 view.jeopardy.gameinfo=Game information
 view.jeopardy.leadingPlayer=Leading player
@@ -51,6 +53,7 @@ view.question.questionAnswer=Question answer
 view.question.submitAnswer=answer
 view.question.timeleft=Time left
 
+view.winner.playerAvatar=Player avatar
 view.winner.winnerpage=Winner overview
 view.winner.gotowinner=Go to winner overview
 view.winner.winnerinformation=Winner information
