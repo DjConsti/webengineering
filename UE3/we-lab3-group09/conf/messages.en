@@ -30,6 +30,9 @@ view.registration.requiredFields=Fields marked with "*" are mandatory.
 
 view.registration.validation.usernameInUse=Username already in use!
 
+view.jeopardy.hasChosenCategoryP1=has chosen
+view.jeopardy.hasChosenCategoryP2=for
+view.jeopardy.hasChosenCategoryP3=.
 view.jeopardy.questionSelect=Question selection
 view.jeopardy.playerAvatar=Player avatar
 view.jeopardy.jumptoQestionSelect=Go to question selection

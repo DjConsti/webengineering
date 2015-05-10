@@ -76,7 +76,7 @@
             } else {
             <p class="user-info negative-change">@Messages("view.jeopardy.computerWrongAnswer"): @computerMoneyChange</p>
             }
-            <p class="user-info">Deadpool hat TUWIEN für € 1000 gewählt.</p>
+            <p class="user-info">Deadpool @Messages("view.jeopardy.hasChosenCategoryP1") TUWIEN @Messages("view.jeopardy.hasChosenCategoryP2") € 1000 @Messages("view.jeopardy.hasChosenCategoryP3")</p>
             @helper.form(action = routes.SecuredArea.chooseQuestion()) {
                <fieldset>
                <legend class="accessibility">@Messages("view.jeopardy.questionSelect")</legend>
