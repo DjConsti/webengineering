@@ -97,6 +97,11 @@ public class SecuredArea extends Controller{
 		
 		List<Integer> answerList = new ArrayList<Integer>();
 		
+		if(request().body().asFormUrlEncoded().get("answers") == null) {
+			System.err.println("USERERROR: INVALID ANSWER SELECT NUMBER");
+			return question();
+		}
+		
 		for(int i = 0; i < request().body().asFormUrlEncoded().get("answers").length; i++)
 		{
 			answerList.add(Integer.parseInt(request().body().asFormUrlEncoded().get("answers")[i]));
