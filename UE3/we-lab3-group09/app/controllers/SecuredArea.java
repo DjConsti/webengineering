@@ -182,7 +182,26 @@ public class SecuredArea extends Controller{
 
 	public static Result question() {
 		List<Answer> list = controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getAllAnswers();
-		list.get(0).getId();
+		//list.get(0).getQuestion().getCorrectAnswers()
+		List<Answer> mixedlist = new ArrayList<Answer>();
+		int i = 0;
+		for( ;i < list.get(0).getQuestion().getCorrectAnswers().size(); i++ )
+		{
+			mixedlist.add(list.get(0).getQuestion().getCorrectAnswers().get(i));
+		}
+		
+		for( int j =0; i < 4; j++)
+		{
+			while(mixedlist.contains(list.get(0).getQuestion().getAllAnswers().get(i))==false)
+			{
+				mixedlist.add(list.get(0).getQuestion().getAllAnswers().get(i));
+				i++;
+				if(i == 4)
+					break;
+			}
+		}
+		
+		
 		return ok(question.render(session().get("user"), 
 				String.valueOf(controller.games.get(session().get("user")).getRound()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
@@ -190,7 +209,7 @@ public class SecuredArea extends Controller{
 				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getCategory().getName(),
 				new String(controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getValue()+""),
 				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getText(),
-				list,
+				mixedlist,
 				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),
 				GameController.games.get(session().get("user")).getGame().getMarvin().getAvatar()));
 	}
