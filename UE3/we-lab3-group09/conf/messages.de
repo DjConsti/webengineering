@@ -42,6 +42,7 @@ view.jeopardy.userWrongAnswer=Du hast falsch geantwortet
 view.jeopardy.computerCorrectAnswer=Deadpool hat richtig geantwortet
 view.jeopardy.computerWrongAnswer=Deadpool hat falsch geantwortet
 view.jeopardy.category=Kategorie
+view.jeopardy.for=für
 view.jeopardy.lastgameinfo=Letztes Spielinfo
 view.jeopardy.lastgame=Letztes Spiel: Nie
 view.jeopardy.selectQuestion=wählen

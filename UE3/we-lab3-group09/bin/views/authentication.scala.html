@@ -18,16 +18,21 @@
             <span class="accessibility">Business Informatics Group </span><span class="gametitle">Jeopardy!</span>
          </h1>
       </header>
-      @helper.form(action=routes.Application.changeLanguage()){
-	      <select id="language" name="language">
-	                <option value="de">Deutsch</option>
-	                <option value="en">English</option>
-	      </select>
-	      <input type="submit" name="changeLan" id="changeLan" class="greenlink formlink clickable" value="@Messages("view.authentication.changelan")" />
-      }
+      
       
       <!-- Content -->
         <div role="main">
+			<section id="language">
+			@helper.form(action=routes.Application.changeLanguage()){
+				<fieldset>
+				<select id="language" name="language">
+	                <option value="de">Deutsch</option>
+	                <option value="en">English</option>
+				</select>
+				<input type="submit" name="changeLan" id="changeLan" class="greenlink formlink clickable" value="@Messages("view.authentication.changelan")" />
+				</fieldset>
+			}
+			</section>
             <section id="login" aria-labelledby="loginheading">
                <h2 id="loginheading" class="accessibility">Login</h2>
                @helper.form(action = routes.Application.login()) {

@@ -180,6 +180,8 @@ public class SecuredArea extends Controller{
 				String.valueOf(controller.games.get(session().get("user")).getRound()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getHumanPlayer().getProfit()),
 				String.valueOf(controller.games.get(session().get("user")).getGame().getMarvinPlayer().getProfit()),
+				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getCategory().getName(),
+				new String(controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getValue()+""),
 				controller.games.get(session().get("user")).getGame().getHumanPlayer().getChosenQuestion().getText(),
 				list,
 				GameController.games.get(session().get("user")).getGame().getHumanPlayer().getUser().getAvatar(),

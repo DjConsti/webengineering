@@ -1,4 +1,4 @@
-@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(qText: String)(ans:List[at.ac.tuwien.big.we15.lab2.api.Answer])(avt: at.ac.tuwien.big.we15.lab2.api.Avatar)(enemy: at.ac.tuwien.big.we15.lab2.api.Avatar)
+@(username: String)(nrfragen: String)(userMoney: String)(computerMoney: String)(qCategory: String)(qValue: String)(qText: String)(ans:List[at.ac.tuwien.big.we15.lab2.api.Answer])(avt: at.ac.tuwien.big.we15.lab2.api.Avatar)(enemy: at.ac.tuwien.big.we15.lab2.api.Avatar)
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
@@ -67,7 +67,7 @@
       <section id="question" aria-labelledby="questionheading">
             @helper.form(action = routes.SecuredArea.commitAnswer()) {
                <h2 id="questionheading" class="accessibility">@Messages("view.jeopardy.question")</h2>
-               <p id="questiontype">TUWIEN für € 300</p>
+               <p id="questiontype">@qCategory @Messages("view.jeopardy.for") € @qValue</p>
                <p id="questiontext">@qText</p>
                <ul id="answers">
                   <li><input name="answers" id="answer_1" value="@ans.get(0).getId()" type="checkbox"/><label class="tile clickable" for="answer_1">@ans.get(0).getText()</label></li>
