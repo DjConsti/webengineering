@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 Manifest-Version: 1.0
 Built-By: pauluni
 Build-Jdk: 1.8.0_45
 Created-By: Maven Integration for Eclipse
 
+=======
+Manifest-Version: 1.0
+Built-By: amd 6x
+Build-Jdk: 1.8.0_45
+Created-By: Maven Integration for Eclipse
+
+>>>>>>> 8821c27b98ace4843302206023e296e9c0e04cde
