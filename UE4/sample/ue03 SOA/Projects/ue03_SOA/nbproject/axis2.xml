@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<axis2 xmlns="http://www.netbeans.org/ns/axis2/1">
+    <service name="erstelleEintrag">
+        <service-class>soa.erstelleEintrag</service-class>
+        <generate-wsdl targetNamespace="http://soa/" schemaNamespace="http://soa/xsd"/>
+    </service>
+    <service name="sucheEintrag">
+        <service-class>soa.sucheEintrag</service-class>
+        <generate-wsdl targetNamespace="http://soa/" schemaNamespace="http://soa/xsd"/>
+    </service>
+</axis2>
+
+
+
+
+

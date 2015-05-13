@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns0="http://enterprise.netbeans.org/bpel/BPEL_SOA/BPEL_SOA" xmlns:ns1="http://soa/" xmlns:ns2="http://www.sun.com/jbi/descriptor/service-unit" version="1.0">
+    <services binding-component="false">
+        <provides endpoint-name="erstelleEintragRole_myRole" interface-name="ns1:erstelleEintragPortType" service-name="ns0:Erstellen">
+            <ns2:display-name>Erstellen</ns2:display-name>
+            <ns2:process-name>BPEL_SOA</ns2:process-name>
+            <ns2:file-path>BPEL_SOA.bpel</ns2:file-path>
+        </provides>
+    </services>
+</jbi>
