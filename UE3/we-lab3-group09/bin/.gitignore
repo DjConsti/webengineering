@@ -1,1 +1,13 @@
+/META-INF/
+/application.conf
+/data.de.json
+/data.en.json
+/messages.de
+/messages.en
+/ApplicationTest.class
+/IntegrationTest$1.class
+/IntegrationTest.class
 /controllers/
+/models/
+/we4/
+/Global.class
