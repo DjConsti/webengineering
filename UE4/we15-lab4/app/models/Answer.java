@@ -1,17 +1,28 @@
 package models;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
+
 
 /**
  * Represents an answer which is stored in the DB
  */
+@Entity
 public class Answer extends BaseEntity {
-
 
     private String textDE;
     private String textEN;
-
+    
     private Boolean correctAnswer;
-
+    
+    @ManyToOne
     private Question question;
 
     /**
@@ -33,6 +44,7 @@ public class Answer extends BaseEntity {
      * @param lang
      * @return
      */
+   // @Access(AccessType.PROPERTY)
     public String getText(String lang) {
         if ("de".equalsIgnoreCase(lang)) {
             return this.textDE;
@@ -41,7 +53,7 @@ public class Answer extends BaseEntity {
             return this.textEN;
         }
     }
-
+   // @Access(AccessType.PROPERTY)
     public Question getQuestion() {
         return question;
     }
@@ -49,7 +61,7 @@ public class Answer extends BaseEntity {
     public void setQuestion(Question question) {
         this.question = question;
     }
-
+    //@Access(AccessType.PROPERTY)
     public String getTextDE() {
         return textDE;
     }
@@ -57,7 +69,8 @@ public class Answer extends BaseEntity {
     public void setTextDE(String textDE) {
         this.textDE = textDE;
     }
-
+    
+    //@Access(AccessType.PROPERTY)
     public String getTextEN() {
         return textEN;
     }
@@ -65,7 +78,8 @@ public class Answer extends BaseEntity {
     public void setTextEN(String textEN) {
         this.textEN = textEN;
     }
-
+    
+   // @Access(AccessType.PROPERTY)
     public Boolean getCorrectAnswer() {
         return correctAnswer;
     }
@@ -74,10 +88,12 @@ public class Answer extends BaseEntity {
         this.correctAnswer = correctAnswer;
     }
     
+   // @Access(AccessType.PROPERTY)
     public Boolean isWrong() {
     	return !correctAnswer;
     }
     
+   // @Access(AccessType.PROPERTY)
     public Boolean isRight() {
     	return correctAnswer;
     }

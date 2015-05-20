@@ -4,9 +4,21 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
 /**
  * Represents a question, which is stored in the DB
  */
+@Entity
 public class Question extends BaseEntity {
 
     private String textDE;
@@ -14,10 +26,13 @@ public class Question extends BaseEntity {
     private int value;
 
     //The category to which this question belongs to
+    @ManyToOne
     private Category category;
 
 
     //A list of right choices in this category
+   
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "question")
     private List<Answer> answers = new ArrayList<Answer>();
 
 
@@ -25,6 +40,7 @@ public class Question extends BaseEntity {
      * Add a wrong choice
      * @param choice
      */
+   // @Access(AccessType.PROPERTY)
     public void addWrongAnswer(Answer choice) {
         choice.setQuestion(this);
         choice.setCorrectAnswer(Boolean.FALSE);
@@ -36,6 +52,7 @@ public class Question extends BaseEntity {
      * Add a right choice
      * @param choice
      */
+   // @Access(AccessType.PROPERTY)
     public void addRightAnswer(Answer choice) {
         choice.setQuestion(this);
         choice.setCorrectAnswer(Boolean.TRUE);
@@ -62,6 +79,7 @@ public class Question extends BaseEntity {
      * @param lang
      * @return
      */
+  //  @Access(AccessType.PROPERTY)
     public String getText(String lang) {
         if ("de".equalsIgnoreCase(lang)) {
             return this.textDE;
@@ -72,7 +90,7 @@ public class Question extends BaseEntity {
     }
 
 
-
+   // @Access(AccessType.PROPERTY)
     public int getValue() {
         return value;
     }
@@ -81,6 +99,7 @@ public class Question extends BaseEntity {
         this.value = value;
     }
 
+   // @Access(AccessType.PROPERTY)
     public String getTextDE() {
         return textDE;
     }
@@ -89,6 +108,7 @@ public class Question extends BaseEntity {
         this.textDE = textDE;
     }
 
+  //  @Access(AccessType.PROPERTY)
     public String getTextEN() {
         return textEN;
     }
@@ -97,6 +117,7 @@ public class Question extends BaseEntity {
         this.textEN = textEN;
     }
 
+  //  @Access(AccessType.PROPERTY)
     public Category getCategory() {
         return category;
     }
@@ -105,6 +126,7 @@ public class Question extends BaseEntity {
         this.category = category;
     }
 
+   // @Access(AccessType.PROPERTY)
     public List<Answer> getAnswers() {
         return answers;
     }
@@ -113,6 +135,7 @@ public class Question extends BaseEntity {
         this.answers = choices;
     }
     
+   // @Access(AccessType.PROPERTY)
     public List<Answer> getCorrectAnswers() {
     	List<Answer> correct = new ArrayList<Answer>();
     	for(Answer c : answers)
@@ -121,6 +144,7 @@ public class Question extends BaseEntity {
     	return correct;
     }
     
+    //@Access(AccessType.PROPERTY)
     public List<Answer> getWrongAnswers() {
     	List<Answer> wrong = new ArrayList<Answer>();
     	for(Answer c : answers)
@@ -129,6 +153,7 @@ public class Question extends BaseEntity {
     	return wrong;
     }
     
+   // @Access(AccessType.PROPERTY)
     public List<Answer> getShuffledAnswers() {
     	List<Answer> answers = new ArrayList<>(getAnswers());
     	Collections.shuffle(answers);

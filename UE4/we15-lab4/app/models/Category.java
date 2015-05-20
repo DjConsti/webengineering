@@ -5,23 +5,25 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import javax.persistence.*;
 /**
  * Represents a category, which is stored in the DB
  */
+@Entity
 public class Category extends BaseEntity {
-
 
     private String nameDE;
     private String nameEN;
 
 
-    //A list of questions in this category
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
     private List<Question> questions = new ArrayList<Question>();
     
     /**
      * Add a new question to the category
      * @param question
      */
+   // @Access(AccessType.PROPERTY)
     public void addQuestion(Question question) {
         question.setCategory(this);
         questions.add(question);
@@ -46,6 +48,7 @@ public class Category extends BaseEntity {
      * @param lang
      * @return
      */
+  //  @Access(AccessType.PROPERTY)
     public String getName(String lang) {
         if ("de".equalsIgnoreCase(lang)) {
             return this.nameDE;
@@ -54,7 +57,8 @@ public class Category extends BaseEntity {
             return this.nameEN;
         }
     }
-
+    
+  //  @Access(AccessType.PROPERTY)
     public String getNameDE() {
         return nameDE;
     }
@@ -63,6 +67,7 @@ public class Category extends BaseEntity {
         this.nameDE = nameDE;
     }
 
+  //  @Access(AccessType.PROPERTY)
     public String getNameEN() {
         return nameEN;
     }
@@ -71,6 +76,7 @@ public class Category extends BaseEntity {
         this.nameEN = nameEN;
     }
 
+  //  @Access(AccessType.PROPERTY)
     public List<Question> getQuestions() {
         return questions;
     }
@@ -79,6 +85,7 @@ public class Category extends BaseEntity {
         this.questions = questions;
     }
     
+  //  @Access(AccessType.PROPERTY)
     public void sort() {
     	Collections.sort(questions, new Comparator<Question>() {
 			@Override

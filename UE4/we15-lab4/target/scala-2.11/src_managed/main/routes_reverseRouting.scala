@@ -1,6 +1,6 @@
-// @SOURCE:/home/constantin/Documents/Uni/LVAs/WebEngineering/webengineering/UE4/we15-lab4/conf/routes
-// @HASH:5b94c92980d44ac4b7c76026e9490186fd1fd49f
-// @DATE:Fri May 15 20:26:53 CEST 2015
+// @SOURCE:C:/xampp/htdocs/webengineering - Kopie/UE4/we15-lab4/conf/routes
+// @HASH:331cfae7aa41dc6f34b9f0186deb3a25b0b719a3
+// @DATE:Wed May 20 20:40:46 CEST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

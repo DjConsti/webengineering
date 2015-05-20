@@ -1,10 +1,13 @@
 package controllers;
 
+import javax.persistence.EntityManager;
+
 import models.JeopardyDAO;
 import models.JeopardyUser;
 import play.Logger;
 import play.data.DynamicForm;
 import play.data.Form;
+import play.db.jpa.JPA;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.authentication;
@@ -25,6 +28,7 @@ public class Authentication extends Controller {
 	@play.db.jpa.Transactional(readOnly = true)
 	public static Result authenticate() {
 		Logger.info("Login information has been provided.");
+		
 		DynamicForm loginForm = Form.form().bindFromRequest();
 		JeopardyUser user = obtainAuthenticatedQuizUser(loginForm);
 		if (user != null) {
