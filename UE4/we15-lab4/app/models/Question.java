@@ -26,13 +26,13 @@ public class Question extends BaseEntity {
     private int value;
 
     //The category to which this question belongs to
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Category category;
 
 
     //A list of right choices in this category
    
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "question")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "question", cascade = CascadeType.ALL)
     private List<Answer> answers = new ArrayList<Answer>();
 
 
