@@ -2,14 +2,37 @@
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(C:\delete\webengineering\UE4\we15-lab4\app\controllers\GameController.java)[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(C:\delete\webengineering\UE4\we15-lab4\app\controllers\GameController.java)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\delete\webengineering\UE4\we15-lab4\app\controllers\GameController.java)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Java source to C:\delete\webengineering\UE4\we15-lab4\target\scala-2.11\classes...[0m
+[0m[[0mdebug[0m] [0mAttempting to call javac directly...[0m
+[0m[[0mdebug[0m] [0mcom.sun.tools.javac.Main not found with appropriate method signature; forking javac instead[0m
+[0m[[0mdebug[0m] [0mForking javac: javac @C:/Users/ADMINI~1/AppData/Local/Temp/sbt_6caf109d/argfile[0m
+[0m[[31merror[0m] [0mC:\delete\webengineering\UE4\we15-lab4\app\controllers\GameController.java:161: error: cannot find symbol[0m
+[0m[[31merror[0m] [0m		HighscoreService hsService = new HighscoreService();[0m
+[0m[[31merror[0m] [0m		^[0m
+[0m[[31merror[0m] [0m  symbol:   class HighscoreService[0m
+[0m[[31merror[0m] [0m  location: class GameController[0m
+[0m[[31merror[0m] [0mC:\delete\webengineering\UE4\we15-lab4\app\controllers\GameController.java:161: error: cannot find symbol[0m
+[0m[[31merror[0m] [0m		HighscoreService hsService = new HighscoreService();[0m
+[0m[[31merror[0m] [0m		                                 ^[0m
+[0m[[31merror[0m] [0m  symbol:   class HighscoreService[0m
+[0m[[31merror[0m] [0m  location: class GameController[0m
+[0m[[31merror[0m] [0mC:\delete\webengineering\UE4\we15-lab4\app\controllers\GameController.java:162: error: method cachedGame in class GameController cannot be applied to given types;[0m
+[0m[[31merror[0m] [0m		hsService.postHighscore(cachedGame());[0m
+[0m[[31merror[0m] [0m		                        ^[0m
+[0m[[31merror[0m] [0m  required: String[0m
+[0m[[31merror[0m] [0m  found: no arguments[0m
+[0m[[31merror[0m] [0m  reason: actual and formal argument lists differ in length[0m
+[0m[[31merror[0m] [0m3 errors[0m
+[0m[[0mdebug[0m] [0mjavac returned exit code: 1[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) javac returned nonzero exit code[0m

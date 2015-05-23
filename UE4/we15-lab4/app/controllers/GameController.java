@@ -156,7 +156,11 @@ public class GameController extends Controller {
 		if(game == null || !game.isGameOver())
 			return redirect(routes.GameController.playGame());
 		
-		Logger.info("[" + request().username() + "] Game over.");		
+		Logger.info("[" + request().username() + "] Game over.");
+		
+		HighscoreService hsService = new HighscoreService();
+		hsService.postHighscore(cachedGame());
+		
 		return ok(winner.render(game));
 	}
 }
