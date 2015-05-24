@@ -1,6 +1,7 @@
 package models;
 
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,6 +18,7 @@ import scala.Serializable;
 public class BaseEntity implements Serializable {
 	@Id
 	@GeneratedValue
+	@Column(name = "ID")
     protected Long id;
 
     public Long getId() {
