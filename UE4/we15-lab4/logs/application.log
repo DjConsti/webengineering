@@ -1,81 +1,84 @@
-2015-05-24 22:19:14,051 - [INFO] - from play in pool-36-thread-3 
+2015-05-24 22:38:47,071 - [INFO] - from play in pool-65-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-05-24 22:19:30,474 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-24 22:38:49,405 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-05-24 22:19:30,503 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-24 22:38:49,433 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-05-24 22:19:32,144 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-24 22:38:51,057 - [INFO] - from application in play-internal-execution-context-1 
 Data from: data.json
 
-2015-05-24 22:19:32,390 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-24 22:38:51,246 - [INFO] - from application in play-internal-execution-context-1 
 5 categories from json file 'data.json' inserted.
 
-2015-05-24 22:19:32,424 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-24 22:38:51,278 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-05-24 22:19:32,915 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2015-05-24 22:38:51,649 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+Go to Registration page.
+
+2015-05-24 22:39:05,598 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 Registration info has been submitted.
 
-2015-05-24 22:19:33,272 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+2015-05-24 22:39:05,829 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
 Go to login page.
 
-2015-05-24 22:19:36,912 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+2015-05-24 22:39:07,891 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 Login information has been provided.
 
-2015-05-24 22:19:36,957 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+2015-05-24 22:39:07,935 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 [test] Play the game.
 
-2015-05-24 22:19:36,962 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+2015-05-24 22:39:07,940 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 [test] Creating a new game.
 
-2015-05-24 22:19:36,974 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+2015-05-24 22:39:07,953 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 Start game with 5 categories.
 
-2015-05-24 22:19:38,778 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+2015-05-24 22:39:09,503 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
 [test] Questions selected.
 
-2015-05-24 22:19:40,156 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
+2015-05-24 22:39:10,504 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
 [test] Answers submitted.
 
-2015-05-24 22:19:42,029 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+2015-05-24 22:39:11,878 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
 [test] Questions selected.
 
-2015-05-24 22:19:43,336 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+2015-05-24 22:39:13,114 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
 [test] Answers submitted.
 
-2015-05-24 22:19:45,584 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+2015-05-24 22:39:14,886 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
 [test] Questions selected.
 
-2015-05-24 22:19:47,180 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+2015-05-24 22:39:15,958 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
 [test] Answers submitted.
 
-2015-05-24 22:19:48,985 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
+2015-05-24 22:39:17,956 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
 [test] Questions selected.
 
-2015-05-24 22:19:50,620 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+2015-05-24 22:39:19,234 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
 [test] Answers submitted.
 
-2015-05-24 22:19:52,076 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+2015-05-24 22:39:20,870 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
 [test] Questions selected.
 
-2015-05-24 22:19:53,165 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+2015-05-24 22:39:22,204 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
 [test] Answers submitted.
 
-2015-05-24 22:19:53,175 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+2015-05-24 22:39:22,217 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
 [test] Game over.
 
-2015-05-24 22:19:53,313 - [ERROR] - from play in play-akka.actor.default-dispatcher-6 
-Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+2015-05-24 22:39:22,234 - [ERROR] - from play in play-akka.actor.default-dispatcher-10 
+Cannot invoke the action, eventually got an error: org.w3c.dom.DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.
 
-2015-05-24 22:19:53,325 - [ERROR] - from application in play-akka.actor.default-dispatcher-6 
+2015-05-24 22:39:22,247 - [ERROR] - from application in play-akka.actor.default-dispatcher-10 
 
 
-! @6m94j7d58 - Internal server error, for (GET) [/jeopardy/gameover] ->
+! @6m94lm09m - Internal server error, for (GET) [/jeopardy/gameover] ->
 
-play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+play.api.Application$$anon$1: Execution exception[[DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.]]
 	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
 	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
 	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
@@ -98,10 +101,17 @@ play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
-Caused by: java.util.NoSuchElementException: null
-	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
-	at controllers.HighscoreService.postHighscore(HighscoreService.java:88) ~[classes/:na]
-	at controllers.GameController.gameOver(GameController.java:162) ~[classes/:na]
+Caused by: org.w3c.dom.DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.
+	at com.sun.org.apache.xerces.internal.dom.ElementNSImpl.setName(ElementNSImpl.java:153) ~[na:1.8.0_45]
+	at com.sun.org.apache.xerces.internal.dom.ElementNSImpl.<init>(ElementNSImpl.java:84) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.<init>(ElementImpl.java:98) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementFactory.createElement(ElementFactory.java:82) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl.createElement(SOAPDocumentImpl.java:98) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.createElement(ElementImpl.java:406) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.addElement(ElementImpl.java:379) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.addChildElement(ElementImpl.java:126) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:58) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
 	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
 	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
 	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
@@ -142,91 +152,257 @@ Caused by: java.util.NoSuchElementException: null
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
 	... 6 common frames omitted
 
-2015-05-24 22:21:16,993 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-24 22:40:15,718 - [INFO] - from application in play-internal-execution-context-1 
 Application shutdown...
 
-2015-05-24 22:21:17,070 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-24 22:40:15,793 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-05-24 22:21:17,073 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-24 22:40:15,795 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-05-24 22:21:17,298 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-24 22:40:16,016 - [INFO] - from application in play-internal-execution-context-1 
 Data from: data.json
 
-2015-05-24 22:21:17,371 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-24 22:40:16,088 - [INFO] - from application in play-internal-execution-context-1 
 5 categories from json file 'data.json' inserted.
 
-2015-05-24 22:21:17,380 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-24 22:40:16,097 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-05-24 22:21:17,402 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+2015-05-24 22:40:16,121 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
 [test] Play the game.
 
-2015-05-24 22:21:17,420 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+2015-05-24 22:40:16,139 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
 Go to login page.
 
-2015-05-24 22:21:18,843 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+2015-05-24 22:40:17,727 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
 Go to Registration page.
 
-2015-05-24 22:21:21,353 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:19,798 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
 Registration info has been submitted.
 
-2015-05-24 22:21:21,393 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:19,826 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
 Go to login page.
 
-2015-05-24 22:21:23,384 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:23,728 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
 Login information has been provided.
 
-2015-05-24 22:21:23,416 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:23,767 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
 [test] Play the game.
 
-2015-05-24 22:21:23,418 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:23,769 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
 [test] Creating a new game.
 
-2015-05-24 22:21:23,419 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:23,771 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
 Start game with 5 categories.
 
-2015-05-24 22:21:25,388 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+2015-05-24 22:40:25,227 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
 [test] Questions selected.
 
-2015-05-24 22:21:26,675 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:26,192 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
 [test] Answers submitted.
 
-2015-05-24 22:21:27,976 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:27,632 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
 [test] Questions selected.
 
-2015-05-24 22:21:28,798 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+2015-05-24 22:40:28,813 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
 [test] Answers submitted.
 
-2015-05-24 22:21:30,704 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
+2015-05-24 22:40:30,030 - [INFO] - from application in play-akka.actor.default-dispatcher-19 
 [test] Questions selected.
 
-2015-05-24 22:21:31,486 - [INFO] - from application in play-akka.actor.default-dispatcher-17 
-[test] Answers submitted.
-
-2015-05-24 22:21:33,227 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:31,632 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
 [test] Questions selected.
 
-2015-05-24 22:21:34,594 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
+2015-05-24 22:40:32,532 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
 [test] Answers submitted.
 
-2015-05-24 22:21:36,316 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+2015-05-24 22:40:33,932 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
 [test] Questions selected.
 
-2015-05-24 22:21:37,577 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+2015-05-24 22:40:35,023 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
 [test] Answers submitted.
 
-2015-05-24 22:21:37,586 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
+2015-05-24 22:40:36,584 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+[test] Questions selected.
+
+2015-05-24 22:40:37,778 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+[test] Answers submitted.
+
+2015-05-24 22:40:37,792 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
 [test] Game over.
 
-2015-05-24 22:21:37,927 - [ERROR] - from play in play-akka.actor.default-dispatcher-18 
+2015-05-24 22:40:37,798 - [ERROR] - from play in play-akka.actor.default-dispatcher-15 
+Cannot invoke the action, eventually got an error: org.w3c.dom.DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.
+
+2015-05-24 22:40:37,801 - [ERROR] - from application in play-akka.actor.default-dispatcher-15 
+
+
+! @6m94m0840 - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: org.w3c.dom.DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.
+	at com.sun.org.apache.xerces.internal.dom.ElementNSImpl.setName(ElementNSImpl.java:153) ~[na:1.8.0_45]
+	at com.sun.org.apache.xerces.internal.dom.ElementNSImpl.<init>(ElementNSImpl.java:84) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.<init>(ElementImpl.java:98) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementFactory.createElement(ElementFactory.java:82) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl.createElement(SOAPDocumentImpl.java:98) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.createElement(ElementImpl.java:406) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.addElement(ElementImpl.java:379) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.addChildElement(ElementImpl.java:126) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:58) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 22:41:50,471 - [INFO] - from application in play-internal-execution-context-4 
+Application shutdown...
+
+2015-05-24 22:41:50,532 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 22:41:50,534 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 22:41:50,745 - [INFO] - from application in play-internal-execution-context-4 
+Data from: data.json
+
+2015-05-24 22:41:50,811 - [INFO] - from application in play-internal-execution-context-4 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 22:41:50,817 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-05-24 22:41:50,843 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+[test] Play the game.
+
+2015-05-24 22:41:50,854 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+Go to login page.
+
+2015-05-24 22:41:52,858 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+Go to Registration page.
+
+2015-05-24 22:41:54,704 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+Registration info has been submitted.
+
+2015-05-24 22:41:54,748 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+Go to login page.
+
+2015-05-24 22:41:57,127 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+Login information has been provided.
+
+2015-05-24 22:41:57,156 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+[test] Play the game.
+
+2015-05-24 22:41:57,157 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+[test] Creating a new game.
+
+2015-05-24 22:41:57,159 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+Start game with 5 categories.
+
+2015-05-24 22:41:59,329 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+[test] Questions selected.
+
+2015-05-24 22:42:01,220 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+[test] Answers submitted.
+
+2015-05-24 22:42:02,219 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+[test] Questions selected.
+
+2015-05-24 22:42:03,965 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+[test] Questions selected.
+
+2015-05-24 22:42:05,263 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+[test] Answers submitted.
+
+2015-05-24 22:42:06,588 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+[test] Questions selected.
+
+2015-05-24 22:42:07,450 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
+[test] Answers submitted.
+
+2015-05-24 22:42:09,009 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+[test] Questions selected.
+
+2015-05-24 22:42:10,367 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
+[test] Answers submitted.
+
+2015-05-24 22:42:11,784 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+[test] Questions selected.
+
+2015-05-24 22:42:13,013 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+[test] Answers submitted.
+
+2015-05-24 22:42:13,027 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+[test] Game over.
+
+2015-05-24 22:42:13,175 - [ERROR] - from play in play-akka.actor.default-dispatcher-24 
 Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
 
-2015-05-24 22:21:37,930 - [ERROR] - from application in play-akka.actor.default-dispatcher-18 
+2015-05-24 22:42:13,178 - [ERROR] - from application in play-akka.actor.default-dispatcher-24 
 
 
-! @6m94jdbol - Internal server error, for (GET) [/jeopardy/gameover] ->
+! @6m94m5j69 - Internal server error, for (GET) [/jeopardy/gameover] ->
 
 play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
 	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
@@ -295,99 +471,93 @@ Caused by: java.util.NoSuchElementException: null
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
 	... 6 common frames omitted
 
-2015-05-24 22:23:32,927 - [INFO] - from application in play-internal-execution-context-3 
+2015-05-24 22:47:48,741 - [INFO] - from application in play-internal-execution-context-5 
 Application shutdown...
 
-2015-05-24 22:23:32,991 - [INFO] - from play in play-internal-execution-context-3 
+2015-05-24 22:47:48,800 - [INFO] - from play in play-internal-execution-context-5 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-05-24 22:23:32,993 - [INFO] - from play in play-internal-execution-context-3 
+2015-05-24 22:47:48,802 - [INFO] - from play in play-internal-execution-context-5 
 database [default] connected at jdbc:h2:mem:play
 
-2015-05-24 22:23:33,198 - [INFO] - from application in play-internal-execution-context-3 
+2015-05-24 22:47:49,003 - [INFO] - from application in play-internal-execution-context-5 
 Data from: data.json
 
-2015-05-24 22:23:33,262 - [INFO] - from application in play-internal-execution-context-3 
+2015-05-24 22:47:49,059 - [INFO] - from application in play-internal-execution-context-5 
 5 categories from json file 'data.json' inserted.
 
-2015-05-24 22:23:33,266 - [INFO] - from play in play-internal-execution-context-3 
+2015-05-24 22:47:49,063 - [INFO] - from play in play-internal-execution-context-5 
 Application started (Dev)
 
-2015-05-24 22:23:33,302 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+2015-05-24 22:47:49,085 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
 [test] Play the game.
 
-2015-05-24 22:23:33,321 - [INFO] - from application in play-akka.actor.default-dispatcher-17 
+2015-05-24 22:47:49,099 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
 Go to login page.
 
-2015-05-24 22:23:36,525 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-Login information has been provided.
-
-2015-05-24 22:23:37,611 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+2015-05-24 22:47:50,771 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
 Go to Registration page.
 
-2015-05-24 22:23:39,684 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+2015-05-24 22:47:53,221 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
 Registration info has been submitted.
 
-2015-05-24 22:23:39,711 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+2015-05-24 22:47:53,278 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
 Go to login page.
 
-2015-05-24 22:23:42,322 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+2015-05-24 22:47:56,226 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
 Login information has been provided.
 
-2015-05-24 22:23:42,359 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+2015-05-24 22:47:56,272 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
 [test] Play the game.
 
-2015-05-24 22:23:42,361 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+2015-05-24 22:47:56,274 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
 [test] Creating a new game.
 
-2015-05-24 22:23:42,362 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+2015-05-24 22:47:56,276 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
 Start game with 5 categories.
 
-2015-05-24 22:23:44,157 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+2015-05-24 22:47:59,669 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
 [test] Questions selected.
 
-2015-05-24 22:23:44,866 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+2015-05-24 22:48:00,776 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
 [test] Answers submitted.
 
-2015-05-24 22:23:46,477 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+2015-05-24 22:48:02,500 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
 [test] Questions selected.
 
-2015-05-24 22:23:47,745 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
-[test] Questions selected.
-
-2015-05-24 22:23:48,942 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+2015-05-24 22:48:03,540 - [INFO] - from application in play-akka.actor.default-dispatcher-34 
 [test] Answers submitted.
 
-2015-05-24 22:23:50,386 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+2015-05-24 22:48:05,387 - [INFO] - from application in play-akka.actor.default-dispatcher-37 
 [test] Questions selected.
 
-2015-05-24 22:23:51,461 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+2015-05-24 22:48:06,240 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
 [test] Answers submitted.
 
-2015-05-24 22:23:53,818 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+2015-05-24 22:48:07,939 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
 [test] Questions selected.
 
-2015-05-24 22:23:55,159 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+2015-05-24 22:48:09,242 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
 [test] Answers submitted.
 
-2015-05-24 22:23:57,135 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+2015-05-24 22:48:10,870 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
 [test] Questions selected.
 
-2015-05-24 22:23:58,196 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+2015-05-24 22:48:12,078 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
 [test] Answers submitted.
 
-2015-05-24 22:23:58,226 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+2015-05-24 22:48:12,086 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
 [test] Game over.
 
-2015-05-24 22:23:58,395 - [ERROR] - from play in play-akka.actor.default-dispatcher-25 
-Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+2015-05-24 22:48:12,091 - [ERROR] - from play in play-akka.actor.default-dispatcher-33 
+Cannot invoke the action, eventually got an error: org.w3c.dom.DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.
 
-2015-05-24 22:23:58,398 - [ERROR] - from application in play-akka.actor.default-dispatcher-25 
+2015-05-24 22:48:12,093 - [ERROR] - from application in play-akka.actor.default-dispatcher-33 
 
 
-! @6m94jlbjb - Internal server error, for (GET) [/jeopardy/gameover] ->
+! @6m94n044l - Internal server error, for (GET) [/jeopardy/gameover] ->
 
-play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+play.api.Application$$anon$1: Execution exception[[DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.]]
 	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
 	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
 	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
@@ -410,9 +580,16 @@ play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
-Caused by: java.util.NoSuchElementException: null
-	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
-	at controllers.HighscoreService.postHighscore(HighscoreService.java:88) ~[classes/:na]
+Caused by: org.w3c.dom.DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.
+	at com.sun.org.apache.xerces.internal.dom.ElementNSImpl.setName(ElementNSImpl.java:153) ~[na:1.8.0_45]
+	at com.sun.org.apache.xerces.internal.dom.ElementNSImpl.<init>(ElementNSImpl.java:84) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.<init>(ElementImpl.java:98) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementFactory.createElement(ElementFactory.java:82) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl.createElement(SOAPDocumentImpl.java:98) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.createElement(ElementImpl.java:406) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.addElement(ElementImpl.java:379) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.addChildElement(ElementImpl.java:126) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:49) ~[classes/:na]
 	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
 	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
 	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
@@ -453,4 +630,2202 @@ Caused by: java.util.NoSuchElementException: null
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
 	... 6 common frames omitted
+
+2015-05-24 22:49:08,965 - [INFO] - from application in play-internal-execution-context-5 
+Application shutdown...
+
+2015-05-24 22:49:09,016 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 22:49:09,018 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 22:49:09,218 - [INFO] - from application in play-internal-execution-context-5 
+Data from: data.json
+
+2015-05-24 22:49:09,272 - [INFO] - from application in play-internal-execution-context-5 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 22:49:09,275 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-05-24 22:49:09,295 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+[test] Play the game.
+
+2015-05-24 22:49:09,312 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+Go to login page.
+
+2015-05-24 22:49:11,147 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+Go to Registration page.
+
+2015-05-24 22:49:13,284 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+Registration info has been submitted.
+
+2015-05-24 22:49:13,318 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+Go to login page.
+
+2015-05-24 22:49:15,502 - [INFO] - from application in play-akka.actor.default-dispatcher-39 
+Login information has been provided.
+
+2015-05-24 22:49:15,625 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+[test] Play the game.
+
+2015-05-24 22:49:15,627 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+[test] Creating a new game.
+
+2015-05-24 22:49:15,628 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+Start game with 5 categories.
+
+2015-05-24 22:49:16,791 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+[test] Questions selected.
+
+2015-05-24 22:49:18,030 - [INFO] - from application in play-akka.actor.default-dispatcher-45 
+[test] Answers submitted.
+
+2015-05-24 22:49:19,341 - [INFO] - from application in play-akka.actor.default-dispatcher-45 
+[test] Questions selected.
+
+2015-05-24 22:49:19,972 - [INFO] - from application in play-akka.actor.default-dispatcher-40 
+[test] Answers submitted.
+
+2015-05-24 22:49:21,226 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+[test] Questions selected.
+
+2015-05-24 22:49:21,896 - [INFO] - from application in play-akka.actor.default-dispatcher-41 
+[test] Answers submitted.
+
+2015-05-24 22:49:23,272 - [INFO] - from application in play-akka.actor.default-dispatcher-43 
+[test] Questions selected.
+
+2015-05-24 22:49:23,972 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+[test] Answers submitted.
+
+2015-05-24 22:49:25,637 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+[test] Questions selected.
+
+2015-05-24 22:49:26,788 - [INFO] - from application in play-akka.actor.default-dispatcher-41 
+[test] Answers submitted.
+
+2015-05-24 22:49:26,825 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+[test] Game over.
+
+2015-05-24 22:49:26,833 - [ERROR] - from play in play-akka.actor.default-dispatcher-36 
+Cannot invoke the action, eventually got an error: org.w3c.dom.DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.
+
+2015-05-24 22:49:26,836 - [ERROR] - from application in play-akka.actor.default-dispatcher-36 
+
+
+! @6m94n4aje - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: org.w3c.dom.DOMException: NAMESPACE_ERR: Es wurde versucht, ein Objekt auf eine Weise zu erstellen oder zu ändern, die falsch in Bezug auf Namespaces ist.
+	at com.sun.org.apache.xerces.internal.dom.ElementNSImpl.setName(ElementNSImpl.java:153) ~[na:1.8.0_45]
+	at com.sun.org.apache.xerces.internal.dom.ElementNSImpl.<init>(ElementNSImpl.java:84) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.<init>(ElementImpl.java:98) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementFactory.createElement(ElementFactory.java:82) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl.createElement(SOAPDocumentImpl.java:98) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.createElement(ElementImpl.java:406) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.addElement(ElementImpl.java:379) ~[na:1.8.0_45]
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl.addChildElement(ElementImpl.java:126) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:49) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:02:59,215 - [INFO] - from application in play-internal-execution-context-5 
+Application shutdown...
+
+2015-05-24 23:02:59,267 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:02:59,269 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:02:59,456 - [INFO] - from application in play-internal-execution-context-5 
+Data from: data.json
+
+2015-05-24 23:02:59,500 - [INFO] - from application in play-internal-execution-context-5 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:02:59,503 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-05-24 23:02:59,533 - [INFO] - from application in play-akka.actor.default-dispatcher-47 
+[test] Play the game.
+
+2015-05-24 23:02:59,553 - [INFO] - from application in play-akka.actor.default-dispatcher-47 
+Go to login page.
+
+2015-05-24 23:03:00,963 - [INFO] - from application in play-akka.actor.default-dispatcher-49 
+Go to Registration page.
+
+2015-05-24 23:03:03,052 - [INFO] - from application in play-akka.actor.default-dispatcher-53 
+Registration info has been submitted.
+
+2015-05-24 23:03:03,121 - [INFO] - from application in play-akka.actor.default-dispatcher-51 
+Go to login page.
+
+2015-05-24 23:03:05,028 - [INFO] - from application in play-akka.actor.default-dispatcher-53 
+Login information has been provided.
+
+2015-05-24 23:03:05,090 - [INFO] - from application in play-akka.actor.default-dispatcher-53 
+[test] Play the game.
+
+2015-05-24 23:03:05,092 - [INFO] - from application in play-akka.actor.default-dispatcher-53 
+[test] Creating a new game.
+
+2015-05-24 23:03:05,093 - [INFO] - from application in play-akka.actor.default-dispatcher-53 
+Start game with 5 categories.
+
+2015-05-24 23:03:06,127 - [INFO] - from application in play-akka.actor.default-dispatcher-48 
+[test] Questions selected.
+
+2015-05-24 23:03:07,567 - [INFO] - from application in play-akka.actor.default-dispatcher-52 
+[test] Answers submitted.
+
+2015-05-24 23:03:09,082 - [INFO] - from application in play-akka.actor.default-dispatcher-48 
+[test] Questions selected.
+
+2015-05-24 23:03:10,202 - [INFO] - from application in play-akka.actor.default-dispatcher-46 
+[test] Answers submitted.
+
+2015-05-24 23:03:11,698 - [INFO] - from application in play-akka.actor.default-dispatcher-46 
+[test] Questions selected.
+
+2015-05-24 23:03:12,757 - [INFO] - from application in play-akka.actor.default-dispatcher-49 
+[test] Answers submitted.
+
+2015-05-24 23:03:14,577 - [INFO] - from application in play-akka.actor.default-dispatcher-47 
+[test] Questions selected.
+
+2015-05-24 23:03:15,558 - [INFO] - from application in play-akka.actor.default-dispatcher-49 
+[test] Answers submitted.
+
+2015-05-24 23:03:17,350 - [INFO] - from application in play-akka.actor.default-dispatcher-46 
+[test] Questions selected.
+
+2015-05-24 23:03:19,446 - [INFO] - from application in play-akka.actor.default-dispatcher-53 
+[test] Answers submitted.
+
+2015-05-24 23:03:19,460 - [INFO] - from application in play-akka.actor.default-dispatcher-49 
+[test] Game over.
+
+2015-05-24 23:03:19,614 - [ERROR] - from play in play-akka.actor.default-dispatcher-49 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:03:19,616 - [ERROR] - from application in play-akka.actor.default-dispatcher-49 
+
+
+! @6m94opkhe - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:93) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:05:15,454 - [INFO] - from application in play-internal-execution-context-5 
+Application shutdown...
+
+2015-05-24 23:05:15,508 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:05:15,510 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:05:15,693 - [INFO] - from application in play-internal-execution-context-5 
+Data from: data.json
+
+2015-05-24 23:05:15,729 - [INFO] - from application in play-internal-execution-context-5 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:05:15,732 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-05-24 23:05:15,756 - [INFO] - from application in play-akka.actor.default-dispatcher-54 
+[test] Play the game.
+
+2015-05-24 23:05:15,767 - [INFO] - from application in play-akka.actor.default-dispatcher-50 
+Go to login page.
+
+2015-05-24 23:05:18,428 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+Go to Registration page.
+
+2015-05-24 23:05:21,491 - [INFO] - from application in play-akka.actor.default-dispatcher-58 
+Registration info has been submitted.
+
+2015-05-24 23:05:21,540 - [INFO] - from application in play-akka.actor.default-dispatcher-60 
+Go to login page.
+
+2015-05-24 23:05:23,890 - [INFO] - from application in play-akka.actor.default-dispatcher-57 
+Login information has been provided.
+
+2015-05-24 23:05:23,940 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+[test] Play the game.
+
+2015-05-24 23:05:23,941 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+[test] Creating a new game.
+
+2015-05-24 23:05:23,942 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+Start game with 5 categories.
+
+2015-05-24 23:05:25,164 - [INFO] - from application in play-akka.actor.default-dispatcher-61 
+[test] Questions selected.
+
+2015-05-24 23:05:26,075 - [INFO] - from application in play-akka.actor.default-dispatcher-61 
+[test] Questions selected.
+
+2015-05-24 23:05:26,645 - [INFO] - from application in play-akka.actor.default-dispatcher-54 
+[test] Answers submitted.
+
+2015-05-24 23:05:28,161 - [INFO] - from application in play-akka.actor.default-dispatcher-58 
+[test] Questions selected.
+
+2015-05-24 23:05:28,846 - [INFO] - from application in play-akka.actor.default-dispatcher-61 
+[test] Answers submitted.
+
+2015-05-24 23:05:30,166 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+[test] Questions selected.
+
+2015-05-24 23:05:31,105 - [INFO] - from application in play-akka.actor.default-dispatcher-58 
+[test] Answers submitted.
+
+2015-05-24 23:05:32,308 - [INFO] - from application in play-akka.actor.default-dispatcher-54 
+[test] Questions selected.
+
+2015-05-24 23:05:33,237 - [INFO] - from application in play-akka.actor.default-dispatcher-62 
+[test] Answers submitted.
+
+2015-05-24 23:05:34,731 - [INFO] - from application in play-akka.actor.default-dispatcher-55 
+[test] Questions selected.
+
+2015-05-24 23:05:35,897 - [INFO] - from application in play-akka.actor.default-dispatcher-62 
+[test] Answers submitted.
+
+2015-05-24 23:05:35,903 - [INFO] - from application in play-akka.actor.default-dispatcher-57 
+[test] Game over.
+
+2015-05-24 23:05:36,456 - [ERROR] - from play in play-akka.actor.default-dispatcher-57 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:05:36,462 - [ERROR] - from application in play-akka.actor.default-dispatcher-57 
+
+
+! @6m94p7f2j - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:93) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:07:18,564 - [INFO] - from application in play-internal-execution-context-9 
+Application shutdown...
+
+2015-05-24 23:07:18,617 - [INFO] - from play in play-internal-execution-context-9 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:07:18,619 - [INFO] - from play in play-internal-execution-context-9 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:07:18,807 - [INFO] - from application in play-internal-execution-context-9 
+Data from: data.json
+
+2015-05-24 23:07:18,839 - [INFO] - from application in play-internal-execution-context-9 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:07:18,842 - [INFO] - from play in play-internal-execution-context-9 
+Application started (Dev)
+
+2015-05-24 23:07:18,869 - [INFO] - from application in play-akka.actor.default-dispatcher-63 
+[test] Play the game.
+
+2015-05-24 23:07:18,891 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+Go to login page.
+
+2015-05-24 23:07:20,387 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+Go to Registration page.
+
+2015-05-24 23:07:22,553 - [INFO] - from application in play-akka.actor.default-dispatcher-65 
+Registration info has been submitted.
+
+2015-05-24 23:07:22,590 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+Go to login page.
+
+2015-05-24 23:07:24,621 - [INFO] - from application in play-akka.actor.default-dispatcher-66 
+Login information has been provided.
+
+2015-05-24 23:07:24,648 - [INFO] - from application in play-akka.actor.default-dispatcher-64 
+[test] Play the game.
+
+2015-05-24 23:07:24,650 - [INFO] - from application in play-akka.actor.default-dispatcher-64 
+[test] Creating a new game.
+
+2015-05-24 23:07:24,651 - [INFO] - from application in play-akka.actor.default-dispatcher-64 
+Start game with 5 categories.
+
+2015-05-24 23:07:25,697 - [INFO] - from application in play-akka.actor.default-dispatcher-67 
+[test] Questions selected.
+
+2015-05-24 23:07:26,675 - [INFO] - from application in play-akka.actor.default-dispatcher-63 
+[test] Answers submitted.
+
+2015-05-24 23:07:28,208 - [INFO] - from application in play-akka.actor.default-dispatcher-64 
+[test] Questions selected.
+
+2015-05-24 23:07:28,873 - [INFO] - from application in play-akka.actor.default-dispatcher-68 
+[test] Answers submitted.
+
+2015-05-24 23:07:30,246 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+[test] Questions selected.
+
+2015-05-24 23:07:31,187 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+[test] Answers submitted.
+
+2015-05-24 23:07:32,478 - [INFO] - from application in play-akka.actor.default-dispatcher-69 
+[test] Questions selected.
+
+2015-05-24 23:07:33,162 - [INFO] - from application in play-akka.actor.default-dispatcher-63 
+[test] Answers submitted.
+
+2015-05-24 23:07:35,332 - [INFO] - from application in play-akka.actor.default-dispatcher-67 
+[test] Questions selected.
+
+2015-05-24 23:07:36,732 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
+[test] Answers submitted.
+
+2015-05-24 23:07:36,740 - [INFO] - from application in play-akka.actor.default-dispatcher-66 
+[test] Game over.
+
+2015-05-24 23:07:36,886 - [ERROR] - from play in play-akka.actor.default-dispatcher-66 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:07:36,888 - [ERROR] - from application in play-akka.actor.default-dispatcher-66 
+
+
+! @6m94peb6g - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:92) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:09:46,539 - [INFO] - from application in play-internal-execution-context-9 
+Application shutdown...
+
+2015-05-24 23:09:46,590 - [INFO] - from play in play-internal-execution-context-9 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:09:46,593 - [INFO] - from play in play-internal-execution-context-9 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:09:46,767 - [INFO] - from application in play-internal-execution-context-9 
+Data from: data.json
+
+2015-05-24 23:09:46,796 - [INFO] - from application in play-internal-execution-context-9 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:09:46,798 - [INFO] - from play in play-internal-execution-context-9 
+Application started (Dev)
+
+2015-05-24 23:09:46,819 - [INFO] - from application in play-akka.actor.default-dispatcher-65 
+[test] Play the game.
+
+2015-05-24 23:09:46,831 - [INFO] - from application in play-akka.actor.default-dispatcher-70 
+Go to login page.
+
+2015-05-24 23:09:58,141 - [INFO] - from application in play-akka.actor.default-dispatcher-72 
+Go to Registration page.
+
+2015-05-24 23:10:00,934 - [INFO] - from application in play-akka.actor.default-dispatcher-65 
+Registration info has been submitted.
+
+2015-05-24 23:10:00,955 - [INFO] - from application in play-akka.actor.default-dispatcher-76 
+Go to login page.
+
+2015-05-24 23:10:03,096 - [INFO] - from application in play-akka.actor.default-dispatcher-65 
+Login information has been provided.
+
+2015-05-24 23:10:03,205 - [INFO] - from application in play-akka.actor.default-dispatcher-73 
+[test] Play the game.
+
+2015-05-24 23:10:03,206 - [INFO] - from application in play-akka.actor.default-dispatcher-73 
+[test] Creating a new game.
+
+2015-05-24 23:10:03,208 - [INFO] - from application in play-akka.actor.default-dispatcher-73 
+Start game with 5 categories.
+
+2015-05-24 23:10:04,108 - [INFO] - from application in play-akka.actor.default-dispatcher-65 
+[test] Questions selected.
+
+2015-05-24 23:10:05,076 - [INFO] - from application in play-akka.actor.default-dispatcher-74 
+[test] Questions selected.
+
+2015-05-24 23:10:06,096 - [INFO] - from application in play-akka.actor.default-dispatcher-70 
+[test] Answers submitted.
+
+2015-05-24 23:10:09,879 - [INFO] - from application in play-akka.actor.default-dispatcher-78 
+[test] Questions selected.
+
+2015-05-24 23:10:11,129 - [INFO] - from application in play-akka.actor.default-dispatcher-70 
+[test] Answers submitted.
+
+2015-05-24 23:10:12,653 - [INFO] - from application in play-akka.actor.default-dispatcher-70 
+[test] Questions selected.
+
+2015-05-24 23:10:13,701 - [INFO] - from application in play-akka.actor.default-dispatcher-73 
+[test] Answers submitted.
+
+2015-05-24 23:10:15,224 - [INFO] - from application in play-akka.actor.default-dispatcher-74 
+[test] Questions selected.
+
+2015-05-24 23:10:16,562 - [INFO] - from application in play-akka.actor.default-dispatcher-73 
+[test] Answers submitted.
+
+2015-05-24 23:10:18,365 - [INFO] - from application in play-akka.actor.default-dispatcher-79 
+[test] Questions selected.
+
+2015-05-24 23:10:20,388 - [INFO] - from application in play-akka.actor.default-dispatcher-70 
+[test] Answers submitted.
+
+2015-05-24 23:10:20,401 - [INFO] - from application in play-akka.actor.default-dispatcher-73 
+[test] Game over.
+
+2015-05-24 23:10:20,777 - [ERROR] - from play in play-akka.actor.default-dispatcher-73 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:10:20,780 - [ERROR] - from application in play-akka.actor.default-dispatcher-73 
+
+
+! @6m94pnji3 - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:92) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:12:49,886 - [INFO] - from application in play-akka.actor.default-dispatcher-80 
+[test] Play the game.
+
+2015-05-24 23:12:49,887 - [INFO] - from application in play-akka.actor.default-dispatcher-80 
+[test] Game over... redirect
+
+2015-05-24 23:12:51,805 - [INFO] - from application in play-akka.actor.default-dispatcher-80 
+Logout.
+
+2015-05-24 23:12:51,850 - [INFO] - from application in play-akka.actor.default-dispatcher-80 
+Go to login page.
+
+2015-05-24 23:12:52,663 - [INFO] - from application in play-akka.actor.default-dispatcher-86 
+Go to Registration page.
+
+2015-05-24 23:13:08,084 - [INFO] - from application in play-akka.actor.default-dispatcher-80 
+Registration info has been submitted.
+
+2015-05-24 23:13:11,429 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+Registration info has been submitted.
+
+2015-05-24 23:13:11,466 - [INFO] - from application in play-akka.actor.default-dispatcher-72 
+Go to login page.
+
+2015-05-24 23:13:14,018 - [INFO] - from application in play-akka.actor.default-dispatcher-87 
+Login information has been provided.
+
+2015-05-24 23:13:14,228 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+[test2] Play the game.
+
+2015-05-24 23:13:14,229 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+[test2] Creating a new game.
+
+2015-05-24 23:13:14,230 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+Start game with 5 categories.
+
+2015-05-24 23:13:15,788 - [INFO] - from application in play-akka.actor.default-dispatcher-87 
+[test2] Questions selected.
+
+2015-05-24 23:13:16,850 - [INFO] - from application in play-akka.actor.default-dispatcher-90 
+[test2] Questions selected.
+
+2015-05-24 23:13:18,112 - [INFO] - from application in play-akka.actor.default-dispatcher-87 
+[test2] Answers submitted.
+
+2015-05-24 23:13:19,570 - [INFO] - from application in play-akka.actor.default-dispatcher-90 
+[test2] Questions selected.
+
+2015-05-24 23:13:20,593 - [INFO] - from application in play-akka.actor.default-dispatcher-89 
+[test2] Answers submitted.
+
+2015-05-24 23:13:28,743 - [INFO] - from application in play-akka.actor.default-dispatcher-72 
+[test2] Questions selected.
+
+2015-05-24 23:13:29,940 - [INFO] - from application in play-akka.actor.default-dispatcher-90 
+[test2] Answers submitted.
+
+2015-05-24 23:13:32,885 - [INFO] - from application in play-akka.actor.default-dispatcher-72 
+[test2] Questions selected.
+
+2015-05-24 23:13:33,940 - [INFO] - from application in play-akka.actor.default-dispatcher-92 
+[test2] Answers submitted.
+
+2015-05-24 23:13:35,369 - [INFO] - from application in play-akka.actor.default-dispatcher-92 
+[test2] Questions selected.
+
+2015-05-24 23:13:37,125 - [INFO] - from application in play-akka.actor.default-dispatcher-92 
+[test2] Answers submitted.
+
+2015-05-24 23:13:37,146 - [INFO] - from application in play-akka.actor.default-dispatcher-92 
+[test2] Game over.
+
+2015-05-24 23:13:37,279 - [ERROR] - from play in play-akka.actor.default-dispatcher-92 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:13:37,281 - [ERROR] - from application in play-akka.actor.default-dispatcher-92 
+
+
+! @6m9508o9n - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:92) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:14:10,258 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+[test2] Play the game.
+
+2015-05-24 23:14:10,259 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+[test2] Game over... redirect
+
+2015-05-24 23:14:18,504 - [INFO] - from application in play-akka.actor.default-dispatcher-93 
+[test2] Start new game.
+
+2015-05-24 23:14:18,507 - [INFO] - from application in play-akka.actor.default-dispatcher-93 
+[test2] Creating a new game.
+
+2015-05-24 23:14:18,511 - [INFO] - from application in play-akka.actor.default-dispatcher-93 
+Start game with 5 categories.
+
+2015-05-24 23:14:19,959 - [INFO] - from application in play-akka.actor.default-dispatcher-95 
+[test2] Questions selected.
+
+2015-05-24 23:14:20,957 - [INFO] - from application in play-akka.actor.default-dispatcher-98 
+[test2] Answers submitted.
+
+2015-05-24 23:14:22,770 - [INFO] - from application in play-akka.actor.default-dispatcher-98 
+[test2] Questions selected.
+
+2015-05-24 23:14:23,886 - [INFO] - from application in play-akka.actor.default-dispatcher-93 
+[test2] Answers submitted.
+
+2015-05-24 23:14:25,164 - [INFO] - from application in play-akka.actor.default-dispatcher-98 
+[test2] Questions selected.
+
+2015-05-24 23:14:26,177 - [INFO] - from application in play-akka.actor.default-dispatcher-99 
+[test2] Answers submitted.
+
+2015-05-24 23:14:28,050 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
+[test2] Questions selected.
+
+2015-05-24 23:14:29,072 - [INFO] - from application in play-akka.actor.default-dispatcher-97 
+[test2] Answers submitted.
+
+2015-05-24 23:14:30,755 - [INFO] - from application in play-akka.actor.default-dispatcher-96 
+[test2] Questions selected.
+
+2015-05-24 23:14:31,938 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
+[test2] Answers submitted.
+
+2015-05-24 23:14:31,951 - [INFO] - from application in play-akka.actor.default-dispatcher-97 
+[test2] Game over.
+
+2015-05-24 23:14:32,093 - [ERROR] - from play in play-akka.actor.default-dispatcher-97 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:14:32,095 - [ERROR] - from application in play-akka.actor.default-dispatcher-97 
+
+
+! @6m950c1c3 - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:92) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:19:44,282 - [INFO] - from application in play-internal-execution-context-12 
+Application shutdown...
+
+2015-05-24 23:19:44,331 - [INFO] - from play in play-internal-execution-context-12 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:19:44,333 - [INFO] - from play in play-internal-execution-context-12 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:19:44,501 - [INFO] - from application in play-internal-execution-context-12 
+Data from: data.json
+
+2015-05-24 23:19:44,529 - [INFO] - from application in play-internal-execution-context-12 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:19:44,532 - [INFO] - from play in play-internal-execution-context-12 
+Application started (Dev)
+
+2015-05-24 23:19:44,552 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+[test2] Play the game.
+
+2015-05-24 23:19:44,565 - [INFO] - from application in play-akka.actor.default-dispatcher-99 
+Go to login page.
+
+2015-05-24 23:19:46,216 - [INFO] - from application in play-akka.actor.default-dispatcher-105 
+Go to Registration page.
+
+2015-05-24 23:19:57,625 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
+Registration info has been submitted.
+
+2015-05-24 23:19:57,660 - [INFO] - from application in play-akka.actor.default-dispatcher-103 
+Go to login page.
+
+2015-05-24 23:19:59,840 - [INFO] - from application in play-akka.actor.default-dispatcher-108 
+Login information has been provided.
+
+2015-05-24 23:19:59,883 - [INFO] - from application in play-akka.actor.default-dispatcher-108 
+[test] Play the game.
+
+2015-05-24 23:19:59,885 - [INFO] - from application in play-akka.actor.default-dispatcher-108 
+[test] Creating a new game.
+
+2015-05-24 23:19:59,886 - [INFO] - from application in play-akka.actor.default-dispatcher-108 
+Start game with 5 categories.
+
+2015-05-24 23:20:01,249 - [INFO] - from application in play-akka.actor.default-dispatcher-103 
+[test] Questions selected.
+
+2015-05-24 23:20:02,208 - [INFO] - from application in play-akka.actor.default-dispatcher-109 
+[test] Answers submitted.
+
+2015-05-24 23:20:03,432 - [INFO] - from application in play-akka.actor.default-dispatcher-109 
+[test] Questions selected.
+
+2015-05-24 23:20:04,699 - [INFO] - from application in play-akka.actor.default-dispatcher-103 
+[test] Answers submitted.
+
+2015-05-24 23:20:06,115 - [INFO] - from application in play-akka.actor.default-dispatcher-102 
+[test] Questions selected.
+
+2015-05-24 23:20:07,067 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+[test] Answers submitted.
+
+2015-05-24 23:20:08,484 - [INFO] - from application in play-akka.actor.default-dispatcher-107 
+[test] Questions selected.
+
+2015-05-24 23:20:09,532 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
+[test] Answers submitted.
+
+2015-05-24 23:20:11,293 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+[test] Questions selected.
+
+2015-05-24 23:20:12,391 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
+[test] Answers submitted.
+
+2015-05-24 23:20:12,402 - [INFO] - from application in play-akka.actor.default-dispatcher-107 
+[test] Game over.
+
+2015-05-24 23:27:48,829 - [INFO] - from application in play-internal-execution-context-12 
+Application shutdown...
+
+2015-05-24 23:27:49,300 - [INFO] - from play in play-internal-execution-context-12 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:27:49,303 - [INFO] - from play in play-internal-execution-context-12 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:27:49,477 - [INFO] - from application in play-internal-execution-context-12 
+Data from: data.json
+
+2015-05-24 23:27:49,506 - [INFO] - from application in play-internal-execution-context-12 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:27:49,508 - [INFO] - from play in play-internal-execution-context-12 
+Application started (Dev)
+
+2015-05-24 23:27:49,528 - [INFO] - from application in play-akka.actor.default-dispatcher-110 
+[test] Play the game.
+
+2015-05-24 23:27:49,540 - [INFO] - from application in play-akka.actor.default-dispatcher-103 
+Go to login page.
+
+2015-05-24 23:28:31,522 - [INFO] - from application in play-akka.actor.default-dispatcher-115 
+Go to Registration page.
+
+2015-05-24 23:28:34,980 - [INFO] - from application in play-akka.actor.default-dispatcher-116 
+Registration info has been submitted.
+
+2015-05-24 23:28:35,005 - [INFO] - from application in play-akka.actor.default-dispatcher-112 
+Go to login page.
+
+2015-05-24 23:28:37,566 - [INFO] - from application in play-akka.actor.default-dispatcher-117 
+Login information has been provided.
+
+2015-05-24 23:28:37,600 - [INFO] - from application in play-akka.actor.default-dispatcher-117 
+[test] Play the game.
+
+2015-05-24 23:28:37,602 - [INFO] - from application in play-akka.actor.default-dispatcher-117 
+[test] Creating a new game.
+
+2015-05-24 23:28:37,603 - [INFO] - from application in play-akka.actor.default-dispatcher-117 
+Start game with 5 categories.
+
+2015-05-24 23:28:38,941 - [INFO] - from application in play-akka.actor.default-dispatcher-123 
+[test] Questions selected.
+
+2015-05-24 23:28:40,066 - [INFO] - from application in play-akka.actor.default-dispatcher-120 
+[test] Answers submitted.
+
+2015-05-24 23:28:43,424 - [INFO] - from application in play-akka.actor.default-dispatcher-115 
+[test] Questions selected.
+
+2015-05-24 23:28:44,449 - [INFO] - from application in play-akka.actor.default-dispatcher-117 
+[test] Answers submitted.
+
+2015-05-24 23:28:45,941 - [INFO] - from application in play-akka.actor.default-dispatcher-123 
+[test] Questions selected.
+
+2015-05-24 23:28:47,048 - [INFO] - from application in play-akka.actor.default-dispatcher-122 
+[test] Answers submitted.
+
+2015-05-24 23:28:48,454 - [INFO] - from application in play-akka.actor.default-dispatcher-120 
+[test] Questions selected.
+
+2015-05-24 23:28:49,556 - [INFO] - from application in play-akka.actor.default-dispatcher-123 
+[test] Answers submitted.
+
+2015-05-24 23:28:51,042 - [INFO] - from application in play-akka.actor.default-dispatcher-116 
+[test] Questions selected.
+
+2015-05-24 23:28:52,272 - [INFO] - from application in play-akka.actor.default-dispatcher-120 
+[test] Answers submitted.
+
+2015-05-24 23:28:52,281 - [INFO] - from application in play-akka.actor.default-dispatcher-122 
+[test] Game over.
+
+2015-05-24 23:28:52,640 - [ERROR] - from play in play-akka.actor.default-dispatcher-122 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:28:52,643 - [ERROR] - from application in play-akka.actor.default-dispatcher-122 
+
+
+! @6m95290c2 - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:101) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:32:18,749 - [INFO] - from application in play-internal-execution-context-16 
+Application shutdown...
+
+2015-05-24 23:32:18,802 - [INFO] - from play in play-internal-execution-context-16 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:32:18,804 - [INFO] - from play in play-internal-execution-context-16 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:32:18,968 - [INFO] - from application in play-internal-execution-context-16 
+Data from: data.json
+
+2015-05-24 23:32:18,993 - [INFO] - from application in play-internal-execution-context-16 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:32:18,995 - [INFO] - from play in play-internal-execution-context-16 
+Application started (Dev)
+
+2015-05-24 23:32:19,014 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+[test] Play the game.
+
+2015-05-24 23:32:19,029 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+Go to login page.
+
+2015-05-24 23:32:20,817 - [INFO] - from application in play-akka.actor.default-dispatcher-124 
+Go to Registration page.
+
+2015-05-24 23:32:23,068 - [INFO] - from application in play-akka.actor.default-dispatcher-124 
+Registration info has been submitted.
+
+2015-05-24 23:32:23,118 - [INFO] - from application in play-akka.actor.default-dispatcher-124 
+Go to login page.
+
+2015-05-24 23:32:25,488 - [INFO] - from application in play-akka.actor.default-dispatcher-129 
+Login information has been provided.
+
+2015-05-24 23:32:25,515 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+[test] Play the game.
+
+2015-05-24 23:32:25,516 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+[test] Creating a new game.
+
+2015-05-24 23:32:25,518 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+Start game with 5 categories.
+
+2015-05-24 23:32:26,724 - [INFO] - from application in play-akka.actor.default-dispatcher-132 
+[test] Questions selected.
+
+2015-05-24 23:32:27,634 - [INFO] - from application in play-akka.actor.default-dispatcher-127 
+[test] Answers submitted.
+
+2015-05-24 23:32:29,178 - [INFO] - from application in play-akka.actor.default-dispatcher-124 
+[test] Questions selected.
+
+2015-05-24 23:32:30,319 - [INFO] - from application in play-akka.actor.default-dispatcher-126 
+[test] Answers submitted.
+
+2015-05-24 23:32:31,644 - [INFO] - from application in play-akka.actor.default-dispatcher-133 
+[test] Questions selected.
+
+2015-05-24 23:32:32,555 - [INFO] - from application in play-akka.actor.default-dispatcher-124 
+[test] Answers submitted.
+
+2015-05-24 23:32:33,888 - [INFO] - from application in play-akka.actor.default-dispatcher-131 
+[test] Questions selected.
+
+2015-05-24 23:32:35,012 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+[test] Answers submitted.
+
+2015-05-24 23:32:38,131 - [INFO] - from application in play-akka.actor.default-dispatcher-126 
+[test] Questions selected.
+
+2015-05-24 23:32:39,260 - [INFO] - from application in play-akka.actor.default-dispatcher-129 
+[test] Answers submitted.
+
+2015-05-24 23:32:39,271 - [INFO] - from application in play-akka.actor.default-dispatcher-131 
+[test] Game over.
+
+2015-05-24 23:32:39,441 - [ERROR] - from play in play-akka.actor.default-dispatcher-131 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:32:39,444 - [ERROR] - from application in play-akka.actor.default-dispatcher-131 
+
+
+! @6m952lnp5 - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:111) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:33:15,327 - [INFO] - from application in play-internal-execution-context-16 
+Application shutdown...
+
+2015-05-24 23:33:15,375 - [INFO] - from play in play-internal-execution-context-16 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:33:15,377 - [INFO] - from play in play-internal-execution-context-16 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:33:15,541 - [INFO] - from application in play-internal-execution-context-16 
+Data from: data.json
+
+2015-05-24 23:33:15,566 - [INFO] - from application in play-internal-execution-context-16 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:33:15,568 - [INFO] - from play in play-internal-execution-context-16 
+Application started (Dev)
+
+2015-05-24 23:33:15,589 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+[test] Play the game.
+
+2015-05-24 23:33:15,604 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+Go to login page.
+
+2015-05-24 23:33:31,152 - [INFO] - from application in play-akka.actor.default-dispatcher-133 
+Login information has been provided.
+
+2015-05-24 23:33:32,727 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
+Go to Registration page.
+
+2015-05-24 23:33:34,916 - [INFO] - from application in play-akka.actor.default-dispatcher-127 
+Registration info has been submitted.
+
+2015-05-24 23:33:34,953 - [INFO] - from application in play-akka.actor.default-dispatcher-133 
+Go to login page.
+
+2015-05-24 23:33:37,023 - [INFO] - from application in play-akka.actor.default-dispatcher-135 
+Login information has been provided.
+
+2015-05-24 23:33:37,070 - [INFO] - from application in play-akka.actor.default-dispatcher-140 
+[test] Play the game.
+
+2015-05-24 23:33:37,072 - [INFO] - from application in play-akka.actor.default-dispatcher-140 
+[test] Creating a new game.
+
+2015-05-24 23:33:37,073 - [INFO] - from application in play-akka.actor.default-dispatcher-140 
+Start game with 5 categories.
+
+2015-05-24 23:33:38,387 - [INFO] - from application in play-akka.actor.default-dispatcher-133 
+[test] Questions selected.
+
+2015-05-24 23:33:39,570 - [INFO] - from application in play-akka.actor.default-dispatcher-140 
+[test] Answers submitted.
+
+2015-05-24 23:33:40,746 - [INFO] - from application in play-akka.actor.default-dispatcher-137 
+[test] Questions selected.
+
+2015-05-24 23:33:41,727 - [INFO] - from application in play-akka.actor.default-dispatcher-140 
+[test] Answers submitted.
+
+2015-05-24 23:33:43,287 - [INFO] - from application in play-akka.actor.default-dispatcher-142 
+[test] Questions selected.
+
+2015-05-24 23:33:44,414 - [INFO] - from application in play-akka.actor.default-dispatcher-133 
+[test] Answers submitted.
+
+2015-05-24 23:33:46,116 - [INFO] - from application in play-akka.actor.default-dispatcher-142 
+[test] Questions selected.
+
+2015-05-24 23:33:47,261 - [INFO] - from application in play-akka.actor.default-dispatcher-140 
+[test] Answers submitted.
+
+2015-05-24 23:33:48,692 - [INFO] - from application in play-akka.actor.default-dispatcher-142 
+[test] Questions selected.
+
+2015-05-24 23:33:49,986 - [INFO] - from application in play-akka.actor.default-dispatcher-135 
+[test] Answers submitted.
+
+2015-05-24 23:33:49,999 - [INFO] - from application in play-akka.actor.default-dispatcher-142 
+[test] Game over.
+
+2015-05-24 23:33:50,271 - [ERROR] - from play in play-akka.actor.default-dispatcher-142 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:33:50,274 - [ERROR] - from application in play-akka.actor.default-dispatcher-142 
+
+
+! @6m952pojb - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:114) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:36:44,912 - [INFO] - from application in play-internal-execution-context-19 
+Application shutdown...
+
+2015-05-24 23:36:44,962 - [INFO] - from play in play-internal-execution-context-19 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:36:44,964 - [INFO] - from play in play-internal-execution-context-19 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:36:45,133 - [INFO] - from application in play-internal-execution-context-19 
+Data from: data.json
+
+2015-05-24 23:36:45,156 - [INFO] - from application in play-internal-execution-context-19 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:36:45,159 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2015-05-24 23:36:45,177 - [INFO] - from application in play-akka.actor.default-dispatcher-143 
+[test] Play the game.
+
+2015-05-24 23:36:45,190 - [INFO] - from application in play-akka.actor.default-dispatcher-143 
+Go to login page.
+
+2015-05-24 23:36:46,512 - [INFO] - from application in play-akka.actor.default-dispatcher-143 
+Go to Registration page.
+
+2015-05-24 23:36:48,396 - [INFO] - from application in play-akka.actor.default-dispatcher-147 
+Registration info has been submitted.
+
+2015-05-24 23:36:48,439 - [INFO] - from application in play-akka.actor.default-dispatcher-148 
+Go to login page.
+
+2015-05-24 23:36:50,446 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+Login information has been provided.
+
+2015-05-24 23:36:50,497 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+[test] Play the game.
+
+2015-05-24 23:36:50,498 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+[test] Creating a new game.
+
+2015-05-24 23:36:50,500 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+Start game with 5 categories.
+
+2015-05-24 23:36:51,989 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+[test] Questions selected.
+
+2015-05-24 23:36:52,948 - [INFO] - from application in play-akka.actor.default-dispatcher-143 
+[test] Answers submitted.
+
+2015-05-24 23:36:54,421 - [INFO] - from application in play-akka.actor.default-dispatcher-148 
+[test] Questions selected.
+
+2015-05-24 23:36:55,430 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+[test] Answers submitted.
+
+2015-05-24 23:36:57,039 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+[test] Questions selected.
+
+2015-05-24 23:36:57,996 - [INFO] - from application in play-akka.actor.default-dispatcher-147 
+[test] Answers submitted.
+
+2015-05-24 23:36:59,716 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+[test] Questions selected.
+
+2015-05-24 23:37:00,777 - [INFO] - from application in play-akka.actor.default-dispatcher-147 
+[test] Answers submitted.
+
+2015-05-24 23:37:02,397 - [INFO] - from application in play-akka.actor.default-dispatcher-145 
+[test] Questions selected.
+
+2015-05-24 23:37:03,418 - [INFO] - from application in play-akka.actor.default-dispatcher-148 
+[test] Answers submitted.
+
+2015-05-24 23:37:03,431 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+[test] Game over.
+
+2015-05-24 23:37:03,998 - [ERROR] - from play in play-akka.actor.default-dispatcher-146 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:37:04,000 - [ERROR] - from application in play-akka.actor.default-dispatcher-146 
+
+
+! @6m953ap8c - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:120) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:37:27,662 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
+[test] Play the game.
+
+2015-05-24 23:37:27,662 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
+[test] Game over... redirect
+
+2015-05-24 23:37:30,034 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
+[test] Start new game.
+
+2015-05-24 23:37:30,036 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
+[test] Creating a new game.
+
+2015-05-24 23:37:30,038 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
+Start game with 5 categories.
+
+2015-05-24 23:37:31,351 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
+[test] Questions selected.
+
+2015-05-24 23:37:32,335 - [INFO] - from application in play-akka.actor.default-dispatcher-147 
+[test] Answers submitted.
+
+2015-05-24 23:37:33,617 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+[test] Questions selected.
+
+2015-05-24 23:37:35,164 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
+[test] Answers submitted.
+
+2015-05-24 23:37:36,769 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
+[test] Questions selected.
+
+2015-05-24 23:37:37,934 - [INFO] - from application in play-akka.actor.default-dispatcher-152 
+[test] Answers submitted.
+
+2015-05-24 23:37:39,329 - [INFO] - from application in play-akka.actor.default-dispatcher-151 
+[test] Questions selected.
+
+2015-05-24 23:37:40,002 - [INFO] - from application in play-akka.actor.default-dispatcher-153 
+[test] Answers submitted.
+
+2015-05-24 23:37:41,821 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+[test] Questions selected.
+
+2015-05-24 23:37:43,037 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
+[test] Answers submitted.
+
+2015-05-24 23:37:43,044 - [INFO] - from application in play-akka.actor.default-dispatcher-147 
+[test] Game over.
+
+2015-05-24 23:37:43,171 - [ERROR] - from play in play-akka.actor.default-dispatcher-147 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2015-05-24 23:37:43,175 - [ERROR] - from application in play-akka.actor.default-dispatcher-147 
+
+
+! @6m953d573 - Internal server error, for (GET) [/jeopardy/gameover] ->
+
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.util.NoSuchElementException: null
+	at com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl$3.next(ElementImpl.java:764) ~[na:1.8.0_45]
+	at controllers.HighscoreService.postHighscore(HighscoreService.java:120) ~[classes/:na]
+	at controllers.GameController.gameOver(GameController.java:163) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:239) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:40:26,806 - [INFO] - from application in play-internal-execution-context-22 
+Application shutdown...
+
+2015-05-24 23:40:26,859 - [INFO] - from play in play-internal-execution-context-22 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:40:26,861 - [INFO] - from play in play-internal-execution-context-22 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:40:27,025 - [INFO] - from application in play-internal-execution-context-22 
+Data from: data.json
+
+2015-05-24 23:40:27,049 - [INFO] - from application in play-internal-execution-context-22 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:40:27,051 - [INFO] - from play in play-internal-execution-context-22 
+Application started (Dev)
+
+2015-05-24 23:40:27,071 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+[test] Play the game.
+
+2015-05-24 23:40:27,085 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+Go to login page.
+
+2015-05-24 23:40:28,485 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
+Go to Registration page.
+
+2015-05-24 23:40:30,381 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+Registration info has been submitted.
+
+2015-05-24 23:40:30,614 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
+Go to login page.
+
+2015-05-24 23:40:32,581 - [INFO] - from application in play-akka.actor.default-dispatcher-156 
+Login information has been provided.
+
+2015-05-24 23:40:32,620 - [INFO] - from application in play-akka.actor.default-dispatcher-156 
+[test] Play the game.
+
+2015-05-24 23:40:32,622 - [INFO] - from application in play-akka.actor.default-dispatcher-156 
+[test] Creating a new game.
+
+2015-05-24 23:40:32,623 - [INFO] - from application in play-akka.actor.default-dispatcher-156 
+Start game with 5 categories.
+
+2015-05-24 23:40:33,913 - [INFO] - from application in play-akka.actor.default-dispatcher-157 
+[test] Questions selected.
+
+2015-05-24 23:40:35,135 - [INFO] - from application in play-akka.actor.default-dispatcher-157 
+[test] Answers submitted.
+
+2015-05-24 23:40:37,039 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
+[test] Questions selected.
+
+2015-05-24 23:40:38,157 - [INFO] - from application in play-akka.actor.default-dispatcher-157 
+[test] Answers submitted.
+
+2015-05-24 23:40:39,664 - [INFO] - from application in play-akka.actor.default-dispatcher-157 
+[test] Questions selected.
+
+2015-05-24 23:40:41,070 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
+[test] Answers submitted.
+
+2015-05-24 23:40:42,570 - [INFO] - from application in play-akka.actor.default-dispatcher-159 
+[test] Questions selected.
+
+2015-05-24 23:40:43,566 - [INFO] - from application in play-akka.actor.default-dispatcher-155 
+[test] Answers submitted.
+
+2015-05-24 23:40:45,064 - [INFO] - from application in play-akka.actor.default-dispatcher-160 
+[test] Questions selected.
+
+2015-05-24 23:40:46,313 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+[test] Answers submitted.
+
+2015-05-24 23:40:46,320 - [INFO] - from application in play-akka.actor.default-dispatcher-157 
+[test] Game over.
+
+2015-05-24 23:40:46,511 - [INFO] - from application in play-akka.actor.default-dispatcher-157 
+UUID vom SOA-request: fc821c16-eadc-425a-a950-8e69912ce4e5
+
+2015-05-24 23:42:33,296 - [INFO] - from application in play-internal-execution-context-23 
+Application shutdown...
+
+2015-05-24 23:42:33,357 - [INFO] - from play in play-internal-execution-context-23 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-24 23:42:33,359 - [INFO] - from play in play-internal-execution-context-23 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-24 23:42:33,563 - [INFO] - from application in play-internal-execution-context-23 
+Data from: data.json
+
+2015-05-24 23:42:33,588 - [INFO] - from application in play-internal-execution-context-23 
+5 categories from json file 'data.json' inserted.
+
+2015-05-24 23:42:33,591 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2015-05-24 23:42:33,632 - [INFO] - from application in play-akka.actor.default-dispatcher-161 
+Go to login page.
+
+2015-05-24 23:43:20,068 - [INFO] - from application in play-akka.actor.default-dispatcher-163 
+[test] Start new game.
+
+2015-05-24 23:43:20,079 - [ERROR] - from play in play-akka.actor.default-dispatcher-163 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-05-24 23:43:20,082 - [ERROR] - from application in play-akka.actor.default-dispatcher-163 
+
+
+! @6m95469h3 - Internal server error, for (POST) [/jeopardy] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at views.html.jeopardy$.apply(jeopardy.template.scala:38) ~[classes/:na]
+	at views.html.jeopardy$.render(jeopardy.template.scala:101) ~[classes/:na]
+	at views.html.jeopardy.render(jeopardy.template.scala) ~[classes/:na]
+	at controllers.GameController.newGame(GameController.java:88) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(routes_routing.scala:199) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(routes_routing.scala:199) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-24 23:43:27,451 - [INFO] - from application in play-akka.actor.default-dispatcher-156 
+[test] Play the game.
+
+2015-05-24 23:43:27,473 - [INFO] - from application in play-akka.actor.default-dispatcher-156 
+Go to login page.
+
+2015-05-24 23:43:29,051 - [INFO] - from application in play-akka.actor.default-dispatcher-168 
+Go to Registration page.
+
+2015-05-24 23:43:31,044 - [INFO] - from application in play-akka.actor.default-dispatcher-170 
+Registration info has been submitted.
+
+2015-05-24 23:43:31,094 - [INFO] - from application in play-akka.actor.default-dispatcher-168 
+Go to login page.
+
+2015-05-24 23:43:33,258 - [INFO] - from application in play-akka.actor.default-dispatcher-171 
+Login information has been provided.
+
+2015-05-24 23:43:33,448 - [INFO] - from application in play-akka.actor.default-dispatcher-171 
+[test] Play the game.
+
+2015-05-24 23:43:33,449 - [INFO] - from application in play-akka.actor.default-dispatcher-171 
+[test] Creating a new game.
+
+2015-05-24 23:43:33,451 - [INFO] - from application in play-akka.actor.default-dispatcher-171 
+Start game with 5 categories.
+
+2015-05-24 23:43:34,703 - [INFO] - from application in play-akka.actor.default-dispatcher-168 
+[test] Questions selected.
+
+2015-05-24 23:43:35,817 - [INFO] - from application in play-akka.actor.default-dispatcher-169 
+[test] Answers submitted.
+
+2015-05-24 23:43:37,639 - [INFO] - from application in play-akka.actor.default-dispatcher-172 
+[test] Questions selected.
+
+2015-05-24 23:43:38,962 - [INFO] - from application in play-akka.actor.default-dispatcher-172 
+[test] Answers submitted.
+
+2015-05-24 23:43:40,558 - [INFO] - from application in play-akka.actor.default-dispatcher-170 
+[test] Questions selected.
+
+2015-05-24 23:43:41,905 - [INFO] - from application in play-akka.actor.default-dispatcher-169 
+[test] Answers submitted.
+
+2015-05-24 23:43:43,494 - [INFO] - from application in play-akka.actor.default-dispatcher-172 
+[test] Questions selected.
+
+2015-05-24 23:43:44,867 - [INFO] - from application in play-akka.actor.default-dispatcher-169 
+[test] Answers submitted.
+
+2015-05-24 23:43:46,501 - [INFO] - from application in play-akka.actor.default-dispatcher-172 
+[test] Questions selected.
+
+2015-05-24 23:43:47,537 - [INFO] - from application in play-akka.actor.default-dispatcher-169 
+[test] Answers submitted.
+
+2015-05-24 23:43:47,642 - [INFO] - from application in play-akka.actor.default-dispatcher-172 
+[test] Game over.
+
+2015-05-24 23:43:47,791 - [INFO] - from application in play-akka.actor.default-dispatcher-172 
+UUID vom SOA-request: 879bc565-eb89-42df-a516-864d8f6b14ca
+
+2015-05-24 23:43:51,298 - [INFO] - from application in play-akka.actor.default-dispatcher-171 
+[test] Start new game.
+
+2015-05-24 23:43:51,300 - [INFO] - from application in play-akka.actor.default-dispatcher-171 
+[test] Creating a new game.
+
+2015-05-24 23:43:51,301 - [INFO] - from application in play-akka.actor.default-dispatcher-171 
+Start game with 5 categories.
+
+2015-05-24 23:44:06,681 - [INFO] - from application in play-akka.actor.default-dispatcher-173 
+[test] Questions selected.
+
+2015-05-24 23:44:11,758 - [INFO] - from application in play-akka.actor.default-dispatcher-156 
+[test] Answers submitted.
+
+2015-05-24 23:44:14,967 - [INFO] - from application in play-akka.actor.default-dispatcher-169 
+[test] Questions selected.
+
+2015-05-24 23:44:20,352 - [INFO] - from application in play-akka.actor.default-dispatcher-170 
+[test] Answers submitted.
+
+2015-05-24 23:44:23,014 - [INFO] - from application in play-akka.actor.default-dispatcher-173 
+[test] Questions selected.
+
+2015-05-24 23:44:30,083 - [INFO] - from application in play-akka.actor.default-dispatcher-170 
+[test] Answers submitted.
+
+2015-05-24 23:44:35,661 - [INFO] - from application in play-akka.actor.default-dispatcher-179 
+[test] Questions selected.
+
+2015-05-24 23:44:47,074 - [INFO] - from application in play-akka.actor.default-dispatcher-183 
+[test] Answers submitted.
+
+2015-05-24 23:44:50,632 - [INFO] - from application in play-akka.actor.default-dispatcher-183 
+[test] Questions selected.
+
+2015-05-24 23:44:54,323 - [INFO] - from application in play-akka.actor.default-dispatcher-183 
+[test] Answers submitted.
+
+2015-05-24 23:44:54,341 - [INFO] - from application in play-akka.actor.default-dispatcher-170 
+[test] Game over.
+
+2015-05-24 23:44:54,793 - [INFO] - from application in play-akka.actor.default-dispatcher-170 
+UUID vom SOA-request: 3d583a34-f586-4dc2-8e10-1a1c6d22c02f
+
+2015-05-24 23:44:55,688 - [INFO] - from application in play-akka.actor.default-dispatcher-183 
+[test] Start new game.
+
+2015-05-24 23:44:55,690 - [INFO] - from application in play-akka.actor.default-dispatcher-183 
+[test] Creating a new game.
+
+2015-05-24 23:44:55,693 - [INFO] - from application in play-akka.actor.default-dispatcher-183 
+Start game with 5 categories.
+
+2015-05-24 23:45:09,876 - [INFO] - from application in play-akka.actor.default-dispatcher-179 
+[test] Questions selected.
+
+2015-05-24 23:45:14,118 - [INFO] - from application in play-akka.actor.default-dispatcher-184 
+[test] Answers submitted.
+
+2015-05-24 23:45:16,375 - [INFO] - from application in play-akka.actor.default-dispatcher-184 
+[test] Questions selected.
+
+2015-05-24 23:45:24,078 - [INFO] - from application in play-akka.actor.default-dispatcher-191 
+[test] Answers submitted.
+
+2015-05-24 23:45:26,904 - [INFO] - from application in play-akka.actor.default-dispatcher-190 
+[test] Questions selected.
+
+2015-05-24 23:45:42,497 - [INFO] - from application in play-akka.actor.default-dispatcher-193 
+[test] Answers submitted.
+
+2015-05-24 23:45:45,347 - [INFO] - from application in play-akka.actor.default-dispatcher-184 
+[test] Questions selected.
+
+2015-05-24 23:45:54,064 - [INFO] - from application in play-akka.actor.default-dispatcher-198 
+[test] Answers submitted.
+
+2015-05-24 23:45:57,199 - [INFO] - from application in play-akka.actor.default-dispatcher-179 
+[test] Questions selected.
+
+2015-05-24 23:46:10,885 - [INFO] - from application in play-akka.actor.default-dispatcher-196 
+[test] Answers submitted.
+
+2015-05-24 23:46:10,906 - [INFO] - from application in play-akka.actor.default-dispatcher-198 
+[test] Game over.
+
+2015-05-24 23:46:14,153 - [INFO] - from application in play-akka.actor.default-dispatcher-198 
+UUID vom SOA-request: 380607bb-9a04-4074-bbe9-b52b9c35c0cc
 
