@@ -159,7 +159,8 @@ public class GameController extends Controller {
 		Logger.info("[" + request().username() + "] Game over.");
 		
 		HighscoreService hsService = new HighscoreService();
-		hsService.postHighscore(cachedGame());
+		System.err.println("Username: " + session().get("userName") + session("userName"));
+		hsService.postHighscore(cachedGame(session().get("userName")));
 		
 		return ok(winner.render(game));
 	}

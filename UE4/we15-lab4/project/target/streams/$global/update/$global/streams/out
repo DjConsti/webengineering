@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/delete/webengineering/UE4/we15-lab4/project/}we15-lab4-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/C:/xampp/htdocs/webengineering%20-%20Kopie/UE4/we15-lab4/project/}we15-lab4-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#we15-lab4-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -158,9 +158,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 {compile=[default(compile)]}[0m
@@ -401,16 +401,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.maven#maven-core;3.2.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.maven#maven-core;3.2.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.maven#maven-core;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -12317,19 +12317,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3603ms :: artifacts dl 109ms[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT compile produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT runtime produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT test produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT provided produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT optional produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT compile-internal produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT runtime-internal produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT test-internal produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT plugin produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT sources produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT docs produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT pom produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT scala-tool produced in C:\delete\webengineering\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3603ms resolve - 109ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7432ms :: artifacts dl 260ms[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT compile produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT runtime produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT test produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT provided produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT optional produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT compile-internal produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT runtime-internal produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT test-internal produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT plugin produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT sources produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT docs produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT pom produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#we15-lab4-build;0.1-SNAPSHOT scala-tool produced in C:\xampp\htdocs\webengineering - Kopie\UE4\we15-lab4\project\target\resolution-cache\reports\default-we15-lab4-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (7432ms resolve - 260ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

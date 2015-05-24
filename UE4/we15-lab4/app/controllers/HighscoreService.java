@@ -51,24 +51,33 @@ public class HighscoreService implements Serializable {
 	        SOAPElement userData = highScoreRequest.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "UserData", "data"));
 	        
 	        SOAPElement loser = userData.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "Loser", "data"));
-	        loser.setAttribute("Gender", game.getLoser().getUser().getGender().toString());
-	        loser.setAttribute("BirthDate", game.getLoser().getUser().getBirthDate().toString());
+	        if(game.getLoser().getUser().getGender()!=null)loser.setAttribute("Gender", game.getLoser().getUser().getGender().toString());
+	        if(game.getLoser().getUser().getBirthDate() != null)loser.setAttribute("BirthDate", game.getLoser().getUser().getBirthDate().toString());
 	        SOAPElement firstname = loser.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "FirstName", "data"));
-	        firstname.setValue(game.getLoser().getUser().getFirstName());
+	        if(game.getLoser().getUser().getFirstName()!=null)firstname.setValue(game.getLoser().getUser().getFirstName());
 	        SOAPElement lastname = loser.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "LastName", "data"));
-	        lastname.setValue(game.getLoser().getUser().getLastName());
+	        if(game.getLoser().getUser().getLastName()!= null)lastname.setValue(game.getLoser().getUser().getLastName());
 	        SOAPElement password = loser.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "Password", "data"));
 	        //password.setValue(game.getLoser().getUser().getPassword());
 	        SOAPElement points = loser.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "Points", "data"));
 	        points.setValue(String.valueOf(game.getLoser().getProfit()));
 	        
 	        SOAPElement winner = userData.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "Winner", "data"));
-	        winner.setAttribute("Gender", game.getWinner().getUser().getGender().toString());
-	        winner.setAttribute("BirthDate", game.getWinner().getUser().getBirthDate().toString());
-	        firstname = winner.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "FirstName", "data"));
-	        firstname.setValue(game.getWinner().getUser().getFirstName());
-	        lastname = winner.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "LastName", "data"));
-	        lastname.setValue(game.getWinner().getUser().getLastName());
+	        if(game.getWinner().getUser().getGender()!=null)winner.setAttribute("Gender", game.getWinner().getUser().getGender().toString());
+	        if(game.getLoser().getUser().getBirthDate() != null)
+	        {
+	        		winner.setAttribute("BirthDate", game.getWinner().getUser().getBirthDate().toString());
+	        		
+	        }
+	       
+	        if(game.getWinner().getUser().getFirstName()!=null){
+	        	firstname = winner.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "FirstName", "data"));
+	        	firstname.setValue(game.getWinner().getUser().getFirstName());
+	        	lastname = winner.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "LastName", "data"));
+	        }
+	        
+	        if(game.getWinner().getUser().getLastName()!=null)lastname.setValue(game.getWinner().getUser().getLastName());
+	        
 	        password = winner.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "Password", "data"));
 	        //password.setValue(game.getWinner().getUser().getPassword());
 	        points = winner.addChildElement(new QName("http://big.tuwien.ac.at/we/highscore/data", "Points", "data"));
