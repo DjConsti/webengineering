@@ -2,6 +2,7 @@ package controllers;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -19,6 +20,7 @@ import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.Security;
+import twitter.TwitterStatusMessage;
 import views.html.jeopardy;
 import views.html.question;
 import views.html.winner;
@@ -160,8 +162,23 @@ public class GameController extends Controller {
 		
 		HighscoreService hsService = new HighscoreService();
 		System.err.println("Username: " + session().get("userName") + session("userName"));
-		hsService.postHighscore(cachedGame(session().get("userName")));
-		
+		String uuid = hsService.postHighscore(cachedGame(session().get("userName")));
+		// nun publishen wir die uuid auf twitter
+		TwitterClient twitter =  new TwitterClient();
+		// TwitterStatusMessage(String from, String uuid, Date dateTime) 
+		if(uuid != null)
+		{
+			try {
+				twitter.publishUuid(new TwitterStatusMessage(game.getHumanPlayer().getUser().getName(),
+										uuid, new Date()));
+				
+				 Logger.info("Der Text wurde erfolgreich auf Twitter gepublisht!" );
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				 Logger.error("Fehler beim publishen auf Twitter!" );
+			}
+		}
 		return ok(winner.render(game));
 	}
 }

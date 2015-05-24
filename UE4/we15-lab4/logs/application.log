@@ -2829,3 +2829,186 @@ Start game with 5 categories.
 2015-05-24 23:46:14,153 - [INFO] - from application in play-akka.actor.default-dispatcher-198 
 UUID vom SOA-request: 380607bb-9a04-4074-bbe9-b52b9c35c0cc
 
+2015-05-25 00:18:54,458 - [INFO] - from application in play-internal-execution-context-30 
+Application shutdown...
+
+2015-05-25 00:18:54,508 - [INFO] - from play in play-internal-execution-context-30 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-25 00:18:54,510 - [INFO] - from play in play-internal-execution-context-30 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-25 00:18:54,669 - [INFO] - from application in play-internal-execution-context-30 
+Data from: data.json
+
+2015-05-25 00:18:54,692 - [INFO] - from application in play-internal-execution-context-30 
+5 categories from json file 'data.json' inserted.
+
+2015-05-25 00:18:54,694 - [INFO] - from play in play-internal-execution-context-30 
+Application started (Dev)
+
+2015-05-25 00:18:54,774 - [INFO] - from application in play-akka.actor.default-dispatcher-202 
+[test] Play the game.
+
+2015-05-25 00:18:54,832 - [INFO] - from application in play-akka.actor.default-dispatcher-200 
+Go to login page.
+
+2015-05-25 00:18:57,137 - [INFO] - from application in play-akka.actor.default-dispatcher-202 
+Go to Registration page.
+
+2015-05-25 00:18:59,163 - [INFO] - from application in play-akka.actor.default-dispatcher-208 
+Registration info has been submitted.
+
+2015-05-25 00:18:59,194 - [INFO] - from application in play-akka.actor.default-dispatcher-202 
+Go to login page.
+
+2015-05-25 00:19:01,071 - [INFO] - from application in play-akka.actor.default-dispatcher-205 
+Login information has been provided.
+
+2015-05-25 00:19:01,259 - [INFO] - from application in play-akka.actor.default-dispatcher-205 
+[test] Play the game.
+
+2015-05-25 00:19:01,260 - [INFO] - from application in play-akka.actor.default-dispatcher-205 
+[test] Creating a new game.
+
+2015-05-25 00:19:01,261 - [INFO] - from application in play-akka.actor.default-dispatcher-205 
+Start game with 5 categories.
+
+2015-05-25 00:19:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-208 
+[test] Questions selected.
+
+2015-05-25 00:19:03,371 - [INFO] - from application in play-akka.actor.default-dispatcher-208 
+[test] Answers submitted.
+
+2015-05-25 00:19:04,709 - [INFO] - from application in play-akka.actor.default-dispatcher-206 
+[test] Questions selected.
+
+2015-05-25 00:19:05,814 - [INFO] - from application in play-akka.actor.default-dispatcher-208 
+[test] Answers submitted.
+
+2015-05-25 00:19:07,704 - [INFO] - from application in play-akka.actor.default-dispatcher-200 
+[test] Questions selected.
+
+2015-05-25 00:19:08,852 - [INFO] - from application in play-akka.actor.default-dispatcher-204 
+[test] Answers submitted.
+
+2015-05-25 00:19:10,634 - [INFO] - from application in play-akka.actor.default-dispatcher-204 
+[test] Questions selected.
+
+2015-05-25 00:19:11,729 - [INFO] - from application in play-akka.actor.default-dispatcher-206 
+[test] Answers submitted.
+
+2015-05-25 00:19:14,233 - [INFO] - from application in play-akka.actor.default-dispatcher-209 
+[test] Questions selected.
+
+2015-05-25 00:19:15,507 - [INFO] - from application in play-akka.actor.default-dispatcher-207 
+[test] Answers submitted.
+
+2015-05-25 00:19:15,522 - [INFO] - from application in play-akka.actor.default-dispatcher-208 
+[test] Game over.
+
+2015-05-25 00:19:15,675 - [INFO] - from application in play-akka.actor.default-dispatcher-208 
+UUID vom SOA-request: 24933dd6-8a18-4639-88d5-c16d281b9fab
+
+2015-05-25 00:19:18,232 - [INFO] - from application in play-akka.actor.default-dispatcher-208 
+Der Text wurde erfolgreich auf Twitter gepublisht!
+
+2015-05-25 00:22:00,319 - [INFO] - from application in play-internal-execution-context-31 
+Application shutdown...
+
+2015-05-25 00:22:00,368 - [INFO] - from play in play-internal-execution-context-31 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-25 00:22:00,371 - [INFO] - from play in play-internal-execution-context-31 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-25 00:22:00,536 - [INFO] - from application in play-internal-execution-context-31 
+Data from: data.json
+
+2015-05-25 00:22:00,557 - [INFO] - from application in play-internal-execution-context-31 
+5 categories from json file 'data.json' inserted.
+
+2015-05-25 00:22:00,559 - [INFO] - from play in play-internal-execution-context-31 
+Application started (Dev)
+
+2015-05-25 00:22:00,600 - [INFO] - from application in play-akka.actor.default-dispatcher-211 
+[test] Play the game.
+
+2015-05-25 00:22:00,621 - [INFO] - from application in play-akka.actor.default-dispatcher-206 
+Go to login page.
+
+2015-05-25 00:22:02,415 - [INFO] - from application in play-akka.actor.default-dispatcher-216 
+Go to Registration page.
+
+2015-05-25 00:22:04,923 - [INFO] - from application in play-akka.actor.default-dispatcher-212 
+Registration info has been submitted.
+
+2015-05-25 00:22:04,975 - [INFO] - from application in play-akka.actor.default-dispatcher-217 
+Go to login page.
+
+2015-05-25 00:22:07,351 - [INFO] - from application in play-akka.actor.default-dispatcher-217 
+Login information has been provided.
+
+2015-05-25 00:22:07,412 - [INFO] - from application in play-akka.actor.default-dispatcher-216 
+[test] Play the game.
+
+2015-05-25 00:22:07,414 - [INFO] - from application in play-akka.actor.default-dispatcher-216 
+[test] Creating a new game.
+
+2015-05-25 00:22:07,415 - [INFO] - from application in play-akka.actor.default-dispatcher-216 
+Start game with 5 categories.
+
+2015-05-25 00:22:08,875 - [INFO] - from application in play-akka.actor.default-dispatcher-216 
+[test] Questions selected.
+
+2015-05-25 00:22:10,184 - [INFO] - from application in play-akka.actor.default-dispatcher-217 
+[test] Answers submitted.
+
+2015-05-25 00:22:11,375 - [INFO] - from application in play-akka.actor.default-dispatcher-214 
+[test] Questions selected.
+
+2015-05-25 00:22:12,050 - [INFO] - from application in play-akka.actor.default-dispatcher-211 
+[test] Answers submitted.
+
+2015-05-25 00:22:13,285 - [INFO] - from application in play-akka.actor.default-dispatcher-216 
+[test] Questions selected.
+
+2015-05-25 00:22:14,545 - [INFO] - from application in play-akka.actor.default-dispatcher-217 
+[test] Answers submitted.
+
+2015-05-25 00:22:16,122 - [INFO] - from application in play-akka.actor.default-dispatcher-211 
+[test] Questions selected.
+
+2015-05-25 00:22:17,241 - [INFO] - from application in play-akka.actor.default-dispatcher-206 
+[test] Answers submitted.
+
+2015-05-25 00:22:18,657 - [INFO] - from application in play-akka.actor.default-dispatcher-212 
+[test] Questions selected.
+
+2015-05-25 00:22:19,893 - [INFO] - from application in play-akka.actor.default-dispatcher-214 
+[test] Answers submitted.
+
+2015-05-25 00:22:19,914 - [INFO] - from application in play-akka.actor.default-dispatcher-214 
+[test] Game over.
+
+2015-05-25 00:22:20,157 - [INFO] - from application in play-akka.actor.default-dispatcher-214 
+UUID vom SOA-request: 5e469348-13cd-4797-8b0c-13b172bffa6f
+
+2015-05-25 00:22:21,330 - [INFO] - from application in play-akka.actor.default-dispatcher-214 
+Der Text wurde erfolgreich auf Twitter gepublisht!
+
+2015-05-25 00:24:17,973 - [INFO] - from application in play-akka.actor.default-dispatcher-211 
+[test] Start new game.
+
+2015-05-25 00:24:17,974 - [INFO] - from application in play-akka.actor.default-dispatcher-211 
+[test] Creating a new game.
+
+2015-05-25 00:24:17,975 - [INFO] - from application in play-akka.actor.default-dispatcher-211 
+Start game with 5 categories.
+
+2015-05-25 00:24:19,517 - [INFO] - from application in play-akka.actor.default-dispatcher-220 
+[test] Questions selected.
+
+2015-05-25 00:24:49,629 - [INFO] - from application in play-akka.actor.default-dispatcher-221 
+[test] Answers submitted.
+

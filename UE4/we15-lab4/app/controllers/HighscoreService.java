@@ -18,6 +18,7 @@ import javax.xml.soap.SOAPPart;
 import org.w3c.dom.Attr;
 
 import play.Logger;
+import twitter.TwitterStatusMessage;
 import models.JeopardyGame;
 
 public class HighscoreService implements Serializable {
@@ -119,12 +120,13 @@ public class HighscoreService implements Serializable {
 	        
 	        String uuid = ((SOAPElement)(reply.getSOAPBody().getChildElements(new QName("http://big.tuwien.ac.at/we/highscore/data", "HighScoreResponse")).next())).getValue();
 			Logger.info("UUID vom SOA-request: " + uuid);
+			
 			return uuid;
 		} catch (SOAPException e) {
 			Logger.error("Fehler beim empfangen des SOA requests.");
 		}
 		
-		return "Could not connect";
+		return null;
 	}
 
 }
