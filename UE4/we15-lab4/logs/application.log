@@ -1,190 +1,153 @@
-2015-05-25 00:43:36,130 - [INFO] - from play in pool-4-thread-4 
+2015-05-25 18:58:12,474 - [INFO] - from play in pool-13-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-05-25 00:43:41,441 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-25 18:58:17,780 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-05-25 00:43:41,610 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-25 18:58:17,807 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-05-25 00:43:43,444 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-25 18:58:22,945 - [INFO] - from application in play-internal-execution-context-1 
 Data from: data.json
 
-2015-05-25 00:43:43,665 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-25 18:58:23,101 - [INFO] - from application in play-internal-execution-context-1 
 5 categories from json file 'data.json' inserted.
 
-2015-05-25 00:43:43,700 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-25 18:58:23,148 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-05-25 00:43:44,295 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+2015-05-25 18:58:23,595 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
 [test] Play the game.
 
-2015-05-25 00:43:44,458 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2015-05-25 18:58:23,747 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
 Go to login page.
 
-2015-05-25 00:44:10,711 - [INFO] - from application in play-internal-execution-context-1 
-Application shutdown...
-
-2015-05-25 00:44:10,854 - [INFO] - from play in play-internal-execution-context-1 
-datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-05-25 00:44:10,857 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-05-25 00:44:11,112 - [INFO] - from application in play-internal-execution-context-1 
-Data from: data.json
-
-2015-05-25 00:44:11,206 - [INFO] - from application in play-internal-execution-context-1 
-5 categories from json file 'data.json' inserted.
-
-2015-05-25 00:44:11,216 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-05-25 00:44:11,224 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Go to login page.
-
-2015-05-25 00:44:13,214 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+2015-05-25 18:58:25,385 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
 Go to Registration page.
 
-2015-05-25 00:44:15,208 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+2015-05-25 18:58:28,063 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
 Registration info has been submitted.
 
-2015-05-25 00:44:15,307 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+2015-05-25 18:58:28,149 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
 Go to login page.
 
-2015-05-25 00:44:17,677 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+2015-05-25 18:58:30,443 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
 Login information has been provided.
 
-2015-05-25 00:44:17,720 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
+2015-05-25 18:58:30,482 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
 [test] Play the game.
 
-2015-05-25 00:44:17,723 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
+2015-05-25 18:58:30,484 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
 [test] Creating a new game.
 
-2015-05-25 00:44:17,735 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
+2015-05-25 18:58:30,497 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
 Start game with 5 categories.
 
-2015-05-25 00:44:19,264 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+2015-05-25 18:58:43,819 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
 [test] Questions selected.
 
-2015-05-25 00:44:20,442 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+2015-05-25 18:58:45,168 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
 [test] Answers submitted.
 
-2015-05-25 00:44:51,679 - [INFO] - from application in play-internal-execution-context-2 
+2015-05-25 19:01:59,779 - [INFO] - from application in play-internal-execution-context-1 
 Application shutdown...
 
-2015-05-25 00:44:51,800 - [INFO] - from play in play-internal-execution-context-2 
+2015-05-25 19:01:59,864 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-05-25 00:44:51,803 - [INFO] - from play in play-internal-execution-context-2 
+2015-05-25 19:01:59,870 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-05-25 00:44:52,025 - [INFO] - from application in play-internal-execution-context-2 
+2015-05-25 19:02:00,203 - [INFO] - from application in play-internal-execution-context-1 
 Data from: data.json
 
-2015-05-25 00:44:52,060 - [ERROR] - from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-internal-execution-context-2 
-Wert zu gross / lang für Feld "QUESTION BINARY(255)": "X'aced00057372000f6d6f64656c732e5175657374696f6eab3b9399376df6b402000549000576616c75654c0007616e73776572737400104c6a6176612f7574... (4282)"
-Value too long for column "QUESTION BINARY(255)": "X'aced00057372000f6d6f64656c732e5175657374696f6eab3b9399376df6b402000549000576616c75654c0007616e73776572737400104c6a6176612f7574... (4282)"; SQL statement:
-insert into Answer (ID, correctAnswer, question, textDE, textEN) values (null, ?, ?, ?, ?) [22001-175]
+2015-05-25 19:02:00,283 - [INFO] - from application in play-internal-execution-context-1 
+5 categories from json file 'data.json' inserted.
 
-2015-05-25 00:44:52,091 - [INFO] - from play in play-internal-execution-context-2 
+2015-05-25 19:02:00,291 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-05-25 00:44:52,114 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
+2015-05-25 19:02:00,319 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
 [test] Play the game.
 
-2015-05-25 00:44:52,131 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+2015-05-25 19:02:00,340 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
 Go to login page.
 
-2015-05-25 00:44:58,184 - [INFO] - from application in play-internal-execution-context-2 
-Application shutdown...
-
-2015-05-25 00:44:58,240 - [INFO] - from play in play-internal-execution-context-2 
-datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-05-25 00:44:58,243 - [INFO] - from play in play-internal-execution-context-2 
-database [default] connected at jdbc:h2:mem:play
-
-2015-05-25 00:44:58,455 - [INFO] - from application in play-internal-execution-context-2 
-Data from: data.json
-
-2015-05-25 00:44:58,475 - [ERROR] - from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-internal-execution-context-2 
-Wert zu gross / lang für Feld "QUESTION BINARY(255)": "X'aced00057372000f6d6f64656c732e5175657374696f6eab3b9399376df6b402000549000576616c75654c0007616e73776572737400104c6a6176612f7574... (4282)"
-Value too long for column "QUESTION BINARY(255)": "X'aced00057372000f6d6f64656c732e5175657374696f6eab3b9399376df6b402000549000576616c75654c0007616e73776572737400104c6a6176612f7574... (4282)"; SQL statement:
-insert into Answer (ID, correctAnswer, question, textDE, textEN) values (null, ?, ?, ?, ?) [22001-175]
-
-2015-05-25 00:44:58,500 - [INFO] - from play in play-internal-execution-context-2 
-Application started (Dev)
-
-2015-05-25 00:44:58,508 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
-Go to login page.
-
-2015-05-25 00:45:10,521 - [INFO] - from application in play-internal-execution-context-2 
-Application shutdown...
-
-2015-05-25 00:45:10,573 - [INFO] - from play in play-internal-execution-context-2 
-datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-05-25 00:45:10,575 - [INFO] - from play in play-internal-execution-context-2 
-database [default] connected at jdbc:h2:mem:play
-
-2015-05-25 00:45:10,769 - [INFO] - from application in play-internal-execution-context-2 
-Data from: data.json
-
-2015-05-25 00:45:10,843 - [INFO] - from application in play-internal-execution-context-2 
-5 categories from json file 'data.json' inserted.
-
-2015-05-25 00:45:10,851 - [INFO] - from play in play-internal-execution-context-2 
-Application started (Dev)
-
-2015-05-25 00:45:10,858 - [INFO] - from application in play-akka.actor.default-dispatcher-17 
-Go to login page.
-
-2015-05-25 00:45:24,739 - [INFO] - from application in play-internal-execution-context-2 
-Application shutdown...
-
-2015-05-25 00:45:24,792 - [INFO] - from play in play-internal-execution-context-2 
-datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-05-25 00:45:24,794 - [INFO] - from play in play-internal-execution-context-2 
-database [default] connected at jdbc:h2:mem:play
-
-2015-05-25 00:45:24,991 - [INFO] - from application in play-internal-execution-context-2 
-Data from: data.json
-
-2015-05-25 00:45:25,061 - [INFO] - from application in play-internal-execution-context-2 
-5 categories from json file 'data.json' inserted.
-
-2015-05-25 00:45:25,067 - [INFO] - from play in play-internal-execution-context-2 
-Application started (Dev)
-
-2015-05-25 00:45:25,074 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
-Go to login page.
-
-2015-05-25 00:45:33,694 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+2015-05-25 19:02:01,646 - [INFO] - from application in play-akka.actor.default-dispatcher-16 
 Go to Registration page.
 
-2015-05-25 00:45:36,075 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+2015-05-25 19:02:03,863 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
 Registration info has been submitted.
 
-2015-05-25 00:45:36,131 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+2015-05-25 19:02:03,891 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
 Go to login page.
 
-2015-05-25 00:45:39,058 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
+2015-05-25 19:02:06,000 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
 Login information has been provided.
 
-2015-05-25 00:45:39,110 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
+2015-05-25 19:02:06,036 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
 [test] Play the game.
 
-2015-05-25 00:45:39,112 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
+2015-05-25 19:02:06,037 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
 [test] Creating a new game.
 
-2015-05-25 00:45:39,115 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
+2015-05-25 19:02:06,039 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
 Start game with 5 categories.
 
-2015-05-25 00:45:40,457 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+2015-05-25 19:17:38,421 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-05-25 19:17:38,483 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-25 19:17:38,486 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-25 19:17:40,619 - [INFO] - from application in play-internal-execution-context-1 
+Data from: data.json
+
+2015-05-25 19:17:40,692 - [INFO] - from application in play-internal-execution-context-1 
+5 categories from json file 'data.json' inserted.
+
+2015-05-25 19:17:40,702 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-05-25 19:17:40,730 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+[test] Play the game.
+
+2015-05-25 19:17:40,748 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+Go to login page.
+
+2015-05-25 19:17:42,344 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Go to Registration page.
+
+2015-05-25 19:17:44,831 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Registration info has been submitted.
+
+2015-05-25 19:17:44,858 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+Go to login page.
+
+2015-05-25 19:17:47,362 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+Login information has been provided.
+
+2015-05-25 19:17:47,403 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+[test] Play the game.
+
+2015-05-25 19:17:47,404 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+[test] Creating a new game.
+
+2015-05-25 19:17:47,407 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+Start game with 5 categories.
+
+2015-05-25 19:17:54,121 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
 [test] Questions selected.
 
-2015-05-25 00:45:41,940 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
+2015-05-25 19:17:57,146 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+[test] Answers submitted.
+
+2015-05-25 19:18:00,490 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
+[test] Questions selected.
+
+2015-05-25 19:18:01,984 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
 [test] Answers submitted.
 

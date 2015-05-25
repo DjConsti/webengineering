@@ -4,7 +4,7 @@
 		module="we15-lab4-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150524194538"
+		publication="20150525185252"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
