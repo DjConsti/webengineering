@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+import controllers.DBPediaClient;
 import models.Category;
 import play.Application;
 import play.GlobalSettings;
@@ -29,6 +30,7 @@ public class Global extends GlobalSettings {
 
 			@Override
 			public Boolean apply() throws Throwable {
+				DBPediaClient.createDBPediaQuestions();
 				insertJSonData();
 				return true;
 			}
