@@ -31,8 +31,8 @@ public class DBPediaClient {
 		category2.setName("Musik", "de");
 		category2.setName("Music", "en");
 		Category category3 = new Category();
-		category2.setName("Literatur", "de");
-		category2.setName("Literature", "en");
+		category3.setName("Literatur", "de");
+		category3.setName("Literature", "en");
 
 		// QUESTION 1
 		Question question1 = new Question();
@@ -42,29 +42,16 @@ public class DBPediaClient {
 
 		if (!DBPediaService.isAvailable())
 			return;
-		// Resource Tim Burton is available at
-		// http://dbpedia.org/resource/Tim_Burton
-		// Load all statements as we need to get the name later
 		Resource director = DBPediaService.loadStatements(DBPedia
 				.createResource("Tim_Burton"));
-		// Resource Johnny Depp is available at
-		// http://dbpedia.org/resource/Johnny_Depp
-		// Load all statements as we need to get the name later
-		Resource actor = DBPediaService.loadStatements(DBPedia
-				.createResource("Johnny_Depp"));
-		// retrieve english and german names, might be used for question text
 		String englishDirectorName = DBPediaService.getResourceName(director,
 				Locale.ENGLISH);
 		String germanDirectorName = DBPediaService.getResourceName(director,
 				Locale.GERMAN);
-		String englishActorName = DBPediaService.getResourceName(actor,
-				Locale.ENGLISH);
-		String germanActorName = DBPediaService.getResourceName(actor,
-				Locale.GERMAN);
 		// build SPARQL-query
 		SelectQueryBuilder movieQuery = DBPediaService
 				.createQueryBuilder()
-				.setLimit(5)
+				.setLimit(2)
 				// at most five statements
 				.addWhereClause(RDF.type, DBPediaOWL.Film)
 				.addPredicateExistsClause(FOAF.name)
@@ -146,7 +133,7 @@ public class DBPediaClient {
 				Locale.GERMAN);
 
 		SelectQueryBuilder query = DBPediaService.createQueryBuilder()
-				.setLimit(3).addWhereClause(RDF.type, DBPediaOWL.MusicalWork)
+				.setLimit(2).addWhereClause(RDF.type, DBPediaOWL.MusicalWork)
 				.addPredicateExistsClause(FOAF.name)
 				.addWhereClause(DBPediaOWL.artist, robbieWilliams)
 				.addFilterClause(RDFS.label, Locale.GERMAN)
@@ -170,7 +157,7 @@ public class DBPediaClient {
 		List<String> germanNoRobbieWilliamsSongs = DBPediaService
 				.getResourceNames(noRobbieWilliamsSongs, Locale.GERMAN);
 
-		List<Answer> answers = new ArrayList<Answer>();
+		answers = new ArrayList<Answer>();
 		for (int i = 0; i < englishRobbieWilliamsSongs.size(); i++) {
 			Answer answer = new Answer();
 			answer.setText(englishRobbieWilliamsSongs.get(i), "en");
@@ -193,10 +180,10 @@ public class DBPediaClient {
 
 		question2.setAnswers(answers);
 
-		JeopardyDAO.INSTANCE.persist(question1);
+		JeopardyDAO.INSTANCE.persist(question2);
 
-		question2.setCategory(category1);
-		category2.addQuestion(question1);
+		question2.setCategory(category2);
+		category2.addQuestion(question2);
 
 		// QUESTION 3
 		Question question3 = new Question();
@@ -208,20 +195,14 @@ public class DBPediaClient {
 			return;
 		Resource hemingway = DBPediaService.loadStatements(DBPedia
 				.createResource("Ernest_Hemingway"));
-		Resource poe = DBPediaService.loadStatements(DBPedia
-				.createResource("Edgar_Allan_Poe"));
 		String englishHemingwayName = DBPediaService.getResourceName(hemingway,
 				Locale.ENGLISH);
 		String germanHemingwayName = DBPediaService.getResourceName(hemingway,
 				Locale.GERMAN);
-		String englishPoeName = DBPediaService.getResourceName(poe,
-				Locale.ENGLISH);
-		String germanPoeName = DBPediaService.getResourceName(poe,
-				Locale.GERMAN);
 		
 		SelectQueryBuilder workQuery = DBPediaService
 				.createQueryBuilder()
-				.setLimit(5)
+				.setLimit(2)
 				.addWhereClause(RDF.type, DBPediaOWL.WrittenWork)
 				.addPredicateExistsClause(FOAF.name)
 				.addWhereClause(DBPediaOWL.author, hemingway)
@@ -243,14 +224,14 @@ public class DBPediaClient {
 		List<String> germanNoHemingwayWorksNames = DBPediaService
 				.getResourceNames(noHemingwayWorks, Locale.GERMAN);
 
-		List<Answer> answers = new ArrayList<Answer>();
+		answers = new ArrayList<Answer>();
 		for (int i = 0; i < englishTimBurtonMovieNames.size(); i++) {
 			Answer answer = new Answer();
 			answer.setText(englishHemingwayWorksNames.get(i), "en");
 			answer.setText(germanHemingwayWorksNames.get(i), "de");
 			answer.setCorrectAnswer(true);
 			JeopardyDAO.INSTANCE.persist(answer);
-			question1.addRightAnswer(answer);
+			question3.addRightAnswer(answer);
 			answers.add(answer);
 		}
 
@@ -260,16 +241,16 @@ public class DBPediaClient {
 			answer.setText(germanNoHemingwayWorksNames.get(i), "de");
 			answer.setCorrectAnswer(false);
 			JeopardyDAO.INSTANCE.persist(answer);
-			question1.addWrongAnswer(answer);
+			question3.addWrongAnswer(answer);
 			answers.add(answer);
 		}
 
-		question1.setAnswers(answers);
+		question3.setAnswers(answers);
 
 		JeopardyDAO.INSTANCE.persist(question1);
 
-		question1.setCategory(category1);
-		category1.addQuestion(question1);
+		question3.setCategory(category3);
+		category3.addQuestion(question3);
 
 		// Add categories
 		JeopardyDAO.INSTANCE.persist(category1);
