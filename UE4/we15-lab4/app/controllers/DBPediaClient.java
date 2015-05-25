@@ -49,8 +49,6 @@ public class DBPediaClient {
 		
 		// Persist categories
 		JeopardyDAO.INSTANCE.persist(category);
-		JeopardyDAO.INSTANCE.persist(category);
-		JeopardyDAO.INSTANCE.persist(category);
 	}
 
 	private static void addMusicQuestion(String deText, String enText, int value,
