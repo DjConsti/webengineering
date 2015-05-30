@@ -1,153 +1,358 @@
-2015-05-25 18:58:12,474 - [INFO] - from play in pool-13-thread-2 
+2015-05-30 17:57:29,709 - [INFO] - from play in pool-4-thread-6 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-05-25 18:58:17,780 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-30 18:00:45,091 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-05-25 18:58:17,807 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-30 18:00:45,475 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-05-25 18:58:22,945 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-30 18:00:55,041 - [INFO] - from application in play-internal-execution-context-1 
 Data from: data.json
 
-2015-05-25 18:58:23,101 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-30 18:00:55,223 - [INFO] - from application in play-internal-execution-context-1 
 5 categories from json file 'data.json' inserted.
 
-2015-05-25 18:58:23,148 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-30 18:00:55,288 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-05-25 18:58:23,595 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
-[test] Play the game.
-
-2015-05-25 18:58:23,747 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2015-05-30 18:00:55,907 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
 Go to login page.
 
-2015-05-25 18:58:25,385 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+2015-05-30 18:00:58,281 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
 Go to Registration page.
 
-2015-05-25 18:58:28,063 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+2015-05-30 18:01:00,932 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
 Registration info has been submitted.
 
-2015-05-25 18:58:28,149 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+2015-05-30 18:01:01,212 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
 Go to login page.
 
-2015-05-25 18:58:30,443 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+2015-05-30 18:01:03,546 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 Login information has been provided.
 
-2015-05-25 18:58:30,482 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2015-05-30 18:01:03,734 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 [test] Play the game.
 
-2015-05-25 18:58:30,484 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2015-05-30 18:01:03,740 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 [test] Creating a new game.
 
-2015-05-25 18:58:30,497 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2015-05-30 18:01:03,755 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 Start game with 5 categories.
 
-2015-05-25 18:58:43,819 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2015-05-30 18:01:05,352 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
 [test] Questions selected.
 
-2015-05-25 18:58:45,168 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+2015-05-30 18:01:06,634 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
 [test] Answers submitted.
 
-2015-05-25 19:01:59,779 - [INFO] - from application in play-internal-execution-context-1 
-Application shutdown...
-
-2015-05-25 19:01:59,864 - [INFO] - from play in play-internal-execution-context-1 
-datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-05-25 19:01:59,870 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-05-25 19:02:00,203 - [INFO] - from application in play-internal-execution-context-1 
-Data from: data.json
-
-2015-05-25 19:02:00,283 - [INFO] - from application in play-internal-execution-context-1 
-5 categories from json file 'data.json' inserted.
-
-2015-05-25 19:02:00,291 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-05-25 19:02:00,319 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-[test] Play the game.
-
-2015-05-25 19:02:00,340 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Go to login page.
-
-2015-05-25 19:02:01,646 - [INFO] - from application in play-akka.actor.default-dispatcher-16 
-Go to Registration page.
-
-2015-05-25 19:02:03,863 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
-Registration info has been submitted.
-
-2015-05-25 19:02:03,891 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
-Go to login page.
-
-2015-05-25 19:02:06,000 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
-Login information has been provided.
-
-2015-05-25 19:02:06,036 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
-[test] Play the game.
-
-2015-05-25 19:02:06,037 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
-[test] Creating a new game.
-
-2015-05-25 19:02:06,039 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
-Start game with 5 categories.
-
-2015-05-25 19:17:38,421 - [INFO] - from application in play-internal-execution-context-1 
-Application shutdown...
-
-2015-05-25 19:17:38,483 - [INFO] - from play in play-internal-execution-context-1 
-datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-05-25 19:17:38,486 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-05-25 19:17:40,619 - [INFO] - from application in play-internal-execution-context-1 
-Data from: data.json
-
-2015-05-25 19:17:40,692 - [INFO] - from application in play-internal-execution-context-1 
-5 categories from json file 'data.json' inserted.
-
-2015-05-25 19:17:40,702 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-05-25 19:17:40,730 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-[test] Play the game.
-
-2015-05-25 19:17:40,748 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Go to login page.
-
-2015-05-25 19:17:42,344 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
-Go to Registration page.
-
-2015-05-25 19:17:44,831 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
-Registration info has been submitted.
-
-2015-05-25 19:17:44,858 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-Go to login page.
-
-2015-05-25 19:17:47,362 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-Login information has been provided.
-
-2015-05-25 19:17:47,403 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-[test] Play the game.
-
-2015-05-25 19:17:47,404 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-[test] Creating a new game.
-
-2015-05-25 19:17:47,407 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-Start game with 5 categories.
-
-2015-05-25 19:17:54,121 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
+2015-05-30 18:01:09,442 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
 [test] Questions selected.
 
-2015-05-25 19:17:57,146 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+2015-05-30 18:01:10,764 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 [test] Answers submitted.
 
-2015-05-25 19:18:00,490 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
+2015-05-30 18:01:12,284 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
 [test] Questions selected.
 
-2015-05-25 19:18:01,984 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+2015-05-30 18:01:13,663 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
+[test] Answers submitted.
+
+2015-05-30 18:01:15,576 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
+[test] Questions selected.
+
+2015-05-30 18:01:16,690 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+[test] Answers submitted.
+
+2015-05-30 18:01:18,607 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+[test] Questions selected.
+
+2015-05-30 18:01:20,248 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
+[test] Answers submitted.
+
+2015-05-30 18:01:20,276 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+[test] Game over.
+
+2015-05-30 18:01:20,809 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+UUID vom SOA-request: f9d94ba9-d638-4844-ba00-af87be56de68
+
+2015-05-30 18:01:22,566 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+Der Text wurde erfolgreich auf Twitter gepublisht!
+
+2015-05-30 18:02:13,335 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+[test] Start new game.
+
+2015-05-30 18:02:13,338 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+[test] Creating a new game.
+
+2015-05-30 18:02:13,342 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+Start game with 5 categories.
+
+2015-05-30 18:02:15,121 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+[test] Questions selected.
+
+2015-05-30 18:02:16,239 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+[test] Answers submitted.
+
+2015-05-30 18:02:17,487 - [INFO] - from application in play-akka.actor.default-dispatcher-17 
+[test] Questions selected.
+
+2015-05-30 18:02:19,434 - [INFO] - from application in play-akka.actor.default-dispatcher-17 
+[test] Answers submitted.
+
+2015-05-30 18:02:21,467 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+[test] Questions selected.
+
+2015-05-30 18:02:23,288 - [INFO] - from application in play-akka.actor.default-dispatcher-17 
+[test] Answers submitted.
+
+2015-05-30 18:02:25,410 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+[test] Questions selected.
+
+2015-05-30 18:02:27,491 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+[test] Answers submitted.
+
+2015-05-30 18:02:30,757 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
+[test] Questions selected.
+
+2015-05-30 18:02:32,189 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+[test] Answers submitted.
+
+2015-05-30 18:02:32,215 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
+[test] Game over.
+
+2015-05-30 18:02:33,222 - [ERROR] - from com.sun.xml.internal.messaging.saaj.client.p2p in play-akka.actor.default-dispatcher-18 
+SAAJ0009: Nachricht konnte nicht gesendet werden
+
+2015-05-30 18:02:33,223 - [ERROR] - from application in play-akka.actor.default-dispatcher-18 
+Fehler beim empfangen des SOA requests.
+
+2015-05-30 18:05:28,477 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-05-30 18:05:28,657 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-05-30 18:05:28,660 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-05-30 18:05:33,124 - [INFO] - from application in play-internal-execution-context-1 
+Data from: data.json
+
+2015-05-30 18:05:33,200 - [INFO] - from application in play-internal-execution-context-1 
+5 categories from json file 'data.json' inserted.
+
+2015-05-30 18:05:33,216 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-05-30 18:05:33,226 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+[test] Start new game.
+
+2015-05-30 18:05:33,238 - [ERROR] - from play in play-akka.actor.default-dispatcher-13 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-05-30 18:05:33,253 - [ERROR] - from application in play-akka.actor.default-dispatcher-13 
+
+
+! @6mal28111 - Internal server error, for (POST) [/jeopardy] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at views.html.jeopardy$.apply(jeopardy.template.scala:38) ~[classes/:na]
+	at views.html.jeopardy$.render(jeopardy.template.scala:101) ~[classes/:na]
+	at views.html.jeopardy.render(jeopardy.template.scala) ~[classes/:na]
+	at controllers.GameController.newGame(GameController.java:90) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(routes_routing.scala:199) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(routes_routing.scala:199) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:44) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-05-30 18:07:20,447 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+[test] Play the game.
+
+2015-05-30 18:07:20,476 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+Go to login page.
+
+2015-05-30 18:07:24,237 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+Login information has been provided.
+
+2015-05-30 18:07:27,022 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+Go to Registration page.
+
+2015-05-30 18:07:28,987 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Registration info has been submitted.
+
+2015-05-30 18:07:29,042 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+Go to login page.
+
+2015-05-30 18:07:31,950 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+Login information has been provided.
+
+2015-05-30 18:07:32,015 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+[test] Play the game.
+
+2015-05-30 18:07:32,016 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+[test] Creating a new game.
+
+2015-05-30 18:07:32,018 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+Start game with 5 categories.
+
+2015-05-30 18:07:34,446 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+[test] Questions selected.
+
+2015-05-30 18:07:35,607 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
+[test] Answers submitted.
+
+2015-05-30 18:07:37,228 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+[test] Questions selected.
+
+2015-05-30 18:07:38,365 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
+[test] Answers submitted.
+
+2015-05-30 18:07:39,863 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+[test] Questions selected.
+
+2015-05-30 18:07:40,931 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
+[test] Answers submitted.
+
+2015-05-30 18:07:42,694 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
+[test] Questions selected.
+
+2015-05-30 18:07:43,829 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
+[test] Answers submitted.
+
+2015-05-30 18:07:45,555 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
+[test] Questions selected.
+
+2015-05-30 18:07:47,139 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
+[test] Answers submitted.
+
+2015-05-30 18:07:47,178 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
+[test] Game over.
+
+2015-05-30 18:07:48,041 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
+UUID vom SOA-request: eac399fd-610c-40d0-a75f-910c0e5b1132
+
+2015-05-30 18:07:49,848 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
+Der Text wurde erfolgreich auf Twitter gepublisht!
+
+2015-05-30 18:09:47,480 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
+[test] Start new game.
+
+2015-05-30 18:09:47,481 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
+[test] Creating a new game.
+
+2015-05-30 18:09:47,485 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
+Start game with 5 categories.
+
+2015-05-30 18:09:48,948 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
+[test] Questions selected.
+
+2015-05-30 18:09:50,780 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
+[test] Answers submitted.
+
+2015-05-30 18:09:52,814 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
+[test] Questions selected.
+
+2015-05-30 18:09:54,071 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
+[test] Answers submitted.
+
+2015-05-30 18:09:55,512 - [INFO] - from application in play-akka.actor.default-dispatcher-32 
+[test] Questions selected.
+
+2015-05-30 18:09:56,742 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
+[test] Answers submitted.
+
+2015-05-30 18:09:58,201 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+[test] Questions selected.
+
+2015-05-30 18:09:59,861 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
+[test] Answers submitted.
+
+2015-05-30 18:10:01,483 - [INFO] - from application in play-akka.actor.default-dispatcher-37 
+[test] Questions selected.
+
+2015-05-30 18:10:02,712 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
+[test] Answers submitted.
+
+2015-05-30 18:10:02,758 - [INFO] - from application in play-akka.actor.default-dispatcher-32 
+[test] Game over.
+
+2015-05-30 18:10:03,766 - [ERROR] - from com.sun.xml.internal.messaging.saaj.client.p2p in play-akka.actor.default-dispatcher-32 
+SAAJ0009: Nachricht konnte nicht gesendet werden
+
+2015-05-30 18:10:03,767 - [ERROR] - from application in play-akka.actor.default-dispatcher-32 
+Fehler beim senden/empfangen des SOA requests.
+
+2015-05-30 18:10:05,905 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
+[test] Start new game.
+
+2015-05-30 18:10:05,906 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
+[test] Creating a new game.
+
+2015-05-30 18:10:05,909 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
+Start game with 5 categories.
+
+2015-05-30 18:10:13,686 - [INFO] - from application in play-akka.actor.default-dispatcher-34 
+[test] Questions selected.
+
+2015-05-30 18:10:17,720 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
 [test] Answers submitted.
 

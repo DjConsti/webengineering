@@ -161,7 +161,6 @@ public class GameController extends Controller {
 		Logger.info("[" + request().username() + "] Game over.");
 		
 		HighscoreService hsService = new HighscoreService();
-		System.err.println("Username: " + session().get("userName") + session("userName"));
 		String uuid = hsService.postHighscore(cachedGame(session().get("userName")));
 		// nun publishen wir die uuid auf twitter
 		TwitterClient twitter =  new TwitterClient();
@@ -174,8 +173,6 @@ public class GameController extends Controller {
 				
 				 Logger.info("Der Text wurde erfolgreich auf Twitter gepublisht!" );
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
 				 Logger.error("Fehler beim publishen auf Twitter!" );
 			}
 		}

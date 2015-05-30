@@ -123,7 +123,7 @@ public class HighscoreService implements Serializable {
 			
 			return uuid;
 		} catch (SOAPException e) {
-			Logger.error("Fehler beim empfangen des SOA requests.");
+			Logger.error("Fehler beim senden/empfangen des SOA requests.");
 		}
 		
 		return null;
